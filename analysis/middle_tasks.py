@@ -100,6 +100,8 @@ def render_middle_task(
         "- Remove F-grade and weak-context candidates from `candidates_for_final`.\n"
         "- Normalize scores onto a comparable 0-100 scale.\n"
         f"- De-duplicate similar candidates and forward at most {max_candidates} candidates.\n"
+        "- When credible candidates exist, preserve at least 3 B-grade and 3 C-grade representatives so the final report shows observation and high-risk momentum buckets instead of looking incomplete.\n"
+        "- Do not pad B/C quotas with weak-context, unsupported, or F-grade names.\n"
         "- Preserve `needs_current_research: true` when any forwarded item depends on current facts.\n"
         "- JSON only. Do not include markdown or commentary in the output file.\n\n"
         "## Required JSON Shape\n"

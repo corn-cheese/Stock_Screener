@@ -118,6 +118,48 @@ class FinalCandidateManagerTests(unittest.TestCase):
         self.assertEqual("HIGH", candidates[0]["ticker"])
         self.assertEqual(1, candidates[0]["rank"])
 
+    def test_build_final_candidates_reserves_observation_and_momentum_grades(self):
+        def candidate(ticker, grade, score):
+            return {
+                "ticker": ticker,
+                "company": f"{ticker} Corp",
+                "proposed_grade": grade,
+                "normalized_score": score,
+                "theme": "AI infrastructure",
+                "why_forwarded": "Representative candidate for its grade.",
+                "main_risk": "Risk requires monitoring.",
+                "needs_current_research": False,
+            }
+
+        middle_results = [
+            {
+                "middle_id": 1,
+                "candidates_for_final": [
+                    candidate("S01", "S", 90),
+                    candidate("A01", "A", 89),
+                    candidate("A02", "A", 88),
+                    candidate("A03", "A", 87),
+                    candidate("A04", "A", 86),
+                    candidate("A05", "A", 85),
+                    candidate("B01", "B", 84),
+                    candidate("B02", "B", 83),
+                    candidate("B03", "B", 82),
+                    candidate("C01", "C", 81),
+                    candidate("C02", "C", 80),
+                    candidate("C03", "C", 79),
+                ],
+            }
+        ]
+
+        candidates = build_final_candidates(middle_results, max_candidates=8)
+
+        tickers = [item["ticker"] for item in candidates]
+        self.assertEqual(8, len(candidates))
+        self.assertIn("S01", tickers)
+        self.assertEqual(3, sum(1 for item in candidates if item["grade"] == "B"))
+        self.assertEqual(3, sum(1 for item in candidates if item["grade"] == "C"))
+        self.assertEqual([1, 2, 3, 4, 5, 6, 7, 8], [item["rank"] for item in candidates])
+
     def test_write_final_candidates_reads_middle_files_and_writes_wrapper(self):
         with temporary_workspace_dir() as temp_dir:
             run_dir = Path(temp_dir)

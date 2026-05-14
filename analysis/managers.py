@@ -1,4 +1,5 @@
 import json
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -6,6 +7,7 @@ from analysis.schemas import FINAL_GRADES, validate_final_candidate
 
 
 GRADE_PRIORITY = {grade: index for index, grade in enumerate(FINAL_GRADES)}
+MIN_FINAL_GRADE_COUNTS = {"B": 3, "C": 3}
 UNKNOWN_BUSINESS_TEXT = "확인 필요: middle 단계에는 상세 사업 설명이 포함되지 않았습니다."
 DEFAULT_JUDGMENT = "후보군 분석 대상으로 유지하되, 상세 기업 정보와 최신 이슈 확인이 필요합니다."
 
@@ -21,13 +23,11 @@ def build_final_candidates(middle_results, max_candidates=40):
             current = best_by_ticker.get(ticker)
             best_by_ticker[ticker] = _pick_better_candidate(current, normalized)
 
-    sorted_candidates = sorted(
-        best_by_ticker.values(),
-        key=lambda item: (GRADE_PRIORITY[item["grade"]], -item["_score"], item["ticker"]),
-    )[:max_candidates]
+    sorted_candidates = _sort_candidates(best_by_ticker.values())
+    selected_candidates = _select_final_candidates(sorted_candidates, max_candidates)
 
     final_candidates = []
-    for rank, candidate in enumerate(sorted_candidates, start=1):
+    for rank, candidate in enumerate(selected_candidates, start=1):
         candidate = dict(candidate)
         candidate.pop("_score", None)
         candidate["rank"] = rank
@@ -35,6 +35,59 @@ def build_final_candidates(middle_results, max_candidates=40):
         final_candidates.append(candidate)
 
     return final_candidates
+
+
+def _select_final_candidates(sorted_candidates, max_candidates):
+    selected = list(sorted_candidates[:max_candidates])
+    if len(selected) < max_candidates or max_candidates <= sum(MIN_FINAL_GRADE_COUNTS.values()):
+        return selected
+
+    selected_tickers = {candidate["ticker"] for candidate in selected}
+    selected_counts = Counter(candidate["grade"] for candidate in selected)
+    available_by_grade = {
+        grade: [candidate for candidate in sorted_candidates if candidate["grade"] == grade]
+        for grade in MIN_FINAL_GRADE_COUNTS
+    }
+    target_counts = {
+        grade: min(min_count, len(available_by_grade[grade]))
+        for grade, min_count in MIN_FINAL_GRADE_COUNTS.items()
+    }
+
+    for grade in MIN_FINAL_GRADE_COUNTS:
+        for candidate in available_by_grade[grade]:
+            if selected_counts[grade] >= target_counts[grade]:
+                break
+            if candidate["ticker"] in selected_tickers:
+                continue
+            replacement = _find_replacement_candidate(selected, target_counts)
+            if replacement is None:
+                break
+            selected.remove(replacement)
+            selected_tickers.remove(replacement["ticker"])
+            selected_counts[replacement["grade"]] -= 1
+            selected.append(candidate)
+            selected_tickers.add(candidate["ticker"])
+            selected_counts[candidate["grade"]] += 1
+
+    return _sort_candidates(selected)
+
+
+def _find_replacement_candidate(selected, target_counts):
+    selected_counts = Counter(candidate["grade"] for candidate in selected)
+    for candidate in sorted(selected, key=_candidate_sort_key, reverse=True):
+        grade = candidate["grade"]
+        if grade in target_counts and selected_counts[grade] <= target_counts[grade]:
+            continue
+        return candidate
+    return None
+
+
+def _sort_candidates(candidates):
+    return sorted(candidates, key=_candidate_sort_key)
+
+
+def _candidate_sort_key(candidate):
+    return (GRADE_PRIORITY[candidate["grade"]], -candidate["_score"], candidate["ticker"])
 
 
 def write_final_candidates(run_dir, middle_outputs_dir=None, output_path=None, max_candidates=40):

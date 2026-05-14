@@ -1,7 +1,7 @@
 {
   "artifact": "final_candidates",
-  "created_at": "2026-05-15T05:35:00",
-  "candidate_count": 40,
+  "created_at": "2026-05-15T05:55:00",
+  "candidate_count": 45,
   "candidates": [
     {
       "rank": 1,
@@ -401,7 +401,7 @@
       "primary_industry": "optical fiber / data-center connectivity",
       "business": "광섬유, 디스플레이 유리, 특수유리, 세라믹, 생명과학 소재를 생산한다.",
       "related_context": "AI 데이터센터 간 대규모 광연결과 국내 광섬유 생산 확대에 연결된다.",
-      "inclusion_reason": "Q1 2026 자료와 최근 NVIDIA 관련 광섬유 투자 뉴스로 AI 인프라 연결성이 확인된다.",
+      "inclusion_reason": "Q1 2026 자료와 NVIDIA-Corning 장기 파트너십으로 AI 데이터센터용 광연결 수요와 미국 제조 확대 연결성이 확인된다.",
       "risk": "세그먼트 mix, 가격, capex, 광통신 수요 지속성.",
       "overall_judgment": "광섬유/소재 기반의 비교적 방어적인 A 후보.",
       "needs_current_research": false
@@ -522,6 +522,71 @@
       "risk": "부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁.",
       "overall_judgment": "AI 네트워킹 보조 후보로 A 하단 유지.",
       "needs_current_research": false
+    },
+    {
+      "grade": "B",
+      "ticker": "BTDR",
+      "company": "Bitdeer Technologies Group Class A Ordinary Shares",
+      "primary_industry": "bitcoin infrastructure / AI cloud and data centers",
+      "business": "비트코인 채굴, SEALMINER 채굴장비, 데이터센터 운영, AI cloud/HPC 인프라를 제공한다.",
+      "related_context": "비트코인 희소자산 인프라, 전력 기반 compute, AI 데이터센터 병목에 연결된다.",
+      "inclusion_reason": "Q1 2026 자료에서 Bitcoin mining and AI infrastructure, 글로벌 데이터센터 자산, AI cloud 역량이 확인된다.",
+      "risk": "순손실, 비트코인 가격과 hashrate, 채굴장비 경제성, 전력비, AI 전환 capex와 financing.",
+      "overall_judgment": "비트코인과 AI compute가 겹친 B 관찰 후보. 사이클 관련성은 높지만 변동성과 재무 리스크가 크다.",
+      "needs_current_research": false,
+      "rank": 41
+    },
+    {
+      "grade": "B",
+      "ticker": "USAR",
+      "company": "USA Rare Earth Inc. Class A Common Stock",
+      "primary_industry": "rare earths / strategic minerals",
+      "business": "미국 내 희토류 산화물 분리, 금속·합금, NdFeB 자석까지 이어지는 mine-to-magnet 플랫폼을 구축하려는 초기 단계 기업.",
+      "related_context": "미중패권전쟁, 희토류 공급망, 방산·산업정책, 희소 전략 자산에 연결된다.",
+      "inclusion_reason": "Q1 2026 10-Q에서 Less Common Metals 인수, $1.5B PIPE, 미국 정부 LOI 기반 지원 가능성, 희토류 value chain 구축 계획이 확인된다.",
+      "risk": "초기 단계, 광물·자석 매출 부재, Round Top 상업화 시점, 대규모 capex, 정부지원 조건, 희석과 실행 리스크.",
+      "overall_judgment": "전략 광물의 B 관찰 후보. 구조적 맥락은 강하지만 아직 수익성과 상업화가 검증 전이다.",
+      "needs_current_research": false,
+      "rank": 42
+    },
+    {
+      "grade": "B",
+      "ticker": "SVM",
+      "company": "Silvercorp Metals Inc. Common Shares",
+      "primary_industry": "precious metals and hard assets",
+      "business": "은, 금, 납, 아연을 생산하는 귀금속·기초금속 광산 기업.",
+      "related_context": "통화가치 희석과 경화자산 선호가 강화될 때 귀금속 생산기업으로 연결된다.",
+      "inclusion_reason": "Q3 FY2026 자료에서 은·금 생산, 기록적 매출, 영업현금흐름이 확인되어 hard-asset 생산기업 후보로 남긴다.",
+      "risk": "은·금 가격, 중국·키르기스스탄 등 관할권, 광산 품위와 원가, 매장량, 운영 리스크.",
+      "overall_judgment": "AI 인프라 직접 후보는 아니지만 희소자산 축을 보완하는 B 관찰 후보.",
+      "needs_current_research": false,
+      "rank": 43
+    },
+    {
+      "grade": "B",
+      "ticker": "IREN",
+      "company": "IREN Limited Ordinary Shares",
+      "primary_industry": "bitcoin infrastructure / AI cloud data centers",
+      "business": "전력·부지·데이터센터를 기반으로 비트코인 채굴과 AI Cloud/GPU 인프라를 운영한다.",
+      "related_context": "비트코인 희소자산 인프라와 AI 데이터센터 전력·컴퓨트 병목이 겹치는 지점이다.",
+      "inclusion_reason": "Q3 FY2026 update와 NVIDIA 전략 파트너십에서 $3.4B AI Cloud 계약, 5GW AI infrastructure partnership, 대규모 capacity buildout이 확인된다.",
+      "risk": "비트코인 가격, 전력계약, GPU capex, 고객 집중, financing, AI cloud 전환 실행 리스크.",
+      "overall_judgment": "비트코인과 AI 인프라가 동시에 노출된 B 관찰 후보. 구조성은 크지만 capex와 execution 리스크도 크다.",
+      "needs_current_research": false,
+      "rank": 44
+    },
+    {
+      "grade": "B",
+      "ticker": "EOSE",
+      "company": "Eos Energy Enterprises Inc. Class A Common Stock",
+      "primary_industry": "grid storage and long-duration energy infrastructure",
+      "business": "미국산 zinc 기반 장주기 에너지저장장치(LDES)를 설계·제조하는 grid storage 기업.",
+      "related_context": "전력망 안정성, 데이터센터 전력 수요, 국가 에너지 인프라 투자와 연결된다.",
+      "inclusion_reason": "Q1 2026 자료에서 Frontier Power USA, 2GWh capacity reservation, 2026 매출 가이던스와 생산 확대가 확인된다.",
+      "risk": "gross loss와 cash burn, 제조 scale-up, backlog 전환, financing·dilution, 경쟁 배터리 기술.",
+      "overall_judgment": "전력 병목의 보조 B 관찰 후보. 사업 적합성은 있으나 재무·상용화 리스크가 크다.",
+      "needs_current_research": false,
+      "rank": 45
     }
   ]
 }

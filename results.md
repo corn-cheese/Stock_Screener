@@ -6,9 +6,9 @@
 - 입력 CSV: Stock_Results/2026-05-15_Scan_Result_Top5000.csv
 - 스캔 조건: 최근 1개월 상승률 15% 이상 후보군에서 context rubric 기준으로 worker/middle/final 선별
 - 전체 스캔 후보: 742
-- 최종 분석 후보: 40
+- 최종 분석 후보: 45
 - 분류 기준: AI 인프라, 국가 주도 인프라/전력, 실물·전략 공급망 연결성, 사업 명확성, 리스크 조정
-- 주의: 투자 추천이 아니라 후보군 분석이며, 매수·매도 지시가 아니다. 최신 자료는 2026-05-15 현재 확인 가능한 공식 IR/실적자료 중심으로 반영했다.
+- 주의: 투자 추천이 아니라 후보군 분석이며, 매수·매도 지시가 아니다. 최신 자료는 2026-05-15 현재 확인 가능한 공식 IR/실적자료 중심으로 반영했다. B 등급은 middle 단계에서 확인된 관찰 후보 5개를 추가 반영했고, C 등급은 신뢰 가능한 후보가 없어 비워 두었다.
 
 ## 1. 시장이 주목하는 섹터 요약
 
@@ -21,20 +21,26 @@
 ### 전력 / 냉각 / 물리 데이터센터 인프라
 - 시장이 주목하는 이유: AI 서버 밀도가 높아질수록 전력망, switchgear, 냉각, 전기·기계 시공이 실제 병목으로 떠오른다.
 - 사용자 맥락과 연결되는 지점: 재정 지배와 국가 주도 인프라 투자, 데이터센터 전력 수요가 겹치는 구간이다.
-- 대표 후보: FIX, PWR, VRT, MYRG, MTZ, MOD, POWL, AGX, SMR
+- 대표 후보: FIX, PWR, VRT, MYRG, MTZ, MOD, POWL, AGX, SMR, EOSE
 - 확인할 리스크: 대형 프로젝트 실행, backlog 질, 원가/인력, 정책 및 인허가
 
 ### 서버 / 스토리지 / 클라우드 인프라
 - 시장이 주목하는 이유: AI 모델 학습과 추론이 GPU 서버, 스토리지, enterprise infrastructure, 데이터센터 capacity 수요를 밀어올린다.
 - 사용자 맥락과 연결되는 지점: 이미 집행되는 capex에서 매출이 발생하는 하드웨어·인프라 계층이다.
-- 대표 후보: DELL, PENG, HPE, SMCI, STX, APLD, GOOGL
+- 대표 후보: DELL, PENG, HPE, SMCI, STX, APLD, GOOGL, IREN, BTDR
 - 확인할 리스크: 서버 마진, 메모리 가격, 고객 집중, 데이터센터 금융/전력 확보
 
 ### 광통신 / 네트워크 / 소재 병목
 - 시장이 주목하는 이유: AI cluster가 커질수록 광모듈, optical fiber, DSP, coherent networking 같은 데이터 이동 계층이 함께 확장된다.
 - 사용자 맥락과 연결되는 지점: AI 인프라에서 GPU 다음 병목이 네트워크와 연결 소재로 이동할 가능성에 연결된다.
-- 대표 후보: COHR, LITE, CIEN, GLW, AAOI, MTSI, SMTC, DY
+- 대표 후보: COHR, LITE, CIEN, GLW, AAOI, MTSI, DY
 - 확인할 리스크: optical cycle, 대형 고객 발주, 가격 경쟁, 공급 증설 속도
+
+### 실물 / 희소자산 / 전략 광물
+- 시장이 주목하는 이유: 재정 지배와 통화가치 희석 우려가 커질수록 귀금속, 비트코인 인프라, 희토류 같은 희소·전략 자산 관심이 커진다.
+- 사용자 맥락과 연결되는 지점: context의 경화자산, 미중패권전쟁, 공급망 재편 관점에 직접 연결된다.
+- 대표 후보: USAR, SVM, BTDR, IREN
+- 확인할 리스크: 금속 가격, 채굴·전력 경제성, 관할권, 상업화와 financing
 
 ### 우주 / 전략 인프라
 - 시장이 주목하는 이유: 방산, 우주, 위성, 통신 인프라는 미중패권전쟁과 국가 주도 산업정책의 수혜를 받을 수 있다.
@@ -48,8 +54,8 @@
 |---|---|---:|---|---|
 | S | 구조적 중심 후보 | 9 | NVDA, AVGO, AMD | 우선 비교할 구조적 중심 후보 |
 | A | 유력 후보 | 31 | CRDO, MPWR, DY | 테마 적합성이 높지만 리스크 확인이 필요한 후보 |
-| B | 관찰 후보 | 0 | - | 해당 등급 후보 없음 |
-| C | 고위험 모멘텀 후보 | 0 | - | 해당 등급 후보 없음 |
+| B | 관찰 후보 | 5 | BTDR, USAR, SVM | 구조적 맥락은 있으나 실행·재무·직접성 확인이 필요한 관찰 후보 |
+| C | 고위험 모멘텀 후보 | 0 | - | middle 단계에서 신뢰 가능한 후보가 없어 제외 |
 
 ## 3. 전체 후보 빠른 보기
 
@@ -95,6 +101,11 @@
 | 38 | A | First Solar Inc. Common Stock | FSLR | solar manufacturing / energy infrastructure | 국가 주도 에너지 제조의 A 후보. 정책 민감도가 높다. | 정책 인센티브, 모듈 가격, 무역정책, backlog 전환. |
 | 39 | A | Intel Corporation | INTC | semiconductors / domestic foundry capacity | 전략성은 크지만 실적 전환 리스크가 커 A 하단 후보. | foundry 손실, turnaround 실행, AI accelerator 경쟁력, capex 부담. |
 | 40 | A | Semtech Corporation Common Stock | SMTC | semiconductors / connectivity | AI 네트워킹 보조 후보로 A 하단 유지. | 부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁. |
+| 41 | B | Bitdeer Technologies Group Class A Ordinary Shares | BTDR | bitcoin infrastructure / AI cloud and data centers | 비트코인과 AI compute가 겹친 B 관찰 후보. 사이클 관련성은 높지만 변동성과 재무 리스크가 크다. | 순손실, 비트코인 가격과 hashrate, 채굴장비 경제성, 전력비, AI 전환 capex와 financing. |
+| 42 | B | USA Rare Earth Inc. Class A Common Stock | USAR | rare earths / strategic minerals | 전략 광물의 B 관찰 후보. 구조적 맥락은 강하지만 아직 수익성과 상업화가 검증 전이다. | 초기 단계, 광물·자석 매출 부재, Round Top 상업화 시점, 대규모 capex, 정부지원 조건, 희석과 실행 리스크. |
+| 43 | B | Silvercorp Metals Inc. Common Shares | SVM | precious metals and hard assets | AI 인프라 직접 후보는 아니지만 희소자산 축을 보완하는 B 관찰 후보. | 은·금 가격, 중국·키르기스스탄 등 관할권, 광산 품위와 원가, 매장량, 운영 리스크. |
+| 44 | B | IREN Limited Ordinary Shares | IREN | bitcoin infrastructure / AI cloud data centers | 비트코인과 AI 인프라가 동시에 노출된 B 관찰 후보. 구조성은 크지만 capex와 execution 리스크도 크다. | 비트코인 가격, 전력계약, GPU capex, 고객 집중, financing, AI cloud 전환 실행 리스크. |
+| 45 | B | Eos Energy Enterprises Inc. Class A Common Stock | EOSE | grid storage and long-duration energy infrastructure | 전력 병목의 보조 B 관찰 후보. 사업 적합성은 있으나 재무·상용화 리스크가 크다. | gross loss와 cash burn, 제조 scale-up, backlog 전환, financing·dilution, 경쟁 배터리 기술. |
 
 ## 4. 등급별 후보 요약
 
@@ -135,11 +146,11 @@
 | 28 | Rocket Lab Corporation | RKLB | space systems / defense aerospace | Q1 2026 자료에서 record quarterly revenue와 대형 backlog가 확인된다. | Neutron 일정, 발사 cadence, 수익성, 정부/상업 계약 mix. |
 | 29 | Vicor Corporation Common Stock | VICR | power components / AI hardware | 최근 공식 실적 자료와 Q1 관련 자료에서 AI 데이터센터 power conversion 수요를 확인할 필요가 있는 후보. | 고객 집중, 경쟁, backlog 전환, 실제 AI 매출 기여도. |
 | 30 | Ciena Corporation Common Stock | CIEN | AI infrastructure and optical networking | FY2025 연말 자료에서 AI ecosystem과 cloud/service provider 수요가 확인된다. | 통신사 capex, 공급망, 고객 order timing, 고평가. |
-| 31 | Corning Incorporated Common Stock | GLW | optical fiber / data-center connectivity | Q1 2026 자료와 최근 NVIDIA 관련 광섬유 투자 뉴스로 AI 인프라 연결성이 확인된다. | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
+| 31 | Corning Incorporated Common Stock | GLW | optical fiber / data-center connectivity | Q1 2026 자료와 NVIDIA-Corning 장기 파트너십으로 AI 데이터센터용 광연결 수요와 미국 제조 확대 연결성이 확인된다. | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
 | 32 | Hewlett Packard Enterprise Company Common Stock | HPE | AI servers / enterprise infrastructure | Q1 FY2026 자료에서 Cloud & AI 세그먼트와 AI systems backlog가 확인된다. | AI 서버 마진, Juniper 통합/네트워킹 경쟁, enterprise 수요. |
 | 33 | Super Micro Computer Inc. Common Stock | SMCI | AI servers / data-center hardware | FY2026 Q2 공식 자료에서 AI server 수요와 대형 고객 대응이 확인된다. | 마진 압박, 고객 집중, 회계/통제 신뢰, 수출통제·법적 이슈. |
 | 34 | Veeco Instruments Inc. Common Stock | VECO | semiconductor equipment | Q1 2026 자료에서 semiconductor process equipment와 AI 관련 수요/중국 리스크가 확인된다. | 중국 노출, capex cycle, 고객 집중, 장비 주문 변동. |
-| 35 | Applied Optoelectronics Inc. Common Stock | AAOI | optical semiconductors / data-center networking | Q1 2026 SEC 자료에서 AI를 power하는 advanced optical/HFC networking products 사업이 확… | 고객 집중, 가격, 생산능력, 데이터센터 수요 지속성. |
+| 35 | Applied Optoelectronics Inc. Common Stock | AAOI | optical semiconductors / data-center networking | Q1 2026 SEC 자료에서 AI를 power하는 advanced optical/HFC networking products 사업이 확인된다. | 고객 집중, 가격, 생산능력, 데이터센터 수요 지속성. |
 | 36 | Analog Devices Inc. Common Stock | ADI | analog semiconductors and industrial electronics | Q1 FY2026 자료에서 산업·통신 중심의 전 end-market 성장과 배당 증가가 확인된다. | analog cycle, 산업 수요, 재고 정상화, 직접 AI 노출도. |
 | 37 | Argan Inc. Common Stock | AGX | power infrastructure / engineering and construction | FY2026 자료에서 power generating facilities 수요와 backlog가 확인된다. | 대형 프로젝트 집중, 실행, 고객 집중, 에너지 정책. |
 | 38 | First Solar Inc. Common Stock | FSLR | solar manufacturing / energy infrastructure | Q1 2026 SEC 자료에서 미국 PV 제조와 대규모 contracted backlog가 확인된다. | 정책 인센티브, 모듈 가격, 무역정책, backlog 전환. |
@@ -147,10 +158,19 @@
 | 40 | Semtech Corporation Common Stock | SMTC | semiconductors / connectivity | FY2026 Q4 자료에서 차세대 optical/copper interconnect 포지션이 확인된다. | 부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁. |
 
 ### B 등급: 관찰 후보
-해당 등급 후보가 없습니다.
+| Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
+|---:|---|---|---|---|---|
+| 41 | Bitdeer Technologies Group Class A Ordinary Shares | BTDR | bitcoin infrastructure / AI cloud and data centers | Q1 2026 자료에서 Bitcoin mining and AI infrastructure, 글로벌 데이터센터 자산, AI cloud 역량이 확인된다. | 순손실, 비트코인 가격과 hashrate, 채굴장비 경제성, 전력비, AI 전환 capex와 financing. |
+| 42 | USA Rare Earth Inc. Class A Common Stock | USAR | rare earths / strategic minerals | Q1 2026 10-Q에서 Less Common Metals 인수, $1.5B PIPE, 미국 정부 LOI 기반 지원 가능성, 희토류 value chain 구축 계획이 확인된다. | 초기 단계, 광물·자석 매출 부재, Round Top 상업화 시점, 대규모 capex, 정부지원 조건, 희석과 실행 리스크. |
+| 43 | Silvercorp Metals Inc. Common Shares | SVM | precious metals and hard assets | Q3 FY2026 자료에서 은·금 생산, 기록적 매출, 영업현금흐름이 확인되어 hard-asset 생산기업 후보로 남긴다. | 은·금 가격, 중국·키르기스스탄 등 관할권, 광산 품위와 원가, 매장량, 운영 리스크. |
+| 44 | IREN Limited Ordinary Shares | IREN | bitcoin infrastructure / AI cloud data centers | Q3 FY2026 update와 NVIDIA 전략 파트너십에서 $3.4B AI Cloud 계약, 5GW AI infrastructure partnership, 대규모 capacity buildout이 확인된다. | 비트코인 가격, 전력계약, GPU capex, 고객 집중, financing, AI cloud 전환 실행 리스크. |
+| 45 | Eos Energy Enterprises Inc. Class A Common Stock | EOSE | grid storage and long-duration energy infrastructure | Q1 2026 자료에서 Frontier Power USA, 2GWh capacity reservation, 2026 매출 가이던스와 생산 확대가 확인된다. | gross loss와 cash burn, 제조 scale-up, backlog 전환, financing·dilution, 경쟁 배터리 기술. |
 
 ### C 등급: 고위험 모멘텀 후보
-해당 등급 후보가 없습니다.
+middle 단계에서 C 등급으로 올릴 만큼 신뢰 가능한 후보가 없어, 변동성만 큰 종목은 최종 상세 목록에서 제외했다.
+| Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
+|---:|---|---|---|---|---|
+| - | - | - | - | 해당 등급 후보 없음 | - |
 
 ## 5. 상세 분석
 
@@ -495,7 +515,7 @@
 | 산업 | optical fiber / data-center connectivity |
 | 주요 사업 | 광섬유, 디스플레이 유리, 특수유리, 세라믹, 생명과학 소재를 생산한다. |
 | 관련 맥락 | AI 데이터센터 간 대규모 광연결과 국내 광섬유 생산 확대에 연결된다. |
-| 포함 이유 | Q1 2026 자료와 최근 NVIDIA 관련 광섬유 투자 뉴스로 AI 인프라 연결성이 확인된다. |
+| 포함 이유 | Q1 2026 자료와 NVIDIA-Corning 장기 파트너십으로 AI 데이터센터용 광연결 수요와 미국 제조 확대 연결성이 확인된다. |
 | 리스크 및 확인 필요 사항 | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
 | 종합 판단 | 광섬유/소재 기반의 비교적 방어적인 A 후보. |
 
@@ -600,11 +620,64 @@
 
 ### B 등급
 
-해당 등급 후보가 없습니다.
+#### 41. Bitdeer Technologies Group Class A Ordinary Shares / BTDR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | bitcoin infrastructure / AI cloud and data centers |
+| 주요 사업 | 비트코인 채굴, SEALMINER 채굴장비, 데이터센터 운영, AI cloud/HPC 인프라를 제공한다. |
+| 관련 맥락 | 비트코인 희소자산 인프라, 전력 기반 compute, AI 데이터센터 병목에 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 Bitcoin mining and AI infrastructure, 글로벌 데이터센터 자산, AI cloud 역량이 확인된다. |
+| 리스크 및 확인 필요 사항 | 순손실, 비트코인 가격과 hashrate, 채굴장비 경제성, 전력비, AI 전환 capex와 financing. |
+| 종합 판단 | 비트코인과 AI compute가 겹친 B 관찰 후보. 사이클 관련성은 높지만 변동성과 재무 리스크가 크다. |
+
+#### 42. USA Rare Earth Inc. Class A Common Stock / USAR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | rare earths / strategic minerals |
+| 주요 사업 | 미국 내 희토류 산화물 분리, 금속·합금, NdFeB 자석까지 이어지는 mine-to-magnet 플랫폼을 구축하려는 초기 단계 기업. |
+| 관련 맥락 | 미중패권전쟁, 희토류 공급망, 방산·산업정책, 희소 전략 자산에 연결된다. |
+| 포함 이유 | Q1 2026 10-Q에서 Less Common Metals 인수, $1.5B PIPE, 미국 정부 LOI 기반 지원 가능성, 희토류 value chain 구축 계획이 확인된다. |
+| 리스크 및 확인 필요 사항 | 초기 단계, 광물·자석 매출 부재, Round Top 상업화 시점, 대규모 capex, 정부지원 조건, 희석과 실행 리스크. |
+| 종합 판단 | 전략 광물의 B 관찰 후보. 구조적 맥락은 강하지만 아직 수익성과 상업화가 검증 전이다. |
+
+#### 43. Silvercorp Metals Inc. Common Shares / SVM
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | precious metals and hard assets |
+| 주요 사업 | 은, 금, 납, 아연을 생산하는 귀금속·기초금속 광산 기업. |
+| 관련 맥락 | 통화가치 희석과 경화자산 선호가 강화될 때 귀금속 생산기업으로 연결된다. |
+| 포함 이유 | Q3 FY2026 자료에서 은·금 생산, 기록적 매출, 영업현금흐름이 확인되어 hard-asset 생산기업 후보로 남긴다. |
+| 리스크 및 확인 필요 사항 | 은·금 가격, 중국·키르기스스탄 등 관할권, 광산 품위와 원가, 매장량, 운영 리스크. |
+| 종합 판단 | AI 인프라 직접 후보는 아니지만 희소자산 축을 보완하는 B 관찰 후보. |
+
+#### 44. IREN Limited Ordinary Shares / IREN
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | bitcoin infrastructure / AI cloud data centers |
+| 주요 사업 | 전력·부지·데이터센터를 기반으로 비트코인 채굴과 AI Cloud/GPU 인프라를 운영한다. |
+| 관련 맥락 | 비트코인 희소자산 인프라와 AI 데이터센터 전력·컴퓨트 병목이 겹치는 지점이다. |
+| 포함 이유 | Q3 FY2026 update와 NVIDIA 전략 파트너십에서 $3.4B AI Cloud 계약, 5GW AI infrastructure partnership, 대규모 capacity buildout이 확인된다. |
+| 리스크 및 확인 필요 사항 | 비트코인 가격, 전력계약, GPU capex, 고객 집중, financing, AI cloud 전환 실행 리스크. |
+| 종합 판단 | 비트코인과 AI 인프라가 동시에 노출된 B 관찰 후보. 구조성은 크지만 capex와 execution 리스크도 크다. |
+
+#### 45. Eos Energy Enterprises Inc. Class A Common Stock / EOSE
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | grid storage and long-duration energy infrastructure |
+| 주요 사업 | 미국산 zinc 기반 장주기 에너지저장장치(LDES)를 설계·제조하는 grid storage 기업. |
+| 관련 맥락 | 전력망 안정성, 데이터센터 전력 수요, 국가 에너지 인프라 투자와 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 Frontier Power USA, 2GWh capacity reservation, 2026 매출 가이던스와 생산 확대가 확인된다. |
+| 리스크 및 확인 필요 사항 | gross loss와 cash burn, 제조 scale-up, backlog 전환, financing·dilution, 경쟁 배터리 기술. |
+| 종합 판단 | 전력 병목의 보조 B 관찰 후보. 사업 적합성은 있으나 재무·상용화 리스크가 크다. |
 
 ### C 등급
 
-해당 등급 후보가 없습니다.
+해당 등급 후보가 없습니다. middle 단계에서 C 등급으로 올릴 만큼 근거가 충분한 후보가 없었고, 단순 변동성 후보는 제외했습니다.
 
 ## 6. 주요 확인 자료
 
@@ -631,7 +704,7 @@
 - MACOM Q2 FY2026 results: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results
 - Powell Industries Q2 FY2026 results: https://www.nasdaq.com/press-release/powell-industries-announces-second-quarter-fiscal-2026-results-2026-05-04
 - Seagate Q3 FY2026 results: https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/
-- Applied Digital Q3 FY2026 results: https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-2026-results
+- Applied Digital Q3 FY2026 results: https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-results
 - Coherent Q3 FY2026 results: https://www.coherent.com/news/press-releases/third-quarter-fiscal-year-2026-results
 - Alphabet Q1 2026 earnings release: https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf
 - Lumentum Q3 FY2026 results: https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Third-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx
@@ -639,6 +712,7 @@
 - Vicor FY2025 Q4/full-year results: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8
 - Ciena FY2025 results: https://investor.ciena.com/news-releases/news-release-details/ciena-reports-fiscal-fourth-quarter-2025-and-year-end-financial
 - Corning Q1 2026 results: https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/04/corning-announces-strong-first-quarter-2026-financial-results.html
+- NVIDIA and Corning AI infrastructure partnership: https://investor.corning.com/news-and-events/news/news-details/2026/NVIDIA-and-Corning-Announce-Long-Term-Partnership-To-Strengthen-U-S--Manufacturing-for-AI-Infrastructure/default.aspx
 - HPE Q1 FY2026 results: https://www.hpe.com/us/en/newsroom/press-release/2026/03/hpe-reports-fiscal-2026-first-quarter-results.html
 - Supermicro Q2 FY2026 results: https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Second-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx
 - Veeco Q1 2026 results: https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Reports-First-Quarter-2026-Financial-Results/default.aspx
@@ -648,3 +722,9 @@
 - First Solar Q1 2026 SEC exhibit: https://www.sec.gov/Archives/edgar/data/1274494/000127449426000108/ex991pressreleaseq1-2026.htm
 - Intel Q1 2026 results: https://newsroom.intel.com/corporate/intel-reports-first-quarter-2026-financial-results
 - Semtech FY2026 Q4 results: https://www.semtech.com/company/press/announces-fourth-quarter-of-fiscal-year-2026-results
+- Bitdeer Q1 2026 results: https://www.globenewswire.com/news-release/2026/05/14/3294742/0/en/Bitdeer-Reports-Unaudited-Financial-Results-for-the-First-Quarter-of-2026.html
+- USA Rare Earth Q1 2026 10-Q: https://www.sec.gov/Archives/edgar/data/1970622/000197062226000038/usar-20260331.htm
+- Silvercorp Q3 FY2026 results: https://silvercorpmetals.com/silvercorp-reports-adjusted-net-income-of-47-9-million-0-22-per-share-and-cash-flow-from-operating-activities-of-132-9-million-for-q3-fiscal-2026/
+- IREN Q3 FY2026 update: https://iren.gcs-web.com/news-releases/news-release-details/iren-business-update-and-q3-fy26-results
+- NVIDIA and IREN strategic partnership: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-IREN-Announce-Strategic-Partnership-to-Accelerate-Deployment-of-up-to-5-Gigawatts-of-AI-Infrastructure/default.aspx
+- Eos Energy Q1 2026 results: https://investors.eose.com/news-releases/news-release-details/eos-energy-enterprises-reports-first-quarter-2026-financial/
