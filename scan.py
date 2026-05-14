@@ -12,6 +12,7 @@ from tqdm import tqdm
 
 TARGET_RETURN = 0.15
 MIN_PRICE = 1
+MIN_MARKET_CAP = 70_000_000
 SCAN_LIMIT = 5000
 
 EXCLUDED_LISTING_KEYWORDS = (
@@ -69,6 +70,13 @@ def parse_market_cap(value):
         return 0
 
 
+def meets_market_cap_threshold(value, min_market_cap=MIN_MARKET_CAP):
+    market_cap = parse_market_cap(value)
+    if market_cap != market_cap:
+        return False
+    return market_cap >= min_market_cap
+
+
 def fetch_nasdaq_candidates(scan_limit=SCAN_LIMIT):
     url = "https://api.nasdaq.com/api/screener/stocks?tableonly=true&limit=25&offset=0&download=true"
     headers = {
@@ -90,12 +98,14 @@ def fetch_nasdaq_candidates(scan_limit=SCAN_LIMIT):
     df_all["marketCap_num"] = df_all["marketCap"].apply(parse_market_cap)
     df_all["symbol"] = df_all["symbol"].apply(clean_symbol)
     df_all = df_all.dropna(subset=["symbol"])
+    df_all = df_all[df_all["marketCap_num"] >= MIN_MARKET_CAP]
 
     df_list = df_all.sort_values(by="marketCap_num", ascending=False).head(scan_limit)
     tickers = [
         row["symbol"]
         for _, row in df_list.iterrows()
         if is_supported_listing(row["symbol"], row.get("name"))
+        and meets_market_cap_threshold(row.get("marketCap_num"))
     ]
 
     return df_list, tickers
