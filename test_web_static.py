@@ -53,6 +53,19 @@ class WebAppStaticTests(unittest.TestCase):
 
         self.assertIn("main", functions)
 
+    def test_streamlit_app_uses_clear_demo_button_labels(self):
+        source = (ROOT / "app.py").read_text(encoding="utf-8")
+
+        self.assertNotIn("면접 시연용 후보군 분석 도구입니다", source)
+        self.assertNotIn("현재 모드", source)
+        self.assertNotIn("빠른 데모 모드", source)
+        self.assertNotIn('st.button("최신 결과 불러오기"', source)
+
+        scan_index = source.index('st.button("실시간 스캔 실행"')
+        csv_index = source.index('st.button("기존 CSV 파일 표시"')
+
+        self.assertLess(scan_index, csv_index)
+
     def test_report_generator_exposes_expected_functions(self):
         report_path = ROOT / "report_generator.py"
 

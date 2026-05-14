@@ -58,25 +58,13 @@ def main():
     st.set_page_config(page_title="Stock Screener Demo", layout="wide")
 
     st.title("Stock Screener Demo")
-    st.caption("면접 시연용 후보군 분석 도구입니다. 투자 추천이 아니라 스캔 결과 기반 후보군 분석 데모입니다.")
 
     latest_csv = find_latest_csv()
     api_key = get_openai_api_key()
 
-    mode = "빠른 데모 모드" if latest_csv else "CSV 없음"
-    st.info(f"현재 모드: {mode}")
-
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        if st.button("최신 결과 불러오기", use_container_width=True):
-            latest_csv = find_latest_csv()
-            if latest_csv:
-                st.success(f"최신 CSV를 불러왔습니다: {latest_csv.name}")
-            else:
-                st.warning("Stock_Results 폴더에 스캔 결과 CSV가 없습니다.")
-
-    with col2:
         if st.button("실시간 스캔 실행", use_container_width=True):
             try:
                 with st.spinner("Nasdaq/yfinance 데이터를 가져와 스캔하는 중입니다. 몇 분 걸릴 수 있습니다."):
@@ -87,6 +75,14 @@ def main():
                 latest_csv = find_latest_csv()
                 if latest_csv:
                     st.info("기존 최신 CSV를 fallback으로 계속 표시합니다.")
+
+    with col2:
+        if st.button("기존 CSV 파일 표시", use_container_width=True):
+            latest_csv = find_latest_csv()
+            if latest_csv:
+                st.success(f"기존 CSV 파일을 불러왔습니다: {latest_csv.name}")
+            else:
+                st.warning("Stock_Results 폴더에 스캔 결과 CSV가 없습니다.")
 
     with col3:
         gpt_disabled = latest_csv is None or not api_key
