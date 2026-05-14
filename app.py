@@ -3,7 +3,6 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from report_generator import generate_report, get_openai_api_key
 from scan import run_scan
 
 
@@ -60,9 +59,8 @@ def main():
     st.title("Stock Screener Demo")
 
     latest_csv = find_latest_csv()
-    api_key = get_openai_api_key()
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
         if st.button("실시간 스캔 실행", use_container_width=True):
@@ -83,21 +81,6 @@ def main():
                 st.success(f"기존 CSV 파일을 불러왔습니다: {latest_csv.name}")
             else:
                 st.warning("Stock_Results 폴더에 스캔 결과 CSV가 없습니다.")
-
-    with col3:
-        gpt_disabled = latest_csv is None or not api_key
-        if st.button("GPT 리포트 생성", use_container_width=True, disabled=gpt_disabled):
-            try:
-                with st.spinner("context.md와 CSV를 바탕으로 results.md를 생성하는 중입니다."):
-                    generate_report(latest_csv)
-                st.success("results.md를 갱신했습니다.")
-            except Exception as exc:
-                st.error(f"GPT 리포트 생성에 실패했습니다: {exc}")
-
-        if latest_csv is None:
-            st.caption("먼저 스캔 결과 CSV가 필요합니다.")
-        elif not api_key:
-            st.caption("OPENAI_API_KEY가 없어서 GPT 생성은 비활성화되어 있습니다.")
 
     tab_candidates, tab_report = st.tabs(["후보 테이블", "리포트 미리보기"])
 

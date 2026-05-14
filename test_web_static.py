@@ -96,20 +96,14 @@ class WebAppStaticTests(unittest.TestCase):
         finally:
             app.RESULTS_DIR = original_results_dir
 
-    def test_report_generator_exposes_expected_functions(self):
-        report_path = ROOT / "report_generator.py"
+    def test_streamlit_app_has_no_gpt_api_dependency(self):
+        source = (ROOT / "app.py").read_text(encoding="utf-8")
 
-        self.assertTrue(report_path.exists())
-
-        tree = parse_module("report_generator.py")
-        functions = {
-            node.name
-            for node in tree.body
-            if isinstance(node, ast.FunctionDef)
-        }
-
-        self.assertIn("generate_report", functions)
-        self.assertIn("get_openai_api_key", functions)
+        self.assertNotIn("report_generator", source)
+        self.assertNotIn("generate_report", source)
+        self.assertNotIn("get_openai_api_key", source)
+        self.assertNotIn("GPT 리포트 생성", source)
+        self.assertNotIn("OPENAI_API_KEY", source)
 
 
 if __name__ == "__main__":
