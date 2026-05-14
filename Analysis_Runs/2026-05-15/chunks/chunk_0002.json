@@ -1,0 +1,507 @@
+{
+  "chunk_id": 2,
+  "rows": [
+    {
+      "source_row_number": 52,
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Military/Government/Technical",
+      "current_price": "131.87",
+      "return_percent": "82.59"
+    },
+    {
+      "source_row_number": 53,
+      "ticker": "VIVO",
+      "company": "VivoPower PLC Ordinary Shares",
+      "sector": "Utilities",
+      "industry": "Power Generation",
+      "current_price": "4.88",
+      "return_percent": "82.09"
+    },
+    {
+      "source_row_number": 54,
+      "ticker": "INTC",
+      "company": "Intel Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "116.14",
+      "return_percent": "82.0"
+    },
+    {
+      "source_row_number": 55,
+      "ticker": "WYY",
+      "company": "WidePoint Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "9.13",
+      "return_percent": "81.96"
+    },
+    {
+      "source_row_number": 56,
+      "ticker": "ABSI",
+      "company": "Absci Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Commercial Physical & Biological Resarch",
+      "current_price": "5.68",
+      "return_percent": "80.32"
+    },
+    {
+      "source_row_number": 57,
+      "ticker": "VELO",
+      "company": "Velo3D Inc. Common stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "19.64",
+      "return_percent": "80.18"
+    },
+    {
+      "source_row_number": 58,
+      "ticker": "MGRT",
+      "company": "Mega Fortune Company Limited Ordinary Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "132.0",
+      "return_percent": "80.08"
+    },
+    {
+      "source_row_number": 59,
+      "ticker": "FLEX",
+      "company": "Flex Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "144.04",
+      "return_percent": "79.74"
+    },
+    {
+      "source_row_number": 60,
+      "ticker": "ALMU",
+      "company": "Aeluma Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "25.58",
+      "return_percent": "79.38"
+    },
+    {
+      "source_row_number": 61,
+      "ticker": "PCT",
+      "company": "PureCycle Technologies Inc. Common stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "12.07",
+      "return_percent": "79.35"
+    },
+    {
+      "source_row_number": 62,
+      "ticker": "TROO",
+      "company": "TROOPS Inc. Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Diversified Financial Services",
+      "current_price": "4.26",
+      "return_percent": "78.24"
+    },
+    {
+      "source_row_number": 63,
+      "ticker": "ASPN",
+      "company": "Aspen Aerogels Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "RETAIL: Building Materials",
+      "current_price": "5.86",
+      "return_percent": "77.04"
+    },
+    {
+      "source_row_number": 64,
+      "ticker": "CEVA",
+      "company": "CEVA Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "37.97",
+      "return_percent": "76.85"
+    },
+    {
+      "source_row_number": 65,
+      "ticker": "IMDX",
+      "company": "Insight Molecular Diagnostics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: In Vitro & In Vivo Diagnostic Substances",
+      "current_price": "6.37",
+      "return_percent": "76.53"
+    },
+    {
+      "source_row_number": 66,
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "449.42",
+      "return_percent": "76.19"
+    },
+    {
+      "source_row_number": 67,
+      "ticker": "VHUB",
+      "company": "VenHub Global Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "1.16",
+      "return_percent": "75.76"
+    },
+    {
+      "source_row_number": 68,
+      "ticker": "BWEN",
+      "company": "Broadwind Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Metal Fabrications",
+      "current_price": "3.83",
+      "return_percent": "75.01"
+    },
+    {
+      "source_row_number": 69,
+      "ticker": "AKAM",
+      "company": "Akamai Technologies Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "155.4",
+      "return_percent": "74.92"
+    },
+    {
+      "source_row_number": 70,
+      "ticker": "AUR",
+      "company": "Aurora Innovation Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "8.12",
+      "return_percent": "73.98"
+    },
+    {
+      "source_row_number": 71,
+      "ticker": "ROMA",
+      "company": "Roma Green Finance Limited Class A Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "8.57",
+      "return_percent": "73.45"
+    },
+    {
+      "source_row_number": 72,
+      "ticker": "RLYB",
+      "company": "Rallybio Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "14.23",
+      "return_percent": "72.55"
+    },
+    {
+      "source_row_number": 73,
+      "ticker": "XRX",
+      "company": "Xerox Holdings Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "2.43",
+      "return_percent": "72.34"
+    },
+    {
+      "source_row_number": 74,
+      "ticker": "CADL",
+      "company": "Candel Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "8.74",
+      "return_percent": "71.47"
+    },
+    {
+      "source_row_number": 75,
+      "ticker": "QUIK",
+      "company": "QuickLogic Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "20.2",
+      "return_percent": "71.33"
+    },
+    {
+      "source_row_number": 76,
+      "ticker": "CLOV",
+      "company": "Clover Health Investments Corp. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "3.47",
+      "return_percent": "70.34"
+    },
+    {
+      "source_row_number": 77,
+      "ticker": "GSIT",
+      "company": "GSI Technology Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "10.65",
+      "return_percent": "70.32"
+    },
+    {
+      "source_row_number": 78,
+      "ticker": "MU",
+      "company": "Micron Technology Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "791.88",
+      "return_percent": "70.06"
+    },
+    {
+      "source_row_number": 79,
+      "ticker": "WEST",
+      "company": "Westrock Coffee Company Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Beverages (Production/Distribution)",
+      "current_price": "8.44",
+      "return_percent": "69.82"
+    },
+    {
+      "source_row_number": 80,
+      "ticker": "SYNA",
+      "company": "Synaptics Incorporated Common Stock $0.001 Par Value",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "130.21",
+      "return_percent": "69.63"
+    },
+    {
+      "source_row_number": 81,
+      "ticker": "AXTI",
+      "company": "AXT Inc Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "113.87",
+      "return_percent": "69.2"
+    },
+    {
+      "source_row_number": 82,
+      "ticker": "EVH",
+      "company": "Evolent Health Inc Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Other Consumer Services",
+      "current_price": "4.2",
+      "return_percent": "67.53"
+    },
+    {
+      "source_row_number": 83,
+      "ticker": "LICN",
+      "company": "Lichen International Limited Class A Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "8.52",
+      "return_percent": "66.73"
+    },
+    {
+      "source_row_number": 84,
+      "ticker": "PODC",
+      "company": "PodcastOne Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "3.62",
+      "return_percent": "66.28"
+    },
+    {
+      "source_row_number": 85,
+      "ticker": "GTX",
+      "company": "Garrett Motion Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "31.98",
+      "return_percent": "65.96"
+    },
+    {
+      "source_row_number": 86,
+      "ticker": "VSH",
+      "company": "Vishay Intertechnology Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "38.28",
+      "return_percent": "65.5"
+    },
+    {
+      "source_row_number": 87,
+      "ticker": "SHAZ",
+      "company": "SharonAI Holdings Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "57.1",
+      "return_percent": "65.41"
+    },
+    {
+      "source_row_number": 88,
+      "ticker": "GBTG",
+      "company": "Global Business Travel Group Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Transportation Services",
+      "current_price": "9.4",
+      "return_percent": "64.82"
+    },
+    {
+      "source_row_number": 89,
+      "ticker": "ON",
+      "company": "ON Semiconductor Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "118.71",
+      "return_percent": "64.75"
+    },
+    {
+      "source_row_number": 90,
+      "ticker": "DDD",
+      "company": "3D Systems Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "3.22",
+      "return_percent": "62.88"
+    },
+    {
+      "source_row_number": 91,
+      "ticker": "ARBE",
+      "company": "Arbe Robotics Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "1.14",
+      "return_percent": "62.62"
+    },
+    {
+      "source_row_number": 92,
+      "ticker": "PACK",
+      "company": "Ranpak Holdings Corp Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Containers/Packaging",
+      "current_price": "6.15",
+      "return_percent": "62.27"
+    },
+    {
+      "source_row_number": 93,
+      "ticker": "WATT",
+      "company": "Energous Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "26.52",
+      "return_percent": "61.71"
+    },
+    {
+      "source_row_number": 94,
+      "ticker": "TGEN",
+      "company": "Tecogen Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "6.12",
+      "return_percent": "61.48"
+    },
+    {
+      "source_row_number": 95,
+      "ticker": "IONQ",
+      "company": "IonQ Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "57.71",
+      "return_percent": "61.39"
+    },
+    {
+      "source_row_number": 96,
+      "ticker": "AMN",
+      "company": "AMN Healthcare Services Inc",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "30.24",
+      "return_percent": "61.02"
+    },
+    {
+      "source_row_number": 97,
+      "ticker": "CLFD",
+      "company": "Clearfield Inc. Common Stock",
+      "sector": "Utilities",
+      "industry": "Telecommunications Equipment",
+      "current_price": "44.44",
+      "return_percent": "60.9"
+    },
+    {
+      "source_row_number": 98,
+      "ticker": "ACHV",
+      "company": "Achieve Life Sciences Inc. Common Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: In Vitro & In Vivo Diagnostic Substances",
+      "current_price": "5.8",
+      "return_percent": "60.8"
+    },
+    {
+      "source_row_number": 99,
+      "ticker": "QURE",
+      "company": "uniQure N.V. Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "27.45",
+      "return_percent": "60.62"
+    },
+    {
+      "source_row_number": 100,
+      "ticker": "ANTX",
+      "company": "AN2 Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.78",
+      "return_percent": "60.4"
+    },
+    {
+      "source_row_number": 101,
+      "ticker": "KULR",
+      "company": "KULR Technology Group Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "3.8",
+      "return_percent": "60.34"
+    }
+  ],
+  "tickers": [
+    "RKLB",
+    "VIVO",
+    "INTC",
+    "WYY",
+    "ABSI",
+    "VELO",
+    "MGRT",
+    "FLEX",
+    "ALMU",
+    "PCT",
+    "TROO",
+    "ASPN",
+    "CEVA",
+    "IMDX",
+    "AMD",
+    "VHUB",
+    "BWEN",
+    "AKAM",
+    "AUR",
+    "ROMA",
+    "RLYB",
+    "XRX",
+    "CADL",
+    "QUIK",
+    "CLOV",
+    "GSIT",
+    "MU",
+    "WEST",
+    "SYNA",
+    "AXTI",
+    "EVH",
+    "LICN",
+    "PODC",
+    "GTX",
+    "VSH",
+    "SHAZ",
+    "GBTG",
+    "ON",
+    "DDD",
+    "ARBE",
+    "PACK",
+    "WATT",
+    "TGEN",
+    "IONQ",
+    "AMN",
+    "CLFD",
+    "ACHV",
+    "QURE",
+    "ANTX",
+    "KULR"
+  ]
+}

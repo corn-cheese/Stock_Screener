@@ -1,0 +1,507 @@
+{
+  "chunk_id": 7,
+  "rows": [
+    {
+      "source_row_number": 302,
+      "ticker": "DHX",
+      "company": "DHI Group Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "3.75",
+      "return_percent": "31.58"
+    },
+    {
+      "source_row_number": 303,
+      "ticker": "BYFC",
+      "company": "Broadway Financial Corporation Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Savings Institutions",
+      "current_price": "9.96",
+      "return_percent": "31.57"
+    },
+    {
+      "source_row_number": 304,
+      "ticker": "DRTS",
+      "company": "Alpha Tau Medical Ltd. Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "10.3",
+      "return_percent": "31.55"
+    },
+    {
+      "source_row_number": 305,
+      "ticker": "NEXA",
+      "company": "Nexa Resources S.A. Common Shares",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "15.69",
+      "return_percent": "31.45"
+    },
+    {
+      "source_row_number": 306,
+      "ticker": "FLD",
+      "company": "Fold Holdings Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "1.51",
+      "return_percent": "31.31"
+    },
+    {
+      "source_row_number": 307,
+      "ticker": "PRM",
+      "company": "Perimeter Solutions SA Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "34.72",
+      "return_percent": "31.25"
+    },
+    {
+      "source_row_number": 308,
+      "ticker": "RNAC",
+      "company": "Cartesian Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "8.33",
+      "return_percent": "31.18"
+    },
+    {
+      "source_row_number": 309,
+      "ticker": "GPRO",
+      "company": "GoPro Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "1.15",
+      "return_percent": "31.14"
+    },
+    {
+      "source_row_number": 310,
+      "ticker": "POWI",
+      "company": "Power Integrations Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "70.74",
+      "return_percent": "30.92"
+    },
+    {
+      "source_row_number": 311,
+      "ticker": "VSAT",
+      "company": "ViaSat Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "74.57",
+      "return_percent": "30.87"
+    },
+    {
+      "source_row_number": 312,
+      "ticker": "OSG",
+      "company": "Octave Specialty Group Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Property-Casualty Insurers",
+      "current_price": "5.65",
+      "return_percent": "30.79"
+    },
+    {
+      "source_row_number": 313,
+      "ticker": "KLIC",
+      "company": "Kulicke and Soffa Industries Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "104.48",
+      "return_percent": "30.76"
+    },
+    {
+      "source_row_number": 314,
+      "ticker": "MWH",
+      "company": "SOLV Energy Inc. Class A Common Stock",
+      "sector": "Industrials",
+      "industry": "Military/Government/Technical",
+      "current_price": "44.42",
+      "return_percent": "30.75"
+    },
+    {
+      "source_row_number": 315,
+      "ticker": "PWR",
+      "company": "Quanta Services Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "current_price": "777.0",
+      "return_percent": "30.72"
+    },
+    {
+      "source_row_number": 316,
+      "ticker": "STAA",
+      "company": "STAAR Surgical Company Common Stock",
+      "sector": "Health Care",
+      "industry": "Ophthalmic Goods",
+      "current_price": "31.93",
+      "return_percent": "30.7"
+    },
+    {
+      "source_row_number": 317,
+      "ticker": "VSTS",
+      "company": "Vestis Corporation Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Consumer Specialties",
+      "current_price": "12.05",
+      "return_percent": "30.7"
+    },
+    {
+      "source_row_number": 318,
+      "ticker": "QBTS",
+      "company": "D-Wave Quantum Inc. Common Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "22.16",
+      "return_percent": "30.58"
+    },
+    {
+      "source_row_number": 319,
+      "ticker": "RDCM",
+      "company": "Radcom Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "15.99",
+      "return_percent": "30.53"
+    },
+    {
+      "source_row_number": 320,
+      "ticker": "RBRK",
+      "company": "Rubrik Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "62.65",
+      "return_percent": "30.44"
+    },
+    {
+      "source_row_number": 321,
+      "ticker": "EGHT",
+      "company": "8x8 Inc Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "2.23",
+      "return_percent": "30.41"
+    },
+    {
+      "source_row_number": 322,
+      "ticker": "NBR",
+      "company": "Nabors Industries Ltd.",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "103.45",
+      "return_percent": "30.4"
+    },
+    {
+      "source_row_number": 323,
+      "ticker": "TSEM",
+      "company": "Tower Semiconductor Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "278.7",
+      "return_percent": "30.17"
+    },
+    {
+      "source_row_number": 324,
+      "ticker": "TDC",
+      "company": "Teradata Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "33.48",
+      "return_percent": "30.17"
+    },
+    {
+      "source_row_number": 325,
+      "ticker": "MDB",
+      "company": "MongoDB Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "303.96",
+      "return_percent": "30.12"
+    },
+    {
+      "source_row_number": 326,
+      "ticker": "RAL",
+      "company": "Ralliant Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "60.56",
+      "return_percent": "30.07"
+    },
+    {
+      "source_row_number": 327,
+      "ticker": "ADUR",
+      "company": "Aduro Clean Technologies Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "14.32",
+      "return_percent": "30.06"
+    },
+    {
+      "source_row_number": 328,
+      "ticker": "PYXS",
+      "company": "Pyxis Oncology Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.21",
+      "return_percent": "30.0"
+    },
+    {
+      "source_row_number": 329,
+      "ticker": "PLUG",
+      "company": "Plug Power Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "3.82",
+      "return_percent": "29.93"
+    },
+    {
+      "source_row_number": 330,
+      "ticker": "EOSE",
+      "company": "Eos Energy Enterprises Inc. Class A Common Stock",
+      "sector": "Miscellaneous",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "8.21",
+      "return_percent": "29.91"
+    },
+    {
+      "source_row_number": 331,
+      "ticker": "TTGT",
+      "company": "TechTarget Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "5.22",
+      "return_percent": "29.85"
+    },
+    {
+      "source_row_number": 332,
+      "ticker": "RELY",
+      "company": "Remitly Global Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "23.26",
+      "return_percent": "29.83"
+    },
+    {
+      "source_row_number": 333,
+      "ticker": "GEO",
+      "company": "Geo Group Inc (The) REIT",
+      "sector": "Consumer Discretionary",
+      "industry": "Homebuilding",
+      "current_price": "23.24",
+      "return_percent": "29.83"
+    },
+    {
+      "source_row_number": 334,
+      "ticker": "P",
+      "company": "Everpure Inc. Class A common stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "82.97",
+      "return_percent": "29.65"
+    },
+    {
+      "source_row_number": 335,
+      "ticker": "MCHP",
+      "company": "Microchip Technology Incorporated Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "96.56",
+      "return_percent": "29.61"
+    },
+    {
+      "source_row_number": 336,
+      "ticker": "HYPR",
+      "company": "Hyperfine Inc. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Electromedical & Electrotherapeutic Apparatus",
+      "current_price": "1.62",
+      "return_percent": "29.6"
+    },
+    {
+      "source_row_number": 337,
+      "ticker": "TMCI",
+      "company": "Treace Medical Concepts Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "2.76",
+      "return_percent": "29.58"
+    },
+    {
+      "source_row_number": 338,
+      "ticker": "ASRT",
+      "company": "Assertio Holdings Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "23.32",
+      "return_percent": "29.41"
+    },
+    {
+      "source_row_number": 339,
+      "ticker": "CECO",
+      "company": "CECO Environmental Corp. Common Stock",
+      "sector": "Industrials",
+      "industry": "Pollution Control Equipment",
+      "current_price": "85.4",
+      "return_percent": "29.26"
+    },
+    {
+      "source_row_number": 340,
+      "ticker": "VIAV",
+      "company": "Viavi Solutions Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "52.71",
+      "return_percent": "29.24"
+    },
+    {
+      "source_row_number": 341,
+      "ticker": "NVT",
+      "company": "nVent Electric plc Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "173.38",
+      "return_percent": "29.12"
+    },
+    {
+      "source_row_number": 342,
+      "ticker": "WSHP",
+      "company": "WeShop Holdings Limited Class A Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Other Specialty Stores",
+      "current_price": "7.22",
+      "return_percent": "28.99"
+    },
+    {
+      "source_row_number": 343,
+      "ticker": "S",
+      "company": "SentinelOne Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "16.44",
+      "return_percent": "28.98"
+    },
+    {
+      "source_row_number": 344,
+      "ticker": "DVA",
+      "company": "DaVita Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Misc Health and Biotechnology Services",
+      "current_price": "192.7",
+      "return_percent": "28.94"
+    },
+    {
+      "source_row_number": 345,
+      "ticker": "LUD",
+      "company": "Luda Technology Group Limited Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "5.99",
+      "return_percent": "28.82"
+    },
+    {
+      "source_row_number": 346,
+      "ticker": "FTK",
+      "company": "Flotek Industries Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "20.19",
+      "return_percent": "28.71"
+    },
+    {
+      "source_row_number": 347,
+      "ticker": "SVC",
+      "company": "Service Properties Trust Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate Investment Trusts",
+      "current_price": "1.7",
+      "return_percent": "28.66"
+    },
+    {
+      "source_row_number": 348,
+      "ticker": "EQ",
+      "company": "Equillium Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.47",
+      "return_percent": "28.65"
+    },
+    {
+      "source_row_number": 349,
+      "ticker": "GNRC",
+      "company": "Generac Holdlings Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Metal Fabrications",
+      "current_price": "272.39",
+      "return_percent": "28.56"
+    },
+    {
+      "source_row_number": 350,
+      "ticker": "NUCL",
+      "company": "Eagle Nuclear Energy Corp. Common stock",
+      "sector": "Basic Materials",
+      "industry": "Other Metals and Minerals",
+      "current_price": "11.02",
+      "return_percent": "28.5"
+    },
+    {
+      "source_row_number": 351,
+      "ticker": "DFDV",
+      "company": "DeFi Development Corp. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "5.09",
+      "return_percent": "28.48"
+    }
+  ],
+  "tickers": [
+    "DHX",
+    "BYFC",
+    "DRTS",
+    "NEXA",
+    "FLD",
+    "PRM",
+    "RNAC",
+    "GPRO",
+    "POWI",
+    "VSAT",
+    "OSG",
+    "KLIC",
+    "MWH",
+    "PWR",
+    "STAA",
+    "VSTS",
+    "QBTS",
+    "RDCM",
+    "RBRK",
+    "EGHT",
+    "NBR",
+    "TSEM",
+    "TDC",
+    "MDB",
+    "RAL",
+    "ADUR",
+    "PYXS",
+    "PLUG",
+    "EOSE",
+    "TTGT",
+    "RELY",
+    "GEO",
+    "P",
+    "MCHP",
+    "HYPR",
+    "TMCI",
+    "ASRT",
+    "CECO",
+    "VIAV",
+    "NVT",
+    "WSHP",
+    "S",
+    "DVA",
+    "LUD",
+    "FTK",
+    "SVC",
+    "EQ",
+    "GNRC",
+    "NUCL",
+    "DFDV"
+  ]
+}

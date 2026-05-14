@@ -1,0 +1,507 @@
+{
+  "chunk_id": 10,
+  "rows": [
+    {
+      "source_row_number": 452,
+      "ticker": "RDVT",
+      "company": "Red Violet Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "45.6",
+      "return_percent": "23.58"
+    },
+    {
+      "source_row_number": 453,
+      "ticker": "KN",
+      "company": "Knowles Corporation Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Consumer Electronics/Appliances",
+      "current_price": "35.77",
+      "return_percent": "23.56"
+    },
+    {
+      "source_row_number": 454,
+      "ticker": "AGCC",
+      "company": "Agencia Comercial Spirits Ltd Class A Ordinary Shares",
+      "sector": "Consumer Staples",
+      "industry": "Beverages (Production/Distribution)",
+      "current_price": "18.55",
+      "return_percent": "23.5"
+    },
+    {
+      "source_row_number": 455,
+      "ticker": "BBAI",
+      "company": "BigBear.ai Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "4.34",
+      "return_percent": "23.29"
+    },
+    {
+      "source_row_number": 456,
+      "ticker": "ELDN",
+      "company": "Eledon Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "3.94",
+      "return_percent": "23.28"
+    },
+    {
+      "source_row_number": 457,
+      "ticker": "SMWB",
+      "company": "Similarweb Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "3.01",
+      "return_percent": "23.16"
+    },
+    {
+      "source_row_number": 458,
+      "ticker": "PUMP",
+      "company": "ProPetro Holding Corp. Common Stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "16.83",
+      "return_percent": "23.15"
+    },
+    {
+      "source_row_number": 459,
+      "ticker": "VISN",
+      "company": "Vistance Networks Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "11.4",
+      "return_percent": "23.14"
+    },
+    {
+      "source_row_number": 460,
+      "ticker": "TKNO",
+      "company": "Alpha Teknova Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: In Vitro & In Vivo Diagnostic Substances",
+      "current_price": "3.73",
+      "return_percent": "23.1"
+    },
+    {
+      "source_row_number": 461,
+      "ticker": "Q",
+      "company": "Qnity Electronics Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "163.29",
+      "return_percent": "22.99"
+    },
+    {
+      "source_row_number": 462,
+      "ticker": "CYPH",
+      "company": "Cypherpunk Technologies Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "1.17",
+      "return_percent": "22.86"
+    },
+    {
+      "source_row_number": 463,
+      "ticker": "VCTR",
+      "company": "Victory Capital Holdings Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Investment Managers",
+      "current_price": "88.35",
+      "return_percent": "22.76"
+    },
+    {
+      "source_row_number": 464,
+      "ticker": "ORMP",
+      "company": "Oramed Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.66",
+      "return_percent": "22.76"
+    },
+    {
+      "source_row_number": 465,
+      "ticker": "CMP",
+      "company": "Compass Minerals Intl Inc Common Stock",
+      "sector": "Industrials",
+      "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+      "current_price": "30.32",
+      "return_percent": "22.75"
+    },
+    {
+      "source_row_number": 466,
+      "ticker": "GENB",
+      "company": "Generate Biomedicines Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "15.82",
+      "return_percent": "22.73"
+    },
+    {
+      "source_row_number": 467,
+      "ticker": "LIDR",
+      "company": "AEye Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "2.03",
+      "return_percent": "22.73"
+    },
+    {
+      "source_row_number": 468,
+      "ticker": "ONDS",
+      "company": "Ondas Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "11.53",
+      "return_percent": "22.71"
+    },
+    {
+      "source_row_number": 469,
+      "ticker": "ASC",
+      "company": "Ardmore Shipping Corporation Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Marine Transportation",
+      "current_price": "18.75",
+      "return_percent": "22.71"
+    },
+    {
+      "source_row_number": 470,
+      "ticker": "ADI",
+      "company": "Analog Devices Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "427.67",
+      "return_percent": "22.68"
+    },
+    {
+      "source_row_number": 471,
+      "ticker": "CRGO",
+      "company": "Freightos Limited Ordinary shares",
+      "sector": "Industrials",
+      "industry": "Integrated Freight & Logistics",
+      "current_price": "2.11",
+      "return_percent": "22.67"
+    },
+    {
+      "source_row_number": 472,
+      "ticker": "NUE",
+      "company": "Nucor Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "233.1",
+      "return_percent": "22.66"
+    },
+    {
+      "source_row_number": 473,
+      "ticker": "FSI",
+      "company": "Flexible Solutions International Inc. Common Stock (CDA)",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "6.41",
+      "return_percent": "22.56"
+    },
+    {
+      "source_row_number": 474,
+      "ticker": "INO",
+      "company": "Inovio Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "1.36",
+      "return_percent": "22.53"
+    },
+    {
+      "source_row_number": 475,
+      "ticker": "GEN",
+      "company": "Gen Digital Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "23.15",
+      "return_percent": "22.42"
+    },
+    {
+      "source_row_number": 476,
+      "ticker": "NTNX",
+      "company": "Nutanix Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "45.08",
+      "return_percent": "22.4"
+    },
+    {
+      "source_row_number": 477,
+      "ticker": "LBRT",
+      "company": "Liberty Energy Inc. Class A common stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "33.32",
+      "return_percent": "22.33"
+    },
+    {
+      "source_row_number": 478,
+      "ticker": "ARW",
+      "company": "Arrow Electronics Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "212.4",
+      "return_percent": "22.31"
+    },
+    {
+      "source_row_number": 479,
+      "ticker": "SILA",
+      "company": "Sila Realty Trust Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate Investment Trusts",
+      "current_price": "30.54",
+      "return_percent": "22.31"
+    },
+    {
+      "source_row_number": 480,
+      "ticker": "MOB",
+      "company": "Mobilicom Limited Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Aerospace",
+      "current_price": "5.92",
+      "return_percent": "22.31"
+    },
+    {
+      "source_row_number": 481,
+      "ticker": "BEN",
+      "company": "Franklin Resources Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Investment Managers",
+      "current_price": "32.31",
+      "return_percent": "22.25"
+    },
+    {
+      "source_row_number": 482,
+      "ticker": "TMC",
+      "company": "TMC the metals company Inc. Common Stock",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "5.77",
+      "return_percent": "22.25"
+    },
+    {
+      "source_row_number": 483,
+      "ticker": "NBIX",
+      "company": "Neurocrine Biosciences Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "159.88",
+      "return_percent": "22.22"
+    },
+    {
+      "source_row_number": 484,
+      "ticker": "PTEN",
+      "company": "Patterson-UTI Energy Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "12.07",
+      "return_percent": "22.17"
+    },
+    {
+      "source_row_number": 485,
+      "ticker": "TSLA",
+      "company": "Tesla Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Auto Manufacturing",
+      "current_price": "444.72",
+      "return_percent": "22.11"
+    },
+    {
+      "source_row_number": 486,
+      "ticker": "VRT",
+      "company": "Vertiv Holdings LLC Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "379.15",
+      "return_percent": "22.11"
+    },
+    {
+      "source_row_number": 487,
+      "ticker": "PRTH",
+      "company": "Priority Technology Holdings Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "6.02",
+      "return_percent": "22.11"
+    },
+    {
+      "source_row_number": 488,
+      "ticker": "EAF",
+      "company": "GrafTech International Ltd. Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "9.25",
+      "return_percent": "22.03"
+    },
+    {
+      "source_row_number": 489,
+      "ticker": "ASPI",
+      "company": "ASP Isotopes Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "6.1",
+      "return_percent": "22.01"
+    },
+    {
+      "source_row_number": 490,
+      "ticker": "ULCC",
+      "company": "Frontier Group Holdings Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Air Freight/Delivery Services",
+      "current_price": "4.83",
+      "return_percent": "21.97"
+    },
+    {
+      "source_row_number": 491,
+      "ticker": "EFXT",
+      "company": "Enerflex Ltd Common Shares",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "27.61",
+      "return_percent": "21.84"
+    },
+    {
+      "source_row_number": 492,
+      "ticker": "LFST",
+      "company": "LifeStance Health Group Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "7.93",
+      "return_percent": "21.81"
+    },
+    {
+      "source_row_number": 493,
+      "ticker": "ACDC",
+      "company": "ProFrac Holding Corp. Class A Common Stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "7.12",
+      "return_percent": "21.79"
+    },
+    {
+      "source_row_number": 494,
+      "ticker": "HSDT",
+      "company": "Solana Company Class A Common Stock (DE)",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Electromedical & Electrotherapeutic Apparatus",
+      "current_price": "2.41",
+      "return_percent": "21.72"
+    },
+    {
+      "source_row_number": 495,
+      "ticker": "PTRN",
+      "company": "Pattern Group Inc. Series A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Catalog/Specialty Distribution",
+      "current_price": "16.26",
+      "return_percent": "21.71"
+    },
+    {
+      "source_row_number": 496,
+      "ticker": "HIVE",
+      "company": "HIVE Digital Technologies Ltd. Common Shares",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "2.94",
+      "return_percent": "21.69"
+    },
+    {
+      "source_row_number": 497,
+      "ticker": "FFIV",
+      "company": "F5 Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Computer Communications Equipment",
+      "current_price": "359.19",
+      "return_percent": "21.68"
+    },
+    {
+      "source_row_number": 498,
+      "ticker": "SVM",
+      "company": "Silvercorp Metals Inc. Common Shares",
+      "sector": "Basic Materials",
+      "industry": "Precious Metals",
+      "current_price": "15.08",
+      "return_percent": "21.61"
+    },
+    {
+      "source_row_number": 499,
+      "ticker": "SNPS",
+      "company": "Synopsys Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "509.13",
+      "return_percent": "21.57"
+    },
+    {
+      "source_row_number": 500,
+      "ticker": "FLXS",
+      "company": "Flexsteel Industries Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Home Furnishings",
+      "current_price": "56.44",
+      "return_percent": "21.4"
+    },
+    {
+      "source_row_number": 501,
+      "ticker": "SOTK",
+      "company": "Sono-Tek Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "4.94",
+      "return_percent": "21.38"
+    }
+  ],
+  "tickers": [
+    "RDVT",
+    "KN",
+    "AGCC",
+    "BBAI",
+    "ELDN",
+    "SMWB",
+    "PUMP",
+    "VISN",
+    "TKNO",
+    "Q",
+    "CYPH",
+    "VCTR",
+    "ORMP",
+    "CMP",
+    "GENB",
+    "LIDR",
+    "ONDS",
+    "ASC",
+    "ADI",
+    "CRGO",
+    "NUE",
+    "FSI",
+    "INO",
+    "GEN",
+    "NTNX",
+    "LBRT",
+    "ARW",
+    "SILA",
+    "MOB",
+    "BEN",
+    "TMC",
+    "NBIX",
+    "PTEN",
+    "TSLA",
+    "VRT",
+    "PRTH",
+    "EAF",
+    "ASPI",
+    "ULCC",
+    "EFXT",
+    "LFST",
+    "ACDC",
+    "HSDT",
+    "PTRN",
+    "HIVE",
+    "FFIV",
+    "SVM",
+    "SNPS",
+    "FLXS",
+    "SOTK"
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "chunk_id": 9,
+  "rows": [
+    {
+      "source_row_number": 402,
+      "ticker": "ACCO",
+      "company": "Acco Brands Corporation Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Publishing",
+      "current_price": "3.94",
+      "return_percent": "25.64"
+    },
+    {
+      "source_row_number": 403,
+      "ticker": "KNSA",
+      "company": "Kiniksa Pharmaceuticals International plc Class A Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "58.89",
+      "return_percent": "25.51"
+    },
+    {
+      "source_row_number": 404,
+      "ticker": "TH",
+      "company": "Target Hospitality Corp. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Hotels/Resorts",
+      "current_price": "18.22",
+      "return_percent": "25.36"
+    },
+    {
+      "source_row_number": 405,
+      "ticker": "RR",
+      "company": "Richtech Robotics Inc. Class B Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "2.8",
+      "return_percent": "25.34"
+    },
+    {
+      "source_row_number": 406,
+      "ticker": "CIEN",
+      "company": "Ciena Corporation Common Stock",
+      "sector": "Utilities",
+      "industry": "Telecommunications Equipment",
+      "current_price": "585.55",
+      "return_percent": "25.33"
+    },
+    {
+      "source_row_number": 407,
+      "ticker": "POWL",
+      "company": "Powell Industries Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Electrical Products",
+      "current_price": "293.67",
+      "return_percent": "25.28"
+    },
+    {
+      "source_row_number": 408,
+      "ticker": "FA",
+      "company": "First Advantage Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "15.08",
+      "return_percent": "25.25"
+    },
+    {
+      "source_row_number": 409,
+      "ticker": "IHRT",
+      "company": "iHeartMedia Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Broadcasting",
+      "current_price": "4.87",
+      "return_percent": "25.19"
+    },
+    {
+      "source_row_number": 410,
+      "ticker": "ADV",
+      "company": "Advantage Solutions Inc. Class A Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "34.94",
+      "return_percent": "25.19"
+    },
+    {
+      "source_row_number": 411,
+      "ticker": "GRAL",
+      "company": "GRAIL Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "63.19",
+      "return_percent": "25.16"
+    },
+    {
+      "source_row_number": 412,
+      "ticker": "ACRS",
+      "company": "Aclaris Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.91",
+      "return_percent": "25.13"
+    },
+    {
+      "source_row_number": 413,
+      "ticker": "NXT",
+      "company": "Nextpower Inc. Class A Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "143.79",
+      "return_percent": "25.12"
+    },
+    {
+      "source_row_number": 414,
+      "ticker": "TUSK",
+      "company": "Mammoth Energy Services Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "3.29",
+      "return_percent": "25.1"
+    },
+    {
+      "source_row_number": 415,
+      "ticker": "LAR",
+      "company": "Lithium Argentina AG Common Shares",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "9.97",
+      "return_percent": "25.09"
+    },
+    {
+      "source_row_number": 416,
+      "ticker": "QS",
+      "company": "QuantumScape Corporation Class A Common Stock",
+      "sector": "Miscellaneous",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "8.58",
+      "return_percent": "25.07"
+    },
+    {
+      "source_row_number": 417,
+      "ticker": "WILC",
+      "company": "G. Willi-Food International  Ltd. Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Food Distributors",
+      "current_price": "35.3",
+      "return_percent": "25.0"
+    },
+    {
+      "source_row_number": 418,
+      "ticker": "ST",
+      "company": "Sensata Technologies Holding plc Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "49.04",
+      "return_percent": "24.99"
+    },
+    {
+      "source_row_number": 419,
+      "ticker": "JBIO",
+      "company": "Jade Biosciences Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "24.27",
+      "return_percent": "24.87"
+    },
+    {
+      "source_row_number": 420,
+      "ticker": "MXCT",
+      "company": "MaxCyte Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Commercial Physical & Biological Resarch",
+      "current_price": "1.1",
+      "return_percent": "24.86"
+    },
+    {
+      "source_row_number": 421,
+      "ticker": "EIKN",
+      "company": "Eikon Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "13.24",
+      "return_percent": "24.79"
+    },
+    {
+      "source_row_number": 422,
+      "ticker": "ACMR",
+      "company": "ACM Research Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "63.26",
+      "return_percent": "24.66"
+    },
+    {
+      "source_row_number": 423,
+      "ticker": "BULL",
+      "company": "Webull Corporation Class A Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Investment Bankers/Brokers/Service",
+      "current_price": "7.26",
+      "return_percent": "24.66"
+    },
+    {
+      "source_row_number": 424,
+      "ticker": "DOMH",
+      "company": "Dominari Holdings Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "3.85",
+      "return_percent": "24.6"
+    },
+    {
+      "source_row_number": 425,
+      "ticker": "UPXI",
+      "company": "Upexi Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medicinal Chemicals and Botanical Products",
+      "current_price": "1.5",
+      "return_percent": "24.58"
+    },
+    {
+      "source_row_number": 426,
+      "ticker": "BTCS",
+      "company": "BTCS Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "2.13",
+      "return_percent": "24.56"
+    },
+    {
+      "source_row_number": 427,
+      "ticker": "INTT",
+      "company": "inTest Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Electrical Products",
+      "current_price": "19.18",
+      "return_percent": "24.5"
+    },
+    {
+      "source_row_number": 428,
+      "ticker": "LONA",
+      "company": "LeonaBio Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "11.29",
+      "return_percent": "24.48"
+    },
+    {
+      "source_row_number": 429,
+      "ticker": "UNCY",
+      "company": "Unicycive Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "8.63",
+      "return_percent": "24.35"
+    },
+    {
+      "source_row_number": 430,
+      "ticker": "HQI",
+      "company": "HireQuest Inc. Common Stock (DE)",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "12.9",
+      "return_percent": "24.28"
+    },
+    {
+      "source_row_number": 431,
+      "ticker": "IREN",
+      "company": "IREN Limited Ordinary Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "58.87",
+      "return_percent": "24.27"
+    },
+    {
+      "source_row_number": 432,
+      "ticker": "NKTX",
+      "company": "Nkarta Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.85",
+      "return_percent": "24.24"
+    },
+    {
+      "source_row_number": 433,
+      "ticker": "VTRS",
+      "company": "Viatris Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "17.27",
+      "return_percent": "24.19"
+    },
+    {
+      "source_row_number": 434,
+      "ticker": "CLSK",
+      "company": "CleanSpark Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "13.99",
+      "return_percent": "24.13"
+    },
+    {
+      "source_row_number": 435,
+      "ticker": "WRBY",
+      "company": "Warby Parker Inc. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Ophthalmic Goods",
+      "current_price": "28.72",
+      "return_percent": "24.12"
+    },
+    {
+      "source_row_number": 436,
+      "ticker": "PAMT",
+      "company": "PAMT CORP Common Stock",
+      "sector": "Industrials",
+      "industry": "Trucking Freight/Courier Services",
+      "current_price": "11.31",
+      "return_percent": "24.07"
+    },
+    {
+      "source_row_number": 437,
+      "ticker": "ACVA",
+      "company": "ACV Auctions Inc. Class A Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "5.78",
+      "return_percent": "24.03"
+    },
+    {
+      "source_row_number": 438,
+      "ticker": "MEC",
+      "company": "Mayville Engineering Company Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Specialties",
+      "current_price": "25.7",
+      "return_percent": "24.03"
+    },
+    {
+      "source_row_number": 439,
+      "ticker": "BAK",
+      "company": "Braskem SA ADR",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "4.96",
+      "return_percent": "24.0"
+    },
+    {
+      "source_row_number": 440,
+      "ticker": "ANVS",
+      "company": "Annovis Bio Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.14",
+      "return_percent": "23.99"
+    },
+    {
+      "source_row_number": 441,
+      "ticker": "CHEF",
+      "company": "The Chefs' Warehouse Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Food Distributors",
+      "current_price": "82.06",
+      "return_percent": "23.98"
+    },
+    {
+      "source_row_number": 442,
+      "ticker": "FIGR",
+      "company": "Figure Technology Solutions Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "43.59",
+      "return_percent": "23.94"
+    },
+    {
+      "source_row_number": 443,
+      "ticker": "THR",
+      "company": "Thermon Group Holdings Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "68.24",
+      "return_percent": "23.94"
+    },
+    {
+      "source_row_number": 444,
+      "ticker": "STUB",
+      "company": "StubHub Holdings Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Services-Misc. Amusement & Recreation",
+      "current_price": "8.55",
+      "return_percent": "23.91"
+    },
+    {
+      "source_row_number": 445,
+      "ticker": "ANGX",
+      "company": "Angel Studios Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Movies/Entertainment",
+      "current_price": "2.85",
+      "return_percent": "23.91"
+    },
+    {
+      "source_row_number": 446,
+      "ticker": "ICL",
+      "company": "ICL Group Ltd. Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Agricultural Chemicals",
+      "current_price": "6.59",
+      "return_percent": "23.87"
+    },
+    {
+      "source_row_number": 447,
+      "ticker": "ALOT",
+      "company": "AstroNova Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "14.59",
+      "return_percent": "23.85"
+    },
+    {
+      "source_row_number": 448,
+      "ticker": "ROOT",
+      "company": "Root Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Property-Casualty Insurers",
+      "current_price": "57.34",
+      "return_percent": "23.82"
+    },
+    {
+      "source_row_number": 449,
+      "ticker": "FIX",
+      "company": "Comfort Systems USA Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "current_price": "2041.37",
+      "return_percent": "23.68"
+    },
+    {
+      "source_row_number": 450,
+      "ticker": "VC",
+      "company": "Visteon Corporation Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "115.91",
+      "return_percent": "23.65"
+    },
+    {
+      "source_row_number": 451,
+      "ticker": "CGTX",
+      "company": "Cognition Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "1.21",
+      "return_percent": "23.59"
+    }
+  ],
+  "tickers": [
+    "ACCO",
+    "KNSA",
+    "TH",
+    "RR",
+    "CIEN",
+    "POWL",
+    "FA",
+    "IHRT",
+    "ADV",
+    "GRAL",
+    "ACRS",
+    "NXT",
+    "TUSK",
+    "LAR",
+    "QS",
+    "WILC",
+    "ST",
+    "JBIO",
+    "MXCT",
+    "EIKN",
+    "ACMR",
+    "BULL",
+    "DOMH",
+    "UPXI",
+    "BTCS",
+    "INTT",
+    "LONA",
+    "UNCY",
+    "HQI",
+    "IREN",
+    "NKTX",
+    "VTRS",
+    "CLSK",
+    "WRBY",
+    "PAMT",
+    "ACVA",
+    "MEC",
+    "BAK",
+    "ANVS",
+    "CHEF",
+    "FIGR",
+    "THR",
+    "STUB",
+    "ANGX",
+    "ICL",
+    "ALOT",
+    "ROOT",
+    "FIX",
+    "VC",
+    "CGTX"
+  ]
+}

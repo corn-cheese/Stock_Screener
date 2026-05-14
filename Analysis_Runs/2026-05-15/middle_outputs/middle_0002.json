@@ -1,0 +1,277 @@
+{
+  "middle_id": 2,
+  "input_workers": [6, 7, 8, 9, 10],
+  "summary": {
+    "input_count": 250,
+    "included_count": 25,
+    "excluded_count": 225,
+    "dominant_themes": [
+      "AI data-center semiconductors and hardware",
+      "power grid and electrical infrastructure",
+      "defense and space systems",
+      "hard assets and strategic materials",
+      "bitcoin and energy-linked compute infrastructure"
+    ]
+  },
+  "candidates_for_final": [
+    {
+      "ticker": "ALAB",
+      "company": "Astera Labs Inc.",
+      "proposed_grade": "S",
+      "normalized_score": 93,
+      "theme": "AI data-center semiconductor connectivity",
+      "why_forwarded": "One of the clearest AI infrastructure bottleneck names, tied to data-center connectivity and advanced compute systems.",
+      "main_risk": "Valuation, hyperscale customer concentration, and durability of product-cycle demand need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "FIX",
+      "company": "Comfort Systems USA Inc. Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 92,
+      "theme": "AI data-center mechanical and electrical construction",
+      "why_forwarded": "Direct fit with data-center, electrical, HVAC, and construction capacity needed for AI infrastructure buildout.",
+      "main_risk": "Valuation, backlog mix, labor capacity, customer concentration, and margin sustainability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "PWR",
+      "company": "Quanta Services Inc. Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 91,
+      "theme": "power grid engineering and construction",
+      "why_forwarded": "Structural grid expansion candidate tied to data-center power demand, electrification, and strategic infrastructure.",
+      "main_risk": "Valuation, project execution, labor availability, and backlog composition need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "VRT",
+      "company": "Vertiv Holdings LLC Class A Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 90,
+      "theme": "data-center power and cooling infrastructure",
+      "why_forwarded": "Strong direct exposure to power distribution, thermal management, and resilient equipment for AI data centers.",
+      "main_risk": "Valuation, backlog quality, data-center capex cyclicality, and margin durability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "DELL",
+      "company": "Dell Technologies Inc.",
+      "proposed_grade": "A",
+      "normalized_score": 87,
+      "theme": "AI servers and enterprise infrastructure",
+      "why_forwarded": "Clear AI infrastructure hardware exposure through servers, storage, and enterprise compute deployment.",
+      "main_risk": "Order visibility, server margins, component supply, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "POWL",
+      "company": "Powell Industries Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 87,
+      "theme": "power infrastructure and electrical equipment",
+      "why_forwarded": "High-fit electrical infrastructure candidate tied to power distribution, grid investment, and data-center demand.",
+      "main_risk": "Recent price strength, backlog composition, margin sustainability, and customer concentration need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "COHR",
+      "company": "Coherent Corp. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "optical components and AI data-center networking",
+      "why_forwarded": "Optical and electronic components are directly relevant to high-speed data-center networking and semiconductor supply chains.",
+      "main_risk": "Cycle timing, customer mix, AI-related backlog, and valuation after the move need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "CIEN",
+      "company": "Ciena Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 85,
+      "theme": "AI infrastructure and optical networking",
+      "why_forwarded": "High-capacity optical networking is a clear enabling layer for data-center and AI network expansion.",
+      "main_risk": "Telecom carrier cycles, data-center order mix, valuation, and backlog quality need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "ADI",
+      "company": "Analog Devices Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "analog semiconductors and industrial electronics",
+      "why_forwarded": "Semiconductor exposure supports power management, communications, industrial automation, and advanced electronics supply chains.",
+      "main_risk": "Valuation, analog-chip cycle timing, inventory normalization, and end-market mix need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "WDC",
+      "company": "Western Digital Corporation",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "data storage and AI infrastructure",
+      "why_forwarded": "Storage hardware has direct relevance to data-center buildouts and AI-driven data growth.",
+      "main_risk": "Storage cycle, pricing, business mix, and current corporate structure need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "TSEM",
+      "company": "Tower Semiconductor Ltd. Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 83,
+      "theme": "semiconductor foundry and strategic supply chain",
+      "why_forwarded": "Foundry capacity supports compute, power, industrial, and communications chips within the strategic semiconductor chain.",
+      "main_risk": "Foundry cycle, capacity utilization, customer concentration, and geopolitics need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "ACMR",
+      "company": "ACM Research Inc. Class A Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 83,
+      "theme": "semiconductor equipment",
+      "why_forwarded": "Chip manufacturing equipment is structurally tied to AI compute expansion and semiconductor supply-chain capacity.",
+      "main_risk": "China exposure, customer concentration, export controls, and order durability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "SNPS",
+      "company": "Synopsys Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "semiconductor design software and EDA",
+      "why_forwarded": "EDA software is a critical enabler of advanced semiconductors, AI accelerators, and custom silicon supply chains.",
+      "main_risk": "Valuation, chip-design cycle, customer concentration, and transaction or regulatory issues need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "AMSC",
+      "company": "American Superconductor Corporation",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "power grid and strategic electrical equipment",
+      "why_forwarded": "Grid capacity and advanced electrical equipment fit AI power constraints and state-led infrastructure needs.",
+      "main_risk": "Contract concentration, project timing, and defense or grid revenue mix need current confirmation.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "IESC",
+      "company": "IES Holdings Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "electrical construction and power infrastructure",
+      "why_forwarded": "Engineering and electrical construction can support data centers, grid upgrades, and strategic infrastructure.",
+      "main_risk": "Project mix, data-center or grid exposure, margin sustainability, and backlog quality need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "KLIC",
+      "company": "Kulicke and Soffa Industries Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 81,
+      "theme": "semiconductor equipment and advanced packaging",
+      "why_forwarded": "Chip assembly and packaging capacity are central constraints for advanced computing supply chains.",
+      "main_risk": "Semiconductor capex cycles, China exposure, and order durability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "NEXA",
+      "company": "Nexa Resources S.A. Common Shares",
+      "proposed_grade": "A",
+      "normalized_score": 81,
+      "theme": "hard assets and metal mining",
+      "why_forwarded": "Mining exposure fits the real-asset and industrial materials side of the rubric, with relevance to resource scarcity.",
+      "main_risk": "Commodity prices, jurisdiction exposure, leverage, and mine-level cost trends need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "NVT",
+      "company": "nVent Electric plc Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 80,
+      "theme": "electrical infrastructure and data-center hardware",
+      "why_forwarded": "Electrical components and enclosures map well to electrification, data centers, and power infrastructure.",
+      "main_risk": "Valuation, end-market cyclicality, and data-center exposure mix need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "POWI",
+      "company": "Power Integrations Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 79,
+      "theme": "power semiconductors and electrification",
+      "why_forwarded": "Power semiconductors fit data-center power conversion, electrification, and infrastructure efficiency.",
+      "main_risk": "End-market cyclicality, inventory digestion, and materiality of AI or data-center exposure need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MTRN",
+      "company": "Materion Corporation",
+      "proposed_grade": "A",
+      "normalized_score": 78,
+      "theme": "advanced materials and aerospace semiconductor supply chain",
+      "why_forwarded": "Specialty materials provide a credible hard-asset and strategic supply-chain link to semiconductors, defense, and aerospace.",
+      "main_risk": "End-market mix, semiconductor or defense exposure, margin trend, and order durability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "NUE",
+      "company": "Nucor Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 78,
+      "theme": "steel and domestic industrial infrastructure",
+      "why_forwarded": "Steel production is a clear real-asset and infrastructure input with domestic strategic relevance.",
+      "main_risk": "Steel pricing, construction-cycle demand, input costs, and valuation after the price move need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "BKSY",
+      "company": "BlackSky Technology Inc.",
+      "proposed_grade": "A",
+      "normalized_score": 78,
+      "theme": "space-based intelligence and defense technology",
+      "why_forwarded": "Satellite intelligence and communications exposure aligns with defense, aerospace, and government strategic technology demand.",
+      "main_risk": "Contract timing, cash needs, competitive positioning, and government budget exposure need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "SVM",
+      "company": "Silvercorp Metals Inc. Common Shares",
+      "proposed_grade": "B",
+      "normalized_score": 77,
+      "theme": "precious metals and hard assets",
+      "why_forwarded": "Precious-metals mining fits the scarce-asset and monetary-debasement side of the context.",
+      "main_risk": "Metal prices, jurisdiction exposure, mine grades, cost inflation, and reserve quality need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "IREN",
+      "company": "IREN Limited Ordinary Shares",
+      "proposed_grade": "B",
+      "normalized_score": 75,
+      "theme": "bitcoin infrastructure and data-center power",
+      "why_forwarded": "Sits at the intersection of bitcoin infrastructure, power access, and potential compute infrastructure.",
+      "main_risk": "Bitcoin price sensitivity, power contracts, AI compute execution, and capital spending plans need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "EOSE",
+      "company": "Eos Energy Enterprises Inc. Class A Common Stock",
+      "proposed_grade": "B",
+      "normalized_score": 75,
+      "theme": "grid storage and energy infrastructure",
+      "why_forwarded": "Energy storage supports grid resilience, power availability, and electrification infrastructure.",
+      "main_risk": "Manufacturing scale, cash needs, backlog conversion, and technology competitiveness need current review.",
+      "needs_current_research": true
+    }
+  ],
+  "rejected_patterns": [
+    "biotechnology and medical-device momentum without infrastructure linkage",
+    "generic enterprise software or SaaS with unclear AI infrastructure monetization",
+    "consumer retail, media, restaurants, and entertainment names outside the target context",
+    "banks, asset managers, insurers, and finance platforms without direct bitcoin infrastructure exposure",
+    "opaque AI, crypto, or technology labels without supported operating-business evidence",
+    "auto and consumer-electronics adjacency without clear power, semiconductor, defense, or infrastructure exposure",
+    "lower-conviction watch items with weaker context fit than the forwarded set"
+  ]
+}

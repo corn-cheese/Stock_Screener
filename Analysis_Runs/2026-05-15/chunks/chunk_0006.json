@@ -1,0 +1,507 @@
+{
+  "chunk_id": 6,
+  "rows": [
+    {
+      "source_row_number": 252,
+      "ticker": "MBLY",
+      "company": "Mobileye Global Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "10.31",
+      "return_percent": "35.24"
+    },
+    {
+      "source_row_number": 253,
+      "ticker": "SVCO",
+      "company": "Silvaco Group Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "10.65",
+      "return_percent": "35.15"
+    },
+    {
+      "source_row_number": 254,
+      "ticker": "CVGI",
+      "company": "Commercial Vehicle Group Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "5.52",
+      "return_percent": "35.01"
+    },
+    {
+      "source_row_number": 255,
+      "ticker": "STRO",
+      "company": "Sutro Biopharma Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "38.84",
+      "return_percent": "34.95"
+    },
+    {
+      "source_row_number": 256,
+      "ticker": "FNKO",
+      "company": "Funko Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Recreational Games/Products/Toys",
+      "current_price": "4.96",
+      "return_percent": "34.78"
+    },
+    {
+      "source_row_number": 257,
+      "ticker": "FSEA",
+      "company": "First Seacoast Bancorp Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Savings Institutions",
+      "current_price": "16.7",
+      "return_percent": "34.68"
+    },
+    {
+      "source_row_number": 258,
+      "ticker": "TEAM",
+      "company": "Atlassian Corporation Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "80.4",
+      "return_percent": "34.65"
+    },
+    {
+      "source_row_number": 259,
+      "ticker": "CCRN",
+      "company": "Cross Country Healthcare Inc. Common Stock $0.0001 Par Value",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "13.15",
+      "return_percent": "34.54"
+    },
+    {
+      "source_row_number": 260,
+      "ticker": "FSTR",
+      "company": "L.B. Foster Company Common Stock",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "40.34",
+      "return_percent": "34.46"
+    },
+    {
+      "source_row_number": 261,
+      "ticker": "DELL",
+      "company": "Dell Technologies Inc. Class C Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Manufacturing",
+      "current_price": "247.27",
+      "return_percent": "34.43"
+    },
+    {
+      "source_row_number": 262,
+      "ticker": "PGNY",
+      "company": "Progyny Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Misc Health and Biotechnology Services",
+      "current_price": "23.06",
+      "return_percent": "34.3"
+    },
+    {
+      "source_row_number": 263,
+      "ticker": "PLSE",
+      "company": "Pulse Biosciences Inc Common Stock (DE)",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "26.99",
+      "return_percent": "34.12"
+    },
+    {
+      "source_row_number": 264,
+      "ticker": "NAVN",
+      "company": "Navan Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "18.57",
+      "return_percent": "34.08"
+    },
+    {
+      "source_row_number": 265,
+      "ticker": "AMSC",
+      "company": "American Superconductor Corporation Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Metal Fabrications",
+      "current_price": "52.88",
+      "return_percent": "34.04"
+    },
+    {
+      "source_row_number": 266,
+      "ticker": "CURR",
+      "company": "Currenc Group Inc. Ordinary Shares",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "4.22",
+      "return_percent": "33.97"
+    },
+    {
+      "source_row_number": 267,
+      "ticker": "LUMN",
+      "company": "Lumen Technologies Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "10.44",
+      "return_percent": "33.85"
+    },
+    {
+      "source_row_number": 268,
+      "ticker": "FLYW",
+      "company": "Flywire Corporation Voting Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "16.37",
+      "return_percent": "33.85"
+    },
+    {
+      "source_row_number": 269,
+      "ticker": "ALAB",
+      "company": "Astera Labs Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "228.33",
+      "return_percent": "33.84"
+    },
+    {
+      "source_row_number": 270,
+      "ticker": "TSHA",
+      "company": "Taysha Gene Therapies Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "6.3",
+      "return_percent": "33.76"
+    },
+    {
+      "source_row_number": 271,
+      "ticker": "AIRJ",
+      "company": "AirJoule Technologies Corporation Class A Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "4.03",
+      "return_percent": "33.44"
+    },
+    {
+      "source_row_number": 272,
+      "ticker": "CORT",
+      "company": "Corcept Therapeutics Incorporated Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "58.26",
+      "return_percent": "33.37"
+    },
+    {
+      "source_row_number": 273,
+      "ticker": "CTW",
+      "company": "CTW Class A Ordinary Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "2.99",
+      "return_percent": "33.37"
+    },
+    {
+      "source_row_number": 274,
+      "ticker": "DDI",
+      "company": "DoubleDown Interactive Co. Ltd. American Depository Shares",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "11.77",
+      "return_percent": "33.35"
+    },
+    {
+      "source_row_number": 275,
+      "ticker": "ANAB",
+      "company": "AnaptysBio Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "62.42",
+      "return_percent": "33.34"
+    },
+    {
+      "source_row_number": 276,
+      "ticker": "RANI",
+      "company": "Rani Therapeutics Holdings Inc. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "1.12",
+      "return_percent": "33.21"
+    },
+    {
+      "source_row_number": 277,
+      "ticker": "CSIQ",
+      "company": "Canadian Solar Inc. Common Shares (ON)",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "17.8",
+      "return_percent": "33.03"
+    },
+    {
+      "source_row_number": 278,
+      "ticker": "OOMA",
+      "company": "Ooma Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "18.98",
+      "return_percent": "33.01"
+    },
+    {
+      "source_row_number": 279,
+      "ticker": "CRML",
+      "company": "Critical Metals Corp. Ordinary Shares",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "11.69",
+      "return_percent": "32.99"
+    },
+    {
+      "source_row_number": 280,
+      "ticker": "LXRX",
+      "company": "Lexicon Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.33",
+      "return_percent": "32.86"
+    },
+    {
+      "source_row_number": 281,
+      "ticker": "SGMT",
+      "company": "Sagimet Biosciences Inc. Series A Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "7.36",
+      "return_percent": "32.85"
+    },
+    {
+      "source_row_number": 282,
+      "ticker": "XPER",
+      "company": "Xperi Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "8.1",
+      "return_percent": "32.79"
+    },
+    {
+      "source_row_number": 283,
+      "ticker": "CYRX",
+      "company": "CryoPort Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "13.21",
+      "return_percent": "32.76"
+    },
+    {
+      "source_row_number": 284,
+      "ticker": "ELVR",
+      "company": "Elevra Lithium Limited American Depository Shares",
+      "sector": "Industrials",
+      "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+      "current_price": "84.0",
+      "return_percent": "32.68"
+    },
+    {
+      "source_row_number": 285,
+      "ticker": "KFRC",
+      "company": "Kforce Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "39.55",
+      "return_percent": "32.63"
+    },
+    {
+      "source_row_number": 286,
+      "ticker": "FRMI",
+      "company": "Fermi Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate Investment Trusts",
+      "current_price": "7.0",
+      "return_percent": "32.58"
+    },
+    {
+      "source_row_number": 287,
+      "ticker": "MIAX",
+      "company": "Miami International Holdings Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Investment Bankers/Brokers/Service",
+      "current_price": "56.88",
+      "return_percent": "32.56"
+    },
+    {
+      "source_row_number": 288,
+      "ticker": "CORZ",
+      "company": "Core Scientific Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "24.76",
+      "return_percent": "32.55"
+    },
+    {
+      "source_row_number": 289,
+      "ticker": "LZM",
+      "company": "Lifezone Metals Limited Ordinary Shares",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "5.05",
+      "return_percent": "32.55"
+    },
+    {
+      "source_row_number": 290,
+      "ticker": "BKSY",
+      "company": "BlackSky Technology Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "42.44",
+      "return_percent": "32.48"
+    },
+    {
+      "source_row_number": 291,
+      "ticker": "CCCC",
+      "company": "C4 Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "3.65",
+      "return_percent": "32.43"
+    },
+    {
+      "source_row_number": 292,
+      "ticker": "MRVI",
+      "company": "Maravai LifeSciences Holdings Inc. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.34",
+      "return_percent": "32.16"
+    },
+    {
+      "source_row_number": 293,
+      "ticker": "MAIR",
+      "company": "Madison Air Solutions Corporation Class A Common Stock",
+      "sector": "Industrials",
+      "industry": "Pollution Control Equipment",
+      "current_price": "41.95",
+      "return_percent": "32.13"
+    },
+    {
+      "source_row_number": 294,
+      "ticker": "OMDA",
+      "company": "Omada Health Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "16.44",
+      "return_percent": "31.94"
+    },
+    {
+      "source_row_number": 295,
+      "ticker": "WDC",
+      "company": "Western Digital Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "483.15",
+      "return_percent": "31.93"
+    },
+    {
+      "source_row_number": 296,
+      "ticker": "KALV",
+      "company": "KalVista Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "26.76",
+      "return_percent": "31.91"
+    },
+    {
+      "source_row_number": 297,
+      "ticker": "IART",
+      "company": "Integra LifeSciences Holdings Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "14.57",
+      "return_percent": "31.78"
+    },
+    {
+      "source_row_number": 298,
+      "ticker": "GHRS",
+      "company": "GH Research PLC Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "22.09",
+      "return_percent": "31.72"
+    },
+    {
+      "source_row_number": 299,
+      "ticker": "LGN",
+      "company": "Legence Corp. Class A Common stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Engineering & Construction",
+      "current_price": "87.0",
+      "return_percent": "31.7"
+    },
+    {
+      "source_row_number": 300,
+      "ticker": "ORN",
+      "company": "Orion Group Holdings Inc. Common",
+      "sector": "Industrials",
+      "industry": "Military/Government/Technical",
+      "current_price": "15.63",
+      "return_percent": "31.66"
+    },
+    {
+      "source_row_number": 301,
+      "ticker": "EXFY",
+      "company": "Expensify Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "1.14",
+      "return_percent": "31.61"
+    }
+  ],
+  "tickers": [
+    "MBLY",
+    "SVCO",
+    "CVGI",
+    "STRO",
+    "FNKO",
+    "FSEA",
+    "TEAM",
+    "CCRN",
+    "FSTR",
+    "DELL",
+    "PGNY",
+    "PLSE",
+    "NAVN",
+    "AMSC",
+    "CURR",
+    "LUMN",
+    "FLYW",
+    "ALAB",
+    "TSHA",
+    "AIRJ",
+    "CORT",
+    "CTW",
+    "DDI",
+    "ANAB",
+    "RANI",
+    "CSIQ",
+    "OOMA",
+    "CRML",
+    "LXRX",
+    "SGMT",
+    "XPER",
+    "CYRX",
+    "ELVR",
+    "KFRC",
+    "FRMI",
+    "MIAX",
+    "CORZ",
+    "LZM",
+    "BKSY",
+    "CCCC",
+    "MRVI",
+    "MAIR",
+    "OMDA",
+    "WDC",
+    "KALV",
+    "IART",
+    "GHRS",
+    "LGN",
+    "ORN",
+    "EXFY"
+  ]
+}

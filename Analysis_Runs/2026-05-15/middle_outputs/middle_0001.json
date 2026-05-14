@@ -1,0 +1,282 @@
+{
+  "middle_id": 1,
+  "input_workers": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "summary": {
+    "input_count": 250,
+    "included_count": 25,
+    "excluded_count": 225,
+    "dominant_themes": [
+      "AI data-center semiconductors",
+      "semiconductor equipment and strategic supply chain",
+      "power and grid infrastructure",
+      "space and defense systems",
+      "bitcoin and strategic hard assets"
+    ]
+  },
+  "candidates_for_final": [
+    {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices Inc.",
+      "proposed_grade": "S",
+      "normalized_score": 94,
+      "theme": "AI accelerators / data-center semiconductors",
+      "why_forwarded": "Direct core exposure to GPUs, CPUs, and data-center compute makes it one of the clearest AI infrastructure names in the group.",
+      "main_risk": "AI accelerator share, supply availability, hyperscaler demand, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MRVL",
+      "company": "Marvell Technology Inc. Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 92,
+      "theme": "AI data-center semiconductors / networking silicon",
+      "why_forwarded": "Custom silicon, networking, and data-center semiconductor exposure sit directly in the AI infrastructure bottleneck.",
+      "main_risk": "AI revenue concentration, customer timing, margin trajectory, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MU",
+      "company": "Micron Technology Inc.",
+      "proposed_grade": "S",
+      "normalized_score": 91,
+      "theme": "AI memory / data-center semiconductors",
+      "why_forwarded": "Memory bandwidth and capacity are central AI infrastructure constraints, giving this candidate a strong structural fit.",
+      "main_risk": "Memory pricing, high-bandwidth memory share, capex cycle, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MYRG",
+      "company": "MYR Group Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 89,
+      "theme": "power grid construction",
+      "why_forwarded": "Grid construction is a direct power-infrastructure bottleneck for electrification, data centers, and industrial buildout.",
+      "main_risk": "Project timing, labor cost, backlog quality, and valuation after the move need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "GFS",
+      "company": "GlobalFoundries Inc. Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 88,
+      "theme": "semiconductor foundry / strategic manufacturing",
+      "why_forwarded": "Foundry capacity connects directly to strategic chip supply chains and government-supported manufacturing priorities.",
+      "main_risk": "Technology node mix, utilization, subsidy impact, and end-market exposure need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "PENG",
+      "company": "Penguin Solutions Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 88,
+      "theme": "AI servers / semiconductor systems",
+      "why_forwarded": "AI server and systems integration exposure gives it direct leverage to compute deployment and infrastructure buildout.",
+      "main_risk": "Customer concentration, backlog visibility, margin durability, and order timing need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MTSI",
+      "company": "MACOM Technology Solutions Holdings Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 87,
+      "theme": "RF semiconductors / optical networking",
+      "why_forwarded": "RF and high-performance semiconductor exposure is relevant to data-center networking, defense, and communications infrastructure.",
+      "main_risk": "Valuation, order trends, defense and data-center mix, and margin quality need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings PLC Ordinary Shares (Ireland)",
+      "proposed_grade": "A",
+      "normalized_score": 87,
+      "theme": "data storage / AI infrastructure",
+      "why_forwarded": "Storage hardware is a core layer of AI and data-center infrastructure, with clearer physical-capacity linkage than software-only names.",
+      "main_risk": "Storage-cycle pricing, capacity demand, product mix, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corporation",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "space systems / defense aerospace",
+      "why_forwarded": "Launch and space-systems exposure gives it direct relevance to defense, sovereign space capacity, and communications infrastructure.",
+      "main_risk": "Launch cadence, contract mix, profitability path, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "APLD",
+      "company": "Applied Digital Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "AI data-center infrastructure",
+      "why_forwarded": "Digital infrastructure and data-center exposure align directly with AI compute capacity demand.",
+      "main_risk": "Financing, customer contracts, project execution, and data-center economics need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "VICR",
+      "company": "Vicor Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "power components / AI hardware",
+      "why_forwarded": "Power conversion components are a direct picks-and-shovels exposure to AI servers, data centers, and strategic electronics.",
+      "main_risk": "Customer concentration, competitive position, and current data-center demand exposure need verification.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 85,
+      "theme": "AI servers / enterprise infrastructure",
+      "why_forwarded": "Servers, storage, networking, and enterprise infrastructure make it a broad AI hardware and platform candidate.",
+      "main_risk": "AI server margins, backlog quality, integration issues, and competitive positioning need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "VECO",
+      "company": "Veeco Instruments Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 85,
+      "theme": "semiconductor equipment",
+      "why_forwarded": "Semiconductor equipment exposure fits advanced chip capacity and strategic manufacturing investment.",
+      "main_risk": "Order cyclicality, China exposure, customer concentration, and backlog durability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "INTC",
+      "company": "Intel Corporation",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "semiconductors / domestic foundry capacity",
+      "why_forwarded": "Large-scale processor, foundry, and domestic manufacturing exposure fit both AI infrastructure and strategic supply-chain priorities.",
+      "main_risk": "Turnaround execution, foundry economics, AI accelerator competitiveness, and policy support need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "AAOI",
+      "company": "Applied Optoelectronics Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "optical semiconductors / data-center networking",
+      "why_forwarded": "Optical communications hardware is directly tied to AI data-center bandwidth and network scaling.",
+      "main_risk": "Customer concentration, pricing, capacity, and demand sustainability need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "SMTC",
+      "company": "Semtech Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "semiconductors / connectivity",
+      "why_forwarded": "Connectivity semiconductor exposure can link to data-center networking and broader infrastructure buildouts.",
+      "main_risk": "Revenue mix, optical or data-center exposure, debt, and valuation need current confirmation.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 83,
+      "theme": "infrastructure construction / government technical work",
+      "why_forwarded": "Physical infrastructure construction fits fiscal buildout, industrial reshoring, and data-center support themes.",
+      "main_risk": "Project mix, public-spending sensitivity, margin durability, and valuation need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "NBIS",
+      "company": "Nebius Group N.V. Class A Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 83,
+      "theme": "AI cloud / data processing infrastructure",
+      "why_forwarded": "Compute and cloud infrastructure positioning makes it more relevant than generic application software names.",
+      "main_risk": "Capacity economics, customer concentration, business mix, and geopolitical exposure need current verification.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "POET",
+      "company": "POET Technologies Inc. Common Shares",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "semiconductor photonics / data center interconnect",
+      "why_forwarded": "Photonics and optical interconnect map directly to AI cluster bandwidth constraints.",
+      "main_risk": "Commercial adoption, customer validation, funding runway, and production scale need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "ACLS",
+      "company": "Axcelis Technologies Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "semiconductor manufacturing equipment",
+      "why_forwarded": "Chip manufacturing equipment is one of the clearest supply-chain layers beneath AI and power semiconductor capacity.",
+      "main_risk": "Capital-spending cycles, customer concentration, export restrictions, and order trends need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "FLNC",
+      "company": "Fluence Energy Inc. Class A Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 81,
+      "theme": "grid storage / energy infrastructure",
+      "why_forwarded": "Battery storage directly supports grid resilience and power availability for energy-intensive infrastructure.",
+      "main_risk": "Project margins, battery supply, policy exposure, and backlog quality need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "BE",
+      "company": "Bloom Energy Corporation Class A Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 80,
+      "theme": "energy infrastructure / distributed power",
+      "why_forwarded": "Distributed power exposure fits grid constraints, resilient power demand, and data-center energy-security themes.",
+      "main_risk": "Profitability, project timing, policy support, and customer concentration need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "RDW",
+      "company": "Redwire Corporation Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 80,
+      "theme": "space infrastructure / government technical services",
+      "why_forwarded": "Space systems and government technical exposure fit defense, satellite, and sovereign infrastructure spending.",
+      "main_risk": "Contract mix, backlog quality, funding timing, and margin profile need current confirmation.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "HUT",
+      "company": "Hut 8 Corp. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 79,
+      "theme": "bitcoin infrastructure / data centers",
+      "why_forwarded": "Bitcoin mining and power-linked data-center infrastructure fit the hard-asset and energy-infrastructure side of the rubric.",
+      "main_risk": "Bitcoin price sensitivity, power costs, dilution, and high-performance computing transition need current review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "USAR",
+      "company": "USA Rare Earth Inc. Class A Common Stock",
+      "proposed_grade": "B",
+      "normalized_score": 78,
+      "theme": "rare earths / strategic minerals",
+      "why_forwarded": "Domestic rare-earth exposure fits scarce assets, strategic minerals, and state-led supply-chain security.",
+      "main_risk": "Project execution, financing, processing capability, and current asset status require verification.",
+      "needs_current_research": true
+    }
+  ],
+  "rejected_patterns": [
+    "biotechnology and healthcare momentum outside the target themes",
+    "application software without infrastructure leverage",
+    "consumer services, media, travel, restaurants, and specialty retail",
+    "finance names without confirmed digital-asset infrastructure or hard-asset exposure",
+    "generic real estate, leasing, and industrial exposure without direct strategic infrastructure linkage",
+    "speculative sensors, autonomy, and quantum names without near-term infrastructure demand proof"
+  ]
+}

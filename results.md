@@ -1,316 +1,650 @@
-﻿# 주식 후보군 분석
+# 주식 후보군 분석
 
-기준일: 2026-05-15 KST
+기준일: 2026-05-15
 
 ## 0. 분석 기준
-- 입력 CSV: `Stock_Results/2026-05-15_Scan_Result_Top5000.csv`
-- 스캔 조건: `python scan.py` 실행. 미국 상장주 시가총액 상위 5000개 중 최근 1개월 수익률 15% 이상, 현재가 1달러 이상, 시가총액 7000만 달러 이상 필터.
-- 전체 스캔 후보: 736개
-- 최종 분석 후보: 61개
-- 분류 기준: `context.md`의 체제 전환, 재정 지배, AI 공장 인프라, 전력 병목, 우주·방산, 경화자산·희소자원 관점에 직접 연결되는 종목만 포함.
-- 범위 제한: 현재 `scan.py`는 미국 시장만 스캔한다. 한국 상장주는 이번 입력 CSV에 포함되지 않았다.
-- 주의: 이 문서는 매수·매도 지시가 아니라 후보군 분석이다. 1개월 급등주 기반이므로 밸류에이션, 유동성, 공매도, 자금조달 리스크를 별도로 확인해야 한다.
+- 입력 CSV: Stock_Results/2026-05-15_Scan_Result_Top5000.csv
+- 스캔 조건: 최근 1개월 상승률 15% 이상 후보군에서 context rubric 기준으로 worker/middle/final 선별
+- 전체 스캔 후보: 742
+- 최종 분석 후보: 40
+- 분류 기준: AI 인프라, 국가 주도 인프라/전력, 실물·전략 공급망 연결성, 사업 명확성, 리스크 조정
+- 주의: 투자 추천이 아니라 후보군 분석이며, 매수·매도 지시가 아니다. 최신 자료는 2026-05-15 현재 확인 가능한 공식 IR/실적자료 중심으로 반영했다.
 
 ## 1. 시장이 주목하는 섹터 요약
 
-### AI 계산·메모리·스토리지
-- 시장이 주목하는 이유: AI 투자가 모델 자체보다 GPU, HBM, 스토리지, 네트워크, EDA 같은 물리적 병목으로 이동하고 있다. 특히 메모리와 HDD·SSD는 AI 학습·추론 데이터가 누적될수록 수요가 구조적으로 커지는 영역이다.
-- 사용자 맥락과 연결되는 지점: AI를 애플리케이션이 아니라 공장으로 보면, 이들은 생산수단과 시스템 필수 인프라에 가깝다.
-- 대표 후보: NVDA, MU, WDC, STX, SNDK, MRVL, SNPS, CDNS, AMD
-- 확인할 리스크: 고평가, CAPEX 둔화, 수출 규제, 메모리·스토리지 업황 반전, 고객 집중.
+### AI compute / 반도체 설계 인프라
+- 시장이 주목하는 이유: GPU, custom silicon, HBM, EDA, 파운드리와 반도체 장비가 AI capex의 가장 앞단 병목으로 반복 확인된다.
+- 사용자 맥락과 연결되는 지점: AI를 애플리케이션이 아니라 공장으로 보는 관점에서 compute와 칩 설계/제조 능력은 사이클의 중심 자산이다.
+- 대표 후보: NVDA, AVGO, AMD, ALAB, MRVL, MU, CRDO, CDNS
+- 확인할 리스크: 밸류에이션, 수출 규제, 고객 집중, AI accelerator 경쟁, 반도체 사이클 전환
 
-### 데이터센터 전력·냉각·시공
-- 시장이 주목하는 이유: AI 데이터센터는 전력 연결, 냉각, 변전, 배전, 현장 시공 역량을 병목으로 만든다. 기존 IT 장비보다 증설 속도가 느려 공급 제약이 더 강하게 나타난다.
-- 사용자 맥락과 연결되는 지점: 재정 지배와 국가 주도 투자 국면에서 전력망·시공·현장 장비는 시스템의 필수 인프라가 된다.
-- 대표 후보: VRT, PWR, STRL, FIX, IESC, AGX, POWL, AAON, BE
-- 확인할 리스크: 대형 고객 CAPEX 조정, 원가 상승, 프로젝트 지연, 전력 인허가.
+### 전력 / 냉각 / 물리 데이터센터 인프라
+- 시장이 주목하는 이유: AI 서버 밀도가 높아질수록 전력망, switchgear, 냉각, 전기·기계 시공이 실제 병목으로 떠오른다.
+- 사용자 맥락과 연결되는 지점: 재정 지배와 국가 주도 인프라 투자, 데이터센터 전력 수요가 겹치는 구간이다.
+- 대표 후보: FIX, PWR, VRT, MYRG, MTZ, MOD, POWL, AGX, SMR
+- 확인할 리스크: 대형 프로젝트 실행, backlog 질, 원가/인력, 정책 및 인허가
 
-### 우주·방산·국가 안보 인프라
-- 시장이 주목하는 이유: 미중 경쟁, 위성 감시, 발사체, 우주 통신, 달 탐사, 방산 테스트 수요가 민간 우주 기업으로 확산되고 있다.
-- 사용자 맥락과 연결되는 지점: 국가 주도 경제와 패권 경쟁의 수혜를 받는 성장축이다.
-- 대표 후보: RKLB, RDW, LUNR
-- 확인할 리스크: 정부 계약 집중, 발사·임무 실패, 적자 지속, 일정 지연.
+### 서버 / 스토리지 / 클라우드 인프라
+- 시장이 주목하는 이유: AI 모델 학습과 추론이 GPU 서버, 스토리지, enterprise infrastructure, 데이터센터 capacity 수요를 밀어올린다.
+- 사용자 맥락과 연결되는 지점: 이미 집행되는 capex에서 매출이 발생하는 하드웨어·인프라 계층이다.
+- 대표 후보: DELL, PENG, HPE, SMCI, STX, APLD, GOOGL
+- 확인할 리스크: 서버 마진, 메모리 가격, 고객 집중, 데이터센터 금융/전력 확보
 
-### 비트코인·디지털 인프라
-- 시장이 주목하는 이유: 비트코인 보유 기업과 채굴·데이터센터 기업이 경화자산 노출과 AI 전력 인프라 노출을 동시에 제공한다.
-- 사용자 맥락과 연결되는 지점: 법정화폐 희석에 대한 헤지와 AI 전력 병목이라는 두 축이 만나는 영역이다.
-- 대표 후보: MSTR, COIN, IREN, HUT, CORZ, RIOT, MARA, CLSK, WULF, CIFR
-- 확인할 리스크: BTC 가격 변동, 레버리지, 희석, 채굴 난이도, HPC 전환 실행 리스크.
+### 광통신 / 네트워크 / 소재 병목
+- 시장이 주목하는 이유: AI cluster가 커질수록 광모듈, optical fiber, DSP, coherent networking 같은 데이터 이동 계층이 함께 확장된다.
+- 사용자 맥락과 연결되는 지점: AI 인프라에서 GPU 다음 병목이 네트워크와 연결 소재로 이동할 가능성에 연결된다.
+- 대표 후보: COHR, LITE, CIEN, GLW, AAOI, MTSI, SMTC, DY
+- 확인할 리스크: optical cycle, 대형 고객 발주, 가격 경쟁, 공급 증설 속도
 
-### 희소자원·원자력
-- 시장이 주목하는 이유: 희토류, 리튬, 은·금, 심해 금속, SMR·마이크로 원전은 공급망 탈중국화와 전력 부족 우려가 맞물리며 재평가되고 있다.
-- 사용자 맥락과 연결되는 지점: 현금 가치 하락 국면에서 희소자원 생산기업과 에너지 옵션은 구조 자산의 성격을 가진다.
-- 대표 후보: USAR, LAC, SVM, AYA, CRML, TMC, SMR, NNE, IMSR
-- 확인할 리스크: 인허가, 상업화 시간, 원자재 가격, 환경 규제, 자금조달.
+### 우주 / 전략 인프라
+- 시장이 주목하는 이유: 방산, 우주, 위성, 통신 인프라는 미중패권전쟁과 국가 주도 산업정책의 수혜를 받을 수 있다.
+- 사용자 맥락과 연결되는 지점: 민간 수요보다 정부·전략 수요가 중요한 사이클 자산에 가깝다.
+- 대표 후보: RKLB
+- 확인할 리스크: 발사 cadence, 수익성 전환, 개발 일정, 정부 계약 의존도
 
 ## 2. 대시보드 요약
 
 | 등급 | 의미 | 종목 수 | 대표 종목 | 해석 |
 |---|---|---:|---|---|
-| S | 구조적 중심 후보 | 9 | NVDA, MU, VRT, PWR, WDC | AI 공장·전력·스토리지·EDA의 핵심 병목 |
-| A | 유력 후보 | 18 | AMD, SNDK, ALAB, CRDO, RKLB | 구조적 방향은 강하지만 실행·밸류에이션 리스크 존재 |
-| B | 관찰 후보 | 22 | INTC, SMCI, MSTR, COIN, RDW | 사이클 중심에 있으나 해자·수익성·리스크가 혼재 |
-| C | 고위험 모멘텀 후보 | 12 | POET, WOLF, DGXX, STKE, NNE | 테마 적합성은 있으나 검증·재무·상업화 리스크 큼 |
+| S | 구조적 중심 후보 | 9 | NVDA, AVGO, AMD | 우선 비교할 구조적 중심 후보 |
+| A | 유력 후보 | 31 | CRDO, MPWR, DY | 테마 적합성이 높지만 리스크 확인이 필요한 후보 |
+| B | 관찰 후보 | 0 | - | 해당 등급 후보 없음 |
+| C | 고위험 모멘텀 후보 | 0 | - | 해당 등급 후보 없음 |
 
 ## 3. 전체 후보 빠른 보기
 
 | Rank | 등급 | 기업명 | 티커 | 핵심 섹터/테마 | 한 줄 판단 | 주요 리스크 |
 |---:|---|---|---|---|---|---|
-| 1 | S | NVIDIA | NVDA | AI GPU·네트워킹 | AI 공장의 핵심 계산 공급자 | 수출 규제, 고평가 |
-| 2 | S | Micron Technology | MU | HBM·DRAM·SSD | AI 메모리 병목의 직접 수혜 | 메모리 업황 반전 |
-| 3 | S | Vertiv | VRT | 전력·냉각 | AI 데이터센터 물리 인프라 병목 | CAPEX 둔화 |
-| 4 | S | Quanta Services | PWR | 전력망·시공 | 전력망 증설 실행 역량 보유 | 프로젝트 지연 |
-| 5 | S | Western Digital | WDC | HDD·AI 스토리지 | AI 데이터 저장 수요와 공급 제약 | 스토리지 사이클 |
-| 6 | S | Seagate | STX | 대용량 HDD | AI 데이터센터 저장장치 구조 성장 | HDD 가격 반전 |
-| 7 | S | Marvell Technology | MRVL | AI 연결·커스텀 실리콘 | AI 데이터 이동 병목에 노출 | 고객 집중 |
-| 8 | S | Synopsys | SNPS | EDA·반도체 IP | AI 칩 설계 복잡도 증가 수혜 | 설계 투자 둔화 |
-| 9 | S | Cadence Design Systems | CDNS | EDA·시뮬레이션 | AI 반도체 설계 필수 소프트웨어 | 고평가 |
-| 10 | A | Advanced Micro Devices | AMD | AI GPU·CPU | NVIDIA 대체축과 대형 고객 계약 | 경쟁력 검증 |
-| 11 | A | Sandisk | SNDK | NAND·기업용 SSD | AI 스토리지 부족의 강한 모멘텀 | 신규 상장·플래시 사이클 |
-| 12 | A | Astera Labs | ALAB | AI 연결 반도체 | 랙스케일 연결 병목에 직접 노출 | 밸류에이션, 고객 집중 |
-| 13 | A | Credo Technology | CRDO | 고속 연결 | AI 클러스터 케이블·리타이머 수요 | 고객 집중 |
-| 14 | A | Dell Technologies | DELL | AI 서버 | 대형 AI 서버 주문 수혜 | 낮은 마진 |
-| 15 | A | Penguin Solutions | PENG | AI 인프라 통합 | AI 팩토리 설계·운영 수요 | 소형주, 고객 변동성 |
-| 16 | A | Sterling Infrastructure | STRL | 데이터센터 시공 | 데이터센터 부지·시공 노출 | 건설 사이클 |
-| 17 | A | Comfort Systems USA | FIX | MEP·냉각 시공 | 데이터센터 HVAC·전기 공사 수혜 | 인건비, 원가 |
-| 18 | A | IES Holdings | IESC | 전기·기계 시공 | 전력·데이터센터 시공 노출 | 프로젝트 집중 |
-| 19 | A | Argan | AGX | 발전소 EPC | 전력 수요 증설 수혜 | 수주 변동성 |
-| 20 | A | Powell Industries | POWL | 전력 배전 장비 | 변전·전력장비 병목 노출 | 주문 사이클 |
-| 21 | A | AAON | AAON | HVAC·냉각 | 고밀도 냉각 수요 노출 | 원가·마진 |
-| 22 | A | Bloom Energy | BE | 온사이트 전력 | AI 데이터센터 전력 조달 대안 | 부채, 설치 지연 |
-| 23 | A | Rocket Lab | RKLB | 우주·방산 | 발사체와 우주 시스템 동시 보유 | 적자, 발사 리스크 |
-| 24 | A | USA Rare Earth | USAR | 희토류·자석 | 미국 내 mine-to-magnet 공급망 | 상업화 리스크 |
-| 25 | A | Lithium Americas | LAC | 미국 리튬 | Thacker Pass 기반 핵심광물 공급 | 건설·가격 리스크 |
-| 26 | A | NuScale Power | SMR | SMR 원전 | AI 전력 수요의 원전 옵션 | 프로젝트 경제성 |
-| 27 | A | IREN | IREN | AI 클라우드·전력 | 채굴 인프라의 AI 전환 선도 후보 | 레버리지, 고객 집중 |
-| 28 | B | Intel | INTC | 미국 반도체·파운드리 | 국가 반도체 자립 옵션 | 턴어라운드 리스크 |
-| 29 | B | GlobalFoundries | GFS | 특수 파운드리 | 미국·동맹 파운드리 공급망 | 첨단노드 부재 |
-| 30 | B | Arteris | AIP | 반도체 IP | SoC 복잡도 증가 수혜 | 규모 작음 |
-| 31 | B | Applied Optoelectronics | AAOI | 광통신 | AI 데이터센터 광모듈 수요 | 고객 집중 |
-| 32 | B | Coherent | COHR | 광소자·레이저 | AI 네트워킹 광부품 노출 | 부채·사이클 |
-| 33 | B | Lumentum | LITE | 광통신 | 데이터센터 광부품 수요 | 통신 업황 |
-| 34 | B | Monolithic Power | MPWR | 전력 반도체 | AI 서버 전력 효율 수요 | 고평가 |
-| 35 | B | Super Micro Computer | SMCI | AI 서버 | 액체냉각·AI 서버 모멘텀 | 회계·마진 리스크 |
-| 36 | B | Applied Digital | APLD | AI 데이터센터 | 채굴에서 AI 데이터센터로 전환 | 자금조달 |
-| 37 | B | Hut 8 | HUT | AI 인프라·채굴 | Anthropic/Fluidstack 연계 AI 인프라 | 실행·희석 |
-| 38 | B | Strategy | MSTR | 비트코인 treasury | BTC 경화자산 고노출 | 레버리지, 프리미엄 |
-| 39 | B | Coinbase | COIN | 암호자산 인프라 | 제도권 crypto 관문 | 규제, 거래량 |
-| 40 | B | Core Scientific | CORZ | HPC·채굴 | 전력 부지의 AI 전환 | 계약·자금 리스크 |
-| 41 | B | Riot Platforms | RIOT | BTC 채굴·전력 | 대규모 전력 부지 보유 | BTC 가격 |
-| 42 | B | MARA Holdings | MARA | BTC·에너지 | BTC 노출과 에너지 최적화 | 채굴 수익성 |
-| 43 | B | CleanSpark | CLSK | BTC 채굴 | 효율적 채굴 인프라 | 해시가격 |
-| 44 | B | Fluence Energy | FLNC | 에너지 저장 | 전력망 안정화 수요 | 수익성 변동 |
-| 45 | B | Redwire | RDW | 우주 인프라 | 우주·방산 시스템 공급망 | 수주 변동성 |
-| 46 | B | Intuitive Machines | LUNR | 달 탐사·우주 서비스 | NASA CLPS 기반 우주 인프라 | 임무 실패 |
-| 47 | B | Silvercorp Metals | SVM | 은·금 | 경화자산 생산 노출 | 중국·광산 리스크 |
-| 48 | B | Aya Gold & Silver | AYA | 은 | 순수 은 생산 성장 후보 | 단일 지역 노출 |
-| 49 | B | Critical Metals | CRML | 리튬·희토류 | 핵심광물 개발 옵션 | 개발·자금 리스크 |
-| 50 | C | POET Technologies | POET | AI 광연결 | 광학 인터포저 테마가 강함 | 상업화 초기 |
-| 51 | C | Wolfspeed | WOLF | SiC 전력반도체 | SiC 공급망의 전략성 | 구조조정 후 리스크 |
-| 52 | C | Digi Power X | DGXX | AI 데이터센터·채굴 | 전력 기반 AI 전환 모멘텀 | 검증 부족 |
-| 53 | C | SOL Strategies | STKE | Solana treasury | 디지털자산 변형 노출 | BTC 대비 성격 다름 |
-| 54 | C | TeraWulf | WULF | HPC·채굴 | AI 데이터센터 전환 모멘텀 | 희석, 프로젝트 리스크 |
-| 55 | C | Cipher Digital | CIFR | HPC 데이터센터 | 채굴에서 AI 캠퍼스로 전환 | 대규모 자금조달 |
-| 56 | C | Bit Digital | BTBT | 채굴·AI | BTC와 AI 인프라 혼합 노출 | 규모·수익성 |
-| 57 | C | American Bitcoin | ABTC | BTC treasury·채굴 | 순수 BTC 모멘텀 노출 | 신생 상장·정치성 |
-| 58 | C | The Metals Company | TMC | 심해 금속 | 배터리 금속 장기 옵션 | 환경·규제 리스크 |
-| 59 | C | NANO Nuclear Energy | NNE | 마이크로 원전 | 원전 전력 테마 모멘텀 | 상업화 미검증 |
-| 60 | C | Terrestrial Energy | IMSR | 용융염 SMR | 차세대 원전 옵션 | 장기 개발 |
-| 61 | C | Eagle Nuclear Energy | NUCL | 우라늄·원전 | 핵연료·원전 테마 노출 | 정보·유동성 제한 |
+| 1 | S | NVIDIA Corporation Common Stock | NVDA | AI infrastructure / GPUs / semiconductors | AI 인프라 사이클의 중심 공급자라 S 등급 유지. 다만 규제와 기대치가 이미 큰 후보. | 밸류에이션, 중국향 수출 규제, 대형 고객 집중, AI capex 지속성. |
+| 2 | S | Broadcom Inc. Common Stock | AVGO | AI infrastructure / semiconductors / networking | AI 네트워크와 맞춤형 칩의 구조적 수혜가 선명해 S 등급 유지. | AI 고객 집중, VMware 통합, 높은 기대치, 대형 hyperscaler 발주 변동. |
+| 3 | S | Advanced Micro Devices Inc. | AMD | AI accelerators / data-center semiconductors | AI compute의 2번 축 후보로 S 등급. 리스크는 경쟁 구도와 execution. | NVIDIA 대비 AI 가속기 점유율, 공급 능력, hyperscaler 채택 속도, 마진. |
+| 4 | S | Astera Labs Inc. | ALAB | AI data-center semiconductor connectivity | 작지만 AI 연결 병목에 매우 직접적인 S 후보. 변동성은 크다. | 고객 집중, 높은 밸류에이션, 제품 사이클, 대형 고객 발주 타이밍. |
+| 5 | S | Comfort Systems USA Inc. Common Stock | FIX | AI data-center mechanical and electrical construction | AI 인프라를 실제 건설하는 물리 계층 후보라 S 등급 유지. | 수주 구성, 노동력/원가, 데이터센터 고객 집중, 마진 정상화. |
+| 6 | S | Marvell Technology Inc. Common Stock | MRVL | AI data-center semiconductors / networking silicon | AI 네트워킹·custom silicon 축의 S 후보. 대형 고객 발주 변동을 주의. | 데이터센터 매출 집중, 고객별 ramp 타이밍, 인수 통합, 마진. |
+| 7 | S | Micron Technology Inc. | MU | AI memory / data-center semiconductors | AI 메모리 공급 제약이 핵심인 S 후보. 사이클 변동성은 남는다. | 메모리 가격 사이클, HBM 점유율, capex, 공급 과잉 전환 가능성. |
+| 8 | S | Quanta Services Inc. Common Stock | PWR | power grid engineering and construction | 전력망 병목의 대표 S 후보. 데이터센터 전력 수요와 정책 인프라 양쪽에 걸쳐 있다. | 프로젝트 실행, 인력, 밸류에이션, 대형 수주 mix. |
+| 9 | S | Vertiv Holdings LLC Class A Common Stock | VRT | data-center power and cooling infrastructure | AI 데이터센터 물리 장비의 S 후보. 기대치가 높아 변동성 관리가 필요하다. | 밸류에이션, 데이터센터 capex 둔화, backlog 전환, 마진 지속성. |
+| 10 | A | Credo Technology Group Holding Ltd Ordinary Shares | CRDO | AI data-center networking / semiconductors | AI 네트워킹 순수 노출도가 높아 A 등급 상단 후보. | 고객 집중, optical 전환 경쟁, 고평가, 제품 채택 주기. |
+| 11 | A | Monolithic Power Systems Inc. Common Stock | MPWR | power semiconductors / AI data-center components | AI 서버 전력 계층의 질 좋은 A 후보. | 높은 밸류에이션, 고객 집중, 재고 사이클, 엔터프라이즈 데이터 노출도 변동. |
+| 12 | A | Dycom Industries Inc. Common Stock | DY | communications and power-line infrastructure | 데이터 이동 인프라의 물리 시공 후보. AI 직접성은 전력/칩보다 낮아 A. | 통신사 capex, 고객 집중, 인력/원가, 프로젝트 타이밍. |
+| 13 | A | MYR Group Inc. Common Stock | MYRG | power grid construction | 전력망 시공 수혜가 명확한 A 후보. | 프로젝트 실행, backlog 품질, 원가, 특정 지역/고객 노출. |
+| 14 | A | NuScale Power Corporation Class A Common Stock | SMR | small modular nuclear power / grid capacity | 전력 구조 변화와 연결은 강하지만 상용화 리스크가 커 A 중 고위험 후보. | 상용 매출 시점, 인허가, 프로젝트 금융, 고객 확정, 주가 변동성. |
+| 15 | A | Cadence Design Systems Inc. Common Stock | CDNS | EDA software / semiconductor design infrastructure | AI 칩 설계 인프라의 고품질 A 후보. | 밸류에이션, 수출 규제, 반도체 설계 사이클, 규제/합의 관련 리스크. |
+| 16 | A | GlobalFoundries Inc. Ordinary Shares | GFS | semiconductor foundry / strategic manufacturing | 최첨단 AI GPU보다는 전략 제조/공급망 성격의 A 후보. | 가동률, 기술 node mix, 보조금 효과, 고객 수요 변동. |
+| 17 | A | MasTec Inc. Common Stock | MTZ | power, pipeline, and communications construction | 물리 인프라 capex의 광범위한 A 후보. | 프로젝트 mix, 실행 마진, 경기 민감도, 대형 수주 타이밍. |
+| 18 | A | Penguin Solutions Inc. Common Stock | PENG | AI servers / semiconductor systems | AI 서버 시스템 노출이 직접적인 A 후보. | 고객 집중, 서버 주문 타이밍, 마진, 메모리/부품 비용. |
+| 19 | A | Dell Technologies Inc. | DELL | AI servers and enterprise infrastructure | AI 서버 물량 노출은 강하지만 마진 질 확인이 필요한 A 후보. | 서버 마진, 메모리 비용, 주문 visibility, 경쟁 가격. |
+| 20 | A | Modine Manufacturing Company Common Stock | MOD | thermal management / data-center cooling | AI 냉각 병목의 명확한 A 후보. | 데이터센터 mix, capacity execution, 원자재, 밸류에이션. |
+| 21 | A | MACOM Technology Solutions Holdings Inc. Common Stock | MTSI | RF semiconductors / optical networking | AI 네트워킹과 방산 반도체가 겹치는 A 후보. | 수주 사이클, defense/data-center mix, 고객 집중, 밸류에이션. |
+| 22 | A | Powell Industries Inc. Common Stock | POWL | power infrastructure and electrical equipment | 전력 장비 병목의 직접 후보로 A 등급. | 대형 프로젝트 집중, 수주 변동, 마진 지속성, 밸류에이션. |
+| 23 | A | Seagate Technology Holdings PLC Ordinary Shares (Ireland) | STX | data storage / AI infrastructure | AI 인프라 중 저장장치 병목에 노출된 A 후보. | HDD 가격 사이클, 고객 집중, 부품/메모리 비용, 교체 수요. |
+| 24 | A | Applied Digital Corporation Common Stock | APLD | AI data-center infrastructure | AI 데이터센터 순수 노출은 크지만 재무/실행 리스크가 큰 A 후보. | 자금 조달, 프로젝트 실행, 고객 계약, 레버리지, 에너지 비용. |
+| 25 | A | Coherent Corp. Common Stock | COHR | optical components and AI data-center networking | 광연결 병목에 직접적인 A 후보. | 광통신 사이클, 고객 mix, capacity 증설, 마진 회복. |
+| 26 | A | Alphabet Inc. Class A Common Stock | GOOGL | AI platforms / cloud data centers | AI 인프라와 플랫폼을 동시에 가진 A 후보. 규제와 capex 효율이 관건. | AI monetization, capex 부담, 반독점, 광고 경기 민감도. |
+| 27 | A | Lumentum Holdings Inc. Common Stock | LITE | optical communications / data-center networking | 광통신 AI 병목의 A 후보. | 고객 집중, optical cycle, 마진 회복, 경쟁. |
+| 28 | A | Rocket Lab Corporation | RKLB | space systems / defense aerospace | 우주 인프라/방산 축의 A 후보. 기술 실행 리스크는 높다. | Neutron 일정, 발사 cadence, 수익성, 정부/상업 계약 mix. |
+| 29 | A | Vicor Corporation Common Stock | VICR | power components / AI hardware | 전력 부품 순수 노출은 매력적이나 확인 필요가 많은 A 후보. | 고객 집중, 경쟁, backlog 전환, 실제 AI 매출 기여도. |
+| 30 | A | Ciena Corporation Common Stock | CIEN | AI infrastructure and optical networking | AI 시대 광네트워크 장비의 A 후보. | 통신사 capex, 공급망, 고객 order timing, 고평가. |
+| 31 | A | Corning Incorporated Common Stock | GLW | optical fiber / data-center connectivity | 광섬유/소재 기반의 비교적 방어적인 A 후보. | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
+| 32 | A | Hewlett Packard Enterprise Company Common Stock | HPE | AI servers / enterprise infrastructure | AI 인프라 하드웨어 후보이나 품질은 Dell/전문 공급자 대비 더 확인 필요. | AI 서버 마진, Juniper 통합/네트워킹 경쟁, enterprise 수요. |
+| 33 | A | Super Micro Computer Inc. Common Stock | SMCI | AI servers / data-center hardware | AI 서버 직접 노출은 매우 크지만 리스크가 커 A 하단 후보. | 마진 압박, 고객 집중, 회계/통제 신뢰, 수출통제·법적 이슈. |
+| 34 | A | Veeco Instruments Inc. Common Stock | VECO | semiconductor equipment | 반도체 장비 supply-chain A 후보. | 중국 노출, capex cycle, 고객 집중, 장비 주문 변동. |
+| 35 | A | Applied Optoelectronics Inc. Common Stock | AAOI | optical semiconductors / data-center networking | 광모듈 순수 노출은 크지만 변동성이 큰 A 후보. | 고객 집중, 가격, 생산능력, 데이터센터 수요 지속성. |
+| 36 | A | Analog Devices Inc. Common Stock | ADI | analog semiconductors and industrial electronics | 품질은 높지만 AI 순수 노출은 낮아 A 하단 후보. | analog cycle, 산업 수요, 재고 정상화, 직접 AI 노출도. |
+| 37 | A | Argan Inc. Common Stock | AGX | power infrastructure / engineering and construction | 전력 공급 병목의 EPC 후보. cyclicality와 project risk가 핵심. | 대형 프로젝트 집중, 실행, 고객 집중, 에너지 정책. |
+| 38 | A | First Solar Inc. Common Stock | FSLR | solar manufacturing / energy infrastructure | 국가 주도 에너지 제조의 A 후보. 정책 민감도가 높다. | 정책 인센티브, 모듈 가격, 무역정책, backlog 전환. |
+| 39 | A | Intel Corporation | INTC | semiconductors / domestic foundry capacity | 전략성은 크지만 실적 전환 리스크가 커 A 하단 후보. | foundry 손실, turnaround 실행, AI accelerator 경쟁력, capex 부담. |
+| 40 | A | Semtech Corporation Common Stock | SMTC | semiconductors / connectivity | AI 네트워킹 보조 후보로 A 하단 유지. | 부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁. |
 
 ## 4. 등급별 후보 요약
 
 ### S 등급: 구조적 중심 후보
 | Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
 |---:|---|---|---|---|---|
-| 1 | NVIDIA | NVDA | AI GPU·네트워킹 | AI 공장 CAPEX의 최상위 병목 | 규제, 고평가 |
-| 2 | Micron Technology | MU | HBM·메모리 | HBM과 데이터센터 SSD 수요가 직접 연결 | 업황 반전 |
-| 3 | Vertiv | VRT | 전력·냉각 | AI 데이터센터 전력·냉각 병목 | 주문 둔화 |
-| 4 | Quanta Services | PWR | 전력망 시공 | 전력망 증설 실행 역량 | 프로젝트 지연 |
-| 5 | Western Digital | WDC | HDD 스토리지 | AI 데이터 저장 수요와 공급 제약 | HDD 가격 변동 |
-| 6 | Seagate | STX | 대용량 저장장치 | 데이터센터 HDD 구조 성장 | 사이클 반전 |
-| 7 | Marvell Technology | MRVL | 연결·커스텀 실리콘 | AI 데이터 이동과 광연결 병목 | 고객 집중 |
-| 8 | Synopsys | SNPS | EDA | AI 칩 설계 복잡도 증가 | R&D 둔화 |
-| 9 | Cadence Design Systems | CDNS | EDA·디지털 트윈 | AI 반도체 설계 필수 도구 | 고평가 |
+| 1 | NVIDIA Corporation Common Stock | NVDA | AI infrastructure / GPUs / semiconductors | FY2026 실적 자료에서 데이터센터 매출과 Blackwell/Rubin 기반 AI 인프라 수요가 계속 핵심 축으로 확인된다. | 밸류에이션, 중국향 수출 규제, 대형 고객 집중, AI capex 지속성. |
+| 2 | Broadcom Inc. Common Stock | AVGO | AI infrastructure / semiconductors / networking | FY2026 Q1 자료에서 AI 반도체와 네트워킹 수요가 실적 성장의 핵심으로 확인된다. | AI 고객 집중, VMware 통합, 높은 기대치, 대형 hyperscaler 발주 변동. |
+| 3 | Advanced Micro Devices Inc. | AMD | AI accelerators / data-center semiconductors | Q1 2026 실적 자료에서 데이터센터가 AI 인프라 수요의 핵심 성장 축으로 확인된다. | NVIDIA 대비 AI 가속기 점유율, 공급 능력, hyperscaler 채택 속도, 마진. |
+| 4 | Astera Labs Inc. | ALAB | AI data-center semiconductor connectivity | IR 자료에서 rack-scale AI infrastructure connectivity가 핵심 사업으로 확인된다. | 고객 집중, 높은 밸류에이션, 제품 사이클, 대형 고객 발주 타이밍. |
+| 5 | Comfort Systems USA Inc. Common Stock | FIX | AI data-center mechanical and electrical construction | 최근 IR 자료에서 기술/데이터센터와 모듈러 시공이 전략적 초점으로 확인된다. | 수주 구성, 노동력/원가, 데이터센터 고객 집중, 마진 정상화. |
+| 6 | Marvell Technology Inc. Common Stock | MRVL | AI data-center semiconductors / networking silicon | 최근 IR 자료에서 AI, cloud, carrier, enterprise infrastructure용 silicon 포지션이 확인된다. | 데이터센터 매출 집중, 고객별 ramp 타이밍, 인수 통합, 마진. |
+| 7 | Micron Technology Inc. | MU | AI memory / data-center semiconductors | FY2026 Q2 자료에서 AI와 데이터센터 메모리 수요, HBM 중요성이 확인된다. | 메모리 가격 사이클, HBM 점유율, capex, 공급 과잉 전환 가능성. |
+| 8 | Quanta Services Inc. Common Stock | PWR | power grid engineering and construction | Q1 2026 자료에서 utility, generation, large-load 시장의 장기 TAM과 수요가 확인된다. | 프로젝트 실행, 인력, 밸류에이션, 대형 수주 mix. |
+| 9 | Vertiv Holdings LLC Class A Common Stock | VRT | data-center power and cooling infrastructure | Q1 2026 자료에서 데이터센터 수요와 강한 실적/가이던스가 확인된다. | 밸류에이션, 데이터센터 capex 둔화, backlog 전환, 마진 지속성. |
 
 ### A 등급: 유력 후보
 | Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
 |---:|---|---|---|---|---|
-| 10 | Advanced Micro Devices | AMD | AI GPU·CPU | 대형 고객 기반 AI GPU 대체축 | NVIDIA 격차 |
-| 11 | Sandisk | SNDK | NAND·SSD | AI 스토리지 부족 수혜 | 플래시 사이클 |
-| 12 | Astera Labs | ALAB | AI 연결 | 랙스케일 AI 연결 병목 | 고평가 |
-| 13 | Credo Technology | CRDO | 고속 연결 | AI 클러스터 연결 수요 | 고객 집중 |
-| 14 | Dell Technologies | DELL | AI 서버 | 대형 AI 서버 주문 | 마진 낮음 |
-| 15 | Penguin Solutions | PENG | AI 인프라 통합 | AI 팩토리 구축·운영 | 규모 작음 |
-| 16 | Sterling Infrastructure | STRL | 데이터센터 시공 | 데이터센터·전자 인프라 노출 | 경기 민감 |
-| 17 | Comfort Systems USA | FIX | 냉각·MEP | 데이터센터 시공 병목 | 원가 상승 |
-| 18 | IES Holdings | IESC | 전기 시공 | 전력·데이터센터 현장 노출 | 프로젝트 집중 |
-| 19 | Argan | AGX | 발전 EPC | 발전소 건설 수요 | 수주 변동 |
-| 20 | Powell Industries | POWL | 전력 장비 | 배전·스위치기어 병목 | 주문 사이클 |
-| 21 | AAON | AAON | HVAC | 고밀도 냉각 수요 | 마진 압박 |
-| 22 | Bloom Energy | BE | 온사이트 전력 | AI 데이터센터 전력 대안 | 부채·설치 지연 |
-| 23 | Rocket Lab | RKLB | 우주·방산 | 발사체와 우주 시스템 수직통합 | 적자 |
-| 24 | USA Rare Earth | USAR | 희토류·자석 | 미국 내 전략 광물 공급망 | 상업화 |
-| 25 | Lithium Americas | LAC | 리튬 | Thacker Pass 핵심광물 옵션 | 리튬 가격 |
-| 26 | NuScale Power | SMR | SMR 원전 | 원전 전력 옵션 | 경제성 검증 |
-| 27 | IREN | IREN | AI 클라우드 | 채굴 인프라의 AI 전환 | 고객 집중 |
+| 10 | Credo Technology Group Holding Ltd Ordinary Shares | CRDO | AI data-center networking / semiconductors | IR 자료에서 AI scale-out fabric과 고속 광/전기 연결 포트폴리오 확장이 확인된다. | 고객 집중, optical 전환 경쟁, 고평가, 제품 채택 주기. |
+| 11 | Monolithic Power Systems Inc. Common Stock | MPWR | power semiconductors / AI data-center components | Q1 2026 자료에서 AI와 서버 애플리케이션용 power management 매출 증가가 확인된다. | 높은 밸류에이션, 고객 집중, 재고 사이클, 엔터프라이즈 데이터 노출도 변동. |
+| 12 | Dycom Industries Inc. Common Stock | DY | communications and power-line infrastructure | FY2026 실적 자료에서 통신 인프라 시공과 대형 고객 기반이 확인된다. | 통신사 capex, 고객 집중, 인력/원가, 프로젝트 타이밍. |
+| 13 | MYR Group Inc. Common Stock | MYRG | power grid construction | Q1 2026 자료에서 전력 인프라와 상업·산업 전기 서비스가 확인된다. | 프로젝트 실행, backlog 품질, 원가, 특정 지역/고객 노출. |
+| 14 | NuScale Power Corporation Class A Common Stock | SMR | small modular nuclear power / grid capacity | 최근 IR/분기 자료에서 SMR 상용화 진행 상황과 재무 업데이트를 확인해야 하는 고베타 후보로 남는다. | 상용 매출 시점, 인허가, 프로젝트 금융, 고객 확정, 주가 변동성. |
+| 15 | Cadence Design Systems Inc. Common Stock | CDNS | EDA software / semiconductor design infrastructure | Q1 2026 자료에서 AI 관련 설계 플랫폼과 강한 수주/실적 흐름이 확인된다. | 밸류에이션, 수출 규제, 반도체 설계 사이클, 규제/합의 관련 리스크. |
+| 16 | GlobalFoundries Inc. Ordinary Shares | GFS | semiconductor foundry / strategic manufacturing | Q1 2026 자료에서 파운드리 실적과 다음 분기 가이던스가 확인된다. | 가동률, 기술 node mix, 보조금 효과, 고객 수요 변동. |
+| 17 | MasTec Inc. Common Stock | MTZ | power, pipeline, and communications construction | 최근 IR 자료에서 Q1 2026 실적과 가이던스 상향이 확인된다. | 프로젝트 mix, 실행 마진, 경기 민감도, 대형 수주 타이밍. |
+| 18 | Penguin Solutions Inc. Common Stock | PENG | AI servers / semiconductor systems | FY2026 Q2 자료에서 CXL, inference workload, AI 관련 시스템 수요가 확인된다. | 고객 집중, 서버 주문 타이밍, 마진, 메모리/부품 비용. |
+| 19 | Dell Technologies Inc. | DELL | AI servers and enterprise infrastructure | FY2026 자료에서 AI-optimized server 매출과 shipment guidance가 확인된다. | 서버 마진, 메모리 비용, 주문 visibility, 경쟁 가격. |
+| 20 | Modine Manufacturing Company Common Stock | MOD | thermal management / data-center cooling | FY2026 자료에서 데이터센터 매출 성장 전망과 capacity expansion이 확인된다. | 데이터센터 mix, capacity execution, 원자재, 밸류에이션. |
+| 21 | MACOM Technology Solutions Holdings Inc. Common Stock | MTSI | RF semiconductors / optical networking | Q2 2026 자료에서 telecom, industrial, defense, data center용 반도체 사업이 확인된다. | 수주 사이클, defense/data-center mix, 고객 집중, 밸류에이션. |
+| 22 | Powell Industries Inc. Common Stock | POWL | power infrastructure and electrical equipment | FY2026 Q2 자료에서 데이터센터 대형 주문과 전력 장비 수요가 확인된다. | 대형 프로젝트 집중, 수주 변동, 마진 지속성, 밸류에이션. |
+| 23 | Seagate Technology Holdings PLC Ordinary Shares (Ireland) | STX | data storage / AI infrastructure | FY2026 Q3 자료에서 AI 데이터 증가와 storage demand 구조 변화가 확인된다. | HDD 가격 사이클, 고객 집중, 부품/메모리 비용, 교체 수요. |
+| 24 | Applied Digital Corporation Common Stock | APLD | AI data-center infrastructure | FY2026 Q3 자료에서 hyperscaler AI 데이터센터 수요와 운영 업데이트가 확인된다. | 자금 조달, 프로젝트 실행, 고객 계약, 레버리지, 에너지 비용. |
+| 25 | Coherent Corp. Common Stock | COHR | optical components and AI data-center networking | FY2026 Q3 자료에서 AI datacenter 수요와 capacity expansion이 확인된다. | 광통신 사이클, 고객 mix, capacity 증설, 마진 회복. |
+| 26 | Alphabet Inc. Class A Common Stock | GOOGL | AI platforms / cloud data centers | Q1 2026 자료에서 Google Cloud 성장, AI R&D 비용, 대규모 capex가 확인된다. | AI monetization, capex 부담, 반독점, 광고 경기 민감도. |
+| 27 | Lumentum Holdings Inc. Common Stock | LITE | optical communications / data-center networking | Q3 FY2026 자료와 IR 설명에서 AI/cloud datacenter용 optical portfolio가 확인된다. | 고객 집중, optical cycle, 마진 회복, 경쟁. |
+| 28 | Rocket Lab Corporation | RKLB | space systems / defense aerospace | Q1 2026 자료에서 record quarterly revenue와 대형 backlog가 확인된다. | Neutron 일정, 발사 cadence, 수익성, 정부/상업 계약 mix. |
+| 29 | Vicor Corporation Common Stock | VICR | power components / AI hardware | 최근 공식 실적 자료와 Q1 관련 자료에서 AI 데이터센터 power conversion 수요를 확인할 필요가 있는 후보. | 고객 집중, 경쟁, backlog 전환, 실제 AI 매출 기여도. |
+| 30 | Ciena Corporation Common Stock | CIEN | AI infrastructure and optical networking | FY2025 연말 자료에서 AI ecosystem과 cloud/service provider 수요가 확인된다. | 통신사 capex, 공급망, 고객 order timing, 고평가. |
+| 31 | Corning Incorporated Common Stock | GLW | optical fiber / data-center connectivity | Q1 2026 자료와 최근 NVIDIA 관련 광섬유 투자 뉴스로 AI 인프라 연결성이 확인된다. | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
+| 32 | Hewlett Packard Enterprise Company Common Stock | HPE | AI servers / enterprise infrastructure | Q1 FY2026 자료에서 Cloud & AI 세그먼트와 AI systems backlog가 확인된다. | AI 서버 마진, Juniper 통합/네트워킹 경쟁, enterprise 수요. |
+| 33 | Super Micro Computer Inc. Common Stock | SMCI | AI servers / data-center hardware | FY2026 Q2 공식 자료에서 AI server 수요와 대형 고객 대응이 확인된다. | 마진 압박, 고객 집중, 회계/통제 신뢰, 수출통제·법적 이슈. |
+| 34 | Veeco Instruments Inc. Common Stock | VECO | semiconductor equipment | Q1 2026 자료에서 semiconductor process equipment와 AI 관련 수요/중국 리스크가 확인된다. | 중국 노출, capex cycle, 고객 집중, 장비 주문 변동. |
+| 35 | Applied Optoelectronics Inc. Common Stock | AAOI | optical semiconductors / data-center networking | Q1 2026 SEC 자료에서 AI를 power하는 advanced optical/HFC networking products 사업이 확… | 고객 집중, 가격, 생산능력, 데이터센터 수요 지속성. |
+| 36 | Analog Devices Inc. Common Stock | ADI | analog semiconductors and industrial electronics | Q1 FY2026 자료에서 산업·통신 중심의 전 end-market 성장과 배당 증가가 확인된다. | analog cycle, 산업 수요, 재고 정상화, 직접 AI 노출도. |
+| 37 | Argan Inc. Common Stock | AGX | power infrastructure / engineering and construction | FY2026 자료에서 power generating facilities 수요와 backlog가 확인된다. | 대형 프로젝트 집중, 실행, 고객 집중, 에너지 정책. |
+| 38 | First Solar Inc. Common Stock | FSLR | solar manufacturing / energy infrastructure | Q1 2026 SEC 자료에서 미국 PV 제조와 대규모 contracted backlog가 확인된다. | 정책 인센티브, 모듈 가격, 무역정책, backlog 전환. |
+| 39 | Intel Corporation | INTC | semiconductors / domestic foundry capacity | Q1 2026 자료에서 Intel 18A, foundry 개선, 제품 ramp가 확인된다. | foundry 손실, turnaround 실행, AI accelerator 경쟁력, capex 부담. |
+| 40 | Semtech Corporation Common Stock | SMTC | semiconductors / connectivity | FY2026 Q4 자료에서 차세대 optical/copper interconnect 포지션이 확인된다. | 부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁. |
 
 ### B 등급: 관찰 후보
-| Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
-|---:|---|---|---|---|---|
-| 28 | Intel | INTC | 반도체·파운드리 | 미국 반도체 자립 정책 옵션 | 턴어라운드 |
-| 29 | GlobalFoundries | GFS | 특수 파운드리 | 동맹권 반도체 제조 기반 | 첨단노드 한계 |
-| 30 | Arteris | AIP | 반도체 IP | SoC 복잡도 증가 수혜 | 규모 작음 |
-| 31 | Applied Optoelectronics | AAOI | 광모듈 | AI 네트워크 광연결 수요 | 고객 집중 |
-| 32 | Coherent | COHR | 광소자 | 광통신·레이저 부품 | 부채 |
-| 33 | Lumentum | LITE | 광통신 | AI 데이터센터 광부품 노출 | 통신 사이클 |
-| 34 | Monolithic Power | MPWR | 전력 반도체 | AI 서버 전력 효율 수요 | 밸류에이션 |
-| 35 | Super Micro Computer | SMCI | AI 서버 | 액체냉각 서버 수혜 | 회계·마진 |
-| 36 | Applied Digital | APLD | AI 데이터센터 | HPC 시설 전환 | 자금조달 |
-| 37 | Hut 8 | HUT | AI 인프라·채굴 | AI 데이터센터 파트너십 | 실행 리스크 |
-| 38 | Strategy | MSTR | BTC treasury | 비트코인 고노출 | 레버리지 |
-| 39 | Coinbase | COIN | crypto 인프라 | 제도권 crypto 관문 | 규제 |
-| 40 | Core Scientific | CORZ | HPC·채굴 | 전력 부지의 AI 전환 | 계약 실행 |
-| 41 | Riot Platforms | RIOT | BTC 채굴 | 대형 전력 자산 | BTC 가격 |
-| 42 | MARA Holdings | MARA | BTC·에너지 | BTC와 에너지 인프라 노출 | 채굴 수익성 |
-| 43 | CleanSpark | CLSK | BTC 채굴 | 채굴 효율성 모멘텀 | 해시가격 |
-| 44 | Fluence Energy | FLNC | 에너지 저장 | 전력망 안정화 수요 | 수익성 |
-| 45 | Redwire | RDW | 우주 인프라 | 방산·우주 시스템 | 수주 변동 |
-| 46 | Intuitive Machines | LUNR | 달 탐사 | NASA CLPS 기반 | 임무 실패 |
-| 47 | Silvercorp Metals | SVM | 은·금 | 귀금속 생산 노출 | 중국 리스크 |
-| 48 | Aya Gold & Silver | AYA | 은 | 순수 은 생산 성장 | 단일 광산 |
-| 49 | Critical Metals | CRML | 리튬·희토류 | 핵심광물 개발 옵션 | 자금·허가 |
+해당 등급 후보가 없습니다.
 
 ### C 등급: 고위험 모멘텀 후보
-| Rank | 기업명 | 티커 | 핵심 섹터/테마 | 포함 이유 | 주요 리스크 |
-|---:|---|---|---|---|---|
-| 50 | POET Technologies | POET | AI 광연결 | AI 광모듈 상업화 기대 | 검증 초기 |
-| 51 | Wolfspeed | WOLF | SiC | SiC 공급망 전략성 | 구조조정 후유증 |
-| 52 | Digi Power X | DGXX | AI 데이터센터 | 전력·채굴 전환 테마 | 검증 부족 |
-| 53 | SOL Strategies | STKE | Solana treasury | 디지털자산 treasury 모멘텀 | 고변동성 |
-| 54 | TeraWulf | WULF | HPC·채굴 | AI 데이터센터 전환 | 희석 |
-| 55 | Cipher Digital | CIFR | HPC 데이터센터 | AI 캠퍼스 임대 계약 | 대규모 CAPEX |
-| 56 | Bit Digital | BTBT | 채굴·AI | crypto와 AI 혼합 노출 | 규모 작음 |
-| 57 | American Bitcoin | ABTC | BTC treasury | 신생 BTC 고노출 | 검증 부족 |
-| 58 | The Metals Company | TMC | 심해 금속 | 장기 핵심금속 옵션 | 규제·환경 |
-| 59 | NANO Nuclear Energy | NNE | 마이크로 원전 | 원전 전력 테마 | 상업화 초기 |
-| 60 | Terrestrial Energy | IMSR | 용융염 SMR | 차세대 원전 옵션 | 장기 개발 |
-| 61 | Eagle Nuclear Energy | NUCL | 원전·우라늄 | 핵연료 테마 모멘텀 | 정보 부족 |
+해당 등급 후보가 없습니다.
 
 ## 5. 상세 분석
 
 ### S 등급
-| Rank | 기업명 / 티커 | 산업 | 주요 사업 | 관련 맥락 | 포함 이유 | 리스크 및 확인 필요 사항 | 종합 판단 |
-|---:|---|---|---|---|---|---|---|
-| 1 | NVIDIA / NVDA | AI 반도체 | GPU, 네트워킹, AI 소프트웨어 스택 | AI 공장 생산수단 | CSV 순위 563, 1개월 +19.58%. AI CAPEX가 바로 매출로 연결되는 최상위 공급자 | 수출 규제, hyperscaler 투자 둔화 | 구조적 중심 후보 |
-| 2 | Micron / MU | 메모리 | HBM, DRAM, NAND, 데이터센터 SSD | AI 메모리 병목 | CSV 순위 78, +69.50%. HBM4와 AI 스토리지 수요가 직접 연결 | 메모리 사이클, 고객 가격 협상 | 구조적 중심 후보 |
-| 3 | Vertiv / VRT | 전력·냉각 | UPS, 전력분배, 냉각, 데이터센터 인프라 | 전력 병목 | CSV 순위 496, +21.73%. 전력·냉각이 AI 데이터센터의 현실 병목 | CAPEX 둔화, 주문 정상화 | 구조적 중심 후보 |
-| 4 | Quanta Services / PWR | 전력망 시공 | 송전·배전·변전·전력 인프라 시공 | 국가 주도 인프라 | CSV 순위 317, +30.67%. 전력망 증설 실행 능력이 희소 | 프로젝트 지연, 원가 상승 | 구조적 중심 후보 |
-| 5 | Western Digital / WDC | 스토리지 | HDD 중심 데이터 저장장치 | AI 데이터 저장 병목 | CSV 순위 275, +33.49%. AI 데이터 누적으로 HDD 수요가 구조화 | 가격 반전, 증설 | 구조적 중심 후보 |
-| 6 | Seagate / STX | 스토리지 | 니어라인 HDD, 대용량 저장장치 | AI 데이터 저장 병목 | CSV 순위 144, +51.11%. AI 데이터센터 저장 수요가 실적 내러티브로 확인 | HDD 공급 사이클 | 구조적 중심 후보 |
-| 7 | Marvell / MRVL | 데이터 인프라 반도체 | 커스텀 실리콘, 광·전기 연결, DSP | AI 데이터 이동 병목 | CSV 순위 246, +35.88%. AI 클러스터 연결과 커스텀 칩 수요에 노출 | 고객 집중, 경쟁 | 구조적 중심 후보 |
-| 8 | Synopsys / SNPS | EDA | 칩 설계·검증 소프트웨어, IP | AI 칩 설계 필수 도구 | CSV 순위 493, +21.88%. 칩 복잡도와 3D 패키징 확대로 EDA 수요 증가 | 설계 투자 둔화, 통합 리스크 | 구조적 중심 후보 |
-| 9 | Cadence / CDNS | EDA·시뮬레이션 | IC 설계, 검증, 시스템 분석 | AI 칩 설계 필수 도구 | CSV 순위 544, +20.05%. AI·HPC 설계 자동화 수요와 직접 연결 | 밸류에이션 | 구조적 중심 후보 |
+
+#### 1. NVIDIA Corporation Common Stock / NVDA
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI infrastructure / GPUs / semiconductors |
+| 주요 사업 | GPU, 가속 컴퓨팅 플랫폼, 네트워킹, AI 소프트웨어 스택을 공급하는 AI 데이터센터 핵심 반도체 기업. |
+| 관련 맥락 | GPU와 네트워킹이 AI 공장 건설의 가장 직접적인 병목에 해당한다. |
+| 포함 이유 | FY2026 실적 자료에서 데이터센터 매출과 Blackwell/Rubin 기반 AI 인프라 수요가 계속 핵심 축으로 확인된다. |
+| 리스크 및 확인 필요 사항 | 밸류에이션, 중국향 수출 규제, 대형 고객 집중, AI capex 지속성. |
+| 종합 판단 | AI 인프라 사이클의 중심 공급자라 S 등급 유지. 다만 규제와 기대치가 이미 큰 후보. |
+
+#### 2. Broadcom Inc. Common Stock / AVGO
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI infrastructure / semiconductors / networking |
+| 주요 사업 | 맞춤형 AI 가속기, AI 네트워킹 반도체, 광대역/무선 반도체와 인프라 소프트웨어를 공급한다. |
+| 관련 맥락 | AI 클러스터 확장에 필요한 custom silicon과 네트워킹의 병목에 연결된다. |
+| 포함 이유 | FY2026 Q1 자료에서 AI 반도체와 네트워킹 수요가 실적 성장의 핵심으로 확인된다. |
+| 리스크 및 확인 필요 사항 | AI 고객 집중, VMware 통합, 높은 기대치, 대형 hyperscaler 발주 변동. |
+| 종합 판단 | AI 네트워크와 맞춤형 칩의 구조적 수혜가 선명해 S 등급 유지. |
+
+#### 3. Advanced Micro Devices Inc. / AMD
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI accelerators / data-center semiconductors |
+| 주요 사업 | 서버 CPU, GPU/AI 가속기, FPGA, DPU와 클라이언트/게이밍 반도체를 공급한다. |
+| 관련 맥락 | AI accelerator와 서버 CPU가 데이터센터 투자 사이클에 직접 연결된다. |
+| 포함 이유 | Q1 2026 실적 자료에서 데이터센터가 AI 인프라 수요의 핵심 성장 축으로 확인된다. |
+| 리스크 및 확인 필요 사항 | NVIDIA 대비 AI 가속기 점유율, 공급 능력, hyperscaler 채택 속도, 마진. |
+| 종합 판단 | AI compute의 2번 축 후보로 S 등급. 리스크는 경쟁 구도와 execution. |
+
+#### 4. Astera Labs Inc. / ALAB
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI data-center semiconductor connectivity |
+| 주요 사업 | AI 랙 스케일 인프라용 PCIe/CXL/Ethernet 연결 반도체와 소프트웨어를 제공한다. |
+| 관련 맥락 | AI 서버 내부와 랙 간 데이터 이동 병목을 해결하는 연결 계층이다. |
+| 포함 이유 | IR 자료에서 rack-scale AI infrastructure connectivity가 핵심 사업으로 확인된다. |
+| 리스크 및 확인 필요 사항 | 고객 집중, 높은 밸류에이션, 제품 사이클, 대형 고객 발주 타이밍. |
+| 종합 판단 | 작지만 AI 연결 병목에 매우 직접적인 S 후보. 변동성은 크다. |
+
+#### 5. Comfort Systems USA Inc. Common Stock / FIX
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI data-center mechanical and electrical construction |
+| 주요 사업 | 미국 내 기계·전기 시공, HVAC, 배관, 모듈러 시공, 서비스 사업을 수행하는 전문 시공 기업. |
+| 관련 맥락 | 데이터센터 전력·냉각·기계 설비 건설 병목에 직접 연결된다. |
+| 포함 이유 | 최근 IR 자료에서 기술/데이터센터와 모듈러 시공이 전략적 초점으로 확인된다. |
+| 리스크 및 확인 필요 사항 | 수주 구성, 노동력/원가, 데이터센터 고객 집중, 마진 정상화. |
+| 종합 판단 | AI 인프라를 실제 건설하는 물리 계층 후보라 S 등급 유지. |
+
+#### 6. Marvell Technology Inc. Common Stock / MRVL
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI data-center semiconductors / networking silicon |
+| 주요 사업 | 데이터 인프라용 반도체, custom silicon, optical DSP, networking, storage silicon을 공급한다. |
+| 관련 맥락 | AI 데이터센터의 custom silicon과 광/네트워크 연결 병목에 연결된다. |
+| 포함 이유 | 최근 IR 자료에서 AI, cloud, carrier, enterprise infrastructure용 silicon 포지션이 확인된다. |
+| 리스크 및 확인 필요 사항 | 데이터센터 매출 집중, 고객별 ramp 타이밍, 인수 통합, 마진. |
+| 종합 판단 | AI 네트워킹·custom silicon 축의 S 후보. 대형 고객 발주 변동을 주의. |
+
+#### 7. Micron Technology Inc. / MU
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI memory / data-center semiconductors |
+| 주요 사업 | DRAM, NAND, HBM, 데이터센터 SSD 등 메모리와 스토리지 반도체를 생산한다. |
+| 관련 맥락 | AI 모델 학습·추론의 메모리 대역폭과 저장장치 수요에 직접 연결된다. |
+| 포함 이유 | FY2026 Q2 자료에서 AI와 데이터센터 메모리 수요, HBM 중요성이 확인된다. |
+| 리스크 및 확인 필요 사항 | 메모리 가격 사이클, HBM 점유율, capex, 공급 과잉 전환 가능성. |
+| 종합 판단 | AI 메모리 공급 제약이 핵심인 S 후보. 사이클 변동성은 남는다. |
+
+#### 8. Quanta Services Inc. Common Stock / PWR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power grid engineering and construction |
+| 주요 사업 | 전력망, 재생에너지, 통신, 파이프라인 인프라 설계·시공·유지보수를 수행한다. |
+| 관련 맥락 | AI 데이터센터와 전기화가 만드는 전력망 확장 수요의 중심 시공사다. |
+| 포함 이유 | Q1 2026 자료에서 utility, generation, large-load 시장의 장기 TAM과 수요가 확인된다. |
+| 리스크 및 확인 필요 사항 | 프로젝트 실행, 인력, 밸류에이션, 대형 수주 mix. |
+| 종합 판단 | 전력망 병목의 대표 S 후보. 데이터센터 전력 수요와 정책 인프라 양쪽에 걸쳐 있다. |
+
+#### 9. Vertiv Holdings LLC Class A Common Stock / VRT
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | data-center power and cooling infrastructure |
+| 주요 사업 | 데이터센터 전력, 열관리, 랙, UPS, 서비스 등 critical digital infrastructure 장비를 공급한다. |
+| 관련 맥락 | AI 서버의 전력 밀도와 냉각 병목에 직접 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 데이터센터 수요와 강한 실적/가이던스가 확인된다. |
+| 리스크 및 확인 필요 사항 | 밸류에이션, 데이터센터 capex 둔화, backlog 전환, 마진 지속성. |
+| 종합 판단 | AI 데이터센터 물리 장비의 S 후보. 기대치가 높아 변동성 관리가 필요하다. |
 
 ### A 등급
-| Rank | 기업명 / 티커 | 산업 | 주요 사업 | 관련 맥락 | 포함 이유 | 리스크 및 확인 필요 사항 | 종합 판단 |
-|---:|---|---|---|---|---|---|---|
-| 10 | AMD / AMD | AI 반도체 | GPU, CPU, 데이터센터 플랫폼 | AI 계산 공급 다변화 | CSV 순위 66, +75.01%. 대형 고객 AI GPU 계약이 모멘텀 | NVIDIA 대비 생태계 격차 | 유력 후보 |
-| 11 | Sandisk / SNDK | NAND·SSD | 기업용 SSD, 플래시 스토리지 | AI 저장장치 부족 | CSV 순위 154, +49.08%. 엔터프라이즈 SSD 수요와 가격 개선 | 플래시 사이클, 급등 부담 | 유력 후보 |
-| 12 | Astera Labs / ALAB | 연결 반도체 | PCIe/CXL/Ethernet 연결 칩 | AI 랙스케일 연결 | CSV 순위 297, +32.11%. AI 연결 병목에 순수 노출 | 고객 집중, 고평가 | 유력 후보 |
-| 13 | Credo / CRDO | 고속 연결 | SerDes, 리타이머, 액티브 케이블 | AI 클러스터 연결 | CSV 순위 664, +16.63%. 전력 효율적 연결 수요 수혜 | 고객 집중 | 유력 후보 |
-| 14 | Dell / DELL | AI 서버 | 서버, 스토리지, AI Factory | AI 서버 통합 | CSV 순위 267, +34.28%. 대규모 AI 서버 주문 가시성 | 낮은 마진, 부품 의존 | 유력 후보 |
-| 15 | Penguin Solutions / PENG | AI 인프라 | AI 팩토리 설계·구축·운영 | AI 공장 운영 레이어 | CSV 순위 36, +90.09%. AI 인프라 통합 수요에 직접 노출 | 소형주, 고객 변동성 | 유력 후보 |
-| 16 | Sterling Infrastructure / STRL | 인프라 시공 | 데이터센터·전자 인프라·교통 시공 | 데이터센터 물리 공급 | CSV 순위 35, +90.74%. e-infrastructure 수요와 연결 | 건설 사이클 | 유력 후보 |
-| 17 | Comfort Systems / FIX | MEP·HVAC | 기계·전기·배관, 모듈형 시공 | 냉각·전기 시공 병목 | CSV 순위 444, +24.07%. 데이터센터 HVAC·전기 공사 수요 | 인건비, 원가 | 유력 후보 |
-| 18 | IES Holdings / IESC | 전기 시공 | 전기·기계 시스템 시공 | 전력 시공 병목 | CSV 순위 365, +27.76%. 데이터센터·산업 전기 시공 노출 | 프로젝트 집중 | 유력 후보 |
-| 19 | Argan / AGX | 발전 EPC | 발전소 EPC, 전력 프로젝트 | 전력 공급 확충 | CSV 순위 495, +21.84%. AI 전력 부족 내러티브와 연결 | 수주 변동성 | 유력 후보 |
-| 20 | Powell / POWL | 전력 장비 | 스위치기어, 전력 제어 장비 | 전력 배전 병목 | CSV 순위 389, +26.61%. 변전·배전 장비 수요 | 주문 사이클 | 유력 후보 |
-| 21 | AAON / AAON | HVAC | 상업용 냉난방·냉각 장비 | 데이터센터 냉각 | CSV 순위 159, +48.45%. 고밀도 냉각 수요에 노출 | 마진·원가 | 유력 후보 |
-| 22 | Bloom Energy / BE | 분산 전력 | 고체산화물 연료전지, 온사이트 전력 | 데이터센터 전력 대안 | CSV 순위 201, +40.85%. Oracle 등 AI 인프라 전력 파트너십 | 부채, 설치 지연 | 유력 후보 |
-| 23 | Rocket Lab / RKLB | 우주·방산 | 발사체, 위성 부품, 우주 시스템 | 패권 경쟁·우주 인프라 | CSV 순위 48, +82.91%. 발사와 우주 시스템 수직통합 | 적자, 발사 실패 | 유력 후보 |
-| 24 | USA Rare Earth / USAR | 희토류 | 희토류 금속·자석, 광산 프로젝트 | 탈중국 공급망 | CSV 순위 148, +50.09%. 미국 내 mine-to-magnet 전략성 | 상업화, 자금 | 유력 후보 |
-| 25 | Lithium Americas / LAC | 리튬 | Thacker Pass 리튬 개발 | 핵심광물 내재화 | CSV 순위 656, +16.89%. 미국 최대급 리튬 공급 옵션 | 리튬 가격, 건설 | 유력 후보 |
-| 26 | NuScale / SMR | 원전 | 소형모듈원전 설계 | AI 전력 장기 옵션 | CSV 순위 567, +19.51%. TVA·ENTRA1 관련 SMR 계획 모멘텀 | 경제성, FID | 유력 후보 |
-| 27 | IREN / IREN | AI 클라우드 | GPU 클러스터, 데이터센터, BTC 채굴 | 전력 기반 AI 전환 | CSV 순위 447, +24.00%. AI cloud 계약과 전력 자산 보유 | 레버리지, 고객 집중 | 유력 후보 |
+
+#### 10. Credo Technology Group Holding Ltd Ordinary Shares / CRDO
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI data-center networking / semiconductors |
+| 주요 사업 | AI 데이터센터용 고속 저전력 connectivity, AEC, optical DSP, SerDes, chiplet 솔루션을 공급한다. |
+| 관련 맥락 | AI 클러스터의 대역폭·전력 효율 병목에 연결된다. |
+| 포함 이유 | IR 자료에서 AI scale-out fabric과 고속 광/전기 연결 포트폴리오 확장이 확인된다. |
+| 리스크 및 확인 필요 사항 | 고객 집중, optical 전환 경쟁, 고평가, 제품 채택 주기. |
+| 종합 판단 | AI 네트워킹 순수 노출도가 높아 A 등급 상단 후보. |
+
+#### 11. Monolithic Power Systems Inc. Common Stock / MPWR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power semiconductors / AI data-center components |
+| 주요 사업 | 고성능 전력관리 반도체와 모듈을 설계·판매한다. |
+| 관련 맥락 | AI 서버와 고밀도 전자장비의 전력 변환·관리 병목에 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 AI와 서버 애플리케이션용 power management 매출 증가가 확인된다. |
+| 리스크 및 확인 필요 사항 | 높은 밸류에이션, 고객 집중, 재고 사이클, 엔터프라이즈 데이터 노출도 변동. |
+| 종합 판단 | AI 서버 전력 계층의 질 좋은 A 후보. |
+
+#### 12. Dycom Industries Inc. Common Stock / DY
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | communications and power-line infrastructure |
+| 주요 사업 | 통신망, 광섬유, 무선, 전력선 인프라 시공·유지보수를 수행한다. |
+| 관련 맥락 | AI와 클라우드 확산에 필요한 네트워크/광섬유 인프라 확장에 연결된다. |
+| 포함 이유 | FY2026 실적 자료에서 통신 인프라 시공과 대형 고객 기반이 확인된다. |
+| 리스크 및 확인 필요 사항 | 통신사 capex, 고객 집중, 인력/원가, 프로젝트 타이밍. |
+| 종합 판단 | 데이터 이동 인프라의 물리 시공 후보. AI 직접성은 전력/칩보다 낮아 A. |
+
+#### 13. MYR Group Inc. Common Stock / MYRG
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power grid construction |
+| 주요 사업 | 송배전, 전력 인프라, 상업·산업 전기 시공을 수행하는 전문 전기 인프라 기업. |
+| 관련 맥락 | 전력망 증설과 데이터센터 전기 시공 병목에 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 전력 인프라와 상업·산업 전기 서비스가 확인된다. |
+| 리스크 및 확인 필요 사항 | 프로젝트 실행, backlog 품질, 원가, 특정 지역/고객 노출. |
+| 종합 판단 | 전력망 시공 수혜가 명확한 A 후보. |
+
+#### 14. NuScale Power Corporation Class A Common Stock / SMR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | small modular nuclear power / grid capacity |
+| 주요 사업 | 소형모듈원전(SMR) 설계와 상용화를 추진하는 원전 기술 기업. |
+| 관련 맥락 | AI 데이터센터와 산업 전력 수요가 장기 원전 옵션을 다시 부각시킨다. |
+| 포함 이유 | 최근 IR/분기 자료에서 SMR 상용화 진행 상황과 재무 업데이트를 확인해야 하는 고베타 후보로 남는다. |
+| 리스크 및 확인 필요 사항 | 상용 매출 시점, 인허가, 프로젝트 금융, 고객 확정, 주가 변동성. |
+| 종합 판단 | 전력 구조 변화와 연결은 강하지만 상용화 리스크가 커 A 중 고위험 후보. |
+
+#### 15. Cadence Design Systems Inc. Common Stock / CDNS
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | EDA software / semiconductor design infrastructure |
+| 주요 사업 | 반도체 설계 자동화(EDA), IP, 시스템 설계/분석 소프트웨어를 제공한다. |
+| 관련 맥락 | AI 가속기와 custom silicon 설계 복잡도가 커질수록 EDA 수요가 커진다. |
+| 포함 이유 | Q1 2026 자료에서 AI 관련 설계 플랫폼과 강한 수주/실적 흐름이 확인된다. |
+| 리스크 및 확인 필요 사항 | 밸류에이션, 수출 규제, 반도체 설계 사이클, 규제/합의 관련 리스크. |
+| 종합 판단 | AI 칩 설계 인프라의 고품질 A 후보. |
+
+#### 16. GlobalFoundries Inc. Ordinary Shares / GFS
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | semiconductor foundry / strategic manufacturing |
+| 주요 사업 | 특수 공정 중심의 글로벌 반도체 파운드리로 자동차, 산업, 통신, 전력 반도체 등을 생산한다. |
+| 관련 맥락 | 국가 주도 반도체 공급망과 전략 제조 역량에 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 파운드리 실적과 다음 분기 가이던스가 확인된다. |
+| 리스크 및 확인 필요 사항 | 가동률, 기술 node mix, 보조금 효과, 고객 수요 변동. |
+| 종합 판단 | 최첨단 AI GPU보다는 전략 제조/공급망 성격의 A 후보. |
+
+#### 17. MasTec Inc. Common Stock / MTZ
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power, pipeline, and communications construction |
+| 주요 사업 | 전력, 재생에너지, 파이프라인, 통신 인프라 설계·시공 기업. |
+| 관련 맥락 | 전력망·통신망·에너지 인프라 증설이라는 국가 주도 투자 흐름에 연결된다. |
+| 포함 이유 | 최근 IR 자료에서 Q1 2026 실적과 가이던스 상향이 확인된다. |
+| 리스크 및 확인 필요 사항 | 프로젝트 mix, 실행 마진, 경기 민감도, 대형 수주 타이밍. |
+| 종합 판단 | 물리 인프라 capex의 광범위한 A 후보. |
+
+#### 18. Penguin Solutions Inc. Common Stock / PENG
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI servers / semiconductor systems |
+| 주요 사업 | AI/HPC 서버, integrated memory, CXL 기반 솔루션, 고가용성 엔터프라이즈 시스템을 제공한다. |
+| 관련 맥락 | AI 추론과 고성능 컴퓨팅 인프라 구축에 연결된다. |
+| 포함 이유 | FY2026 Q2 자료에서 CXL, inference workload, AI 관련 시스템 수요가 확인된다. |
+| 리스크 및 확인 필요 사항 | 고객 집중, 서버 주문 타이밍, 마진, 메모리/부품 비용. |
+| 종합 판단 | AI 서버 시스템 노출이 직접적인 A 후보. |
+
+#### 19. Dell Technologies Inc. / DELL
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI servers and enterprise infrastructure |
+| 주요 사업 | 서버, 스토리지, 네트워킹, PC, 서비스와 AI Factory 인프라를 공급한다. |
+| 관련 맥락 | AI 서버 출하와 enterprise AI 인프라 구축의 대형 공급자다. |
+| 포함 이유 | FY2026 자료에서 AI-optimized server 매출과 shipment guidance가 확인된다. |
+| 리스크 및 확인 필요 사항 | 서버 마진, 메모리 비용, 주문 visibility, 경쟁 가격. |
+| 종합 판단 | AI 서버 물량 노출은 강하지만 마진 질 확인이 필요한 A 후보. |
+
+#### 20. Modine Manufacturing Company Common Stock / MOD
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | thermal management / data-center cooling |
+| 주요 사업 | 데이터센터 냉각, 열관리, HVAC, 산업용 열교환 솔루션을 공급한다. |
+| 관련 맥락 | AI 서버 고밀도화가 냉각과 열관리 투자를 밀어올린다. |
+| 포함 이유 | FY2026 자료에서 데이터센터 매출 성장 전망과 capacity expansion이 확인된다. |
+| 리스크 및 확인 필요 사항 | 데이터센터 mix, capacity execution, 원자재, 밸류에이션. |
+| 종합 판단 | AI 냉각 병목의 명확한 A 후보. |
+
+#### 21. MACOM Technology Solutions Holdings Inc. Common Stock / MTSI
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | RF semiconductors / optical networking |
+| 주요 사업 | RF, microwave, millimeter-wave, optical, data-center, defense용 고성능 반도체를 설계·제조한다. |
+| 관련 맥락 | 데이터센터 광연결과 방산/통신 전자장비 공급망에 연결된다. |
+| 포함 이유 | Q2 2026 자료에서 telecom, industrial, defense, data center용 반도체 사업이 확인된다. |
+| 리스크 및 확인 필요 사항 | 수주 사이클, defense/data-center mix, 고객 집중, 밸류에이션. |
+| 종합 판단 | AI 네트워킹과 방산 반도체가 겹치는 A 후보. |
+
+#### 22. Powell Industries Inc. Common Stock / POWL
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power infrastructure and electrical equipment |
+| 주요 사업 | 전력 배전, switchgear, 통합 전기 장비와 전력 제어 시스템을 공급한다. |
+| 관련 맥락 | 데이터센터 전력 분배와 산업 전력 인프라 증설에 직접 연결된다. |
+| 포함 이유 | FY2026 Q2 자료에서 데이터센터 대형 주문과 전력 장비 수요가 확인된다. |
+| 리스크 및 확인 필요 사항 | 대형 프로젝트 집중, 수주 변동, 마진 지속성, 밸류에이션. |
+| 종합 판단 | 전력 장비 병목의 직접 후보로 A 등급. |
+
+#### 23. Seagate Technology Holdings PLC Ordinary Shares (Ireland) / STX
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | data storage / AI infrastructure |
+| 주요 사업 | 대용량 HDD와 데이터 저장장치를 공급하는 mass-capacity storage 기업. |
+| 관련 맥락 | AI 데이터 생성과 보관 수요가 데이터센터 저장장치 수요를 키운다. |
+| 포함 이유 | FY2026 Q3 자료에서 AI 데이터 증가와 storage demand 구조 변화가 확인된다. |
+| 리스크 및 확인 필요 사항 | HDD 가격 사이클, 고객 집중, 부품/메모리 비용, 교체 수요. |
+| 종합 판단 | AI 인프라 중 저장장치 병목에 노출된 A 후보. |
+
+#### 24. Applied Digital Corporation Common Stock / APLD
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI data-center infrastructure |
+| 주요 사업 | AI, cloud, networking, blockchain workload용 고성능 데이터센터를 설계·건설·운영한다. |
+| 관련 맥락 | AI compute capacity 부족과 데이터센터 전력/부지 수요에 연결된다. |
+| 포함 이유 | FY2026 Q3 자료에서 hyperscaler AI 데이터센터 수요와 운영 업데이트가 확인된다. |
+| 리스크 및 확인 필요 사항 | 자금 조달, 프로젝트 실행, 고객 계약, 레버리지, 에너지 비용. |
+| 종합 판단 | AI 데이터센터 순수 노출은 크지만 재무/실행 리스크가 큰 A 후보. |
+
+#### 25. Coherent Corp. Common Stock / COHR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | optical components and AI data-center networking |
+| 주요 사업 | 레이저, 광소자, transceiver, photonics, compound semiconductor 소재/부품을 공급한다. |
+| 관련 맥락 | AI 데이터센터 네트워킹의 광연결·레이저 병목에 연결된다. |
+| 포함 이유 | FY2026 Q3 자료에서 AI datacenter 수요와 capacity expansion이 확인된다. |
+| 리스크 및 확인 필요 사항 | 광통신 사이클, 고객 mix, capacity 증설, 마진 회복. |
+| 종합 판단 | 광연결 병목에 직접적인 A 후보. |
+
+#### 26. Alphabet Inc. Class A Common Stock / GOOGL
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI platforms / cloud data centers |
+| 주요 사업 | Google Search, YouTube, Google Cloud, TPU, AI 모델/서비스와 데이터센터를 운영한다. |
+| 관련 맥락 | AI 모델, 클라우드, 자체 칩, 데이터센터 capex가 한 회사 안에 결합돼 있다. |
+| 포함 이유 | Q1 2026 자료에서 Google Cloud 성장, AI R&D 비용, 대규모 capex가 확인된다. |
+| 리스크 및 확인 필요 사항 | AI monetization, capex 부담, 반독점, 광고 경기 민감도. |
+| 종합 판단 | AI 인프라와 플랫폼을 동시에 가진 A 후보. 규제와 capex 효율이 관건. |
+
+#### 27. Lumentum Holdings Inc. Common Stock / LITE
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | optical communications / data-center networking |
+| 주요 사업 | 광통신 레이저, 모듈, optical subsystems와 photonics 기술을 공급한다. |
+| 관련 맥락 | AI 데이터센터의 고속 광연결과 cloud networking에 연결된다. |
+| 포함 이유 | Q3 FY2026 자료와 IR 설명에서 AI/cloud datacenter용 optical portfolio가 확인된다. |
+| 리스크 및 확인 필요 사항 | 고객 집중, optical cycle, 마진 회복, 경쟁. |
+| 종합 판단 | 광통신 AI 병목의 A 후보. |
+
+#### 28. Rocket Lab Corporation / RKLB
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | space systems / defense aerospace |
+| 주요 사업 | Electron 발사 서비스, 우주 시스템, 위성 부품, Neutron 개발을 수행한다. |
+| 관련 맥락 | 국가 주도 우주·방산·통신 인프라와 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 record quarterly revenue와 대형 backlog가 확인된다. |
+| 리스크 및 확인 필요 사항 | Neutron 일정, 발사 cadence, 수익성, 정부/상업 계약 mix. |
+| 종합 판단 | 우주 인프라/방산 축의 A 후보. 기술 실행 리스크는 높다. |
+
+#### 29. Vicor Corporation Common Stock / VICR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power components / AI hardware |
+| 주요 사업 | 고밀도 전력 변환 모듈과 power delivery 솔루션을 제공한다. |
+| 관련 맥락 | AI 서버의 전력 효율과 고밀도 전력 공급 문제에 연결된다. |
+| 포함 이유 | 최근 공식 실적 자료와 Q1 관련 자료에서 AI 데이터센터 power conversion 수요를 확인할 필요가 있는 후보. |
+| 리스크 및 확인 필요 사항 | 고객 집중, 경쟁, backlog 전환, 실제 AI 매출 기여도. |
+| 종합 판단 | 전력 부품 순수 노출은 매력적이나 확인 필요가 많은 A 후보. |
+
+#### 30. Ciena Corporation Common Stock / CIEN
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI infrastructure and optical networking |
+| 주요 사업 | 광전송 장비, coherent optics, switching/routing, 네트워크 자동화 소프트웨어를 제공한다. |
+| 관련 맥락 | AI 데이터센터와 cloud interconnect의 고속 네트워크 확장에 연결된다. |
+| 포함 이유 | FY2025 연말 자료에서 AI ecosystem과 cloud/service provider 수요가 확인된다. |
+| 리스크 및 확인 필요 사항 | 통신사 capex, 공급망, 고객 order timing, 고평가. |
+| 종합 판단 | AI 시대 광네트워크 장비의 A 후보. |
+
+#### 31. Corning Incorporated Common Stock / GLW
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | optical fiber / data-center connectivity |
+| 주요 사업 | 광섬유, 디스플레이 유리, 특수유리, 세라믹, 생명과학 소재를 생산한다. |
+| 관련 맥락 | AI 데이터센터 간 대규모 광연결과 국내 광섬유 생산 확대에 연결된다. |
+| 포함 이유 | Q1 2026 자료와 최근 NVIDIA 관련 광섬유 투자 뉴스로 AI 인프라 연결성이 확인된다. |
+| 리스크 및 확인 필요 사항 | 세그먼트 mix, 가격, capex, 광통신 수요 지속성. |
+| 종합 판단 | 광섬유/소재 기반의 비교적 방어적인 A 후보. |
+
+#### 32. Hewlett Packard Enterprise Company Common Stock / HPE
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI servers / enterprise infrastructure |
+| 주요 사업 | 서버, 스토리지, networking, hybrid cloud, AI systems와 서비스를 제공한다. |
+| 관련 맥락 | enterprise AI 서버와 네트워크 인프라 구축에 연결된다. |
+| 포함 이유 | Q1 FY2026 자료에서 Cloud & AI 세그먼트와 AI systems backlog가 확인된다. |
+| 리스크 및 확인 필요 사항 | AI 서버 마진, Juniper 통합/네트워킹 경쟁, enterprise 수요. |
+| 종합 판단 | AI 인프라 하드웨어 후보이나 품질은 Dell/전문 공급자 대비 더 확인 필요. |
+
+#### 33. Super Micro Computer Inc. Common Stock / SMCI
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | AI servers / data-center hardware |
+| 주요 사업 | AI 서버, GPU 서버, 스토리지, liquid cooling, rack-scale 데이터센터 솔루션을 공급한다. |
+| 관련 맥락 | GPU 클러스터와 AI 서버 구축의 직접 공급망이다. |
+| 포함 이유 | FY2026 Q2 공식 자료에서 AI server 수요와 대형 고객 대응이 확인된다. |
+| 리스크 및 확인 필요 사항 | 마진 압박, 고객 집중, 회계/통제 신뢰, 수출통제·법적 이슈. |
+| 종합 판단 | AI 서버 직접 노출은 매우 크지만 리스크가 커 A 하단 후보. |
+
+#### 34. Veeco Instruments Inc. Common Stock / VECO
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | semiconductor equipment |
+| 주요 사업 | 반도체, compound semiconductor, photonics, power electronics 공정 장비를 제조한다. |
+| 관련 맥락 | AI 반도체와 photonics 생산능력 확장에 필요한 장비 계층이다. |
+| 포함 이유 | Q1 2026 자료에서 semiconductor process equipment와 AI 관련 수요/중국 리스크가 확인된다. |
+| 리스크 및 확인 필요 사항 | 중국 노출, capex cycle, 고객 집중, 장비 주문 변동. |
+| 종합 판단 | 반도체 장비 supply-chain A 후보. |
+
+#### 35. Applied Optoelectronics Inc. Common Stock / AAOI
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | optical semiconductors / data-center networking |
+| 주요 사업 | 데이터센터, CATV, telecom, FTTH용 광모듈과 광네트워킹 제품을 공급한다. |
+| 관련 맥락 | AI 데이터센터의 optical networking 확장에 연결된다. |
+| 포함 이유 | Q1 2026 SEC 자료에서 AI를 power하는 advanced optical/HFC networking products 사업이 확인된다. |
+| 리스크 및 확인 필요 사항 | 고객 집중, 가격, 생산능력, 데이터센터 수요 지속성. |
+| 종합 판단 | 광모듈 순수 노출은 크지만 변동성이 큰 A 후보. |
+
+#### 36. Analog Devices Inc. Common Stock / ADI
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | analog semiconductors and industrial electronics |
+| 주요 사업 | 아날로그, mixed-signal, power management, RF, sensor 반도체를 공급한다. |
+| 관련 맥락 | 산업, 통신, 전력관리, 자동화 인프라의 반도체 기반을 제공한다. |
+| 포함 이유 | Q1 FY2026 자료에서 산업·통신 중심의 전 end-market 성장과 배당 증가가 확인된다. |
+| 리스크 및 확인 필요 사항 | analog cycle, 산업 수요, 재고 정상화, 직접 AI 노출도. |
+| 종합 판단 | 품질은 높지만 AI 순수 노출은 낮아 A 하단 후보. |
+
+#### 37. Argan Inc. Common Stock / AGX
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | power infrastructure / engineering and construction |
+| 주요 사업 | 가스화력 등 대형 발전소와 에너지 인프라 EPC를 수행한다. |
+| 관련 맥락 | AI 데이터센터 전력 수요가 안정적인 발전 설비 투자로 이어질 수 있다. |
+| 포함 이유 | FY2026 자료에서 power generating facilities 수요와 backlog가 확인된다. |
+| 리스크 및 확인 필요 사항 | 대형 프로젝트 집중, 실행, 고객 집중, 에너지 정책. |
+| 종합 판단 | 전력 공급 병목의 EPC 후보. cyclicality와 project risk가 핵심. |
+
+#### 38. First Solar Inc. Common Stock / FSLR
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | solar manufacturing / energy infrastructure |
+| 주요 사업 | 미국 중심의 박막 태양광 모듈 제조와 유틸리티급 태양광 공급을 수행한다. |
+| 관련 맥락 | 국내 에너지 제조, 전력 수요, 산업정책과 연결된다. |
+| 포함 이유 | Q1 2026 SEC 자료에서 미국 PV 제조와 대규모 contracted backlog가 확인된다. |
+| 리스크 및 확인 필요 사항 | 정책 인센티브, 모듈 가격, 무역정책, backlog 전환. |
+| 종합 판단 | 국가 주도 에너지 제조의 A 후보. 정책 민감도가 높다. |
+
+#### 39. Intel Corporation / INTC
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | semiconductors / domestic foundry capacity |
+| 주요 사업 | CPU, 데이터센터 제품, AI PC, 반도체 제조, foundry와 advanced packaging을 추진한다. |
+| 관련 맥락 | 미국 내 반도체 제조와 foundry 역량이라는 국가전략 공급망에 연결된다. |
+| 포함 이유 | Q1 2026 자료에서 Intel 18A, foundry 개선, 제품 ramp가 확인된다. |
+| 리스크 및 확인 필요 사항 | foundry 손실, turnaround 실행, AI accelerator 경쟁력, capex 부담. |
+| 종합 판단 | 전략성은 크지만 실적 전환 리스크가 커 A 하단 후보. |
+
+#### 40. Semtech Corporation Common Stock / SMTC
+
+| 항목 | 내용 |
+|---|---|
+| 산업 | semiconductors / connectivity |
+| 주요 사업 | data center networking, IoT, cellular infrastructure용 고성능 반도체와 연결 솔루션을 제공한다. |
+| 관련 맥락 | 800G/1.6T/3.2T 시대의 광·동 interconnect와 데이터센터 네트워킹에 연결된다. |
+| 포함 이유 | FY2026 Q4 자료에서 차세대 optical/copper interconnect 포지션이 확인된다. |
+| 리스크 및 확인 필요 사항 | 부채, 매출 mix, 광/데이터센터 매출 비중, 경쟁. |
+| 종합 판단 | AI 네트워킹 보조 후보로 A 하단 유지. |
 
 ### B 등급
-| Rank | 기업명 / 티커 | 산업 | 주요 사업 | 관련 맥락 | 포함 이유 | 리스크 및 확인 필요 사항 | 종합 판단 |
-|---:|---|---|---|---|---|---|---|
-| 28 | Intel / INTC | 반도체 | CPU, 파운드리, 패키징 | 미국 반도체 자립 | CSV 순위 49, +82.84%. 정책 옵션과 패키징/파운드리 모멘텀 | 실행 실패 가능성 | 관찰 후보 |
-| 29 | GlobalFoundries / GFS | 파운드리 | 특수공정, RF, 자동차·산업 칩 | 동맹권 제조 기반 | CSV 순위 137, +52.37%. 첨단보다 공급망 안정성 테마 | 첨단노드 부재 | 관찰 후보 |
-| 30 | Arteris / AIP | 반도체 IP | NoC, SoC 연결 IP | 칩 복잡도 증가 | CSV 순위 45, +84.43%. AI SoC 설계 복잡도 수혜 | 규모 작음 | 관찰 후보 |
-| 31 | Applied Optoelectronics / AAOI | 광통신 | 데이터센터 광모듈 | AI 네트워크 | CSV 순위 203, +40.67%. 광연결 병목 수혜 | 고객 집중 | 관찰 후보 |
-| 32 | Coherent / COHR | 광소자 | 레이저, 광부품, 소재 | AI 광연결 | CSV 순위 349, +28.95%. 광통신 부품 노출 | 부채, 사이클 | 관찰 후보 |
-| 33 | Lumentum / LITE | 광통신 | 광부품, 레이저 | AI 광연결 | CSV 순위 616, +18.18%. 데이터센터 광부품 수요 | 통신 업황 | 관찰 후보 |
-| 34 | Monolithic Power / MPWR | 전력 반도체 | 전력관리 IC | AI 서버 전력 효율 | CSV 순위 606, +18.35%. 고전력 AI 서버의 전력 효율 수혜 | 고평가 | 관찰 후보 |
-| 35 | Super Micro / SMCI | AI 서버 | 서버, 액체냉각, 랙솔루션 | AI 서버 구축 | CSV 순위 549, +19.98%. AI 서버 수요에 직접 노출 | 회계, 마진 | 관찰 후보 |
-| 36 | Applied Digital / APLD | 데이터센터 | HPC·AI 데이터센터 개발 | 채굴 인프라 전환 | CSV 순위 160, +48.33%. AI 데이터센터 프로젝트 모멘텀 | 자금조달 | 관찰 후보 |
-| 37 | Hut 8 / HUT | 채굴·AI 인프라 | BTC 채굴, 데이터센터 개발 | BTC와 AI 전력 | CSV 순위 141, +51.84%. AI 인프라 파트너십 보유 | 실행·희석 | 관찰 후보 |
-| 38 | Strategy / MSTR | BTC treasury | 대규모 비트코인 보유 | 경화자산 대체 | CSV 순위 210, +39.30%. BTC에 대한 상장 레버리지 | 부채·프리미엄 | 관찰 후보 |
-| 39 | Coinbase / COIN | crypto 인프라 | 거래, 보관, 스테이블코인, 기관 서비스 | 제도권 crypto 관문 | CSV 순위 605, +18.36%. crypto 제도화 수혜 | 규제·거래량 | 관찰 후보 |
-| 40 | Core Scientific / CORZ | HPC·채굴 | 데이터센터, 채굴, AI 인프라 | 전력 부지 전환 | CSV 순위 273, +33.67%. 채굴 부지의 AI 전환 | 계약 실행 | 관찰 후보 |
-| 41 | Riot Platforms / RIOT | BTC 채굴 | 대형 채굴·전력 인프라 | BTC 경화자산 | CSV 순위 234, +36.76%. BTC 상승 레버리지 | 채굴 난이도 | 관찰 후보 |
-| 42 | MARA / MARA | BTC·에너지 | 채굴, 에너지 최적화 | BTC와 전력 인프라 | CSV 순위 371, +27.63%. BTC와 에너지 인프라 동시 노출 | 채굴 수익성 | 관찰 후보 |
-| 43 | CleanSpark / CLSK | BTC 채굴 | 미국 기반 채굴 | BTC 경화자산 | CSV 순위 445, +24.05%. 효율적 채굴 노출 | 해시가격 | 관찰 후보 |
-| 44 | Fluence / FLNC | 에너지 저장 | 배터리 저장장치, 전력망 소프트웨어 | 전력망 안정화 | CSV 순위 183, +44.46%. AI 전력 수요가 저장장치 필요성 확대 | 수익성 | 관찰 후보 |
-| 45 | Redwire / RDW | 우주·방산 | 우주 인프라, 센서, 자율 시스템 | 우주 공급망 | CSV 순위 179, +45.06%. 우주·방산 기술 공급망 노출 | 수주 변동 | 관찰 후보 |
-| 46 | Intuitive Machines / LUNR | 우주 서비스 | 달 착륙선, NASA CLPS, 우주 데이터 | 국가 우주 인프라 | CSV 순위 117, +55.72%. NASA 계약 모멘텀 | 임무 실패 | 관찰 후보 |
-| 47 | Silvercorp / SVM | 귀금속 | 은·금 광산 | 경화자산 생산 | CSV 순위 498, +21.69%. 은 가격 상승 레버리지 | 중국 노출 | 관찰 후보 |
-| 48 | Aya Gold & Silver / AYA | 은 광산 | 모로코 은 생산·탐사 | 경화자산 생산 | CSV 순위 619, +18.11%. 순수 은 생산 성장성 | 단일 지역 | 관찰 후보 |
-| 49 | Critical Metals / CRML | 핵심광물 | 리튬·희토류 프로젝트 | 공급망 탈중국 | CSV 순위 259, +34.81%. 전략 광물 개발 옵션 | 개발·자금 | 관찰 후보 |
+
+해당 등급 후보가 없습니다.
 
 ### C 등급
-| Rank | 기업명 / 티커 | 산업 | 주요 사업 | 관련 맥락 | 포함 이유 | 리스크 및 확인 필요 사항 | 종합 판단 |
-|---:|---|---|---|---|---|---|---|
-| 50 | POET Technologies / POET | 광반도체 | 광학 인터포저, AI 광모듈 | AI 광연결 병목 | CSV 순위 7, +199.03%. 테마 적합성은 강함 | 상업화 초기 | 고위험 모멘텀 |
-| 51 | Wolfspeed / WOLF | SiC 반도체 | SiC 소재·전력반도체 | 전력 효율·전기화 | CSV 순위 8, +194.63%. SiC 전략성은 있으나 구조조정 후 리스크 큼 | 재무 안정성 | 고위험 모멘텀 |
-| 52 | Digi Power X / DGXX | 디지털 전력 | AI 데이터센터, 채굴, 전력 | AI 전력 전환 | CSV 순위 13, +159.64%. 급등 모멘텀은 강하나 검증 제한 | 유동성·검증 | 고위험 모멘텀 |
-| 53 | SOL Strategies / STKE | 디지털자산 | SOL treasury, validator | crypto 대체자산 | CSV 순위 21, +120.83%. 디지털자산 노출은 있으나 BTC와 성격 다름 | 토큰 집중 | 고위험 모멘텀 |
-| 54 | TeraWulf / WULF | HPC·채굴 | 데이터센터, 채굴, HPC 전환 | 전력 부지 AI 전환 | CSV 순위 716, +15.51%. AI/HPC 전환 스토리 보유 | 희석, CAPEX | 고위험 모멘텀 |
-| 55 | Cipher Digital / CIFR | HPC 데이터센터 | AI 캠퍼스, 채굴 | 전력 부지 AI 전환 | CSV 순위 575, +19.21%. HPC 임대 계약 모멘텀 | 대규모 자금조달 | 고위험 모멘텀 |
-| 56 | Bit Digital / BTBT | 채굴·AI | BTC 채굴, AI 인프라 | BTC와 AI 혼합 | CSV 순위 224, +37.74%. 테마는 맞지만 해자 약함 | 규모·수익성 | 고위험 모멘텀 |
-| 57 | American Bitcoin / ABTC | BTC treasury | 채굴, BTC 축적 | 경화자산 노출 | CSV 순위 706, +15.73%. BTC 직접 노출 | 신생 상장, 정치성 | 고위험 모멘텀 |
-| 58 | The Metals Company / TMC | 심해 금속 | 해저 다금속 단괴 개발 | 핵심금속 장기 옵션 | CSV 순위 479, +22.46%. 공급망 옵션성은 있으나 규제 불확실성 큼 | 환경·인허가 | 고위험 모멘텀 |
-| 59 | NANO Nuclear / NNE | 원전 | 마이크로 모듈 원전 개발 | AI 전력 장기 옵션 | CSV 순위 647, +17.30%. 원전 테마는 강하나 상업화 전 | 기술·허가 | 고위험 모멘텀 |
-| 60 | Terrestrial Energy / IMSR | 차세대 원전 | 용융염 SMR 개발 | 장기 전력 옵션 | CSV 순위 631, +17.87%. 차세대 원전 옵션 | 장기 개발 | 고위험 모멘텀 |
-| 61 | Eagle Nuclear Energy / NUCL | 원전·우라늄 | 원전·핵연료 관련 자산 | 전력·핵연료 테마 | CSV 순위 398, +26.05%. 원전 테마 모멘텀 | 공개 정보·유동성 제한 | 고위험 모멘텀 |
+
+해당 등급 후보가 없습니다.
 
 ## 6. 주요 확인 자료
 
-- 입력 스캔 결과: `Stock_Results/2026-05-15_Scan_Result_Top5000.csv`
-- NVIDIA FY2026 실적 및 AI 인프라 업데이트: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/
-- Micron HBM4·AI 데이터센터 메모리 자료: https://investors.micron.com/news-releases/news-release-details/micron-high-volume-production-hbm4-designed-nvidia-vera-rubin
-- AMD-Meta 6GW AI GPU 파트너십: https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
-- Vertiv 데이터센터 전력·냉각 협력: https://investors.vertiv.com/news/news-details/2026/Vertiv-and-Generate-Capital-Collaborate-to-Accelerate-Data-Center-Capacity-with-Complete-Power-and-Cooling-Infrastructure/
-- Quanta Services 전력 인프라 자료: https://investors.quantaservices.com/news-events/press-releases/detail/390/quanta-services-reports-fourth-quarter-and-full-year-2025-results/
-- Western Digital FY2026 Q3 및 AI 스토리지: https://www.westerndigital.com/en-ca/company/newsroom/press-releases/2026/2026-04-30-wd-reports-fiscal-third-quarter-2026-financial-results
-- Seagate FY2026 Q3 및 AI 저장 수요: https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx
-- Sandisk FY2026 Q3 자료: https://www.sandisk.com/company/newsroom/press-releases/2026/2026-04-30-sandisk-reports-fiscal-third-quarter-2026-financial-results
-- Marvell AI 데이터센터 연결·커스텀 실리콘 자료: https://www.marvell.com/company/newsroom.html
-- Astera Labs FY2026 Q1 자료: https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-first-quarter-2026-financial-results
-- Credo 224G AI scale-up retimer 자료: https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Introduces-Industrys-First-224G-Multiprotocol-AI-Scale-Up-Retimer-Supporting-UALink-ESUN-and-Ethernet/default.aspx
-- Synopsys-TSMC AI 시스템 설계 자료: https://investor.synopsys.com/news/news-details/2026/Synopsys-Partners-with-TSMC-to-Power-Next-Generation-AI-Systems-with-Silicon-Proven-IP-and-Certified-EDA-Flows/default.aspx
-- Cadence 2026 Q1 및 AI EDA 자료: https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx
-- Dell AI 서버 주문 관련 자료: https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2025~11~dell-technologies-delivers-third-quarter-fiscal-2026-financial-results.htm
-- Penguin Solutions AI 인프라 자료: https://www.penguinsolutions.com/
-- Bloom Energy AI 데이터센터 전력 파트너십: https://www.bloomenergy.com/news/bloom-energy-and-oracle-expand-strategic-partnership-to-deploy-up-to-2-8-gw-to-accelerate-ai-infrastructure-build-out/
-- Rocket Lab Space Force 자료: https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-and-raytheon-selected-demonstrate-advanced
-- Redwire 투자자 자료: https://ir.redwirespace.com/
-- Intuitive Machines NASA CLPS 수주 자료: https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-expands-lunar-surface-operations-1804-million
-- USA Rare Earth Q1 2026 자료: https://www.globenewswire.com/news-release/2026/05/13/3294467/0/en/usa-rare-earth-reports-first-quarter-2026-financial-results.html
-- Lithium Americas Thacker Pass Q1 2026 자료: https://lithiumamericas.com/news/news-details/2026/Lithium-Americas-Reports-First-Quarter-2026-Results/default.aspx
-- DOE Thacker Pass loan 자료: https://www.energy.gov/edf/thacker-pass
-- NuScale Power Q1 2026 자료: https://www.nuscalepower.com/press-releases/2026/nuscale-power-reports-first-quarter-2026-results
-- IREN Q3 FY26 AI Cloud 자료: https://iren.gcs-web.com/news-releases/news-release-details/iren-business-update-and-q3-fy26-results
-- Hut 8 AI infrastructure partnership 자료: https://canada.hut8.com/resources/press-releases/hut-8-announces-ai-infrastructure-partnership-with-anthropic-and-fluidstack
-- Strategy Q1 2026 SEC 자료: https://www.sec.gov/Archives/edgar/data/1050446/000105044626000024/mstr-20260505x8kxex991.htm
-- Coinbase Q1 2026 자료: https://investor.coinbase.com/news/news-details/2026/Coinbase-Q1-Financial-Results-Show-Resilient-Financial-Performance-Driven-by-New-All-Time-High-Crypto-Trading-Volume-Market-Share/default.aspx
-- TeraWulf 투자자 자료: https://investors.terawulf.com/
-- Cipher Digital HPC 자료: https://investors.cipherdigital.com/news-events/press-releases/
-- The Metals Company 자료: https://investors.metals.co/news-events/press-releases/
-- NANO Nuclear Q1 FY2026 자료: https://ir.nanonuclearenergy.com/news-releases/news-release-details/nano-nuclear-reports-q1-fy-2026-financial-results-and-provides
-- Terrestrial Energy Nasdaq 상장 및 IMSR 자료: https://www.nasdaq.com/press-release/terrestrial-energy-inc-begins-trading-nasdaq-stock-market-2025-10-29
-- Silvercorp Metals 전략 자료: https://silvercorpmetals.com/strategy/
-- Aya Gold & Silver Q1 2026 자료: https://www.ayagoldsilver.com/news/news-releases/aya-gold--silver-reports-q1-2026-results-with-record-revenue-and-cash-flow
-- Critical Metals 2026 자료: https://www.criticalmetalscorp.com/critical-metals-to-acquire-european-lithium/
+- NVIDIA FY2026 Q4/FY results: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/
+- Broadcom FY2026 Q1 results: https://investors.broadcom.com/node/63976/pdf
+- AMD Q1 2026 results: https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results
+- Astera Labs IR / Q1 2026 materials: https://ir.asteralabs.com/
+- Comfort Systems USA IR: https://investors.comfortsystemsusa.com/
+- Marvell IR overview: https://investor.marvell.com/overview?src=responsive-sub
+- Micron Q2 FY2026 results: https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-results-second-quarter-fiscal-2026
+- Quanta Services Q1 2026 results: https://investors.quantaservices.com/news-events/press-releases/detail/396/quanta-services-reports-first-quarter-2026-results
+- Vertiv Q1 2026 results: https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-First-Quarter-with-Diluted-EPS-Growth-of-136-Adjusted-Diluted-EPS-Growth-of-83-Raises-Full-Year-Guidance/default.aspx
+- Credo Technology IR: https://investors.credosemi.com/
+- Monolithic Power Systems Q1 2026 results: https://www.nasdaq.com/press-release/monolithic-power-systems-reports-first-quarter-results-april-30-2026-2026-04-30
+- Dycom FY2026 results: https://www.nasdaq.com/press-release/dycom-industries-inc-reports-fiscal-2026-fourth-quarter-and-annual-results-and
+- MYR Group Q1 2026 results: https://www.globenewswire.com/news-release/2026/04/29/3284266/10748/en/MYR-Group-Inc-Announces-First-Quarter-2026-Results.html
+- NuScale quarterly results page: https://www.nuscalepower.com/en/investors/financials/quarterly-results
+- Cadence Q1 2026 results: https://investor.cadence.com/news/news-details/2026/Cadence-Reports-First-Quarter-2026-Financial-Results/default.aspx
+- GlobalFoundries Q1 2026 results: https://www.globenewswire.com/news-release/2026/05/05/3287493/0/en/globalfoundries-reports-first-quarter-2026-financial-results.html
+- MasTec IR: https://investors.mastec.com/
+- Penguin Solutions Q2 FY2026 prepared remarks: https://s204.q4cdn.com/917347554/files/doc_financials/2026/q2/PENG-Q2-FY26-Earnings-Call-Prepared-Remarks-for-posting-_4-1-26_Final.pdf
+- Dell FY2026 Q4/full-year results: https://www.dell.com/en-us/dt/corporate/newsroom/announcements/detailpage.press-releases~usa~2026~2~dell-technologies-delivers-fourth-quarter-and-full-year-fiscal-2026-results.htm
+- Modine Q3 FY2026 results: https://investors.modine.com/news/news-details/2026/Modine-Reports-Third-Quarter-Fiscal-2026-Results/default.aspx
+- MACOM Q2 FY2026 results: https://ir.macom.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results
+- Powell Industries Q2 FY2026 results: https://www.nasdaq.com/press-release/powell-industries-announces-second-quarter-fiscal-2026-results-2026-05-04
+- Seagate Q3 FY2026 results: https://investors.seagate.com/news/news-details/2026/Seagate-Technology-Reports-Fiscal-Third-Quarter-2026-Financial-Results/
+- Applied Digital Q3 FY2026 results: https://ir.applieddigital.com/news-events/press-releases/detail/148/applied-digital-reports-fiscal-third-quarter-2026-results
+- Coherent Q3 FY2026 results: https://www.coherent.com/news/press-releases/third-quarter-fiscal-year-2026-results
+- Alphabet Q1 2026 earnings release: https://s206.q4cdn.com/479360582/files/doc_financials/2026/q1/2026q1-alphabet-earnings-release.pdf
+- Lumentum Q3 FY2026 results: https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Third-Quarter-of-Fiscal-Year-2026-Financial-Results/default.aspx
+- Rocket Lab Q1 2026 results: https://www.globenewswire.com/news-release/2026/05/07/3290563/0/en/Rocket-Lab-Announces-First-Quarter-2026-Financial-Results-Surpasses-All-Guidance-Metrics-Including-Revenue-Margin-and-Adjusted-EBITDA-Posts-Record-200M-Quarterly-Revenue-and-over-2.html
+- Vicor FY2025 Q4/full-year results: https://vicorcorporation.gcs-web.com/news-releases/news-release-details/vicor-corporation-reports-results-fourth-quarter-and-year-8
+- Ciena FY2025 results: https://investor.ciena.com/news-releases/news-release-details/ciena-reports-fiscal-fourth-quarter-2025-and-year-end-financial
+- Corning Q1 2026 results: https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2026/04/corning-announces-strong-first-quarter-2026-financial-results.html
+- HPE Q1 FY2026 results: https://www.hpe.com/us/en/newsroom/press-release/2026/03/hpe-reports-fiscal-2026-first-quarter-results.html
+- Supermicro Q2 FY2026 results: https://ir.supermicro.com/news/news-details/2026/Supermicro-Announces-Second-Quarter-Fiscal-Year-2026-Financial-Results/default.aspx
+- Veeco Q1 2026 results: https://ir.veeco.com/news-and-events/news-details/2026/Veeco-Reports-First-Quarter-2026-Financial-Results/default.aspx
+- Applied Optoelectronics Q1 2026 SEC exhibit: https://www.sec.gov/Archives/edgar/data/1158114/000168316826003562/aaoi_ex9901.htm
+- Analog Devices Q1 FY2026 results: https://investor.analog.com/news-releases/news-release-details/analog-devices-reports-fiscal-first-quarter-2026-financial
+- Argan FY2026 results: https://www.nasdaq.com/press-release/argan-inc-reports-fourth-quarter-and-fiscal-year-2026-results-2026-03-26
+- First Solar Q1 2026 SEC exhibit: https://www.sec.gov/Archives/edgar/data/1274494/000127449426000108/ex991pressreleaseq1-2026.htm
+- Intel Q1 2026 results: https://newsroom.intel.com/corporate/intel-reports-first-quarter-2026-financial-results
+- Semtech FY2026 Q4 results: https://www.semtech.com/company/press/announces-fourth-quarter-of-fiscal-year-2026-results

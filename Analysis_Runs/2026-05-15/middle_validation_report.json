@@ -1,0 +1,61 @@
+{
+  "ok": true,
+  "checked_count": 3,
+  "failed_count": 0,
+  "middle_reports": [
+    {
+      "worker_output_paths": [
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0001.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0002.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0003.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0004.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0005.json"
+      ],
+      "output_path": "Analysis_Runs/2026-05-15/middle_outputs/middle_0001.json",
+      "middle_id": 1,
+      "ok": true,
+      "allowed_ticker_count": 250,
+      "candidate_count": 25,
+      "unexpected_tickers": [],
+      "worker_excluded_tickers": [],
+      "duplicate_tickers": [],
+      "errors": []
+    },
+    {
+      "worker_output_paths": [
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0006.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0007.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0008.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0009.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0010.json"
+      ],
+      "output_path": "Analysis_Runs/2026-05-15/middle_outputs/middle_0002.json",
+      "middle_id": 2,
+      "ok": true,
+      "allowed_ticker_count": 250,
+      "candidate_count": 25,
+      "unexpected_tickers": [],
+      "worker_excluded_tickers": [],
+      "duplicate_tickers": [],
+      "errors": []
+    },
+    {
+      "worker_output_paths": [
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0011.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0012.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0013.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0014.json",
+        "Analysis_Runs/2026-05-15/worker_outputs/worker_0015.json"
+      ],
+      "output_path": "Analysis_Runs/2026-05-15/middle_outputs/middle_0003.json",
+      "middle_id": 3,
+      "ok": true,
+      "allowed_ticker_count": 242,
+      "candidate_count": 25,
+      "unexpected_tickers": [],
+      "worker_excluded_tickers": [],
+      "duplicate_tickers": [],
+      "errors": []
+    }
+  ]
+}

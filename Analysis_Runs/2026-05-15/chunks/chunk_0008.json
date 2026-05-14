@@ -1,0 +1,507 @@
+{
+  "chunk_id": 8,
+  "rows": [
+    {
+      "source_row_number": 352,
+      "ticker": "SHLS",
+      "company": "Shoals Technologies Group Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "9.27",
+      "return_percent": "28.46"
+    },
+    {
+      "source_row_number": 353,
+      "ticker": "LVO",
+      "company": "LiveOne Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Restaurants",
+      "current_price": "5.53",
+      "return_percent": "28.42"
+    },
+    {
+      "source_row_number": 354,
+      "ticker": "QMCO",
+      "company": "Quantum Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "8.87",
+      "return_percent": "28.31"
+    },
+    {
+      "source_row_number": 355,
+      "ticker": "WHWK",
+      "company": "Whitehawk Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "5.13",
+      "return_percent": "28.25"
+    },
+    {
+      "source_row_number": 356,
+      "ticker": "COHR",
+      "company": "Coherent Corp. Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "401.74",
+      "return_percent": "28.18"
+    },
+    {
+      "source_row_number": 357,
+      "ticker": "IESC",
+      "company": "IES Holdings Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "current_price": "697.17",
+      "return_percent": "28.12"
+    },
+    {
+      "source_row_number": 358,
+      "ticker": "PNRG",
+      "company": "PrimeEnergy Resources Corporation Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "253.68",
+      "return_percent": "28.06"
+    },
+    {
+      "source_row_number": 359,
+      "ticker": "MTRN",
+      "company": "Materion Corporation",
+      "sector": "Industrials",
+      "industry": "Industrial Specialties",
+      "current_price": "211.71",
+      "return_percent": "28.01"
+    },
+    {
+      "source_row_number": 360,
+      "ticker": "BLMN",
+      "company": "Bloomin' Brands Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Restaurants",
+      "current_price": "8.2",
+      "return_percent": "28.0"
+    },
+    {
+      "source_row_number": 361,
+      "ticker": "NRXP",
+      "company": "NRX Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "3.2",
+      "return_percent": "28.0"
+    },
+    {
+      "source_row_number": 362,
+      "ticker": "NWPX",
+      "company": "NWPX Infrastructure Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "112.09",
+      "return_percent": "27.94"
+    },
+    {
+      "source_row_number": 363,
+      "ticker": "SUPX",
+      "company": "SuperX AI Technology Limited Ordinary Shares",
+      "sector": "",
+      "industry": "",
+      "current_price": "10.35",
+      "return_percent": "27.94"
+    },
+    {
+      "source_row_number": 364,
+      "ticker": "CLYM",
+      "company": "Climb Bio Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "11.32",
+      "return_percent": "27.91"
+    },
+    {
+      "source_row_number": 365,
+      "ticker": "SXC",
+      "company": "SunCoke Energy Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "7.89",
+      "return_percent": "27.88"
+    },
+    {
+      "source_row_number": 366,
+      "ticker": "LINC",
+      "company": "Lincoln Educational Services Corporation Common Stock",
+      "sector": "Real Estate",
+      "industry": "Other Consumer Services",
+      "current_price": "50.93",
+      "return_percent": "27.84"
+    },
+    {
+      "source_row_number": 367,
+      "ticker": "PBT",
+      "company": "Permian Basin Royalty Trust Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "27.59",
+      "return_percent": "27.83"
+    },
+    {
+      "source_row_number": 368,
+      "ticker": "AMRC",
+      "company": "Ameresco Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Engineering & Construction",
+      "current_price": "32.99",
+      "return_percent": "27.82"
+    },
+    {
+      "source_row_number": 369,
+      "ticker": "MOH",
+      "company": "Molina Healthcare Inc Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "188.18",
+      "return_percent": "27.57"
+    },
+    {
+      "source_row_number": 370,
+      "ticker": "POAS",
+      "company": "Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "2.48",
+      "return_percent": "27.44"
+    },
+    {
+      "source_row_number": 371,
+      "ticker": "COHU",
+      "company": "Cohu Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Electrical Products",
+      "current_price": "48.99",
+      "return_percent": "27.21"
+    },
+    {
+      "source_row_number": 372,
+      "ticker": "CLPT",
+      "company": "ClearPoint Neuro Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "13.2",
+      "return_percent": "27.17"
+    },
+    {
+      "source_row_number": 373,
+      "ticker": "SXT",
+      "company": "Sensient Technologies Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "118.06",
+      "return_percent": "26.92"
+    },
+    {
+      "source_row_number": 374,
+      "ticker": "BGIN",
+      "company": "Bgin Blockchain Limited Class A Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "3.93",
+      "return_percent": "26.85"
+    },
+    {
+      "source_row_number": 375,
+      "ticker": "WTTR",
+      "company": "Select Water Solutions Inc. Class A common stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "18.7",
+      "return_percent": "26.79"
+    },
+    {
+      "source_row_number": 376,
+      "ticker": "TTI",
+      "company": "Tetra Technologies Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "10.66",
+      "return_percent": "26.75"
+    },
+    {
+      "source_row_number": 377,
+      "ticker": "ELV",
+      "company": "Elevance Health Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "397.03",
+      "return_percent": "26.7"
+    },
+    {
+      "source_row_number": 378,
+      "ticker": "RELL",
+      "company": "Richardson Electronics Ltd. Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "17.11",
+      "return_percent": "26.69"
+    },
+    {
+      "source_row_number": 379,
+      "ticker": "AP",
+      "company": "Ampco-Pittsburgh Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Fluid Controls",
+      "current_price": "11.4",
+      "return_percent": "26.67"
+    },
+    {
+      "source_row_number": 380,
+      "ticker": "ZBAI",
+      "company": "ATIF Holdings Limited Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "9.37",
+      "return_percent": "26.61"
+    },
+    {
+      "source_row_number": 381,
+      "ticker": "VRCA",
+      "company": "Verrica Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "7.24",
+      "return_percent": "26.57"
+    },
+    {
+      "source_row_number": 382,
+      "ticker": "STRZ",
+      "company": "Starz Entertainment Corp. Common Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Movies/Entertainment",
+      "current_price": "21.25",
+      "return_percent": "26.56"
+    },
+    {
+      "source_row_number": 383,
+      "ticker": "PL",
+      "company": "Planet Labs PBC Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "42.93",
+      "return_percent": "26.52"
+    },
+    {
+      "source_row_number": 384,
+      "ticker": "SRTA",
+      "company": "Strata Critical Medical Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Transportation Services",
+      "current_price": "5.47",
+      "return_percent": "26.44"
+    },
+    {
+      "source_row_number": 385,
+      "ticker": "CVS",
+      "company": "CVS Health Corporation Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Retail-Drug Stores and Proprietary Stores",
+      "current_price": "97.26",
+      "return_percent": "26.41"
+    },
+    {
+      "source_row_number": 386,
+      "ticker": "ALXO",
+      "company": "ALX Oncology Holdings Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.04",
+      "return_percent": "26.32"
+    },
+    {
+      "source_row_number": 387,
+      "ticker": "XGN",
+      "company": "Exagen Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "3.84",
+      "return_percent": "26.32"
+    },
+    {
+      "source_row_number": 388,
+      "ticker": "TDOC",
+      "company": "Teladoc Health Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "6.61",
+      "return_percent": "26.24"
+    },
+    {
+      "source_row_number": 389,
+      "ticker": "HNRG",
+      "company": "Hallador Energy Company Common Stock",
+      "sector": "Energy",
+      "industry": "Coal Mining",
+      "current_price": "19.05",
+      "return_percent": "26.24"
+    },
+    {
+      "source_row_number": 390,
+      "ticker": "KALU",
+      "company": "Kaiser Aluminum Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "178.95",
+      "return_percent": "26.2"
+    },
+    {
+      "source_row_number": 391,
+      "ticker": "DOMO",
+      "company": "Domo Inc. Class B Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "3.42",
+      "return_percent": "26.2"
+    },
+    {
+      "source_row_number": 392,
+      "ticker": "CERS",
+      "company": "Cerus Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "2.54",
+      "return_percent": "26.12"
+    },
+    {
+      "source_row_number": 393,
+      "ticker": "OKTA",
+      "company": "Okta Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "80.81",
+      "return_percent": "26.09"
+    },
+    {
+      "source_row_number": 394,
+      "ticker": "VATE",
+      "company": "INNOVATE Corp. Common Stock",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "12.14",
+      "return_percent": "26.06"
+    },
+    {
+      "source_row_number": 395,
+      "ticker": "AXSM",
+      "company": "Axsome Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "231.81",
+      "return_percent": "25.86"
+    },
+    {
+      "source_row_number": 396,
+      "ticker": "ARKO",
+      "company": "ARKO Corp. Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Food Chains",
+      "current_price": "7.15",
+      "return_percent": "25.86"
+    },
+    {
+      "source_row_number": 397,
+      "ticker": "LYTS",
+      "company": "LSI Industries Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Building Products",
+      "current_price": "24.18",
+      "return_percent": "25.81"
+    },
+    {
+      "source_row_number": 398,
+      "ticker": "BWA",
+      "company": "BorgWarner Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "67.51",
+      "return_percent": "25.74"
+    },
+    {
+      "source_row_number": 399,
+      "ticker": "VRNS",
+      "company": "Varonis Systems Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "27.35",
+      "return_percent": "25.69"
+    },
+    {
+      "source_row_number": 400,
+      "ticker": "ZS",
+      "company": "Zscaler Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "154.18",
+      "return_percent": "25.67"
+    },
+    {
+      "source_row_number": 401,
+      "ticker": "MARA",
+      "company": "MARA Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "13.18",
+      "return_percent": "25.64"
+    }
+  ],
+  "tickers": [
+    "SHLS",
+    "LVO",
+    "QMCO",
+    "WHWK",
+    "COHR",
+    "IESC",
+    "PNRG",
+    "MTRN",
+    "BLMN",
+    "NRXP",
+    "NWPX",
+    "SUPX",
+    "CLYM",
+    "SXC",
+    "LINC",
+    "PBT",
+    "AMRC",
+    "MOH",
+    "POAS",
+    "COHU",
+    "CLPT",
+    "SXT",
+    "BGIN",
+    "WTTR",
+    "TTI",
+    "ELV",
+    "RELL",
+    "AP",
+    "ZBAI",
+    "VRCA",
+    "STRZ",
+    "PL",
+    "SRTA",
+    "CVS",
+    "ALXO",
+    "XGN",
+    "TDOC",
+    "HNRG",
+    "KALU",
+    "DOMO",
+    "CERS",
+    "OKTA",
+    "VATE",
+    "AXSM",
+    "ARKO",
+    "LYTS",
+    "BWA",
+    "VRNS",
+    "ZS",
+    "MARA"
+  ]
+}

@@ -4,12 +4,20 @@
 
 이 프로젝트는 사용자의 맥락(`context.md`)을 기준으로 주식 후보군을 도출하고, 각 종목의 적합성을 분류·랭킹하는 프로젝트이다.
 
-기본 workflow는 다음과 같다.
+기본 workflow는 반자동 Codex mode를 기준으로 다음과 같다.
 
 1. `scan.py`를 실행하여 오늘 날짜의 스캔 결과 CSV 파일을 생성한다.
-2. 생성된 `Stock_Results/YYYY-MM-DD_Scan_Result_Top5000.csv` 파일의 각 종목을 확인한다.
-3. `context.md`에 적힌 사용자의 관심사, 투자 맥락, 제약 조건을 기준으로 각 종목을 분류한다.
-4. 분류된 종목 각각에 대해 다음 내용을 작성한다.
+2. `python analyze.py --mode codex --stage prepare`로 `context.md`를 rubric/brief로 압축하고, CSV를 chunk로 나누며, worker task 파일을 생성한다.
+3. Codex main agent가 `worker_tasks/*.md`를 worker subagent들에게 병렬 배치하여 `worker_outputs/*.json`을 작성하게 한다.
+4. `python analyze.py --mode codex --stage validate-workers`로 worker output을 검증한다.
+5. 검증 통과 후 `python analyze.py --mode codex --stage prepare-middle`로 middle task 파일을 생성한다.
+6. Codex main agent가 `middle_tasks/*.md`를 middle subagent들에게 병렬 배치하여 `middle_outputs/*.json`을 작성하게 한다.
+7. `python analyze.py --mode codex --stage validate-middle`로 middle output을 검증한다.
+8. 검증 통과 후 `python analyze.py --mode codex --stage final`로 최종 후보를 병합하고 `results.md`를 작성한다.
+9. 최종 후보 중 `needs_current_research: true`인 종목은 최신 자료를 확인한다.
+
+각 종목 분석에는 다음 내용이 포함되어야 한다.
+
    - 기업명
    - 티커
    - 주요 산업
@@ -17,7 +25,8 @@
    - 사용자의 맥락 중 어떤 부분과 관련되는지
    - 해당 종목을 랭킹에 포함한 이유
    - 주의할 리스크 또는 확인이 필요한 점
-5. 최종 결과는 `results.md` 파일에 덮어쓴다.
+
+최종 결과는 `results.md` 파일에 덮어쓴다.
 
 ## Important rules
 
@@ -29,12 +38,25 @@
 - 결과는 “후보군 분석” 형식으로 작성하고, 매수·매도 지시를 하지 않는다.
 - `context.md`의 개인적 내용은 결과에 불필요하게 노출하지 않는다.
 - `results.md`를 작성할 때 기존 내용을 보존하라는 별도 지시가 없으면 전체 덮어쓰기를 허용한다.
+- Python은 Codex subagent를 자동 실행하지 않는다.
+- Python은 task 파일 생성, 상태 확인, output 검증, 다음 단계 안내, final 후보 병합, report 작성만 담당한다.
+- 실제 worker/middle 판단은 Codex main agent가 task 파일을 읽고 subagent를 병렬 배치해서 수행한다.
+- mock output은 개발용 smoke test 결과일 뿐 실제 종목 분석 결과로 취급하지 않는다.
+- validation 실패 시 다음 단계로 진행하지 않는다.
 
 ## File conventions
 
 - 입력 맥락 파일: `context.md`
 - 스캔 결과 폴더: `Stock_Results`
 - 스캔 결과 파일: `Stock_Results/YYYY-MM-DD_Scan_Result_Top5000.csv` 형식
+- 분석 run 폴더: `Analysis_Runs/YYYY-MM-DD`
+- context 산출물: `Analysis_Runs/YYYY-MM-DD/context_rubric.json`, `Analysis_Runs/YYYY-MM-DD/context_brief.md`
+- worker task 폴더: `Analysis_Runs/YYYY-MM-DD/worker_tasks`
+- worker output 폴더: `Analysis_Runs/YYYY-MM-DD/worker_outputs`
+- middle task 폴더: `Analysis_Runs/YYYY-MM-DD/middle_tasks`
+- middle output 폴더: `Analysis_Runs/YYYY-MM-DD/middle_outputs`
+- final 후보 파일: `Analysis_Runs/YYYY-MM-DD/final_candidates.json`
+- validation report 파일: `validation_report.json`, `middle_validation_report.json`, `final_validation_report.json`
 - 최종 결과 파일: `results.md`
 
 ## Running the project
@@ -50,6 +72,50 @@ python scan.py
 ```bash
 python scan.py --pause
 ```
+
+반자동 Codex mode 상태 확인:
+
+```bash
+python analyze.py --mode codex --stage status
+```
+
+task 준비:
+
+```bash
+python analyze.py --mode codex --stage prepare
+```
+
+worker output 검증:
+
+```bash
+python analyze.py --mode codex --stage validate-workers
+```
+
+middle task 준비:
+
+```bash
+python analyze.py --mode codex --stage prepare-middle
+```
+
+middle output 검증:
+
+```bash
+python analyze.py --mode codex --stage validate-middle
+```
+
+최종 후보 병합 및 `results.md` 작성:
+
+```bash
+python analyze.py --mode codex --stage final
+```
+
+개발용 mock smoke test:
+
+```bash
+python analyze.py --mode codex --stage mock-smoke
+```
+
+중요: `mock-smoke`는 pipeline 개발 검증용이다. 실제 분석 결과로 사용하지 않는다.
 
 ## Output Format
 
@@ -172,11 +238,20 @@ python scan.py --pause
 
 코드를 수정한 경우 다음을 확인한다.
 
+```bash
 python scan.py
+python -m unittest
+python analyze.py --mode codex --stage mock-smoke
+python analyze.py --mode codex --stage status
+```
 
 테스트가 없는 경우에도 최소한 다음은 확인한다.
 
-scan.py가 정상 실행되는지
-오늘 날짜의 결과 파일이 생성되는지
-results.md가 의도한 형식으로 작성되는지
-존재하지 않는 종목이나 확인되지 않은 기업 정보를 만들어내지 않았는지
+- `scan.py`가 정상 실행되는지
+- 오늘 날짜의 결과 파일이 생성되는지
+- `python -m unittest`가 통과하는지
+- `mock-smoke`가 `final_validation_report.ok: true`를 반환하는지
+- `status`가 현재 단계와 다음 조치를 정확히 안내하는지
+- 실제 run에서는 worker/middle output이 mock이 아닌 Codex subagent 판단 결과인지
+- `results.md`가 의도한 형식으로 작성되는지
+- 존재하지 않는 종목이나 확인되지 않은 기업 정보를 만들어내지 않았는지

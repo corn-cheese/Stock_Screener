@@ -1,0 +1,507 @@
+{
+  "chunk_id": 1,
+  "rows": [
+    {
+      "source_row_number": 2,
+      "ticker": "AIIO",
+      "company": "Robo.ai Inc. Class B Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Auto Manufacturing",
+      "current_price": "6.08",
+      "return_percent": "866.6"
+    },
+    {
+      "source_row_number": 3,
+      "ticker": "RXT",
+      "company": "Rackspace Technology Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "7.3",
+      "return_percent": "488.82"
+    },
+    {
+      "source_row_number": 4,
+      "ticker": "MXL",
+      "company": "MaxLinear Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "88.38",
+      "return_percent": "309.93"
+    },
+    {
+      "source_row_number": 5,
+      "ticker": "MRAM",
+      "company": "Everspin Technologies Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "41.02",
+      "return_percent": "253.62"
+    },
+    {
+      "source_row_number": 6,
+      "ticker": "AGL",
+      "company": "agilon health inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Misc Health and Biotechnology Services",
+      "current_price": "78.77",
+      "return_percent": "247.31"
+    },
+    {
+      "source_row_number": 7,
+      "ticker": "JLHL",
+      "company": "Julong Holding Limited Class A Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Military/Government/Technical",
+      "current_price": "20.2",
+      "return_percent": "242.37"
+    },
+    {
+      "source_row_number": 8,
+      "ticker": "WOLF",
+      "company": "Wolfspeed Inc. Common Stock New",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "68.52",
+      "return_percent": "197.91"
+    },
+    {
+      "source_row_number": 9,
+      "ticker": "POET",
+      "company": "POET Technologies Inc. Common Shares",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "19.96",
+      "return_percent": "197.52"
+    },
+    {
+      "source_row_number": 10,
+      "ticker": "BAND",
+      "company": "Bandwidth Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "52.85",
+      "return_percent": "194.43"
+    },
+    {
+      "source_row_number": 11,
+      "ticker": "EDSA",
+      "company": "Edesa Biotech Inc. Common Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "14.6",
+      "return_percent": "179.69"
+    },
+    {
+      "source_row_number": 12,
+      "ticker": "FCEL",
+      "company": "FuelCell Energy Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "20.41",
+      "return_percent": "179.57"
+    },
+    {
+      "source_row_number": 13,
+      "ticker": "EVC",
+      "company": "Entravision Communications Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Broadcasting",
+      "current_price": "8.86",
+      "return_percent": "160.74"
+    },
+    {
+      "source_row_number": 14,
+      "ticker": "DGXX",
+      "company": "Digi Power X Inc. Subordinate Voting Shares",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "7.05",
+      "return_percent": "156.18"
+    },
+    {
+      "source_row_number": 15,
+      "ticker": "REPL",
+      "company": "Replimune Group Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "4.93",
+      "return_percent": "152.56"
+    },
+    {
+      "source_row_number": 16,
+      "ticker": "IPWR",
+      "company": "Ideal Power Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "7.2",
+      "return_percent": "149.13"
+    },
+    {
+      "source_row_number": 17,
+      "ticker": "VLN",
+      "company": "Valens Semiconductor Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "3.43",
+      "return_percent": "148.54"
+    },
+    {
+      "source_row_number": 18,
+      "ticker": "SKLZ",
+      "company": "Skillz Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "6.8",
+      "return_percent": "142.68"
+    },
+    {
+      "source_row_number": 19,
+      "ticker": "AMBQ",
+      "company": "Ambiq Micro Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "70.74",
+      "return_percent": "135.8"
+    },
+    {
+      "source_row_number": 20,
+      "ticker": "FRMM",
+      "company": "Forum Markets Incorporated Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.85",
+      "return_percent": "129.86"
+    },
+    {
+      "source_row_number": 21,
+      "ticker": "NVTS",
+      "company": "Navitas Semiconductor Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "22.2",
+      "return_percent": "124.94"
+    },
+    {
+      "source_row_number": 22,
+      "ticker": "SILC",
+      "company": "Silicom Ltd Ordinary Shares",
+      "sector": "Telecommunications",
+      "industry": "Computer Communications Equipment",
+      "current_price": "51.31",
+      "return_percent": "121.45"
+    },
+    {
+      "source_row_number": 23,
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "159.79",
+      "return_percent": "117.55"
+    },
+    {
+      "source_row_number": 24,
+      "ticker": "INOD",
+      "company": "Innodata Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "89.06",
+      "return_percent": "115.54"
+    },
+    {
+      "source_row_number": 25,
+      "ticker": "STKE",
+      "company": "Sol Strategies Inc. Common Shares",
+      "sector": "",
+      "industry": "",
+      "current_price": "2.33",
+      "return_percent": "115.28"
+    },
+    {
+      "source_row_number": 26,
+      "ticker": "IFRX",
+      "company": "InflaRx N.V. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "2.39",
+      "return_percent": "110.09"
+    },
+    {
+      "source_row_number": 27,
+      "ticker": "SLNH",
+      "company": "Soluna Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "2.14",
+      "return_percent": "103.75"
+    },
+    {
+      "source_row_number": 28,
+      "ticker": "TRT",
+      "company": "Trio-Tech International Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "14.17",
+      "return_percent": "103.01"
+    },
+    {
+      "source_row_number": 29,
+      "ticker": "XMTR",
+      "company": "Xometry Inc. Class A Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "88.42",
+      "return_percent": "102.33"
+    },
+    {
+      "source_row_number": 30,
+      "ticker": "BLZE",
+      "company": "Backblaze Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "7.19",
+      "return_percent": "100.84"
+    },
+    {
+      "source_row_number": 31,
+      "ticker": "KOPN",
+      "company": "Kopin Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "5.43",
+      "return_percent": "99.45"
+    },
+    {
+      "source_row_number": 32,
+      "ticker": "ZTEK",
+      "company": "Zentek Ltd. Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "1.01",
+      "return_percent": "98.04"
+    },
+    {
+      "source_row_number": 33,
+      "ticker": "CUE",
+      "company": "Cue Biopharma Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "25.83",
+      "return_percent": "96.58"
+    },
+    {
+      "source_row_number": 34,
+      "ticker": "NRGV",
+      "company": "Energy Vault Holdings Inc. Common Stock",
+      "sector": "Miscellaneous",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "6.32",
+      "return_percent": "95.82"
+    },
+    {
+      "source_row_number": 35,
+      "ticker": "BRUN",
+      "company": "Boost Run Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "25.25",
+      "return_percent": "94.98"
+    },
+    {
+      "source_row_number": 36,
+      "ticker": "VPG",
+      "company": "Vishay Precision Group Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "100.35",
+      "return_percent": "93.73"
+    },
+    {
+      "source_row_number": 37,
+      "ticker": "HPP",
+      "company": "Hudson Pacific Properties Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Real Estate",
+      "current_price": "11.82",
+      "return_percent": "91.88"
+    },
+    {
+      "source_row_number": 38,
+      "ticker": "PENG",
+      "company": "Penguin Solutions Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "49.15",
+      "return_percent": "91.1"
+    },
+    {
+      "source_row_number": 39,
+      "ticker": "STRL",
+      "company": "Sterling Infrastructure Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Military/Government/Technical",
+      "current_price": "882.81",
+      "return_percent": "90.04"
+    },
+    {
+      "source_row_number": 40,
+      "ticker": "OSS",
+      "company": "One Stop Systems Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Manufacturing",
+      "current_price": "16.65",
+      "return_percent": "90.01"
+    },
+    {
+      "source_row_number": 41,
+      "ticker": "ATOM",
+      "company": "Atomera Incorporated Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "9.56",
+      "return_percent": "89.68"
+    },
+    {
+      "source_row_number": 42,
+      "ticker": "ATRA",
+      "company": "Atara Biotherapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "9.73",
+      "return_percent": "88.93"
+    },
+    {
+      "source_row_number": 43,
+      "ticker": "HYLN",
+      "company": "Hyliion Holdings Corp. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Construction/Ag Equipment/Trucks",
+      "current_price": "3.58",
+      "return_percent": "88.16"
+    },
+    {
+      "source_row_number": 44,
+      "ticker": "CMPS",
+      "company": "COMPASS Pathways Plc American Depository Shares",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "10.73",
+      "return_percent": "86.7"
+    },
+    {
+      "source_row_number": 45,
+      "ticker": "KLXE",
+      "company": "KLX Energy Services Holdings Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oilfield Services/Equipment",
+      "current_price": "4.09",
+      "return_percent": "85.91"
+    },
+    {
+      "source_row_number": 46,
+      "ticker": "SITM",
+      "company": "SiTime Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "823.5",
+      "return_percent": "84.62"
+    },
+    {
+      "source_row_number": 47,
+      "ticker": "WYFI",
+      "company": "WhiteFiber Inc. Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "29.63",
+      "return_percent": "84.15"
+    },
+    {
+      "source_row_number": 48,
+      "ticker": "BRCC",
+      "company": "BRC Inc. Class A Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Beverages (Production/Distribution)",
+      "current_price": "1.52",
+      "return_percent": "83.73"
+    },
+    {
+      "source_row_number": 49,
+      "ticker": "AIP",
+      "company": "Arteris Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "37.02",
+      "return_percent": "83.54"
+    },
+    {
+      "source_row_number": 50,
+      "ticker": "DDOG",
+      "company": "Datadog Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "202.46",
+      "return_percent": "83.11"
+    },
+    {
+      "source_row_number": 51,
+      "ticker": "AIRS",
+      "company": "AirSculpt Technologies Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "4.78",
+      "return_percent": "82.63"
+    }
+  ],
+  "tickers": [
+    "AIIO",
+    "RXT",
+    "MXL",
+    "MRAM",
+    "AGL",
+    "JLHL",
+    "WOLF",
+    "POET",
+    "BAND",
+    "EDSA",
+    "FCEL",
+    "EVC",
+    "DGXX",
+    "REPL",
+    "IPWR",
+    "VLN",
+    "SKLZ",
+    "AMBQ",
+    "FRMM",
+    "NVTS",
+    "SILC",
+    "DOCN",
+    "INOD",
+    "STKE",
+    "IFRX",
+    "SLNH",
+    "TRT",
+    "XMTR",
+    "BLZE",
+    "KOPN",
+    "ZTEK",
+    "CUE",
+    "NRGV",
+    "BRUN",
+    "VPG",
+    "HPP",
+    "PENG",
+    "STRL",
+    "OSS",
+    "ATOM",
+    "ATRA",
+    "HYLN",
+    "CMPS",
+    "KLXE",
+    "SITM",
+    "WYFI",
+    "BRCC",
+    "AIP",
+    "DDOG",
+    "AIRS"
+  ]
+}

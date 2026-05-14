@@ -1,0 +1,507 @@
+{
+  "chunk_id": 11,
+  "rows": [
+    {
+      "source_row_number": 502,
+      "ticker": "MB",
+      "company": "MasterBeef Group Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Restaurants",
+      "current_price": "6.98",
+      "return_percent": "21.37"
+    },
+    {
+      "source_row_number": 503,
+      "ticker": "NHC",
+      "company": "National HealthCare Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Hospital/Nursing Management",
+      "current_price": "198.4",
+      "return_percent": "21.35"
+    },
+    {
+      "source_row_number": 504,
+      "ticker": "JOBY",
+      "company": "Joby Aviation Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Aerospace",
+      "current_price": "10.65",
+      "return_percent": "21.08"
+    },
+    {
+      "source_row_number": 505,
+      "ticker": "FEAM",
+      "company": "5E Advanced Materials Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+      "current_price": "2.01",
+      "return_percent": "21.08"
+    },
+    {
+      "source_row_number": 506,
+      "ticker": "DINO",
+      "company": "HF Sinclair Corporation Common Stock",
+      "sector": "Energy",
+      "industry": "Natural Gas Distribution",
+      "current_price": "68.72",
+      "return_percent": "21.05"
+    },
+    {
+      "source_row_number": 507,
+      "ticker": "AGX",
+      "company": "Argan Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Engineering & Construction",
+      "current_price": "730.01",
+      "return_percent": "20.98"
+    },
+    {
+      "source_row_number": 508,
+      "ticker": "ORCL",
+      "company": "Oracle Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "197.05",
+      "return_percent": "20.89"
+    },
+    {
+      "source_row_number": 509,
+      "ticker": "STVN",
+      "company": "Stevanato Group S.p.A. Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "17.85",
+      "return_percent": "20.89"
+    },
+    {
+      "source_row_number": 510,
+      "ticker": "TOI",
+      "company": "The Oncology Institute Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "4.09",
+      "return_percent": "20.86"
+    },
+    {
+      "source_row_number": 511,
+      "ticker": "ZVRA",
+      "company": "Zevra Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "11.82",
+      "return_percent": "20.79"
+    },
+    {
+      "source_row_number": 512,
+      "ticker": "IRDM",
+      "company": "Iridium Communications Inc Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "43.62",
+      "return_percent": "20.76"
+    },
+    {
+      "source_row_number": 513,
+      "ticker": "CBOE",
+      "company": "Cboe Global Markets Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Investment Bankers/Brokers/Service",
+      "current_price": "363.0",
+      "return_percent": "20.7"
+    },
+    {
+      "source_row_number": 514,
+      "ticker": "LWLG",
+      "company": "Lightwave Logic Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Containers/Packaging",
+      "current_price": "14.74",
+      "return_percent": "20.66"
+    },
+    {
+      "source_row_number": 515,
+      "ticker": "WEN",
+      "company": "Wendy's Company (The) Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Restaurants",
+      "current_price": "8.18",
+      "return_percent": "20.65"
+    },
+    {
+      "source_row_number": 516,
+      "ticker": "LASR",
+      "company": "nLIGHT Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "80.67",
+      "return_percent": "20.64"
+    },
+    {
+      "source_row_number": 517,
+      "ticker": "YSWY",
+      "company": "Yesway Inc. Class A Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Food Chains",
+      "current_price": "25.61",
+      "return_percent": "20.63"
+    },
+    {
+      "source_row_number": 518,
+      "ticker": "BSTZ",
+      "company": "BlackRock Science and Technology Term Trust Common Shares of Beneficial Interest",
+      "sector": "Finance",
+      "industry": "Trusts Except Educational Religious and Charitable",
+      "current_price": "29.05",
+      "return_percent": "20.63"
+    },
+    {
+      "source_row_number": 519,
+      "ticker": "USAS",
+      "company": "Americas Gold and Silver Corporation Common Shares no par value",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "7.27",
+      "return_percent": "20.56"
+    },
+    {
+      "source_row_number": 520,
+      "ticker": "NTAP",
+      "company": "NetApp Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "119.19",
+      "return_percent": "20.53"
+    },
+    {
+      "source_row_number": 521,
+      "ticker": "NTCT",
+      "company": "NetScout Systems Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "39.11",
+      "return_percent": "20.52"
+    },
+    {
+      "source_row_number": 522,
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "401.15",
+      "return_percent": "20.5"
+    },
+    {
+      "source_row_number": 523,
+      "ticker": "FLL",
+      "company": "Full House Resorts Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Hotels/Resorts",
+      "current_price": "3.0",
+      "return_percent": "20.48"
+    },
+    {
+      "source_row_number": 524,
+      "ticker": "BIDU",
+      "company": "Baidu Inc. ADS",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "142.43",
+      "return_percent": "20.47"
+    },
+    {
+      "source_row_number": 525,
+      "ticker": "RMR",
+      "company": "The RMR Group Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "19.47",
+      "return_percent": "20.47"
+    },
+    {
+      "source_row_number": 526,
+      "ticker": "NUAI",
+      "company": "New Era Energy & Digital Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "5.18",
+      "return_percent": "20.47"
+    },
+    {
+      "source_row_number": 527,
+      "ticker": "CPSS",
+      "company": "Consumer Portfolio Services Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "10.18",
+      "return_percent": "20.47"
+    },
+    {
+      "source_row_number": 528,
+      "ticker": "NEXT",
+      "company": "NextDecade Corporation Common Stock",
+      "sector": "Utilities",
+      "industry": "Oil & Gas Production",
+      "current_price": "8.93",
+      "return_percent": "20.45"
+    },
+    {
+      "source_row_number": 529,
+      "ticker": "SEI",
+      "company": "Solaris Energy Infrastructure Inc. Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Oil and Gas Field Machinery",
+      "current_price": "78.32",
+      "return_percent": "20.43"
+    },
+    {
+      "source_row_number": 530,
+      "ticker": "LFMD",
+      "company": "LifeMD Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Nursing Services",
+      "current_price": "4.54",
+      "return_percent": "20.42"
+    },
+    {
+      "source_row_number": 531,
+      "ticker": "SMCI",
+      "company": "Super Micro Computer Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Manufacturing",
+      "current_price": "32.75",
+      "return_percent": "20.4"
+    },
+    {
+      "source_row_number": 532,
+      "ticker": "AVT",
+      "company": "Avnet Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "86.39",
+      "return_percent": "20.4"
+    },
+    {
+      "source_row_number": 533,
+      "ticker": "STLD",
+      "company": "Steel Dynamics Inc.",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "235.12",
+      "return_percent": "20.39"
+    },
+    {
+      "source_row_number": 534,
+      "ticker": "CVEO",
+      "company": "Civeo Corporation (Canada) Common Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Hotels/Resorts",
+      "current_price": "35.47",
+      "return_percent": "20.38"
+    },
+    {
+      "source_row_number": 535,
+      "ticker": "RDNW",
+      "company": "RideNow Group Inc. Class B Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "7.93",
+      "return_percent": "20.33"
+    },
+    {
+      "source_row_number": 536,
+      "ticker": "NVEC",
+      "company": "NVE Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "92.2",
+      "return_percent": "20.3"
+    },
+    {
+      "source_row_number": 537,
+      "ticker": "ACET",
+      "company": "Adicet Bio Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "8.42",
+      "return_percent": "20.29"
+    },
+    {
+      "source_row_number": 538,
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Hotels/Resorts",
+      "current_price": "33.65",
+      "return_percent": "20.28"
+    },
+    {
+      "source_row_number": 539,
+      "ticker": "NOVT",
+      "company": "Novanta Inc. Common Stock",
+      "sector": "Miscellaneous",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "154.98",
+      "return_percent": "20.28"
+    },
+    {
+      "source_row_number": 540,
+      "ticker": "WS",
+      "company": "Worthington Steel Inc. Common Shares",
+      "sector": "Industrials",
+      "industry": "Steel/Iron Ore",
+      "current_price": "40.73",
+      "return_percent": "20.28"
+    },
+    {
+      "source_row_number": 541,
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "351.64",
+      "return_percent": "20.27"
+    },
+    {
+      "source_row_number": 542,
+      "ticker": "ETOR",
+      "company": "eToro Group Ltd. Class A Common Shares",
+      "sector": "Finance",
+      "industry": "Investment Bankers/Brokers/Service",
+      "current_price": "41.75",
+      "return_percent": "20.25"
+    },
+    {
+      "source_row_number": 543,
+      "ticker": "TRAK",
+      "company": "ReposiTrak Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "9.17",
+      "return_percent": "20.18"
+    },
+    {
+      "source_row_number": 544,
+      "ticker": "VMI",
+      "company": "Valmont Industries Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "516.1",
+      "return_percent": "20.17"
+    },
+    {
+      "source_row_number": 545,
+      "ticker": "GOOG",
+      "company": "Alphabet Inc. Class C Capital Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "397.23",
+      "return_percent": "20.16"
+    },
+    {
+      "source_row_number": 546,
+      "ticker": "CYD",
+      "company": "China Yuchai International Limited Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "50.65",
+      "return_percent": "20.15"
+    },
+    {
+      "source_row_number": 547,
+      "ticker": "CRSR",
+      "company": "Corsair Gaming Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "7.36",
+      "return_percent": "20.15"
+    },
+    {
+      "source_row_number": 548,
+      "ticker": "ROG",
+      "company": "Rogers Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "141.71",
+      "return_percent": "20.12"
+    },
+    {
+      "source_row_number": 549,
+      "ticker": "SOUN",
+      "company": "SoundHound AI Inc Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "8.37",
+      "return_percent": "20.09"
+    },
+    {
+      "source_row_number": 550,
+      "ticker": "SGHC",
+      "company": "Super Group (SGHC) Limited Ordinary Shares",
+      "sector": "Consumer Discretionary",
+      "industry": "Services-Misc. Amusement & Recreation",
+      "current_price": "13.14",
+      "return_percent": "20.06"
+    },
+    {
+      "source_row_number": 551,
+      "ticker": "VUZI",
+      "company": "Vuzix Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "3.09",
+      "return_percent": "20.04"
+    }
+  ],
+  "tickers": [
+    "MB",
+    "NHC",
+    "JOBY",
+    "FEAM",
+    "DINO",
+    "AGX",
+    "ORCL",
+    "STVN",
+    "TOI",
+    "ZVRA",
+    "IRDM",
+    "CBOE",
+    "LWLG",
+    "WEN",
+    "LASR",
+    "YSWY",
+    "BSTZ",
+    "USAS",
+    "NTAP",
+    "NTCT",
+    "GOOGL",
+    "FLL",
+    "BIDU",
+    "RMR",
+    "NUAI",
+    "CPSS",
+    "NEXT",
+    "SEI",
+    "LFMD",
+    "SMCI",
+    "AVT",
+    "STLD",
+    "CVEO",
+    "RDNW",
+    "NVEC",
+    "ACET",
+    "LTH",
+    "NOVT",
+    "WS",
+    "CDNS",
+    "ETOR",
+    "TRAK",
+    "VMI",
+    "GOOG",
+    "CYD",
+    "CRSR",
+    "ROG",
+    "SOUN",
+    "SGHC",
+    "VUZI"
+  ]
+}

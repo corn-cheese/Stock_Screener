@@ -1,0 +1,427 @@
+{
+  "chunk_id": 15,
+  "rows": [
+    {
+      "source_row_number": 702,
+      "ticker": "LNTH",
+      "company": "Lantheus Holdings Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: In Vitro & In Vivo Diagnostic Substances",
+      "current_price": "95.92",
+      "return_percent": "15.92"
+    },
+    {
+      "source_row_number": 703,
+      "ticker": "GDYN",
+      "company": "Grid Dynamics Holdings Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "6.45",
+      "return_percent": "15.92"
+    },
+    {
+      "source_row_number": 704,
+      "ticker": "GTE",
+      "company": "Gran Tierra Energy Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "9.1",
+      "return_percent": "15.92"
+    },
+    {
+      "source_row_number": 705,
+      "ticker": "RGP",
+      "company": "Resources Connection Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "4.37",
+      "return_percent": "15.92"
+    },
+    {
+      "source_row_number": 706,
+      "ticker": "GNLX",
+      "company": "Genelux Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "3.06",
+      "return_percent": "15.91"
+    },
+    {
+      "source_row_number": 707,
+      "ticker": "AVGO",
+      "company": "Broadcom Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "441.12",
+      "return_percent": "15.85"
+    },
+    {
+      "source_row_number": 708,
+      "ticker": "JBL",
+      "company": "Jabil Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "354.18",
+      "return_percent": "15.76"
+    },
+    {
+      "source_row_number": 709,
+      "ticker": "CODI",
+      "company": "D/B/A Compass Diversified Holdings Shares of Beneficial Interest",
+      "sector": "Consumer Discretionary",
+      "industry": "Home Furnishings",
+      "current_price": "12.06",
+      "return_percent": "15.74"
+    },
+    {
+      "source_row_number": 710,
+      "ticker": "HR",
+      "company": "Healthcare Realty Trust Incorporated Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate Investment Trusts",
+      "current_price": "20.4",
+      "return_percent": "15.7"
+    },
+    {
+      "source_row_number": 711,
+      "ticker": "SATL",
+      "company": "Satellogic Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "8.44",
+      "return_percent": "15.68"
+    },
+    {
+      "source_row_number": 712,
+      "ticker": "NKLR",
+      "company": "Terra Innovatum Global N.V. Ordinary shares",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "6.35",
+      "return_percent": "15.68"
+    },
+    {
+      "source_row_number": 713,
+      "ticker": "SFM",
+      "company": "Sprouts Farmers Market Inc. Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Food Chains",
+      "current_price": "86.97",
+      "return_percent": "15.67"
+    },
+    {
+      "source_row_number": 714,
+      "ticker": "SEPN",
+      "company": "Septerna Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "27.91",
+      "return_percent": "15.67"
+    },
+    {
+      "source_row_number": 715,
+      "ticker": "AAPL",
+      "company": "Apple Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Manufacturing",
+      "current_price": "299.01",
+      "return_percent": "15.63"
+    },
+    {
+      "source_row_number": 716,
+      "ticker": "OCC",
+      "company": "Optical Cable Corporation Common Stock",
+      "sector": "Industrials",
+      "industry": "Telecommunications Equipment",
+      "current_price": "12.69",
+      "return_percent": "15.57"
+    },
+    {
+      "source_row_number": 717,
+      "ticker": "SMTI",
+      "company": "Sanara MedTech Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Industrial Specialties",
+      "current_price": "21.39",
+      "return_percent": "15.53"
+    },
+    {
+      "source_row_number": 718,
+      "ticker": "PII",
+      "company": "Polaris Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Industrial Specialties",
+      "current_price": "66.41",
+      "return_percent": "15.52"
+    },
+    {
+      "source_row_number": 719,
+      "ticker": "STSS",
+      "company": "Sharps Technology Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "2.01",
+      "return_percent": "15.52"
+    },
+    {
+      "source_row_number": 720,
+      "ticker": "SUNB",
+      "company": "Sunbelt Rentals Holdings Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Diversified Commercial Services",
+      "current_price": "79.42",
+      "return_percent": "15.47"
+    },
+    {
+      "source_row_number": 721,
+      "ticker": "ELVA",
+      "company": "Electrovaya Inc. Common Shares",
+      "sector": "",
+      "industry": "",
+      "current_price": "11.05",
+      "return_percent": "15.47"
+    },
+    {
+      "source_row_number": 722,
+      "ticker": "MUSA",
+      "company": "Murphy USA Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Retail-Auto Dealers and Gas Stations",
+      "current_price": "575.02",
+      "return_percent": "15.36"
+    },
+    {
+      "source_row_number": 723,
+      "ticker": "HP",
+      "company": "Helmerich & Payne Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "39.35",
+      "return_percent": "15.36"
+    },
+    {
+      "source_row_number": 724,
+      "ticker": "CAT",
+      "company": "Caterpillar Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Construction/Ag Equipment/Trucks",
+      "current_price": "914.36",
+      "return_percent": "15.34"
+    },
+    {
+      "source_row_number": 725,
+      "ticker": "SNX",
+      "company": "TD SYNNEX Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Retail: Computer Software & Peripheral Equipment",
+      "current_price": "235.48",
+      "return_percent": "15.3"
+    },
+    {
+      "source_row_number": 726,
+      "ticker": "CON",
+      "company": "Concentra Group Holdings Parent Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "26.23",
+      "return_percent": "15.3"
+    },
+    {
+      "source_row_number": 727,
+      "ticker": "MOD",
+      "company": "Modine Manufacturing Company Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "292.4",
+      "return_percent": "15.27"
+    },
+    {
+      "source_row_number": 728,
+      "ticker": "CMPR",
+      "company": "Cimpress plc Ordinary Shares (Ireland)",
+      "sector": "Consumer Discretionary",
+      "industry": "Publishing",
+      "current_price": "92.78",
+      "return_percent": "15.27"
+    },
+    {
+      "source_row_number": 729,
+      "ticker": "HIW",
+      "company": "Highwoods Properties Inc. Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate Investment Trusts",
+      "current_price": "26.33",
+      "return_percent": "15.26"
+    },
+    {
+      "source_row_number": 730,
+      "ticker": "AVR",
+      "company": "Anteris Technologies Global Corp. Common Stock",
+      "sector": "Health Care",
+      "industry": "Industrial Specialties",
+      "current_price": "7.25",
+      "return_percent": "15.26"
+    },
+    {
+      "source_row_number": 731,
+      "ticker": "INDV",
+      "company": "Indivior Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "37.98",
+      "return_percent": "15.2"
+    },
+    {
+      "source_row_number": 732,
+      "ticker": "PLXS",
+      "company": "Plexus Corp. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "262.5",
+      "return_percent": "15.16"
+    },
+    {
+      "source_row_number": 733,
+      "ticker": "DY",
+      "company": "Dycom Industries Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Water Sewer Pipeline Comm & Power Line Construction",
+      "current_price": "451.52",
+      "return_percent": "15.11"
+    },
+    {
+      "source_row_number": 734,
+      "ticker": "IDR",
+      "company": "Idaho Strategic Resources Inc. Common Stock",
+      "sector": "Basic Materials",
+      "industry": "Precious Metals",
+      "current_price": "44.94",
+      "return_percent": "15.11"
+    },
+    {
+      "source_row_number": 735,
+      "ticker": "XXI",
+      "company": "Twenty One Capital Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "8.46",
+      "return_percent": "15.1"
+    },
+    {
+      "source_row_number": 736,
+      "ticker": "PLGO",
+      "company": "Pelagos Insurance Capital Limited Common Shares",
+      "sector": "Finance",
+      "industry": "Property-Casualty Insurers",
+      "current_price": "23.19",
+      "return_percent": "15.09"
+    },
+    {
+      "source_row_number": 737,
+      "ticker": "TENB",
+      "company": "Tenable Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "20.57",
+      "return_percent": "15.08"
+    },
+    {
+      "source_row_number": 738,
+      "ticker": "ESI",
+      "company": "Element Solutions Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Major Chemicals",
+      "current_price": "43.94",
+      "return_percent": "15.06"
+    },
+    {
+      "source_row_number": 739,
+      "ticker": "ARRY",
+      "company": "Array Technologies Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Miscellaneous manufacturing industries",
+      "current_price": "8.61",
+      "return_percent": "15.02"
+    },
+    {
+      "source_row_number": 740,
+      "ticker": "PROF",
+      "company": "Profound Medical Corp. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "7.2",
+      "return_percent": "15.02"
+    },
+    {
+      "source_row_number": 741,
+      "ticker": "RSSS",
+      "company": "Research Solutions Inc Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "2.68",
+      "return_percent": "15.02"
+    },
+    {
+      "source_row_number": 742,
+      "ticker": "ADEA",
+      "company": "Adeia Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "31.4",
+      "return_percent": "15.0"
+    },
+    {
+      "source_row_number": 743,
+      "ticker": "AIRG",
+      "company": "Airgain Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "6.95",
+      "return_percent": "15.0"
+    }
+  ],
+  "tickers": [
+    "LNTH",
+    "GDYN",
+    "GTE",
+    "RGP",
+    "GNLX",
+    "AVGO",
+    "JBL",
+    "CODI",
+    "HR",
+    "SATL",
+    "NKLR",
+    "SFM",
+    "SEPN",
+    "AAPL",
+    "OCC",
+    "SMTI",
+    "PII",
+    "STSS",
+    "SUNB",
+    "ELVA",
+    "MUSA",
+    "HP",
+    "CAT",
+    "SNX",
+    "CON",
+    "MOD",
+    "CMPR",
+    "HIW",
+    "AVR",
+    "INDV",
+    "PLXS",
+    "DY",
+    "IDR",
+    "XXI",
+    "PLGO",
+    "TENB",
+    "ESI",
+    "ARRY",
+    "PROF",
+    "RSSS",
+    "ADEA",
+    "AIRG"
+  ]
+}

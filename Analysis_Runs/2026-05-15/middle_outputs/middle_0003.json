@@ -1,0 +1,276 @@
+{
+  "middle_id": 3,
+  "input_workers": [11, 12, 13, 14, 15],
+  "summary": {
+    "input_count": 242,
+    "included_count": 25,
+    "excluded_count": 217,
+    "dominant_themes": [
+      "AI semiconductors and data-center networking",
+      "power and grid infrastructure",
+      "strategic aerospace and space systems",
+      "critical minerals and hard assets",
+      "Bitcoin compute infrastructure"
+    ]
+  },
+  "candidates_for_final": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 97,
+      "theme": "AI infrastructure / GPUs / semiconductors",
+      "why_forwarded": "Central supplier for accelerated compute, data-center networking, and strategic AI infrastructure.",
+      "main_risk": "Valuation, export controls, customer concentration, supply limits, and durability of AI capex need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc. Common Stock",
+      "proposed_grade": "S",
+      "normalized_score": 95,
+      "theme": "AI infrastructure / semiconductors / networking",
+      "why_forwarded": "Direct exposure to high-performance connectivity and custom silicon supply chains for AI data centers.",
+      "main_risk": "Valuation, customer concentration, AI revenue durability, and integration execution need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "CRDO",
+      "company": "Credo Technology Group Holding Ltd Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 92,
+      "theme": "AI data-center networking / semiconductors",
+      "why_forwarded": "High-speed connectivity components map directly to AI cluster bandwidth constraints.",
+      "main_risk": "Customer concentration, valuation, product-cycle durability, and current data-center mix need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MPWR",
+      "company": "Monolithic Power Systems Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 91,
+      "theme": "power semiconductors / AI data-center components",
+      "why_forwarded": "Power management chips are a direct picks-and-shovels layer for AI servers and advanced electronics.",
+      "main_risk": "Valuation, customer concentration, inventory cycle, and exact AI data-center mix need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "DY",
+      "company": "Dycom Industries Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 90,
+      "theme": "communications and power-line infrastructure",
+      "why_forwarded": "Clear physical infrastructure fit tied to broadband, data-center connectivity, and grid buildout.",
+      "main_risk": "Customer concentration, project timing, labor costs, and telecom capex cycle need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "SMR",
+      "company": "NuScale Power Corporation Class A Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 89,
+      "theme": "small modular nuclear power / grid capacity",
+      "why_forwarded": "Nuclear power is directly relevant to energy security and long-duration electricity supply for AI load growth.",
+      "main_risk": "Commercial deployment timing, financing, regulatory approvals, and customer commitments need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 88,
+      "theme": "EDA software / semiconductor design infrastructure",
+      "why_forwarded": "Chip design tools are critical infrastructure for AI accelerators and custom silicon complexity.",
+      "main_risk": "Valuation, export controls, chip-cycle sensitivity, and AI design demand need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MTZ",
+      "company": "MasTec Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 88,
+      "theme": "power, pipeline, and communications construction",
+      "why_forwarded": "Physical network, utility, and energy construction align tightly with grid and AI data-center constraints.",
+      "main_risk": "Backlog mix, execution margins, valuation, and infrastructure spending sensitivity need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MOD",
+      "company": "Modine Manufacturing Company Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 87,
+      "theme": "thermal management / data-center cooling",
+      "why_forwarded": "Cooling systems are a practical bottleneck for power-dense AI compute and industrial electrification.",
+      "main_risk": "Data-center revenue mix, capacity, margins, and valuation need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc. Class A Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "AI platforms / cloud data centers",
+      "why_forwarded": "Large-scale AI, cloud infrastructure, custom chips, and data-center capex create direct context relevance.",
+      "main_risk": "AI monetization, capex intensity, antitrust pressure, and ad-cycle exposure need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "LITE",
+      "company": "Lumentum Holdings Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 86,
+      "theme": "optical communications / data-center networking",
+      "why_forwarded": "Optical components are a strong fit for AI data-center bandwidth and networking constraints.",
+      "main_risk": "Customer concentration, optical-cycle volatility, AI revenue mix, and margin recovery need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "GLW",
+      "company": "Corning Incorporated Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 85,
+      "theme": "optical fiber / data-center connectivity",
+      "why_forwarded": "Optical fiber and advanced materials provide durable infrastructure exposure to network capacity growth.",
+      "main_risk": "Segment mix, pricing, capital intensity, and data-center demand contribution need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "SMCI",
+      "company": "Super Micro Computer Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 85,
+      "theme": "AI servers / data-center hardware",
+      "why_forwarded": "Server hardware is directly tied to GPU clusters and compute infrastructure buildout.",
+      "main_risk": "Margins, customer concentration, component supply, accounting confidence, and current demand need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "FSLR",
+      "company": "First Solar Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "solar manufacturing / energy infrastructure",
+      "why_forwarded": "Domestic solar manufacturing fits power demand, energy security, and strategic industrial policy.",
+      "main_risk": "Policy incentives, pricing, capacity expansion, trade exposure, backlog quality, and valuation need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "AGX",
+      "company": "Argan Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 84,
+      "theme": "power infrastructure / engineering and construction",
+      "why_forwarded": "Power construction directly supports AI data-center electricity demand and industrial capacity expansion.",
+      "main_risk": "Backlog mix, project execution, customer concentration, and valuation after the move need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "ICHR",
+      "company": "Ichor Holdings Ordinary Shares",
+      "proposed_grade": "A",
+      "normalized_score": 83,
+      "theme": "semiconductor equipment supply chain",
+      "why_forwarded": "Semiconductor manufacturing components support AI chip capacity and strategic supply-chain resilience.",
+      "main_risk": "Semicap cycle timing, customer concentration, margin recovery, and current backlog need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "BTDR",
+      "company": "Bitdeer Technologies Group Class A Ordinary Shares",
+      "proposed_grade": "B",
+      "normalized_score": 82,
+      "theme": "Bitcoin infrastructure / compute and power",
+      "why_forwarded": "Digital-asset compute infrastructure fits scarce-asset and power-linked compute themes.",
+      "main_risk": "Bitcoin price exposure, mining economics, power costs, hosting mix, and financing need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "AMKR",
+      "company": "Amkor Technology Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 82,
+      "theme": "semiconductor packaging / advanced manufacturing",
+      "why_forwarded": "Packaging and assembly capacity are strategic inputs for AI semiconductors and regional chip supply.",
+      "main_risk": "Customer concentration, pricing, capital intensity, and advanced-packaging exposure need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "MDA",
+      "company": "MDA Space Ltd. Common Shares",
+      "proposed_grade": "A",
+      "normalized_score": 81,
+      "theme": "space systems / strategic aerospace",
+      "why_forwarded": "Satellite and space-infrastructure exposure aligns with government-led strategic industry and security demand.",
+      "main_risk": "Contract mix, government exposure, production cadence, and valuation after the move need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "FLY",
+      "company": "Firefly Aerospace Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 81,
+      "theme": "aerospace / government technical services",
+      "why_forwarded": "Launch and space systems fit defense, intelligence, and national space infrastructure themes.",
+      "main_risk": "Launch cadence, contract quality, customer concentration, funding needs, and current program status need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "KGS",
+      "company": "Kodiak Gas Services Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 80,
+      "theme": "natural gas infrastructure / energy security",
+      "why_forwarded": "Natural gas services connect to energy infrastructure and power availability for industrial and data-center growth.",
+      "main_risk": "Commodity-cycle exposure, leverage, contract durability, and customer concentration need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "ORA",
+      "company": "Ormat Technologies Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 80,
+      "theme": "geothermal power / electric utilities",
+      "why_forwarded": "Dispatchable renewable power fits grid resilience, energy security, and data-center electricity demand.",
+      "main_risk": "Project backlog, tax incentives, power contracts, geothermal resource risk, and valuation need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "WCC",
+      "company": "WESCO International Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 79,
+      "theme": "electrical distribution / data-center infrastructure",
+      "why_forwarded": "Electrical and communications distribution sits in the supply chain for power, networking, and infrastructure equipment.",
+      "main_risk": "Cyclicality, debt, supplier mix, and actual data-center exposure need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "CAT",
+      "company": "Caterpillar Inc. Common Stock",
+      "proposed_grade": "A",
+      "normalized_score": 79,
+      "theme": "infrastructure / mining / industrial equipment",
+      "why_forwarded": "Construction and mining equipment connect directly to infrastructure spending, resource extraction, and hard-asset capex.",
+      "main_risk": "Cyclical demand, dealer inventory, mining capex timing, and valuation need review.",
+      "needs_current_research": true
+    },
+    {
+      "ticker": "LAC",
+      "company": "Lithium Americas Corp. Common Shares",
+      "proposed_grade": "A",
+      "normalized_score": 78,
+      "theme": "lithium mining / critical minerals",
+      "why_forwarded": "Lithium supply fits scarce resources, battery storage, electrification, and state-supported domestic materials themes.",
+      "main_risk": "Project development, permitting, financing, lithium pricing, and strategic partner status need review.",
+      "needs_current_research": true
+    }
+  ],
+  "rejected_patterns": [
+    "healthcare and biotechnology names without infrastructure linkage",
+    "consumer restaurants, retail, gaming, leisure, and packaged products",
+    "generic software or AI application names without compute, power, networking, or hardware exposure",
+    "financial platforms, broad funds, and asset managers without operating infrastructure exposure",
+    "REITs, shipping, trucking, and logistics names where the context fit was indirect or mostly cyclical",
+    "speculative small caps with thin business evidence despite thematic labels"
+  ]
+}

@@ -1,81 +1,735 @@
 ﻿티커,종목명,섹터,산업,현재가,수익률(%)
-AIIO,Robo.ai Inc. Class B Ordinary Shares,Industrials,Auto Manufacturing,6.42,920.67
-RXT,Rackspace Technology Inc. Common Stock,Technology,Computer Software: Programming Data Processing,7.05,468.44
-MXL,MaxLinear Inc. Common Stock,Technology,Semiconductors,87.87,307.56
-JLHL,Julong Holding Limited Class A Ordinary Shares,Consumer Discretionary,Military/Government/Technical,20.3,244.07
-AGL,agilon health inc. Common Stock,Health Care,Misc Health and Biotechnology Services,77.86,243.3
-MRAM,Everspin Technologies Inc. Common Stock,Technology,Semiconductors,39.77,242.84
-POET,POET Technologies Inc. Common Shares,Technology,Semiconductors,19.98,197.69
-BAND,Bandwidth Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,52.67,193.43
-WOLF,Wolfspeed Inc. Common Stock New,Technology,Semiconductors,67.38,192.96
-EDSA,Edesa Biotech Inc. Common Shares,Health Care,Biotechnology: Pharmaceutical Preparations,14.38,175.48
-FCEL,FuelCell Energy Inc. Common Stock,Energy,Industrial Machinery/Components,20.01,174.18
-DGXX,Digi Power X Inc. Subordinate Voting Shares,Finance,Finance: Consumer Services,7.42,169.81
-EVC,Entravision Communications Corporation Common Stock,Industrials,Broadcasting,9.09,167.35
-IPWR,Ideal Power Inc. Common Stock,Technology,Semiconductors,7.18,148.44
-VLN,Valens Semiconductor Ltd. Ordinary Shares,Technology,Semiconductors,3.42,148.19
-REPL,Replimune Group Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),4.76,144.36
-FRMM,Forum Markets Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,5.08,140.76
-SKLZ,Skillz Inc. Class A Common Stock,Technology,EDP Services,6.7,139.2
-AMBQ,Ambiq Micro Inc. Common Stock,Technology,Semiconductors,70.26,134.2
-NVTS,Navitas Semiconductor Corporation Common Stock,Technology,Semiconductors,22.12,124.11
-SILC,Silicom Ltd Ordinary Shares,Telecommunications,Computer Communications Equipment,50.78,119.18
-INOD,Innodata Inc. Common Stock,Technology,EDP Services,90.54,119.13
-STKE,Sol Strategies Inc. Common Shares,,,2.35,117.59
-SLNH,Soluna Holdings Inc. Common Stock,Technology,EDP Services,2.28,117.13
-DOCN,DigitalOcean Holdings Inc. Common Stock,Technology,Computer Software: Programming Data Processing,158.48,115.77
-IFRX,InflaRx N.V. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.4,110.96
-ZTEK,Zentek Ltd. Common Stock,Industrials,Major Chemicals,1.05,106.86
-XMTR,Xometry Inc. Class A Common Stock,Real Estate,Real Estate,88.7,102.97
-BLZE,Backblaze Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,7.25,102.51
-KOPN,Kopin Corporation Common Stock,Technology,Semiconductors,5.45,100.37
-CUE,Cue Biopharma Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,26.31,100.23
-TRT,Trio-Tech International Common Stock,Technology,Industrial Machinery/Components,13.85,98.42
-NRGV,Energy Vault Holdings Inc. Common Stock,Miscellaneous,Industrial Machinery/Components,6.28,94.43
-HPP,Hudson Pacific Properties Inc. Common Stock,Finance,Real Estate,11.96,94.16
-BRUN,Boost Run Inc. Class A Common Stock,Technology,EDP Services,24.92,92.43
-ATOM,Atomera Incorporated Common Stock,Technology,Semiconductors,9.64,91.27
-STRL,Sterling Infrastructure Inc. Common Stock,Industrials,Military/Government/Technical,884.21,90.34
-VPG,Vishay Precision Group Inc. Common Stock,Technology,Electrical Products,98.53,90.21
-PENG,Penguin Solutions Inc. Common Stock,Technology,Semiconductors,48.78,89.68
-CMPS,COMPASS Pathways Plc American Depository Shares,Health Care,Biotechnology: Pharmaceutical Preparations,10.88,89.22
-OSS,One Stop Systems Inc. Common Stock,Technology,Computer Manufacturing,16.58,89.22
-KLXE,KLX Energy Services Holdings Inc. Common Stock,Energy,Oilfield Services/Equipment,4.16,89.09
-HYLN,Hyliion Holdings Corp. Class A Common Stock,Consumer Discretionary,Construction/Ag Equipment/Trucks,3.58,88.16
-SITM,SiTime Corporation Common Stock,Technology,Semiconductors,824.21,84.78
-VIVO,VivoPower PLC Ordinary Shares,Utilities,Power Generation,4.93,83.99
-VHUB,VenHub Global Inc. Common Stock,Technology,Industrial Machinery/Components,1.21,83.33
-VELO,Velo3D Inc. Common stock,Technology,Industrial Machinery/Components,19.96,83.12
-RKLB,Rocket Lab Corporation Common Stock,Industrials,Military/Government/Technical,132.16,83.0
-DDOG,Datadog Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,202.26,82.92
-ATRA,Atara Biotherapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),9.42,82.86
-AIRS,AirSculpt Technologies Inc. Common Stock,Health Care,Medical/Nursing Services,4.79,82.81
-PCT,PureCycle Technologies Inc. Common stock,Industrials,Major Chemicals,12.28,82.47
-INTC,Intel Corporation Common Stock,Technology,Semiconductors,116.13,81.99
-AIP,Arteris Inc. Common Stock,Technology,Semiconductors,36.57,81.31
-ALMU,Aeluma Inc. Common Stock,Technology,Semiconductors,25.84,81.2
+AIIO,Robo.ai Inc. Class B Ordinary Shares,Industrials,Auto Manufacturing,5.82,825.28
+RXT,Rackspace Technology Inc. Common Stock,Technology,Computer Software: Programming Data Processing,7.2,480.59
+MXL,MaxLinear Inc. Common Stock,Technology,Semiconductors,87.74,306.93
+MRAM,Everspin Technologies Inc. Common Stock,Technology,Semiconductors,40.87,252.33
+AGL,agilon health inc. Common Stock,Health Care,Misc Health and Biotechnology Services,78.76,247.29
+JLHL,Julong Holding Limited Class A Ordinary Shares,Consumer Discretionary,Military/Government/Technical,20.2,242.37
+WOLF,Wolfspeed Inc. Common Stock New,Technology,Semiconductors,68.55,198.04
+BAND,Bandwidth Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,52.58,192.95
+POET,POET Technologies Inc. Common Shares,Technology,Semiconductors,19.61,192.25
+FCEL,FuelCell Energy Inc. Common Stock,Energy,Industrial Machinery/Components,20.48,180.55
+EDSA,Edesa Biotech Inc. Common Shares,Health Care,Biotechnology: Pharmaceutical Preparations,14.6,179.69
+EVC,Entravision Communications Corporation Common Stock,Industrials,Broadcasting,8.82,159.56
+DGXX,Digi Power X Inc. Subordinate Voting Shares,Finance,Finance: Consumer Services,7.09,157.82
+REPL,Replimune Group Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),4.91,151.54
+IPWR,Ideal Power Inc. Common Stock,Technology,Semiconductors,7.2,149.14
+VLN,Valens Semiconductor Ltd. Ordinary Shares,Technology,Semiconductors,3.39,145.65
+SKLZ,Skillz Inc. Class A Common Stock,Technology,EDP Services,6.77,141.79
+AMBQ,Ambiq Micro Inc. Common Stock,Technology,Semiconductors,70.55,135.17
+FRMM,Forum Markets Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.84,129.62
+NVTS,Navitas Semiconductor Corporation Common Stock,Technology,Semiconductors,21.95,122.39
+INOD,Innodata Inc. Common Stock,Technology,EDP Services,89.69,117.06
+DOCN,DigitalOcean Holdings Inc. Common Stock,Technology,Computer Software: Programming Data Processing,158.56,115.87
+SILC,Silicom Ltd Ordinary Shares,Telecommunications,Computer Communications Equipment,49.96,115.6
+STKE,Sol Strategies Inc. Common Shares,,,2.33,115.28
+IFRX,InflaRx N.V. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.39,110.09
+XMTR,Xometry Inc. Class A Common Stock,Real Estate,Real Estate,88.43,102.36
+BRUN,Boost Run Inc. Class A Common Stock,Technology,EDP Services,26.14,101.85
+SLNH,Soluna Holdings Inc. Common Stock,Technology,EDP Services,2.12,101.43
+TRT,Trio-Tech International Common Stock,Technology,Industrial Machinery/Components,14.03,100.98
+BLZE,Backblaze Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,7.19,100.84
+ZTEK,Zentek Ltd. Common Stock,Industrials,Major Chemicals,1.02,100.0
+KOPN,Kopin Corporation Common Stock,Technology,Semiconductors,5.41,98.9
+CUE,Cue Biopharma Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,25.83,96.58
+NRGV,Energy Vault Holdings Inc. Common Stock,Miscellaneous,Industrial Machinery/Components,6.26,93.96
+HPP,Hudson Pacific Properties Inc. Common Stock,Finance,Real Estate,11.79,91.4
+VPG,Vishay Precision Group Inc. Common Stock,Technology,Electrical Products,99.0,91.12
+PENG,Penguin Solutions Inc. Common Stock,Technology,Semiconductors,49.01,90.53
+STRL,Sterling Infrastructure Inc. Common Stock,Industrials,Military/Government/Technical,883.75,90.24
+ATRA,Atara Biotherapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),9.72,88.74
+ATOM,Atomera Incorporated Common Stock,Technology,Semiconductors,9.48,88.19
+OSS,One Stop Systems Inc. Common Stock,Technology,Computer Manufacturing,16.4,87.21
+HYLN,Hyliion Holdings Corp. Class A Common Stock,Consumer Discretionary,Construction/Ag Equipment/Trucks,3.56,87.11
+CMPS,COMPASS Pathways Plc American Depository Shares,Health Care,Biotechnology: Pharmaceutical Preparations,10.72,86.43
+KLXE,KLX Energy Services Holdings Inc. Common Stock,Energy,Oilfield Services/Equipment,4.08,85.53
+BRCC,BRC Inc. Class A Common Stock,Consumer Staples,Beverages (Production/Distribution),1.53,84.33
+SITM,SiTime Corporation Common Stock,Technology,Semiconductors,820.75,84.01
+WYFI,WhiteFiber Inc. Ordinary Shares,Finance,Finance: Consumer Services,29.48,83.22
+AIP,Arteris Inc. Common Stock,Technology,Semiconductors,36.87,82.8
+DDOG,Datadog Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,201.65,82.37
+AIRS,AirSculpt Technologies Inc. Common Stock,Health Care,Medical/Nursing Services,4.77,82.06
+INTC,Intel Corporation Common Stock,Technology,Semiconductors,115.57,81.11
+RKLB,Rocket Lab Corporation Common Stock,Industrials,Military/Government/Technical,130.13,80.19
 MGRT,Mega Fortune Company Limited Ordinary Shares,Technology,EDP Services,132.0,80.08
-WYFI,WhiteFiber Inc. Ordinary Shares,Finance,Finance: Consumer Services,28.91,79.69
-FLEX,Flex Ltd. Ordinary Shares,Technology,Electrical Products,143.41,78.95
-TROO,TROOPS Inc. Ordinary Shares ,Finance,Diversified Financial Services,4.27,78.66
-ABSI,Absci Corporation Common Stock,Health Care,Biotechnology: Commercial Physical & Biological Resarch,5.61,77.94
-CEVA,CEVA Inc. Common Stock,Technology,Computer Software: Programming Data Processing,37.96,76.81
-ASPN,Aspen Aerogels Inc. Common Stock,Consumer Discretionary,RETAIL: Building Materials,5.84,76.59
-BRCC,BRC Inc. Class A Common Stock,Consumer Staples,Beverages (Production/Distribution),1.47,76.51
-IMDX,Insight Molecular Diagnostics Inc. Common Stock,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,6.32,75.07
-AKAM,Akamai Technologies Inc. Common Stock,Real Estate,Real Estate,155.29,74.8
-AMD,Advanced Micro Devices Inc. Common Stock,Technology,Semiconductors,445.17,74.53
-AUR,Aurora Innovation Inc. Class A Common Stock,Technology,EDP Services,8.15,74.52
-BWEN,Broadwind Inc. Common Stock,Telecommunications,Metal Fabrications,3.82,74.2
-RLYB,Rallybio Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,14.26,72.85
-WEST,Westrock Coffee Company Common Stock,Consumer Staples,Beverages (Production/Distribution),8.59,72.74
-XRX,Xerox Holdings Corporation Common Stock,Technology,Computer peripheral equipment,2.42,71.99
-WYY,WidePoint Corporation Common Stock,Technology,EDP Services,8.62,71.71
-QUIK,QuickLogic Corporation Common Stock,Technology,Semiconductors,20.21,71.39
-AXTI,AXT Inc Common Stock,Technology,Semiconductors,114.8,70.58
-CADL,Candel Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),8.67,70.0
-SHAZ,SharonAI Holdings Inc. Class A Common Stock,Technology,EDP Services,58.62,69.8
-MU,Micron Technology Inc. Common Stock,Technology,Semiconductors,789.22,69.48
-CLOV,Clover Health Investments Corp. Class A Common Stock,Health Care,Medical Specialities,3.45,69.21
-ROMA,Roma Green Finance Limited Class A Ordinary Shares,Consumer Discretionary,Professional Services,8.3,68.02
-SYNA,Synaptics Incorporated Common Stock $0.001 Par Value,Technology,Semiconductors,128.94,67.98
+VELO,Velo3D Inc. Common stock,Technology,Industrial Machinery/Components,19.62,80.0
+VIVO,VivoPower PLC Ordinary Shares,Utilities,Power Generation,4.82,79.86
+ABSI,Absci Corporation Common Stock,Health Care,Biotechnology: Commercial Physical & Biological Resarch,5.66,79.68
+FLEX,Flex Ltd. Ordinary Shares,Technology,Electrical Products,143.77,79.4
+IMDX,Insight Molecular Diagnostics Inc. Common Stock,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,6.45,78.67
+ALMU,Aeluma Inc. Common Stock,Technology,Semiconductors,25.42,78.26
+PCT,PureCycle Technologies Inc. Common stock,Industrials,Major Chemicals,11.98,77.93
+VHUB,VenHub Global Inc. Common Stock,Technology,Industrial Machinery/Components,1.17,77.27
+AMD,Advanced Micro Devices Inc. Common Stock,Technology,Semiconductors,449.41,76.19
+TROO,TROOPS Inc. Ordinary Shares ,Finance,Diversified Financial Services,4.21,76.15
+ASPN,Aspen Aerogels Inc. Common Stock,Consumer Discretionary,RETAIL: Building Materials,5.83,76.13
+CEVA,CEVA Inc. Common Stock,Technology,Computer Software: Programming Data Processing,37.81,76.11
+AKAM,Akamai Technologies Inc. Common Stock,Real Estate,Real Estate,155.02,74.49
+WYY,WidePoint Corporation Common Stock,Technology,EDP Services,8.74,74.11
+BWEN,Broadwind Inc. Common Stock,Telecommunications,Metal Fabrications,3.81,73.97
+ROMA,Roma Green Finance Limited Class A Ordinary Shares,Consumer Discretionary,Professional Services,8.57,73.45
+AUR,Aurora Innovation Inc. Class A Common Stock,Technology,EDP Services,8.06,72.59
+RLYB,Rallybio Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,14.23,72.55
+CADL,Candel Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),8.77,71.96
+XRX,Xerox Holdings Corporation Common Stock,Technology,Computer peripheral equipment,2.41,71.28
+QUIK,QuickLogic Corporation Common Stock,Technology,Semiconductors,20.16,70.99
+CLOV,Clover Health Investments Corp. Class A Common Stock,Health Care,Medical Specialities,3.46,69.61
+GSIT,GSI Technology Common Stock,Technology,Semiconductors,10.58,69.32
+MU,Micron Technology Inc. Common Stock,Technology,Semiconductors,788.34,69.3
+WEST,Westrock Coffee Company Common Stock,Consumer Staples,Beverages (Production/Distribution),8.4,69.01
+SYNA,Synaptics Incorporated Common Stock $0.001 Par Value,Technology,Semiconductors,129.0,68.06
+AXTI,AXT Inc Common Stock,Technology,Semiconductors,112.85,67.68
+EVH,Evolent Health Inc Class A Common Stock,Consumer Discretionary,Other Consumer Services,4.18,66.73
+LICN,Lichen International Limited Class A Ordinary Shares,Consumer Discretionary,Professional Services,8.52,66.73
+SHAZ,SharonAI Holdings Inc. Class A Common Stock,Technology,EDP Services,57.19,65.69
+PODC,PodcastOne Inc. Common Stock,Technology,Computer Software: Programming Data Processing,3.61,65.37
+GTX,Garrett Motion Inc. Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,31.86,65.33
+VSH,Vishay Intertechnology Inc. Common Stock,Technology,Electrical Products,38.17,65.05
+GBTG,Global Business Travel Group Inc. Class A Common Stock,Consumer Discretionary,Transportation Services,9.4,64.82
+ON,ON Semiconductor Corporation Common Stock,Technology,Semiconductors,118.51,64.48
+PACK,Ranpak Holdings Corp Class A Common Stock,Consumer Discretionary,Containers/Packaging,6.14,62.14
+DDD,3D Systems Corporation Common Stock,Technology,Computer Software: Prepackaged Software,3.21,62.12
+CLFD,Clearfield Inc. Common Stock,Utilities,Telecommunications Equipment,44.7,61.84
+ARBE,Arbe Robotics Ltd. Ordinary Shares,Technology,EDP Services,1.13,61.2
+AMN,AMN Healthcare Services Inc,Consumer Discretionary,Professional Services,30.18,60.73
+TGEN,Tecogen Inc. Common Stock,Industrials,Industrial Machinery/Components,6.07,60.26
+WATT,Energous Corporation Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,26.25,60.09
+NVCR,NovoCure Limited Ordinary Shares,Health Care,Medical/Dental Instruments,18.08,60.0
+QURE,uniQure N.V. Ordinary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,27.33,59.95
+ACHV,Achieve Life Sciences Inc. Common Shares,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,5.76,59.56
+IONQ,IonQ Inc. Common Stock,Technology,EDP Services,56.98,59.34
+KULR,KULR Technology Group Inc. Common Stock,Technology,Electrical Products,3.78,59.28
+TWLO,Twilio Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,196.73,58.65
+ANTX,AN2 Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.72,58.39
+CNC,Centene Corporation Common Stock,Health Care,Medical Specialities,58.99,58.32
+SLQT,SelectQuote Inc. Common Stock,Finance,Specialty Insurers,1.16,57.67
+STM,STMicroelectronics N.V. Common Stock,Technology,Semiconductors,64.44,57.56
+WTI,W&T Offshore Inc. Common Stock,Energy,Oil & Gas Production,4.41,57.32
+AESI,Atlas Energy Solutions Inc. Common Stock,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),18.82,56.96
+CD,Chaince Digital Holdings Inc. Ordinary Shares,Finance,Finance: Consumer Services,7.44,56.96
+MRDN,Meridian Holdings Inc. Common Stock,Technology,Computer Software: Prepackaged Software,10.72,56.5
+SMTC,Semtech Corporation Common Stock,Technology,Semiconductors,140.86,56.3
+SANM,Sanmina Corporation Common Stock,Technology,Electrical Products,240.73,55.84
+CXDO,Crexendo Inc. Common Stock,Telecommunications,Telecommunications Equipment,9.64,55.74
+KEEL,Keel Infrastructure Corp. Common Stock,Finance,Finance: Consumer Services,4.42,55.64
+RDZN,Roadzen Inc. Ordinary Shares,Finance,Specialty Insurers,1.87,55.42
+RUM,Rumble Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,8.1,55.27
+SLS,SELLAS Life Sciences Group Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,7.53,55.04
+INV,Innventure Inc. Common Stock,Finance,Blank Checks,7.44,55.0
+BB,BlackBerry Limited Common Stock,Technology,Computer Software: Prepackaged Software,6.14,54.53
+TBI,TrueBlue Inc. Common Stock,Consumer Discretionary,Professional Services,5.81,54.52
+HOVR,New Horizon Aircraft Ltd. Class A Ordinary Share,Industrials,Aerospace,2.41,54.49
+TORO,Toro Corp. Common Stock,Consumer Discretionary,Marine Transportation,5.31,54.36
+OGN,Organon & Co. Common Stock ,Health Care,Biotechnology: Pharmaceutical Preparations,13.36,53.79
+FTNT,Fortinet Inc. Common Stock,Technology,Computer peripheral equipment,121.0,53.74
+VICR,Vicor Corporation Common Stock,Technology,Industrial Machinery/Components,292.01,53.61
+HUM,Humana Inc. Common Stock,Health Care,Medical Specialities,300.94,53.38
+CPIX,Cumberland Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.88,53.3
+RMAX,RE/MAX Holdings Inc. Class A Common Stock,Finance,Real Estate,9.07,53.21
+LQDA,Liquidia Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,59.24,53.04
+CTEV,Claritev Corporation Class A Common Stock,Real Estate,Real Estate,27.75,52.98
+COCO,The Vita Coco Company Inc. Common Stock,Consumer Staples,Beverages (Production/Distribution),75.91,52.95
+LUNR,Intuitive Machines Inc. Class A Common Stock,Industrials,Industrial Machinery/Components,36.09,52.47
+ESPR,Esperion Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.12,52.44
+GFS,GlobalFoundries Inc. Ordinary Shares,Technology,Semiconductors,73.78,52.41
+NGNE,Neurogene Inc. Common Stock ,Health Care,Biotechnology: Pharmaceutical Preparations,31.57,52.07
+DMRC,Digimarc Corporation Common Stock,Technology,EDP Services,9.73,52.03
+DWSN,Dawson Geophysical Company Common Stock,Energy,Oil & Gas Production,3.9,51.75
+SEZL,Sezzle Inc. Common Stock,Finance,Finance: Consumer Services,103.01,51.49
+LIFE,Ethos Technologies Inc. Class A Common Stock,Finance,Specialty Insurers,22.24,51.4
+QCOM,QUALCOMM Incorporated Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,200.82,51.18
+FPS,Forgent Power Solutions Inc. Class A Common Stock,Energy,Industrial Machinery/Components,49.92,51.14
+MAAS,Maase Inc. Class A Ordinary Shares,Finance,Investment Managers,10.12,50.82
+AAON,AAON Inc. Common Stock,Industrials,Industrial Machinery/Components,141.0,50.3
+WALD,Waldencast plc Class A Ordinary Share,Consumer Discretionary,Package Goods/Cosmetics,1.59,50.0
+MEI,Methode Electronics Inc. Common Stock,Technology,Electrical Products,11.02,49.98
+STX,Seagate Technology Holdings PLC Ordinary Shares (Ireland),Technology,Electronic Components,800.01,49.97
+ZIP,ZipRecruiter Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,3.65,49.8
+OSCR,Oscar Health Inc. Class A Common Stock,Health Care,Medical Specialities,22.88,49.61
+OABI,OmniAb Inc. Common Stock,Health Care,Biotechnology: Commercial Physical & Biological Resarch,2.18,49.32
+FTRE,Fortrea Holdings Inc. Common Stock,Health Care,Medical Specialities,14.3,49.11
+RFIL,RF Industries Ltd. Common Stock,Technology,Electrical Products,18.33,49.05
+HUT,Hut 8 Corp. Common Stock,Finance,Finance: Consumer Services,106.63,48.63
+ATEX,Anterix Inc. Common Stock,Telecommunications,Telecommunications Equipment,56.34,48.54
+KLC,KinderCare Learning Companies Inc. Common Stock,Consumer Discretionary,Other Consumer Services,4.45,48.33
+INDI,indie Semiconductor Inc. Class A Common Stock,Technology,Semiconductors,4.38,48.31
+AEVA,Aeva Technologies Inc. Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,20.92,48.16
+ARTV,Artiva Biotherapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),11.1,48.13
+ENPH,Enphase Energy Inc. Common Stock,Technology,Semiconductors,47.4,48.11
+USAR,USA Rare Earth Inc. Class A Common Stock,Basic Materials,Metal Mining,25.14,47.97
+PRCH,Porch Group Inc. Common Stock,Technology,Computer Software: Prepackaged Software,10.43,47.66
+OUST,Ouster Inc. Common Stock,Industrials,Industrial Machinery/Components,34.49,47.27
+FENC,Fennec Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),9.2,47.2
+NNBR,NN Inc. Common Stock,Industrials,Industrial Machinery/Components,2.31,47.2
+PANW,Palo Alto Networks Inc. Common Stock,Technology,Computer peripheral equipment,237.65,47.07
+EOLS,Evolus Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,6.53,47.07
+FIVN,Five9 Inc. Common Stock,Technology,EDP Services,21.16,46.64
+APLD,Applied Digital Corporation Common Stock,Finance,Finance: Consumer Services,46.14,46.62
+SNDK,Sandisk Corporation Common Stock,Technology,Electronic Components,1384.54,46.6
+MYRG,MYR Group Inc. Common Stock,Industrials,Water Sewer Pipeline Comm & Power Line Construction,472.14,46.6
+VECO,Veeco Instruments Inc. Common Stock,Technology,Industrial Machinery/Components,59.67,46.54
+NDLS,Noodles & Company Class A Common Stock,Consumer Discretionary,Restaurants,12.3,46.2
+CRWD,CrowdStrike Holdings Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,580.59,45.7
+HUMA,Humacyte Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),1.0,45.08
+AMBA,Ambarella Inc. Ordinary Shares,Technology,Semiconductors,81.28,44.63
+FROG,JFrog Ltd. Ordinary Shares,Technology,Computer Software: Prepackaged Software,64.14,44.59
+TBLA,Taboola.com Ltd. Ordinary Shares,Technology,Computer Software: Programming Data Processing,4.95,44.17
+TONX,TON Strategy Company Common Stock,Consumer Discretionary,Other Consumer Services,3.4,44.07
+AARD,Aardvark Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,6.68,44.07
+QUBT,Quantum Computing Inc. Common Stock,Technology,Computer Software: Prepackaged Software,11.68,44.05
+FATE,Fate Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),1.93,44.03
+MTSI,MACOM Technology Solutions Holdings Inc. Common Stock,Technology,Semiconductors,380.09,44.02
+ZJK,ZJK Industrial Co. Ltd. Class A Ordinary Shares,Industrials,Metal Fabrications,2.88,44.0
+NXDR,Nextdoor Holdings Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,2.07,43.4
+BUUU,BUUU Group Limited Class A Ordinary Share,Consumer Discretionary,Services-Misc. Amusement & Recreation,20.58,43.31
+ELMD,Electromed Inc. Common Stock,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,36.07,43.08
+ACLS,Axcelis Technologies Inc. Common Stock,Technology,Industrial Machinery/Components,161.64,42.97
+AMPG,Amplitech Group Inc. Common Stock,Telecommunications,Telecommunications Equipment,2.88,42.57
+EXTR,Extreme Networks Inc. Common Stock,Telecommunications,Computer Communications Equipment,24.98,42.47
+AMWL,American Well Corporation Class A Common Stock,Real Estate,Real Estate,7.84,42.29
+NVCT,Nuvectis Pharma Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,12.4,42.04
+TXN,Texas Instruments Incorporated Common Stock,Technology,Semiconductors,309.29,42.03
+MANE,Veradermics Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,106.26,41.71
+TTMI,TTM Technologies Inc. Common Stock,Technology,Electrical Products,170.81,41.47
+INBX,Inhibrx Biosciences Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),117.58,41.35
+NPWR,NET Power Inc. Class A Common Stock,Energy,Industrial Machinery/Components,2.2,40.97
+FLNC,Fluence Energy Inc. Class A Common Stock,Miscellaneous,Industrial Machinery/Components,20.84,40.81
+BOOM,DMC Global Inc. Common Stock,Industrials,Industrial Specialties,7.47,40.68
+JELD,JELD-WEN Holding Inc. Common Stock,Basic Materials,Forest Products,1.54,40.45
+AEHR,Aehr Test Systems Common Stock,Industrials,Electrical Products,104.38,40.33
+ASST,Strive Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,17.41,40.06
+GRWG,GrowGeneration Corp. Common Stock,Consumer Discretionary,RETAIL: Building Materials,1.51,40.06
+CSCO,Cisco Systems Inc. Common Stock (DE),Telecommunications,Computer Communications Equipment,115.65,40.0
+NXPI,NXP Semiconductors N.V. Common Stock,Technology,Semiconductors,293.77,39.96
+ASYS,Amtech Systems Inc. Common Stock,Technology,Industrial Machinery/Components,22.33,39.82
+URGN,UroGen Pharma Ltd. Ordinary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,29.6,39.49
+RDW,Redwire Corporation Common Stock,Industrials,Military/Government/Technical,13.67,39.35
+MX,Magnachip Semiconductor Corporation Common Stock,Technology,Semiconductors,4.29,38.83
+HPE,Hewlett Packard Enterprise Company Common Stock,Technology,Retail: Computer Software & Peripheral Equipment,33.95,38.74
+PDSB,PDS Biotechnology Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1.47,38.68
+FLWS,1-800-FLOWERS.COM Inc. Common Stock,Consumer Discretionary,Other Specialty Stores,4.64,38.66
+NBIS,Nebius Group N.V. Class A Ordinary Shares,Technology,Computer Software: Programming Data Processing,224.37,38.55
+HNGE,Hinge Health Inc. Class A Common Stock,Technology,EDP Services,53.7,38.47
+GENK,GEN Restaurant Group Inc. Class A Common Stock,Consumer Discretionary,Restaurants,2.2,38.36
+KLTR,Kaltura Inc. Common Stock,Technology,Computer Software: Prepackaged Software,1.51,38.22
+BLDP,Ballard Power Systems Inc. Common Shares,Energy,Industrial Machinery/Components,4.06,38.09
+AVTX,Avalo Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,19.19,38.06
+ILPT,Industrial Logistics Properties Trust Common Shares of Beneficial Interest,Real Estate,Real Estate Investment Trusts,7.94,37.98
+CTOS,Custom Truck One Source Inc. Common Stock,Consumer Discretionary,Diversified Commercial Services,10.06,37.88
+OBE,Obsidian Energy Ltd. Common Shares,Energy,Oil & Gas Production,13.14,37.88
+FNKO,Funko Inc. Class A Common Stock,Consumer Discretionary,Recreational Games/Products/Toys,5.06,37.5
+MNTK,Montauk Renewables Inc. Common Stock,Utilities,Natural Gas Distribution,1.63,37.39
+BE,Bloom Energy Corporation Class A Common Stock,Energy,Industrial Machinery/Components,300.89,37.38
+UIS,Unisys Corporation New Common Stock,Technology,EDP Services,3.05,37.16
+PI,Impinj Inc. Common Stock,Technology,Industrial Machinery/Components,145.77,37.08
+HLIT,Harmonic Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,13.38,36.81
+WSC,WillScot Holdings Corporation Class A Common Stock,Industrials,Misc Corporate Leasing Services,26.1,36.75
+GRPN,Groupon Inc. Common Stock,Consumer Discretionary,Advertising,17.17,36.38
+MRVL,Marvell Technology Inc. Common Stock,Technology,Semiconductors,182.49,36.36
+AAOI,Applied Optoelectronics Inc. Common Stock,Technology,Semiconductors,199.59,36.34
+ELA,Envela Corporation Common Stock,Consumer Discretionary,Consumer Specialties,23.92,36.3
+BTBT,Bit Digital Inc. Ordinary Shares,Finance,Finance: Consumer Services,2.06,36.09
+RMIX,Suncrete Inc. Class A Common Stock,Industrials,Building Materials,17.75,36.02
+BHE,Benchmark Electronics Inc. Common Stock,Technology,Electrical Products,86.78,35.98
+OSTX,OS Therapies Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1.89,35.92
+HELE,Helen of Troy Limited Common Stock,Consumer Discretionary,Home Furnishings,23.56,35.87
+CRNC,Cerence Inc. Common Stock,Technology,Computer Software: Prepackaged Software,10.46,35.84
+AIFU,AIFU Inc. Class A Ordinary Share,Finance,Specialty Insurers,1.86,35.77
+APPS,Digital Turbine Inc. Common Stock,Miscellaneous,Multi-Sector Companies,4.24,35.74
+SUIG,Sui Group Holdings Limited Common Stock,Finance,Finance Companies,1.85,35.66
+MSTR,Strategy Inc Common Stock Class A,Technology,Computer Software: Prepackaged Software,186.38,35.64
+STRO,Sutro Biopharma Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),39.0,35.51
+NN,NextNav Inc. Common Stock,Industrials,Industrial Machinery/Components,21.83,35.39
+ASTH,Astrana Health Inc. Common Stock,Consumer Discretionary,Professional Services,39.33,35.29
+SGHT,Sight Sciences Inc. Common Stock,Health Care,Medical/Dental Instruments,5.16,35.21
+PBI,Pitney Bowes Inc. Common Stock,Miscellaneous,Office Equipment/Supplies/Services,15.86,35.14
+HRI,Herc Holdings Inc. Common Stock ,Industrials,Misc Corporate Leasing Services,140.05,35.13
+VGNT,Versigent PLC Ordinary Shares,,,44.48,35.12
+AOSL,Alpha and Omega Semiconductor Limited Common Shares,Technology,Semiconductors,41.0,34.96
+CVGI,Commercial Vehicle Group Inc. Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,5.52,34.96
+RIOT,Riot Platforms Inc. Common Stock ,Finance,Finance: Consumer Services,24.43,34.85
+TZOO,Travelzoo Common Stock,Consumer Discretionary,Advertising,9.07,34.84
+FSTR,L.B. Foster Company Common Stock,Industrials,Metal Fabrications,40.43,34.75
+FSEA,First Seacoast Bancorp Inc. Common Stock,Finance,Savings Institutions,16.7,34.68
+SVCO,Silvaco Group Inc. Common Stock,Technology,Computer Software: Prepackaged Software,10.61,34.64
+CURR,Currenc Group Inc. Ordinary Shares,Real Estate,Real Estate,4.24,34.6
+TEAM,Atlassian Corporation Class A Common Stock,Technology,Computer Software: Prepackaged Software,80.34,34.55
+CCRN,Cross Country Healthcare Inc. Common Stock $0.0001 Par Value,Consumer Discretionary,Professional Services,13.14,34.49
+PGNY,Progyny Inc. Common Stock,Health Care,Misc Health and Biotechnology Services,23.06,34.3
+DELL,Dell Technologies Inc. Class C Common Stock ,Technology,Computer Manufacturing,246.86,34.21
+MBLY,Mobileye Global Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,10.23,34.19
+GLXY,Galaxy Digital Inc. Class A Common Stock,Finance,Investment Bankers/Brokers/Service,31.82,34.15
+IPHA,Innate Pharma S.A. ADS,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),2.18,34.05
+SEAT,Vivid Seats Inc. Class A Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,9.1,34.02
+FLYW,Flywire Corporation Voting Common Stock,Real Estate,Real Estate,16.38,33.93
+FRMI,Fermi Inc. Common Stock,Real Estate,Real Estate Investment Trusts,7.05,33.62
+PLSE,Pulse Biosciences Inc Common Stock (DE),Health Care,Medical/Dental Instruments,26.88,33.6
+TSHA,Taysha Gene Therapies Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),6.29,33.55
+AMSC,American Superconductor Corporation Common Stock,Consumer Discretionary,Metal Fabrications,52.63,33.42
+DDI,DoubleDown Interactive Co. Ltd. American Depository Shares,Technology,EDP Services,11.78,33.41
+CTW,CTW Class A Ordinary Shares,Technology,EDP Services,2.99,33.37
+CSIQ,Canadian Solar Inc. Common Shares (ON),Technology,Semiconductors,17.83,33.3
+NAVN,Navan Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,18.46,33.29
+ALAB,Astera Labs Inc. Common Stock,Technology,Semiconductors,227.32,33.25
+CORT,Corcept Therapeutics Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,58.12,33.07
+KFRC,Kforce Inc. Common Stock,Consumer Discretionary,Professional Services,39.67,33.03
+SGMT,Sagimet Biosciences Inc. Series A Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,7.36,32.76
+ANAB,AnaptysBio Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,62.1,32.65
+AIRJ,AirJoule Technologies Corporation Class A Common Stock,Industrials,Industrial Machinery/Components,4.01,32.62
+RANI,Rani Therapeutics Holdings Inc. Class A Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1.11,32.56
+LZM,Lifezone Metals Limited Ordinary Shares,Basic Materials,Metal Mining,5.05,32.55
+OOMA,Ooma Inc. Common Stock,Technology,EDP Services,18.92,32.55
+XPER,Xperi Inc. Common Stock ,Technology,Computer Software: Prepackaged Software,8.08,32.46
+CCCC,C4 Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),3.65,32.43
+LXRX,Lexicon Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.32,32.29
+CYRX,CryoPort Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,13.16,32.26
+OMDA,Omada Health Inc. Common Stock,Health Care,Medical/Nursing Services,16.48,32.26
+LUMN,Lumen Technologies Inc. Common Stock,Telecommunications,Telecommunications Equipment,10.31,32.24
+MIAX,Miami International Holdings Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,56.74,32.24
+MRVI,Maravai LifeSciences Holdings Inc. Class A Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.34,32.16
+EGHT,8x8 Inc Common Stock,Technology,EDP Services,2.26,32.16
+MAIR,Madison Air Solutions Corporation Class A Common Stock,Industrials,Pollution Control Equipment,41.92,32.03
+CRML,Critical Metals Corp. Ordinary Shares,Basic Materials,Metal Mining,11.6,31.97
+KALV,KalVista Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,26.77,31.96
+OSG,Octave Specialty Group Inc. Common Stock,Finance,Property-Casualty Insurers,5.69,31.71
+TMCI,Treace Medical Concepts Inc. Common Stock,Health Care,Medical/Dental Instruments,2.81,31.69
+DHX,DHI Group Inc. Common Stock,Real Estate,Real Estate,3.75,31.58
+BYFC,Broadway Financial Corporation Class A Common Stock,Finance,Savings Institutions,9.96,31.57
+IART,Integra LifeSciences Holdings Corporation Common Stock,Health Care,Medical/Dental Instruments,14.55,31.56
+LGN,Legence Corp. Class A Common stock,Consumer Discretionary,Engineering & Construction,86.86,31.49
+BKSY,BlackSky Technology Inc. Class A Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,42.12,31.45
+ORN,Orion Group Holdings Inc. Common,Industrials,Military/Government/Technical,15.6,31.42
+WDC,Western Digital Corporation Common Stock,Technology,Electronic Components,481.01,31.34
+NEXA,Nexa Resources S.A. Common Shares,Basic Materials,Metal Mining,15.68,31.32
+FLD,Fold Holdings Inc. Class A Common Stock,Finance,Finance: Consumer Services,1.51,31.31
+CORZ,Core Scientific Inc. Common Stock,Finance,Finance: Consumer Services,24.51,31.21
+GHRS,GH Research PLC Ordinary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,21.98,31.04
+EXFY,Expensify Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,1.14,31.03
+ELVR,Elevra Lithium Limited American Depository Shares,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),82.93,30.99
+POWI,Power Integrations Inc. Common Stock,Technology,Semiconductors,70.76,30.97
+RNAC,Cartesian Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,8.31,30.94
+PWR,Quanta Services Inc. Common Stock,Industrials,Engineering & Construction,777.34,30.78
+MWH,SOLV Energy Inc. Class A Common Stock,Industrials,Military/Government/Technical,44.42,30.78
+DRTS,Alpha Tau Medical Ltd. Ordinary Shares,Health Care,Medical/Dental Instruments,10.24,30.78
+VSTS,Vestis Corporation Common Stock,Consumer Discretionary,Consumer Specialties,12.06,30.75
+NBR,Nabors Industries Ltd.,Energy,Oil & Gas Production,103.64,30.64
+PRM,Perimeter Solutions SA Common Stock,Industrials,Major Chemicals,34.55,30.62
+KLIC,Kulicke and Soffa Industries Inc. Common Stock,Technology,Semiconductors,104.24,30.46
+STAA,STAAR Surgical Company Common Stock,Health Care,Ophthalmic Goods,31.86,30.41
+RDCM,Radcom Ltd. Ordinary Shares,Technology,Computer peripheral equipment,15.98,30.41
+GPRO,GoPro Inc. Class A Common Stock,Consumer Discretionary,Industrial Machinery/Components,1.14,30.11
+TDC,Teradata Corporation Common Stock,Technology,Computer Software: Prepackaged Software,33.45,30.05
+RAL,Ralliant Corporation Common Stock,Industrials,Industrial Machinery/Components,60.54,30.03
+RBRK,Rubrik Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,62.42,29.96
+MCHP,Microchip Technology Incorporated Common Stock,Technology,Semiconductors,96.68,29.77
+MDB,MongoDB Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,303.1,29.75
+VSAT,ViaSat Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,73.93,29.74
+PYXS,Pyxis Oncology Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.2,29.71
+RELY,Remitly Global Inc. Common Stock,Real Estate,Real Estate,23.24,29.69
+ADUR,Aduro Clean Technologies Inc. Common Stock,Industrials,Major Chemicals,14.25,29.43
+TSEM,Tower Semiconductor Ltd. Ordinary Shares,Technology,Semiconductors,277.1,29.42
+SVC,Service Properties Trust Common Stock,Real Estate,Real Estate Investment Trusts,1.71,29.42
+ASRT,Assertio Holdings Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,23.32,29.41
+P,Everpure Inc. Class A common stock,Technology,Electronic Components,82.74,29.28
+GEO,Geo Group Inc (The) REIT,Consumer Discretionary,Homebuilding,23.14,29.27
+VIAV,Viavi Solutions Inc. Common Stock,Technology,Semiconductors,52.67,29.14
+CECO,CECO Environmental Corp. Common Stock,Industrials,Pollution Control Equipment,85.31,29.12
+DVA,DaVita Inc. Common Stock,Health Care,Misc Health and Biotechnology Services,192.79,29.0
+TTGT,TechTarget Inc. Common Stock,Telecommunications,Telecommunications Equipment,5.18,28.98
+NVT,nVent Electric plc Ordinary Shares ,Industrials,Industrial Machinery/Components,173.12,28.92
+PBT,Permian Basin Royalty Trust Common Stock,Energy,Oil & Gas Production,27.82,28.9
+PLUG,Plug Power Inc. Common Stock,Energy,Industrial Machinery/Components,3.79,28.87
+QBTS,D-Wave Quantum Inc. Common Shares,Technology,EDP Services,21.86,28.85
+STRZ,Starz Entertainment Corp. Common Shares,Consumer Discretionary,Movies/Entertainment,21.63,28.84
+S,SentinelOne Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,16.42,28.82
+LUD,Luda Technology Group Limited Ordinary Shares,Industrials,Steel/Iron Ore,5.99,28.82
+EOSE,Eos Energy Enterprises Inc. Class A Common Stock,Miscellaneous,Industrial Machinery/Components,8.14,28.8
+SUPX,SuperX AI Technology Limited Ordinary Shares,,,10.41,28.68
+EQ,Equillium Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.47,28.59
+LVO,LiveOne Inc. Common Stock,Consumer Discretionary,Restaurants,5.54,28.54
+GNRC,Generac Holdlings Inc. Common Stock,Consumer Discretionary,Metal Fabrications,272.21,28.48
+FTK,Flotek Industries Inc. Common Stock,Industrials,Major Chemicals,20.14,28.36
+NWPX,NWPX Infrastructure Inc. Common Stock,Industrials,Steel/Iron Ore,112.4,28.3
+DFDV,DeFi Development Corp. Common Stock,Finance,Finance: Consumer Services,5.08,28.28
+SHLS,Shoals Technologies Group Inc. Class A Common Stock,Technology,Semiconductors,9.26,28.25
+LINC,Lincoln Educational Services Corporation Common Stock,Real Estate,Other Consumer Services,51.05,28.14
+IESC,IES Holdings Inc. Common Stock,Industrials,Engineering & Construction,697.17,28.12
+MTRN,Materion Corporation,Industrials,Industrial Specialties,211.87,28.1
+PNRG,PrimeEnergy Resources Corporation Common Stock,Energy,Oil & Gas Production,253.68,28.06
+SXC,SunCoke Energy Inc. Common Stock,Industrials,Steel/Iron Ore,7.89,27.96
+WHWK,Whitehawk Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,5.11,27.87
+NUCL,Eagle Nuclear Energy Corp. Common stock,Basic Materials,Other Metals and Minerals,10.97,27.86
+WSHP,WeShop Holdings Limited Class A Ordinary Shares,Consumer Discretionary,Other Specialty Stores,7.16,27.86
+NRXP,NRX Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.19,27.6
+COHU,Cohu Inc. Common Stock,Industrials,Electrical Products,49.12,27.55
+BLMN,Bloomin' Brands Inc. Common Stock,Consumer Discretionary,Restaurants,8.17,27.46
+COHR,Coherent Corp. Common Stock,Technology,Electronic Components,399.34,27.41
+QMCO,Quantum Corporation Common Stock,Technology,Electronic Components,8.79,27.21
+HYPR,Hyperfine Inc. Class A Common Stock,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,1.59,27.2
+CLYM,Climb Bio Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,11.26,27.18
+MOH,Molina Healthcare Inc Common Stock,Health Care,Medical Specialities,187.22,26.92
+BGIN,Bgin Blockchain Limited Class A Ordinary Shares,Finance,Finance: Consumer Services,3.93,26.85
+ELV,Elevance Health Inc. Common Stock,Health Care,Medical Specialities,397.42,26.83
+SXT,Sensient Technologies Corporation Common Stock,Industrials,Major Chemicals,117.96,26.82
+AP,Ampco-Pittsburgh Corporation Common Stock,Industrials,Fluid Controls,11.41,26.78
+TTI,Tetra Technologies Inc. Common Stock,Energy,Oil & Gas Production,10.66,26.75
+DOMO,Domo Inc. Class B Common Stock,Technology,Computer Software: Prepackaged Software,3.43,26.75
+POAS,Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares,Industrials,Industrial Machinery/Components,2.47,26.66
+AMRC,Ameresco Inc. Class A Common Stock,Consumer Discretionary,Engineering & Construction,32.67,26.58
+VRCA,Verrica Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,7.24,26.57
+SRTA,Strata Critical Medical Inc. Class A Common Stock,Consumer Discretionary,Transportation Services,5.48,26.56
+CVS,CVS Health Corporation Common Stock,Consumer Staples,Retail-Drug Stores and Proprietary Stores,97.3,26.45
+CLPT,ClearPoint Neuro Inc. Common Stock,Health Care,Medical/Dental Instruments,13.12,26.4
+RELL,Richardson Electronics Ltd. Common Stock,Technology,Electronic Components,17.07,26.4
+WTTR,Select Water Solutions Inc. Class A common stock,Energy,Oilfield Services/Equipment,18.63,26.31
+KALU,Kaiser Aluminum Corporation Common Stock,Industrials,Metal Fabrications,178.95,26.2
+HNRG,Hallador Energy Company Common Stock,Energy,Coal Mining,19.04,26.18
+VATE,INNOVATE Corp. Common Stock,Industrials,Metal Fabrications,12.14,26.06
+TDOC,Teladoc Health Inc. Common Stock,Health Care,Medical/Nursing Services,6.61,26.05
+LYTS,LSI Industries Inc. Common Stock,Consumer Discretionary,Building Products,24.18,25.81
+OKTA,Okta Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,80.56,25.7
+ZBAI,ATIF Holdings Limited Ordinary Shares,Consumer Discretionary,Professional Services,9.3,25.69
+XGN,Exagen Inc. Common Stock,Health Care,Medical Specialities,3.82,25.66
+ACCO,Acco Brands Corporation Common Stock,Consumer Discretionary,Publishing,3.94,25.64
+ARKO,ARKO Corp. Common Stock,Consumer Staples,Food Chains,7.14,25.62
+CERS,Cerus Corporation Common Stock,Technology,EDP Services,2.53,25.62
+AXSM,Axsome Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,231.19,25.52
+VRNS,Varonis Systems Inc. Common Stock,Technology,Computer Software: Prepackaged Software,27.31,25.51
+FA,First Advantage Corporation Common Stock,Technology,EDP Services,15.11,25.5
+ZS,Zscaler Inc. Common Stock,Technology,EDP Services,153.96,25.49
+ALXO,ALX Oncology Holdings Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.03,25.39
+BWA,BorgWarner Inc. Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,67.31,25.37
+DOMH,Dominari Holdings Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.87,25.32
+PL,Planet Labs PBC Class A Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,42.47,25.15
+KNSA,Kiniksa Pharmaceuticals International plc Class A Ordinary Shares,Health Care,Biotechnology: Pharmaceutical Preparations,58.71,25.12
+CIEN,Ciena Corporation Common Stock,Utilities,Telecommunications Equipment,584.46,25.1
+TH,Target Hospitality Corp. Common Stock,Consumer Discretionary,Hotels/Resorts,18.17,25.05
+POWL,Powell Industries Inc. Common Stock,Energy,Electrical Products,293.06,25.01
+WILC,G. Willi-Food International  Ltd. Ordinary Shares,Consumer Discretionary,Food Distributors,35.3,25.0
+IHRT,iHeartMedia Inc. Class A Common Stock,Consumer Discretionary,Broadcasting,4.86,24.94
+LAR,Lithium Argentina AG Common Shares,Basic Materials,Metal Mining,9.95,24.91
+MXCT,MaxCyte Inc. Common Stock,Health Care,Biotechnology: Commercial Physical & Biological Resarch,1.1,24.86
+UNCY,Unicycive Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,8.66,24.78
+ST,Sensata Technologies Holding plc Ordinary Shares,Industrials,Industrial Machinery/Components,48.94,24.73
+GRAL,GRAIL Inc. Common Stock ,Health Care,Medical Specialities,62.92,24.62
+ACRS,Aclaris Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.89,24.62
+RR,Richtech Robotics Inc. Class B Common Stock,Industrials,Industrial Machinery/Components,2.78,24.61
+ACVA,ACV Auctions Inc. Class A Common Stock,Real Estate,Real Estate,5.8,24.57
+MARA,MARA Holdings Inc. Common Stock,Technology,EDP Services,13.06,24.55
+TUSK,Mammoth Energy Services Inc. Common Stock,Energy,Oilfield Services/Equipment,3.28,24.52
+NXT,Nextpower Inc. Class A Common Stock,Industrials,Industrial Machinery/Components,143.09,24.51
+LONA,LeonaBio Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),11.29,24.48
+ACMR,ACM Research Inc. Class A Common Stock,Technology,Industrial Machinery/Components,63.14,24.41
+HQI,HireQuest Inc. Common Stock (DE),Consumer Discretionary,Professional Services,12.9,24.28
+JBIO,Jade Biosciences Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,24.16,24.25
+UPXI,Upexi Inc. Common Stock,Health Care, Medicinal Chemicals and Botanical Products ,1.49,24.17
+BULL,Webull Corporation Class A Ordinary Shares,Finance,Investment Bankers/Brokers/Service,7.22,24.14
+INTT,inTest Corporation Common Stock,Industrials,Electrical Products,19.13,24.14
+VTRS,Viatris Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,17.26,24.12
+WRBY,Warby Parker Inc. Class A Common Stock,Health Care,Ophthalmic Goods,28.72,24.09
+CHEF,The Chefs' Warehouse Inc. Common Stock,Consumer Discretionary,Food Distributors,82.12,24.07
+PAMT,PAMT CORP Common Stock,Industrials,Trucking Freight/Courier Services,11.31,24.07
+ICL,ICL Group Ltd. Ordinary Shares,Industrials,Agricultural Chemicals,6.6,24.06
+NKTX,Nkarta Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.84,24.02
+ANVS,Annovis Bio Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,2.14,23.99
+MEC,Mayville Engineering Company Inc. Common Stock,Industrials,Industrial Specialties,25.68,23.94
+STUB,StubHub Holdings Inc. Class A Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,8.55,23.93
+QS,QuantumScape Corporation Class A Common Stock,Miscellaneous,Industrial Machinery/Components,8.5,23.91
+EIKN,Eikon Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),13.15,23.89
+THR,Thermon Group Holdings Inc. Common Stock,Energy,Industrial Machinery/Components,68.2,23.86
+ALOT,AstroNova Inc. Common Stock,Technology,Computer peripheral equipment,14.59,23.85
+BTCS,BTCS Inc. Common Stock,Finance,Finance: Consumer Services,2.12,23.68
+BAK,Braskem SA ADR,Industrials,Major Chemicals,4.95,23.63
+ADV,Advantage Solutions Inc. Class A Common Stock,Real Estate,Real Estate,34.5,23.61
+FIX,Comfort Systems USA Inc. Common Stock,Industrials,Engineering & Construction,2040.06,23.6
+PUMP,ProPetro Holding Corp. Common Stock,Energy,Oilfield Services/Equipment,16.89,23.52
+ANGX,Angel Studios Inc. Class A Common Stock,Consumer Discretionary,Movies/Entertainment,2.84,23.51
+AGCC,Agencia Comercial Spirits Ltd Class A Ordinary Shares,Consumer Staples,Beverages (Production/Distribution),18.55,23.5
+VC,Visteon Corporation Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,115.71,23.44
+VISN,Vistance Networks Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,11.43,23.36
+KN,Knowles Corporation Common Stock,Consumer Staples,Consumer Electronics/Appliances,35.69,23.28
+RDVT,Red Violet Inc. Common Stock ,Technology,Computer Software: Prepackaged Software,45.45,23.17
+SMWB,Similarweb Ltd. Ordinary Shares,Technology,Computer Software: Programming Data Processing,3.01,23.16
+ROOT,Root Inc. Class A Common Stock,Finance,Property-Casualty Insurers,57.03,23.15
+CGTX,Cognition Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),1.2,23.08
+FIGR,Figure Technology Solutions Inc. Class A Common Stock,Finance,Finance: Consumer Services,43.23,22.92
+FEAM,5E Advanced Materials Inc. Common Stock,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),2.04,22.89
+ELDN,Eledon Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.93,22.81
+ASC,Ardmore Shipping Corporation Common Stock,Consumer Discretionary,Marine Transportation,18.76,22.77
+ADI,Analog Devices Inc. Common Stock,Technology,Semiconductors,427.58,22.65
+VCTR,Victory Capital Holdings Inc. Class A Common Stock,Finance,Investment Managers,88.27,22.65
+GENB,Generate Biomedicines Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,15.81,22.65
+ORMP,Oramed Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.66,22.63
+CYPH,Cypherpunk Technologies Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1.16,22.63
+ARW,Arrow Electronics Inc. Common Stock,Technology,Electronic Components,212.93,22.61
+BBAI,BigBear.ai Inc. Common Stock,Technology,Computer Software: Prepackaged Software,4.32,22.59
+FSI,Flexible Solutions International Inc. Common Stock (CDA),Industrials,Major Chemicals,6.41,22.56
+INO,Inovio Pharmaceuticals Inc. Common Stock,Health Care,Medical/Dental Instruments,1.36,22.51
+NUE,Nucor Corporation Common Stock,Industrials,Steel/Iron Ore,232.79,22.5
+Q,Qnity Electronics Inc. Common Stock,Technology,Semiconductors,162.59,22.46
+SILA,Sila Realty Trust Inc. Common Stock,Real Estate,Real Estate Investment Trusts,30.55,22.33
+NTNX,Nutanix Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,45.05,22.32
+IREN,IREN Limited Ordinary Shares,Technology,EDP Services,57.92,22.28
+NBIX,Neurocrine Biosciences Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),159.9,22.24
+PRTH,Priority Technology Holdings Inc. Common Stock,Real Estate,Real Estate,6.03,22.21
+CMP,Compass Minerals Intl Inc Common Stock,Industrials,Mining & Quarrying of Nonmetallic Minerals (No Fuels),30.18,22.19
+GEN,Gen Digital Inc. Common Stock,Technology,Computer Software: Prepackaged Software,23.1,22.18
+CLSK,CleanSpark Inc. Common Stock,Finance,Finance: Consumer Services,13.77,22.14
+PTEN,Patterson-UTI Energy Inc. Common Stock,Energy,Oil & Gas Production,12.06,22.12
+LIDR,AEye Inc. Class A Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,2.02,22.12
+BEN,Franklin Resources Inc. Common Stock,Finance,Investment Managers,32.27,22.1
+ULCC,Frontier Group Holdings Inc. Common Stock,Consumer Discretionary,Air Freight/Delivery Services,4.84,22.1
+CRGO,Freightos Limited Ordinary shares,Industrials,Integrated Freight & Logistics,2.1,22.09
+LBRT,Liberty Energy Inc. Class A common stock,Energy,Oilfield Services/Equipment,33.25,22.06
+MOB,Mobilicom Limited Ordinary Shares,Industrials,Aerospace,5.91,22.0
+FFIV,F5 Inc. Common Stock,Telecommunications,Computer Communications Equipment,360.05,21.97
+EAF,GrafTech International Ltd. Common Stock,Energy,Industrial Machinery/Components,9.23,21.77
+VRT,Vertiv Holdings LLC Class A Common Stock,Technology,Industrial Machinery/Components,378.08,21.76
+EFXT,Enerflex Ltd Common Shares,Industrials,Industrial Machinery/Components,27.59,21.76
+ACDC,ProFrac Holding Corp. Class A Common Stock,Energy,Oilfield Services/Equipment,7.12,21.71
+TSLA,Tesla Inc. Common Stock,Industrials,Auto Manufacturing,443.21,21.69
+TKNO,Alpha Teknova Inc. Common Stock,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,3.68,21.62
+ASPI,ASP Isotopes Inc. Common Stock,Industrials,Major Chemicals,6.08,21.6
+PTRN,Pattern Group Inc. Series A Common Stock,Consumer Discretionary,Catalog/Specialty Distribution,16.24,21.52
+LFST,LifeStance Health Group Inc. Common Stock,Health Care,Medical/Nursing Services,7.91,21.43
+TMC,TMC the metals company Inc. Common Stock,Basic Materials,Metal Mining,5.73,21.4
+SOTK,Sono-Tek Corporation Common Stock,Technology,Industrial Machinery/Components,4.94,21.38
+MB,MasterBeef Group Ordinary Shares,Consumer Discretionary,Restaurants,6.98,21.37
+NHC,National HealthCare Corporation Common Stock,Health Care,Hospital/Nursing Management,198.4,21.35
+STVN,Stevanato Group S.p.A. Ordinary Shares,Health Care,Medical/Dental Instruments,17.92,21.33
+SNPS,Synopsys Inc. Common Stock,Technology,Computer Software: Prepackaged Software,507.88,21.27
+AGX,Argan Inc. Common Stock,Consumer Discretionary,Engineering & Construction,731.41,21.21
+HIVE,HIVE Digital Technologies Ltd. Common Shares,Finance,Finance: Consumer Services,2.93,21.07
+DINO,HF Sinclair Corporation Common Stock,Energy,Natural Gas Distribution,68.71,21.02
+NTAP,NetApp Inc. Common Stock,Technology,Electronic Components,119.62,20.96
+SVM,Silvercorp Metals Inc. Common Shares,Basic Materials,Precious Metals,14.99,20.89
+ONDS,Ondas Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,11.36,20.85
+IRDM,Iridium Communications Inc Common Stock,Telecommunications,Telecommunications Equipment,43.64,20.82
+CVEO,Civeo Corporation (Canada) Common Shares,Consumer Discretionary,Hotels/Resorts,35.59,20.81
+CNCK,Coincheck Group N.V. Ordinary Shares,Finance,Finance: Consumer Services,2.21,20.77
+CYD,China Yuchai International Limited Common Stock,Industrials,Industrial Machinery/Components,50.9,20.73
+TOI,The Oncology Institute Inc. Common Stock,Health Care,Medical/Nursing Services,4.08,20.71
+HSDT,Solana Company Class A Common Stock (DE),Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,2.39,20.71
+NVEC,NVE Corporation Common Stock,Technology,Semiconductors,92.47,20.65
+CBOE,Cboe Global Markets Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,362.73,20.61
+BSTZ,BlackRock Science and Technology Term Trust Common Shares of Beneficial Interest,Finance,Trusts Except Educational Religious and Charitable,29.04,20.61
+FLXS,Flexsteel Industries Inc. Common Stock,Consumer Discretionary,Home Furnishings,56.07,20.61
+CPSS,Consumer Portfolio Services Inc. Common Stock,Finance,Finance: Consumer Services,10.19,20.59
+GOOGL,Alphabet Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,401.06,20.47
+ORCL,Oracle Corporation Common Stock,Technology,Computer Software: Prepackaged Software,196.36,20.47
+LASR,nLIGHT Inc. Common Stock,Technology,Semiconductors,80.51,20.41
+BIDU,Baidu Inc. ADS,Technology,Computer Software: Programming Data Processing,142.32,20.38
+SEI,Solaris Energy Infrastructure Inc. Class A Common Stock,Consumer Discretionary,Oil and Gas Field Machinery,78.26,20.34
+RDNW,RideNow Group Inc. Class B Common Stock,Technology,EDP Services,7.93,20.33
+NTCT,NetScout Systems Inc. Common Stock,Technology,EDP Services,39.04,20.32
+STLD,Steel Dynamics Inc.,Industrials,Steel/Iron Ore,234.96,20.31
+LWLG,Lightwave Logic Inc. Common Stock,Industrials,Containers/Packaging,14.7,20.29
+ACET,Adicet Bio Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,8.42,20.29
+WEN,Wendy's Company (The) Common Stock,Consumer Discretionary,Restaurants,8.15,20.28
+RMR,The RMR Group Inc. Class A Common Stock,Consumer Discretionary,Professional Services,19.44,20.28
+FLL,Full House Resorts Inc. Common Stock,Consumer Discretionary,Hotels/Resorts,2.99,20.28
+CRSR,Corsair Gaming Inc. Common Stock,Technology,Computer peripheral equipment,7.37,20.23
+LTH,Life Time Group Holdings Inc. Common Stock,Consumer Discretionary,Hotels/Resorts,33.63,20.19
+AVT,Avnet Inc. Common Stock,Technology,Electronic Components,86.23,20.18
+VMI,Valmont Industries Inc. Common Stock,Industrials,Metal Fabrications,516.02,20.15
+DERM,Journey Medical Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,6.32,20.15
+CDNS,Cadence Design Systems Inc. Common Stock,Technology,Computer Software: Prepackaged Software,351.22,20.13
+GOOG,Alphabet Inc. Class C Capital Stock,Technology,Computer Software: Programming Data Processing,397.13,20.13
+ZVRA,Zevra Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,11.76,20.12
+JOBY,Joby Aviation Inc. Common Stock,Industrials,Aerospace,10.56,20.06
+SGHC,Super Group (SGHC) Limited Ordinary Shares,Consumer Discretionary,Services-Misc. Amusement & Recreation,13.14,20.06
+NEXT,NextDecade Corporation Common Stock,Utilities,Oil & Gas Production,8.9,20.04
+WKC,World Kinect Corporation Common Stock,Energy,Oil Refining/Marketing,28.0,20.04
+PM,Philip Morris International Inc Common Stock,Health Care, Medicinal Chemicals and Botanical Products ,191.41,20.03
+TBRG,TruBridge Inc. Common Stock,Technology,EDP Services,25.85,20.03
+NUAI,New Era Energy & Digital Inc. Common Stock,Energy,Oil & Gas Production,5.16,20.0
+TRAK,ReposiTrak Inc. Common Stock,Technology,EDP Services,9.15,19.97
+NOVT,Novanta Inc. Common Stock,Miscellaneous,Industrial Machinery/Components,154.57,19.96
+ENS,EnerSys Common Stock,Technology,Industrial Machinery/Components,238.57,19.92
+NVDA,NVIDIA Corporation Common Stock,Technology,Semiconductors,235.62,19.9
+ROG,Rogers Corporation Common Stock,Industrials,Major Chemicals,141.41,19.87
+PNTG,The Pennant Group Inc. Common Stock ,Health Care,Medical/Nursing Services,36.74,19.85
+NSIT,Insight Enterprises Inc. Common Stock,Consumer Discretionary,Catalog/Specialty Distribution,88.39,19.8
+WS,Worthington Steel Inc. Common Shares,Industrials,Steel/Iron Ore,40.55,19.76
+CRBP,Corbus Pharmaceuticals Holdings Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,12.0,19.76
+RSI,Rush Street Interactive Inc. Class A Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,26.74,19.75
+USAS,Americas Gold and Silver Corporation Common Shares no par value,Basic Materials,Metal Mining,7.22,19.74
+VUZI,Vuzix Corporation Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,3.08,19.65
+WCC,WESCO International Inc. Common Stock,Consumer Discretionary,Telecommunications Equipment,371.02,19.64
+LFMD,LifeMD Inc. Common Stock,Health Care,Medical/Nursing Services,4.51,19.63
+OMCL,Omnicell Inc. Common Stock ($0.001 par value),Technology,Computer Manufacturing,43.43,19.54
+SMCI,Super Micro Computer Inc. Common Stock,Technology,Computer Manufacturing,32.51,19.52
+BDSX,Biodesix Inc. Common Stock,Health Care,Medical Specialities,14.51,19.52
+AFRM,Affirm Holdings Inc. Class A Common Stock,Finance,Finance: Consumer Services,66.71,19.51
+ETOR,eToro Group Ltd. Class A Common Shares,Finance,Investment Bankers/Brokers/Service,41.48,19.48
+GLW,Corning Incorporated Common Stock,Industrials,Telecommunications Equipment,206.45,19.46
+TSAT,Telesat Corporation Class A Common Shares and Class B Variable Voting Shares ,Industrials,Metal Fabrications,54.04,19.45
+SOUN,SoundHound AI Inc Class A Common Stock,Technology,Computer Software: Prepackaged Software,8.32,19.44
+KRC,Kilroy Realty Corporation Common Stock,Real Estate,Real Estate Investment Trusts,34.86,19.42
+BTX,BlackRock Technology and Private Equity Term Trust Common Shares of Beneficial Interest,,,8.85,19.41
+KGS,Kodiak Gas Services Inc. Common Stock,Utilities,Natural Gas Distribution,74.21,19.39
+RGS,Regis Corporation Common Stock,Consumer Discretionary,Other Consumer Services,28.89,19.38
+ARWR,Arrowhead Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,79.59,19.34
+LBRX,LB Pharmaceuticals Inc Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,31.7,19.33
+TGTX,TG Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,41.22,19.27
+PACS,PACS Group Inc. Common Stock,Health Care,Hospital/Nursing Management,39.52,19.25
+NUTX,Nutex Health Inc. Common Stock,Real Estate,Real Estate,128.59,19.24
+YSWY,Yesway Inc. Class A Common Stock,Consumer Staples,Food Chains,25.31,19.22
+ACRV,Acrivon Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,1.96,19.21
+CPRX,Catalyst Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,31.18,19.05
+ARMK,Aramark Common Stock,Consumer Discretionary,Restaurants,52.6,19.02
+LXFR,Luxfer Holdings PLC Ordinary Shares,Basic Materials,Major Chemicals,15.66,18.96
+MPWR,Monolithic Power Systems Inc. Common Stock,Technology,Semiconductors,1621.84,18.95
+COYA,Coya Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,5.3,18.95
+TTRX,Turn Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.02,18.93
+ECG,Everus Construction Group Inc. Common Stock,Consumer Discretionary,Homebuilding,161.46,18.92
+ZM,Zoom Communications Inc. Class A Common Stock,Technology,Computer Software: Programming Data Processing,97.93,18.85
+DIN,Dine Brands Global Inc. Common Stock,Consumer Discretionary,Restaurants,31.58,18.83
+CASY,Casey's General Stores Inc. Common Stock,Consumer Discretionary,Retail-Auto Dealers and Gas Stations,881.5,18.81
+SAIL,SailPoint Inc. Common Stock,Technology,Computer Software: Prepackaged Software,13.2,18.75
+COLD,Americold Realty Trust Inc. Common Stock,Real Estate,Real Estate Investment Trusts,14.66,18.74
+UMAC,Unusual Machines Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,16.61,18.73
+DUOL,Duolingo Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,108.55,18.69
+SLSN,Solesence Inc. Common Stock,Consumer Discretionary,Package Goods/Cosmetics,1.3,18.64
+AXGN,Axogen Inc. Common Stock,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,40.88,18.63
+ABCL,AbCellera Biologics Inc. Common Shares,Health Care,Biotechnology: Pharmaceutical Preparations,4.46,18.61
+LFUS,Littelfuse Inc. Common Stock,Energy,Electrical Products,459.64,18.57
+AMKR,Amkor Technology Inc. Common Stock,Technology,Semiconductors,72.7,18.56
+CVLG,Covenant Logistics Group Inc. Class A Common Stock,Industrials,Trucking Freight/Courier Services,33.77,18.49
+HTLD,Heartland Express Inc. Common Stock,Industrials,Trucking Freight/Courier Services,13.03,18.45
+ONL,Orion Properties Inc. Common Stock,Real Estate,Real Estate Investment Trusts,2.98,18.45
+DIOD,Diodes Incorporated Common Stock,Technology,Semiconductors,103.66,18.44
+CIFR,Cipher Digital Inc. Common Stock,Finance,Finance: Consumer Services,21.83,18.35
+HQ,Horizon Quantum Holdings Ltd. Class A Ordinary Shares,Technology,EDP Services,12.28,18.35
+ALGM,Allegro MicroSystems Inc. Common Stock,Technology,Semiconductors,45.28,18.32
+MTZ,MasTec Inc. Common Stock,Industrials,Water Sewer Pipeline Comm & Power Line Construction,432.47,18.2
+DEI,Douglas Emmett Inc. Common Stock,Real Estate,Real Estate Investment Trusts,11.65,18.2
+KOS,Kosmos Energy Ltd. Common Shares (DE),Energy,Oil & Gas Production,2.95,18.2
+CYTK,Cytokinetics Incorporated Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,78.42,18.19
+CGNX,Cognex Corporation Common Stock,Industrials,Industrial Machinery/Components,65.68,18.17
+LPG,Dorian LPG Ltd. Common Stock,Consumer Discretionary,Marine Transportation,40.87,18.16
+NHP,National Healthcare Properties Inc. Class A Common Stock,,,14.17,18.08
+ARQ,Arq Inc. Common Stock,Industrials,Major Chemicals,2.64,18.08
+MNKD,MannKind Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.23,18.07
+ROKU,Roku Inc. Class A Common Stock,Telecommunications,Cable & Other Pay Television Services,125.77,18.05
+MCRI,Monarch Casino & Resort Inc. Common Stock,Consumer Discretionary,Hotels/Resorts,116.88,18.05
+ESOA,Energy Services of America Corporation Common Stock,Industrials,Water Sewer Pipeline Comm & Power Line Construction,17.23,18.01
+KVHI,KVH Industries Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,10.91,18.0
+APO,Apollo Global Management Inc. (New) Common Stock,Finance,Investment Managers,135.43,17.95
+HSHP,Himalaya Shipping Ltd. Common Shares,Consumer Discretionary,Marine Transportation,16.17,17.94
+TTWO,Take-Two Interactive Software Inc. Common Stock,Consumer Discretionary,Services-Misc. Amusement & Recreation,241.88,17.93
+SYRE,Spyre Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,75.48,17.92
+INSW,International Seaways Inc. Common Stock ,Consumer Discretionary,Marine Transportation,85.42,17.83
+ADM,Archer-Daniels-Midland Company Common Stock,Consumer Staples,Packaged Foods,81.11,17.82
+EVEX,Eve Holding Inc. Common Stock,Industrials,Aerospace,3.18,17.78
+CDNA,CareDx Inc. Common Stock,Health Care,Medical Specialities,20.76,17.75
+DHC,Diversified Healthcare Trust Common Shares of Beneficial Interest,Real Estate,Real Estate Investment Trusts,8.6,17.74
+PRMB,Primo Brands Corporation Class A Common Stock,Consumer Staples,Beverages (Production/Distribution),23.2,17.65
+AYA,Aya Gold & Silver Inc. Common Shares,Basic Materials,Precious Metals,21.56,17.62
+AGH,Aureus Greenway Holdings Inc. Common Stock,Consumer Discretionary,Hotels/Resorts,4.24,17.59
+BTE,Baytex Energy Corp Common Shares,Energy,Oil & Gas Production,4.95,17.58
+LAES,SEALSQ Corp Ordinary Shares,Technology,Semiconductors,3.05,17.57
+NB,NioCorp Developments Ltd. Common Stock,Basic Materials,Metal Mining,5.86,17.54
+VOYG,Voyager Technologies Inc. Class A Common Stock,Industrials,Military/Government/Technical,35.41,17.49
+LITE,Lumentum Holdings Inc. Common Stock,Telecommunications,Telecommunications Equipment,1001.8,17.47
+EQPT,EquipmentShare.com Inc Class A Common Stock,Consumer Discretionary,Diversified Commercial Services,23.92,17.46
+PGEN,Precigen Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.68,17.46
+WERN,Werner Enterprises Inc. Common Stock,Industrials,Trucking Freight/Courier Services,37.28,17.4
+PTHS,Pelthos Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),27.0,17.39
+SIF,SIFCO Industries Inc. Common Stock,Industrials,Aerospace,18.47,17.37
+CVE,Cenovus Energy Inc Common Stock,Energy,Oil & Gas Production,30.18,17.36
+NVGS,Navigator Holdings Ltd. Ordinary Shares (Marshall Islands),Consumer Discretionary,Marine Transportation,23.58,17.31
+RPD,Rapid7 Inc. Common Stock,Technology,Computer Software: Prepackaged Software,6.28,17.29
+SNDR,Schneider National Inc. Common Stock,Industrials,Trucking Freight/Courier Services,33.02,17.22
+DGII,Digi International Inc. Common Stock,Telecommunications,Computer Communications Equipment,64.55,17.21
+KRYS,Krystal Biotech Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),316.35,17.16
+SWKS,Skyworks Solutions Inc. Common Stock,Technology,Semiconductors,67.1,17.14
+GRRR,Gorilla Technology Group Inc. Ordinary shares,Technology,Computer Software: Prepackaged Software,13.83,17.1
+PSTL,Postal Realty Trust Inc. Class A Common Stock,Real Estate,Real Estate Investment Trusts,23.16,17.09
+CCSI,Consensus Cloud Solutions Inc. Common Stock,Technology,Computer Software: Prepackaged Software,28.86,17.08
+MDA,MDA Space Ltd. Common Shares,Consumer Discretionary,Electronic Components,39.23,16.96
+SMR,NuScale Power Corporation Class A Common Stock,Industrials,Metal Fabrications,11.98,16.93
+HRB,H&R Block Inc. Common Stock,Consumer Discretionary,Other Consumer Services,35.68,16.91
+GKOS,Glaukos Corporation Common Stock,Health Care,Medical/Dental Instruments,140.89,16.9
+YOU,Clear Secure Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,56.57,16.9
+OPLN,OPENLANE Inc. Common Stock,Consumer Discretionary,Retail-Auto Dealers and Gas Stations,35.9,16.88
+AIFC,AI Financial Corporation Common Stock,Finance,Finance: Consumer Services,1.04,16.85
+LAC,Lithium Americas Corp. Common Shares,Basic Materials,Metal Mining,5.15,16.82
+ATLC,Atlanticus Holdings Corporation Common Stock,Finance,Finance: Consumer Services,79.65,16.82
+DOC,Healthpeak Properties Inc. Common Stock,Real Estate,Real Estate Investment Trusts,19.57,16.67
+RUN,Sunrun Inc. Common Stock,Miscellaneous,Industrial Machinery/Components,14.52,16.67
+ADAM,Adamas Trust Inc. Common Stock,Real Estate,Real Estate Investment Trusts,9.01,16.65
+SFL,SFL Corporation Ltd,Consumer Discretionary,Marine Transportation,12.55,16.64
+COOK,Traeger Inc. Common Stock,Consumer Discretionary,Consumer Electronics/Appliances,39.26,16.64
+HZO,MarineMax Inc.  (FL) Common Stock,Consumer Discretionary,Auto & Home Supply Stores,34.02,16.63
+BODI,The Beachbody Company Inc. Class A Common Stock,Consumer Discretionary,Other Consumer Services,12.95,16.5
+NVO,Novo Nordisk A/S Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,45.81,16.49
+UTI,Universal Technical Institute Inc Common Stock,Real Estate,Other Consumer Services,41.0,16.44
+CMI,Cummins Inc. Common Stock,Industrials,Industrial Machinery/Components,716.67,16.43
+RILY,BRC Group Holdings Inc. Common Stock,Finance,Investment Managers,9.22,16.41
+MED,MEDIFAST INC Common Stock,Consumer Staples,Packaged Foods,12.66,16.41
+CLF,Cleveland-Cliffs Inc. Common Stock,Basic Materials,Metal Mining,10.99,16.3
+NRXS,Neuraxis Inc. Common Stock,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus,8.35,16.3
+BTDR,Bitdeer Technologies Group Class A Ordinary Shares,Finance,Finance: Consumer Services,13.91,16.25
+PKOH,Park-Ohio Holdings Corp. Common Stock,Industrials,Industrial Specialties,30.82,16.15
+BW,Babcock & Wilcox Enterprises Inc. Common Stock,Industrials,Building Products,20.74,16.13
+ORA,Ormat Technologies Inc. Common Stock,Utilities,Electric Utilities: Central,133.21,16.1
+MUSA,Murphy USA Inc. Common Stock,Consumer Discretionary,Retail-Auto Dealers and Gas Stations,578.59,16.08
+KYIV,Kyivstar Group Ltd. Common Shares,Telecommunications,Telecommunications Equipment,13.72,16.07
+RGP,Resources Connection Inc. Common Stock,Real Estate,Real Estate,4.38,16.05
+BTI,British American Tobacco  Industries p.l.c. Common Stock ADR,Health Care, Medicinal Chemicals and Botanical Products ,66.74,16.04
+LPL,LG Display Co Ltd AMERICAN DEPOSITORY SHARES,Technology,Industrial Machinery/Components,5.29,16.01
+MPTI,M-tron Industries Inc. Common Stock,Technology,Industrial Machinery/Components,78.26,16.01
+SLN,Silence Therapeutics Plc American Depository Share,Health Care,Biotechnology: Pharmaceutical Preparations,7.1,16.01
+ICHR,Ichor Holdings Ordinary Shares,Technology,Semiconductors,74.25,16.0
+SFM,Sprouts Farmers Market Inc. Common Stock,Consumer Staples,Food Chains,87.21,15.99
+GDYN,Grid Dynamics Holdings Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,6.45,15.97
+COIN,Coinbase Global Inc. Class A Common Stock,Finance,Finance: Consumer Services,213.8,15.94
+LNTH,Lantheus Holdings Inc. Common Stock,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances,95.93,15.94
+GNLX,Genelux Corporation Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,3.06,15.91
+DSGN,Design Therapeutics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,14.65,15.86
+PRLB,Proto Labs Inc. Common stock,Industrials,Metal Fabrications,71.71,15.83
+JBL,Jabil Inc. Common Stock,Technology,Electrical Products,354.27,15.79
+NTSK,Netskope Inc. Class A Common Stock,Technology,Computer Software: Prepackaged Software,10.81,15.79
+MDV,Modiv Industrial Inc. Class C Common Stock,Real Estate,Real Estate Investment Trusts,17.92,15.74
+NPO,Enpro Inc. Common Stock,Industrials,Metal Fabrications,321.89,15.73
+BWLP,BW LPG Limited Common Shares,Consumer Discretionary,Transportation Services,20.61,15.72
+CMBT,CMB.TECH NV Ordinary Shares,Consumer Discretionary,Marine Transportation,14.95,15.71
+AAPL,Apple Inc. Common Stock,Technology,Computer Manufacturing,299.14,15.68
+AVGO,Broadcom Inc. Common Stock,Technology,Semiconductors,440.37,15.65
+NINE,Nine Energy Service Inc. Common Stock,Energy,Oilfield Services/Equipment,10.13,15.64
+HR,Healthcare Realty Trust Incorporated Common Stock,Real Estate,Real Estate Investment Trusts,20.38,15.62
+VRDN,Viridian Therapeutics Inc. Common Stock,Health Care,Medical Specialities,17.56,15.6
+NNE,Nano Nuclear Energy Inc. Common Stock,Utilities,Electric Utilities: Central,27.19,15.6
+FSLR,First Solar Inc. Common Stock,Technology,Semiconductors,231.72,15.51
+RSSS,Research Solutions Inc Common Stock,Technology,EDP Services,2.69,15.45
+SUNB,Sunbelt Rentals Holdings Inc. Common Stock,Consumer Discretionary,Diversified Commercial Services,79.4,15.44
+SEPN,Septerna Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,27.85,15.42
+PII,Polaris Inc. Common Stock,Consumer Discretionary,Industrial Specialties,66.35,15.4
+CON,Concentra Group Holdings Parent Inc. Common Stock,Health Care,Medical Specialities,26.25,15.38
+CRDO,Credo Technology Group Holding Ltd Ordinary Shares,Technology,Semiconductors,184.04,15.37
+MOD,Modine Manufacturing Company Common Stock,Consumer Discretionary,Auto Parts:O.E.M.,292.64,15.37
+CODI,D/B/A Compass Diversified Holdings Shares of Beneficial Interest,Consumer Discretionary,Home Furnishings,12.02,15.36
+HIW,Highwoods Properties Inc. Common Stock,Real Estate,Real Estate Investment Trusts,26.34,15.35
+OCC,Optical Cable Corporation Common Stock,Industrials,Telecommunications Equipment,12.66,15.35
+CLDT,Chatham Lodging Trust (REIT) Common Shares of Beneficial Interest,Real Estate,Real Estate Investment Trusts,10.0,15.34
+CMPR,Cimpress plc Ordinary Shares (Ireland),Consumer Discretionary,Publishing,92.82,15.32
+CAT,Caterpillar Inc. Common Stock,Industrials,Construction/Ag Equipment/Trucks,913.93,15.29
+KYTX,Kyverna Therapeutics Inc. Common Stock,Health Care,Biotechnology: Biological Products (No Diagnostic Substances),10.79,15.28
+SNX,TD SYNNEX Corporation Common Stock,Technology,Retail: Computer Software & Peripheral Equipment,235.42,15.27
+AVR,Anteris Technologies Global Corp. Common Stock,Health Care,Industrial Specialties,7.25,15.26
+HP,Helmerich & Payne Inc. Common Stock,Energy,Oil & Gas Production,39.31,15.24
+INDV,Indivior Pharmaceuticals Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,37.99,15.23
+GTE,Gran Tierra Energy Inc. Common Stock,Energy,Oil & Gas Production,9.05,15.22
+NKLR,Terra Innovatum Global N.V. Ordinary shares,Industrials,Metal Fabrications,6.32,15.21
+WLDN,Willdan Group Inc. Common Stock,Consumer Discretionary,Military/Government/Technical,92.32,15.18
+SNEX,StoneX Group Inc. Common Stock,Finance,Investment Bankers/Brokers/Service,117.7,15.13
+PLXS,Plexus Corp. Common Stock,Technology,Electrical Products,262.41,15.12
+XWIN,XMAX Inc. Common Stock,Consumer Discretionary,Home Furnishings,8.3,15.12
+DY,Dycom Industries Inc. Common Stock,Industrials,Water Sewer Pipeline Comm & Power Line Construction,451.5,15.11
+TENB,Tenable Holdings Inc. Common Stock,Technology,Computer Software: Prepackaged Software,20.57,15.11
+AIRG,Airgain Inc. Common Stock,Technology,Radio And Television Broadcasting And Communications Equipment,6.95,15.07
+ELVA,Electrovaya Inc. Common Shares,,,11.01,15.05
+SMTI,Sanara MedTech Inc. Common Stock,Health Care,Industrial Specialties,21.3,15.05
+MGNX,MacroGenics Inc. Common Stock,Health Care,Biotechnology: Pharmaceutical Preparations,4.01,15.04
+TE,T1 Energy Inc. Common Stock,Miscellaneous,Industrial Machinery/Components,5.59,15.02

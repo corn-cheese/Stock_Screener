@@ -1,0 +1,507 @@
+{
+  "chunk_id": 3,
+  "rows": [
+    {
+      "source_row_number": 102,
+      "ticker": "NVCR",
+      "company": "NovoCure Limited Ordinary Shares",
+      "sector": "Health Care",
+      "industry": "Medical/Dental Instruments",
+      "current_price": "18.01",
+      "return_percent": "59.38"
+    },
+    {
+      "source_row_number": 103,
+      "ticker": "TWLO",
+      "company": "Twilio Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "197.45",
+      "return_percent": "59.23"
+    },
+    {
+      "source_row_number": 104,
+      "ticker": "CNC",
+      "company": "Centene Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "59.02",
+      "return_percent": "58.4"
+    },
+    {
+      "source_row_number": 105,
+      "ticker": "SLQT",
+      "company": "SelectQuote Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Specialty Insurers",
+      "current_price": "1.16",
+      "return_percent": "58.02"
+    },
+    {
+      "source_row_number": 106,
+      "ticker": "STM",
+      "company": "STMicroelectronics N.V. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "64.55",
+      "return_percent": "57.82"
+    },
+    {
+      "source_row_number": 107,
+      "ticker": "RUM",
+      "company": "Rumble Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "8.23",
+      "return_percent": "57.57"
+    },
+    {
+      "source_row_number": 108,
+      "ticker": "KEEL",
+      "company": "Keel Infrastructure Corp. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "4.47",
+      "return_percent": "57.57"
+    },
+    {
+      "source_row_number": 109,
+      "ticker": "WTI",
+      "company": "W&T Offshore Inc. Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "4.41",
+      "return_percent": "57.32"
+    },
+    {
+      "source_row_number": 110,
+      "ticker": "SMTC",
+      "company": "Semtech Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "141.68",
+      "return_percent": "57.21"
+    },
+    {
+      "source_row_number": 111,
+      "ticker": "AESI",
+      "company": "Atlas Energy Solutions Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Mining & Quarrying of Nonmetallic Minerals (No Fuels)",
+      "current_price": "18.84",
+      "return_percent": "57.13"
+    },
+    {
+      "source_row_number": 112,
+      "ticker": "INV",
+      "company": "Innventure Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Blank Checks",
+      "current_price": "7.53",
+      "return_percent": "56.87"
+    },
+    {
+      "source_row_number": 113,
+      "ticker": "MRDN",
+      "company": "Meridian Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "10.72",
+      "return_percent": "56.5"
+    },
+    {
+      "source_row_number": 114,
+      "ticker": "CD",
+      "company": "Chaince Digital Holdings Inc. Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "7.41",
+      "return_percent": "56.33"
+    },
+    {
+      "source_row_number": 115,
+      "ticker": "CXDO",
+      "company": "Crexendo Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "9.64",
+      "return_percent": "55.74"
+    },
+    {
+      "source_row_number": 116,
+      "ticker": "HOVR",
+      "company": "New Horizon Aircraft Ltd. Class A Ordinary Share",
+      "sector": "Industrials",
+      "industry": "Aerospace",
+      "current_price": "2.43",
+      "return_percent": "55.73"
+    },
+    {
+      "source_row_number": 117,
+      "ticker": "SANM",
+      "company": "Sanmina Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "240.28",
+      "return_percent": "55.55"
+    },
+    {
+      "source_row_number": 118,
+      "ticker": "RDZN",
+      "company": "Roadzen Inc. Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Specialty Insurers",
+      "current_price": "1.87",
+      "return_percent": "55.42"
+    },
+    {
+      "source_row_number": 119,
+      "ticker": "SLS",
+      "company": "SELLAS Life Sciences Group Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "7.54",
+      "return_percent": "55.14"
+    },
+    {
+      "source_row_number": 120,
+      "ticker": "VICR",
+      "company": "Vicor Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "294.39",
+      "return_percent": "54.86"
+    },
+    {
+      "source_row_number": 121,
+      "ticker": "TORO",
+      "company": "Toro Corp. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Marine Transportation",
+      "current_price": "5.33",
+      "return_percent": "54.81"
+    },
+    {
+      "source_row_number": 122,
+      "ticker": "BB",
+      "company": "BlackBerry Limited Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "6.14",
+      "return_percent": "54.79"
+    },
+    {
+      "source_row_number": 123,
+      "ticker": "TBI",
+      "company": "TrueBlue Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Professional Services",
+      "current_price": "5.82",
+      "return_percent": "54.65"
+    },
+    {
+      "source_row_number": 124,
+      "ticker": "LUNR",
+      "company": "Intuitive Machines Inc. Class A Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "36.56",
+      "return_percent": "54.46"
+    },
+    {
+      "source_row_number": 125,
+      "ticker": "LQDA",
+      "company": "Liquidia Corporation Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "59.54",
+      "return_percent": "53.82"
+    },
+    {
+      "source_row_number": 126,
+      "ticker": "OGN",
+      "company": "Organon & Co. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "13.36",
+      "return_percent": "53.79"
+    },
+    {
+      "source_row_number": 127,
+      "ticker": "CPIX",
+      "company": "Cumberland Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "4.89",
+      "return_percent": "53.62"
+    },
+    {
+      "source_row_number": 128,
+      "ticker": "HUM",
+      "company": "Humana Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "301.27",
+      "return_percent": "53.54"
+    },
+    {
+      "source_row_number": 129,
+      "ticker": "FTNT",
+      "company": "Fortinet Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "120.79",
+      "return_percent": "53.48"
+    },
+    {
+      "source_row_number": 130,
+      "ticker": "RMAX",
+      "company": "RE/MAX Holdings Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Real Estate",
+      "current_price": "9.07",
+      "return_percent": "53.21"
+    },
+    {
+      "source_row_number": 131,
+      "ticker": "CTEV",
+      "company": "Claritev Corporation Class A Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "27.75",
+      "return_percent": "52.98"
+    },
+    {
+      "source_row_number": 132,
+      "ticker": "COCO",
+      "company": "The Vita Coco Company Inc. Common Stock",
+      "sector": "Consumer Staples",
+      "industry": "Beverages (Production/Distribution)",
+      "current_price": "75.84",
+      "return_percent": "52.81"
+    },
+    {
+      "source_row_number": 133,
+      "ticker": "GFS",
+      "company": "GlobalFoundries Inc. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "73.93",
+      "return_percent": "52.72"
+    },
+    {
+      "source_row_number": 134,
+      "ticker": "ESPR",
+      "company": "Esperion Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "3.12",
+      "return_percent": "52.2"
+    },
+    {
+      "source_row_number": 135,
+      "ticker": "NGNE",
+      "company": "Neurogene Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "31.59",
+      "return_percent": "52.17"
+    },
+    {
+      "source_row_number": 136,
+      "ticker": "SEZL",
+      "company": "Sezzle Inc. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "103.32",
+      "return_percent": "51.95"
+    },
+    {
+      "source_row_number": 137,
+      "ticker": "QCOM",
+      "company": "QUALCOMM Incorporated Common Stock",
+      "sector": "Technology",
+      "industry": "Radio And Television Broadcasting And Communications Equipment",
+      "current_price": "201.76",
+      "return_percent": "51.88"
+    },
+    {
+      "source_row_number": 138,
+      "ticker": "FPS",
+      "company": "Forgent Power Solutions Inc. Class A Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "50.15",
+      "return_percent": "51.83"
+    },
+    {
+      "source_row_number": 139,
+      "ticker": "DMRC",
+      "company": "Digimarc Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "9.71",
+      "return_percent": "51.72"
+    },
+    {
+      "source_row_number": 140,
+      "ticker": "LIFE",
+      "company": "Ethos Technologies Inc. Class A Common Stock",
+      "sector": "Finance",
+      "industry": "Specialty Insurers",
+      "current_price": "22.16",
+      "return_percent": "50.85"
+    },
+    {
+      "source_row_number": 141,
+      "ticker": "DWSN",
+      "company": "Dawson Geophysical Company Common Stock",
+      "sector": "Energy",
+      "industry": "Oil & Gas Production",
+      "current_price": "3.87",
+      "return_percent": "50.58"
+    },
+    {
+      "source_row_number": 142,
+      "ticker": "HUT",
+      "company": "Hut 8 Corp. Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "108.0",
+      "return_percent": "50.54"
+    },
+    {
+      "source_row_number": 143,
+      "ticker": "STX",
+      "company": "Seagate Technology Holdings PLC Ordinary Shares (Ireland)",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "802.0",
+      "return_percent": "50.34"
+    },
+    {
+      "source_row_number": 144,
+      "ticker": "AAON",
+      "company": "AAON Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "140.94",
+      "return_percent": "50.24"
+    },
+    {
+      "source_row_number": 145,
+      "ticker": "USAR",
+      "company": "USA Rare Earth Inc. Class A Common Stock",
+      "sector": "Basic Materials",
+      "industry": "Metal Mining",
+      "current_price": "25.51",
+      "return_percent": "50.18"
+    },
+    {
+      "source_row_number": 146,
+      "ticker": "WALD",
+      "company": "Waldencast plc Class A Ordinary Share",
+      "sector": "Consumer Discretionary",
+      "industry": "Package Goods/Cosmetics",
+      "current_price": "1.59",
+      "return_percent": "50.0"
+    },
+    {
+      "source_row_number": 147,
+      "ticker": "ZIP",
+      "company": "ZipRecruiter Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "3.66",
+      "return_percent": "50.0"
+    },
+    {
+      "source_row_number": 148,
+      "ticker": "OSCR",
+      "company": "Oscar Health Inc. Class A Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "22.92",
+      "return_percent": "49.93"
+    },
+    {
+      "source_row_number": 149,
+      "ticker": "MAAS",
+      "company": "Maase Inc. Class A Ordinary Shares",
+      "sector": "Finance",
+      "industry": "Investment Managers",
+      "current_price": "10.04",
+      "return_percent": "49.66"
+    },
+    {
+      "source_row_number": 150,
+      "ticker": "RFIL",
+      "company": "RF Industries Ltd. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "18.4",
+      "return_percent": "49.55"
+    },
+    {
+      "source_row_number": 151,
+      "ticker": "FTRE",
+      "company": "Fortrea Holdings Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Medical Specialities",
+      "current_price": "14.32",
+      "return_percent": "49.32"
+    }
+  ],
+  "tickers": [
+    "NVCR",
+    "TWLO",
+    "CNC",
+    "SLQT",
+    "STM",
+    "RUM",
+    "KEEL",
+    "WTI",
+    "SMTC",
+    "AESI",
+    "INV",
+    "MRDN",
+    "CD",
+    "CXDO",
+    "HOVR",
+    "SANM",
+    "RDZN",
+    "SLS",
+    "VICR",
+    "TORO",
+    "BB",
+    "TBI",
+    "LUNR",
+    "LQDA",
+    "OGN",
+    "CPIX",
+    "HUM",
+    "FTNT",
+    "RMAX",
+    "CTEV",
+    "COCO",
+    "GFS",
+    "ESPR",
+    "NGNE",
+    "SEZL",
+    "QCOM",
+    "FPS",
+    "DMRC",
+    "LIFE",
+    "DWSN",
+    "HUT",
+    "STX",
+    "AAON",
+    "USAR",
+    "WALD",
+    "ZIP",
+    "OSCR",
+    "MAAS",
+    "RFIL",
+    "FTRE"
+  ]
+}

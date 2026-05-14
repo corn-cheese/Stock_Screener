@@ -14,8 +14,6 @@ TARGET_RETURN = 0.15
 MIN_PRICE = 1
 MIN_MARKET_CAP = 70_000_000
 SCAN_LIMIT = 5000
-TARGET_RESULT_MIN = 50
-TARGET_RESULT_MAX = 80
 RETURN_PERCENT_COLUMN = "수익률(%)"
 
 EXCLUDED_LISTING_KEYWORDS = (
@@ -131,12 +129,7 @@ def get_listing_metadata(df_list, ticker):
 def select_momentum_results(
     results,
     target_return=TARGET_RETURN,
-    min_count=TARGET_RESULT_MIN,
-    max_count=TARGET_RESULT_MAX,
 ):
-    if min_count > max_count:
-        raise ValueError("min_count cannot be greater than max_count")
-
     def return_percent(row):
         try:
             return float(row.get(RETURN_PERCENT_COLUMN, float("-inf")))
@@ -148,14 +141,9 @@ def select_momentum_results(
         return []
 
     target_percent = target_return * 100
-    preferred_results = [
+    return [
         row for row in sorted_results if return_percent(row) >= target_percent
     ]
-
-    if len(preferred_results) >= min_count:
-        return preferred_results[:max_count]
-
-    return sorted_results[: min(min_count, len(sorted_results))]
 
 
 def scan_price_momentum(
@@ -163,8 +151,6 @@ def scan_price_momentum(
     tickers,
     target_return=TARGET_RETURN,
     min_price=MIN_PRICE,
-    target_result_min=TARGET_RESULT_MIN,
-    target_result_max=TARGET_RESULT_MAX,
 ):
     results = []
     chunk_size = 400
@@ -232,8 +218,6 @@ def scan_price_momentum(
     return select_momentum_results(
         results,
         target_return=target_return,
-        min_count=target_result_min,
-        max_count=target_result_max,
     )
 
 
@@ -248,8 +232,7 @@ def run_scan(scan_limit=SCAN_LIMIT, output_dir="Stock_Results"):
     print("■■■ US Market 5000 - AI 전처리용 스캐너 ■■■")
     print(
         f"※ 전략: 시총 상위 {scan_limit}개 중 최근 1개월 상승률 동적 필터링 "
-        f"({TARGET_RESULT_MIN}~{TARGET_RESULT_MAX}개 목표, "
-        f"{int(TARGET_RETURN * 100)}% 기준 우선)"
+        f"({int(TARGET_RETURN * 100)}% 이상 상승 종목 전체 출력)"
     )
     print("=" * 60)
 

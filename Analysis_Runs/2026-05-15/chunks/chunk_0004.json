@@ -1,0 +1,507 @@
+{
+  "chunk_id": 4,
+  "rows": [
+    {
+      "source_row_number": 152,
+      "ticker": "OABI",
+      "company": "OmniAb Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Commercial Physical & Biological Resarch",
+      "current_price": "2.18",
+      "return_percent": "49.32"
+    },
+    {
+      "source_row_number": 153,
+      "ticker": "ENPH",
+      "company": "Enphase Energy Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "47.74",
+      "return_percent": "49.19"
+    },
+    {
+      "source_row_number": 154,
+      "ticker": "KLC",
+      "company": "KinderCare Learning Companies Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Other Consumer Services",
+      "current_price": "4.47",
+      "return_percent": "49.17"
+    },
+    {
+      "source_row_number": 155,
+      "ticker": "ATEX",
+      "company": "Anterix Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "56.53",
+      "return_percent": "49.04"
+    },
+    {
+      "source_row_number": 156,
+      "ticker": "AEVA",
+      "company": "Aeva Technologies Inc. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Parts:O.E.M.",
+      "current_price": "21.02",
+      "return_percent": "48.87"
+    },
+    {
+      "source_row_number": 157,
+      "ticker": "INDI",
+      "company": "indie Semiconductor Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "4.38",
+      "return_percent": "48.47"
+    },
+    {
+      "source_row_number": 158,
+      "ticker": "APLD",
+      "company": "Applied Digital Corporation Common Stock",
+      "sector": "Finance",
+      "industry": "Finance: Consumer Services",
+      "current_price": "46.71",
+      "return_percent": "48.44"
+    },
+    {
+      "source_row_number": 159,
+      "ticker": "HUMA",
+      "company": "Humacyte Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "1.02",
+      "return_percent": "48.34"
+    },
+    {
+      "source_row_number": 160,
+      "ticker": "ARTV",
+      "company": "Artiva Biotherapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "11.1",
+      "return_percent": "48.13"
+    },
+    {
+      "source_row_number": 161,
+      "ticker": "MEI",
+      "company": "Methode Electronics Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "10.88",
+      "return_percent": "48.01"
+    },
+    {
+      "source_row_number": 162,
+      "ticker": "PRCH",
+      "company": "Porch Group Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "10.43",
+      "return_percent": "47.66"
+    },
+    {
+      "source_row_number": 163,
+      "ticker": "OUST",
+      "company": "Ouster Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "34.55",
+      "return_percent": "47.52"
+    },
+    {
+      "source_row_number": 164,
+      "ticker": "NNBR",
+      "company": "NN Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "2.32",
+      "return_percent": "47.45"
+    },
+    {
+      "source_row_number": 165,
+      "ticker": "SNDK",
+      "company": "Sandisk Corporation Common Stock",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "current_price": "1392.15",
+      "return_percent": "47.4"
+    },
+    {
+      "source_row_number": 166,
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer peripheral equipment",
+      "current_price": "238.07",
+      "return_percent": "47.33"
+    },
+    {
+      "source_row_number": 167,
+      "ticker": "EOLS",
+      "company": "Evolus Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "6.53",
+      "return_percent": "47.07"
+    },
+    {
+      "source_row_number": 168,
+      "ticker": "VECO",
+      "company": "Veeco Instruments Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "59.84",
+      "return_percent": "46.95"
+    },
+    {
+      "source_row_number": 169,
+      "ticker": "MYRG",
+      "company": "MYR Group Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Water Sewer Pipeline Comm & Power Line Construction",
+      "current_price": "472.21",
+      "return_percent": "46.62"
+    },
+    {
+      "source_row_number": 170,
+      "ticker": "FIVN",
+      "company": "Five9 Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "EDP Services",
+      "current_price": "21.11",
+      "return_percent": "46.29"
+    },
+    {
+      "source_row_number": 171,
+      "ticker": "NDLS",
+      "company": "Noodles & Company Class A Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Restaurants",
+      "current_price": "12.3",
+      "return_percent": "46.2"
+    },
+    {
+      "source_row_number": 172,
+      "ticker": "FENC",
+      "company": "Fennec Pharmaceuticals Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "9.12",
+      "return_percent": "45.92"
+    },
+    {
+      "source_row_number": 173,
+      "ticker": "FATE",
+      "company": "Fate Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "1.96",
+      "return_percent": "45.9"
+    },
+    {
+      "source_row_number": 174,
+      "ticker": "CRWD",
+      "company": "CrowdStrike Holdings Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "581.31",
+      "return_percent": "45.88"
+    },
+    {
+      "source_row_number": 175,
+      "ticker": "QUBT",
+      "company": "Quantum Computing Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "11.79",
+      "return_percent": "45.38"
+    },
+    {
+      "source_row_number": 176,
+      "ticker": "AMBA",
+      "company": "Ambarella Inc. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "81.53",
+      "return_percent": "45.07"
+    },
+    {
+      "source_row_number": 177,
+      "ticker": "FROG",
+      "company": "JFrog Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "64.21",
+      "return_percent": "44.75"
+    },
+    {
+      "source_row_number": 178,
+      "ticker": "TBLA",
+      "company": "Taboola.com Ltd. Ordinary Shares",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "4.96",
+      "return_percent": "44.61"
+    },
+    {
+      "source_row_number": 179,
+      "ticker": "AARD",
+      "company": "Aardvark Therapeutics Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "6.7",
+      "return_percent": "44.4"
+    },
+    {
+      "source_row_number": 180,
+      "ticker": "AMPG",
+      "company": "Amplitech Group Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Telecommunications Equipment",
+      "current_price": "2.91",
+      "return_percent": "44.31"
+    },
+    {
+      "source_row_number": 181,
+      "ticker": "ZJK",
+      "company": "ZJK Industrial Co. Ltd. Class A Ordinary Shares",
+      "sector": "Industrials",
+      "industry": "Metal Fabrications",
+      "current_price": "2.88",
+      "return_percent": "44.0"
+    },
+    {
+      "source_row_number": 182,
+      "ticker": "MTSI",
+      "company": "MACOM Technology Solutions Holdings Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "379.87",
+      "return_percent": "43.93"
+    },
+    {
+      "source_row_number": 183,
+      "ticker": "TONX",
+      "company": "TON Strategy Company Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "Other Consumer Services",
+      "current_price": "3.39",
+      "return_percent": "43.64"
+    },
+    {
+      "source_row_number": 184,
+      "ticker": "NXDR",
+      "company": "Nextdoor Holdings Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Programming Data Processing",
+      "current_price": "2.07",
+      "return_percent": "43.4"
+    },
+    {
+      "source_row_number": 185,
+      "ticker": "ACLS",
+      "company": "Axcelis Technologies Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "162.1",
+      "return_percent": "43.38"
+    },
+    {
+      "source_row_number": 186,
+      "ticker": "BUUU",
+      "company": "BUUU Group Limited Class A Ordinary Share",
+      "sector": "Consumer Discretionary",
+      "industry": "Services-Misc. Amusement & Recreation",
+      "current_price": "20.58",
+      "return_percent": "43.31"
+    },
+    {
+      "source_row_number": 187,
+      "ticker": "ELMD",
+      "company": "Electromed Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Electromedical & Electrotherapeutic Apparatus",
+      "current_price": "36.1",
+      "return_percent": "43.2"
+    },
+    {
+      "source_row_number": 188,
+      "ticker": "FLNC",
+      "company": "Fluence Energy Inc. Class A Common Stock",
+      "sector": "Miscellaneous",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "21.15",
+      "return_percent": "42.91"
+    },
+    {
+      "source_row_number": 189,
+      "ticker": "EXTR",
+      "company": "Extreme Networks Inc. Common Stock",
+      "sector": "Telecommunications",
+      "industry": "Computer Communications Equipment",
+      "current_price": "24.93",
+      "return_percent": "42.21"
+    },
+    {
+      "source_row_number": 190,
+      "ticker": "TXN",
+      "company": "Texas Instruments Incorporated Common Stock",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "current_price": "309.61",
+      "return_percent": "42.18"
+    },
+    {
+      "source_row_number": 191,
+      "ticker": "TTMI",
+      "company": "TTM Technologies Inc. Common Stock",
+      "sector": "Technology",
+      "industry": "Electrical Products",
+      "current_price": "171.62",
+      "return_percent": "42.14"
+    },
+    {
+      "source_row_number": 192,
+      "ticker": "NVCT",
+      "company": "Nuvectis Pharma Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "12.4",
+      "return_percent": "42.04"
+    },
+    {
+      "source_row_number": 193,
+      "ticker": "AMWL",
+      "company": "American Well Corporation Class A Common Stock",
+      "sector": "Real Estate",
+      "industry": "Real Estate",
+      "current_price": "7.82",
+      "return_percent": "42.01"
+    },
+    {
+      "source_row_number": 194,
+      "ticker": "AEHR",
+      "company": "Aehr Test Systems Common Stock",
+      "sector": "Industrials",
+      "industry": "Electrical Products",
+      "current_price": "105.54",
+      "return_percent": "41.89"
+    },
+    {
+      "source_row_number": 195,
+      "ticker": "MANE",
+      "company": "Veradermics Incorporated Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Pharmaceutical Preparations",
+      "current_price": "106.21",
+      "return_percent": "41.64"
+    },
+    {
+      "source_row_number": 196,
+      "ticker": "INBX",
+      "company": "Inhibrx Biosciences Inc. Common Stock",
+      "sector": "Health Care",
+      "industry": "Biotechnology: Biological Products (No Diagnostic Substances)",
+      "current_price": "117.8",
+      "return_percent": "41.6"
+    },
+    {
+      "source_row_number": 197,
+      "ticker": "ASST",
+      "company": "Strive Inc. Class A Common Stock",
+      "sector": "Technology",
+      "industry": "Computer Software: Prepackaged Software",
+      "current_price": "17.58",
+      "return_percent": "41.43"
+    },
+    {
+      "source_row_number": 198,
+      "ticker": "NPWR",
+      "company": "NET Power Inc. Class A Common Stock",
+      "sector": "Energy",
+      "industry": "Industrial Machinery/Components",
+      "current_price": "2.2",
+      "return_percent": "41.35"
+    },
+    {
+      "source_row_number": 199,
+      "ticker": "BOOM",
+      "company": "DMC Global Inc. Common Stock",
+      "sector": "Industrials",
+      "industry": "Industrial Specialties",
+      "current_price": "7.49",
+      "return_percent": "40.96"
+    },
+    {
+      "source_row_number": 200,
+      "ticker": "JELD",
+      "company": "JELD-WEN Holding Inc. Common Stock",
+      "sector": "Basic Materials",
+      "industry": "Forest Products",
+      "current_price": "1.54",
+      "return_percent": "40.45"
+    },
+    {
+      "source_row_number": 201,
+      "ticker": "GRWG",
+      "company": "GrowGeneration Corp. Common Stock",
+      "sector": "Consumer Discretionary",
+      "industry": "RETAIL: Building Materials",
+      "current_price": "1.51",
+      "return_percent": "40.28"
+    }
+  ],
+  "tickers": [
+    "OABI",
+    "ENPH",
+    "KLC",
+    "ATEX",
+    "AEVA",
+    "INDI",
+    "APLD",
+    "HUMA",
+    "ARTV",
+    "MEI",
+    "PRCH",
+    "OUST",
+    "NNBR",
+    "SNDK",
+    "PANW",
+    "EOLS",
+    "VECO",
+    "MYRG",
+    "FIVN",
+    "NDLS",
+    "FENC",
+    "FATE",
+    "CRWD",
+    "QUBT",
+    "AMBA",
+    "FROG",
+    "TBLA",
+    "AARD",
+    "AMPG",
+    "ZJK",
+    "MTSI",
+    "TONX",
+    "NXDR",
+    "ACLS",
+    "BUUU",
+    "ELMD",
+    "FLNC",
+    "EXTR",
+    "TXN",
+    "TTMI",
+    "NVCT",
+    "AMWL",
+    "AEHR",
+    "MANE",
+    "INBX",
+    "ASST",
+    "NPWR",
+    "BOOM",
+    "JELD",
+    "GRWG"
+  ]
+}
