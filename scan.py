@@ -3,6 +3,7 @@ import yfinance as yf
 from tqdm import tqdm
 import requests
 import os
+import sys
 import time
 from datetime import datetime
 
@@ -10,6 +11,52 @@ from datetime import datetime
 TARGET_RETURN = 0.2    # 20% 이상 상승 (AI 분석용 후보군)
 MIN_PRICE = 1          # 1달러 미만 잡주 제외
 SCAN_LIMIT = 5000      # 3000 -> 5000개로 확대 (최대한 많이 확보)
+
+EXCLUDED_LISTING_KEYWORDS = (
+    "warrant",
+    "right",
+    "unit",
+    "preferred",
+    "preference",
+    "depositary share",
+    "note due",
+    "notes due",
+    "bond",
+    "debenture",
+)
+
+
+def clean_symbol(symbol):
+    if symbol is None:
+        return None
+
+    cleaned = str(symbol).strip().upper()
+    if not cleaned:
+        return None
+    if "^" in cleaned or "/" in cleaned or " " in cleaned:
+        return None
+
+    return cleaned
+
+
+def is_supported_listing(symbol, name):
+    cleaned = clean_symbol(symbol)
+    if cleaned is None:
+        return False
+
+    listing_name = str(name or "").lower()
+    if any(keyword in listing_name for keyword in EXCLUDED_LISTING_KEYWORDS):
+        return False
+
+    # Nasdaq warrant/right/unit tickers often use these suffixes.
+    if len(cleaned) > 4 and cleaned.endswith(("W", "R", "U")):
+        return False
+
+    return True
+
+
+def should_pause_before_exit(args):
+    return "--pause" in args
 
 print("■■■ US Market 5000 - AI 전처리용 스캐너 ■■■")
 print(f"※ 전략: 시총 상위 {SCAN_LIMIT}개 중 최근 1개월 {int(TARGET_RETURN*100)}% 급등주 전수 조사")
@@ -56,12 +103,18 @@ try:
                 return 0
             
         df_all['marketCap_num'] = df_all['marketCap'].apply(parse_market_cap)
+        df_all['symbol'] = df_all['symbol'].apply(clean_symbol)
+        df_all = df_all.dropna(subset=['symbol'])
         
         # 시총 상위 5000개 자르기 (외국 기업 포함)
         df_list = df_all.sort_values(by='marketCap_num', ascending=False).head(SCAN_LIMIT)
         
         # 티커 추출 (특수문자가 포함된 워런트, 우선주 등 제외하고 깔끔한 것만)
-        tickers = [x for x in df_list['symbol'].tolist() if '^' not in x and '/' not in x]
+        tickers = [
+            row['symbol']
+            for _, row in df_list.iterrows()
+            if is_supported_listing(row['symbol'], row.get('name'))
+        ]
         
         print(f"  -> {len(tickers)}개 종목 로딩 완료.")
     else:
@@ -187,4 +240,5 @@ else:
     print("조건(20% 상승)에 맞는 종목이 하나도 없습니다. 시장이 폭락장인가요?")
 
 print("=" * 60)
-input("엔터 키를 누르면 종료합니다...")
+if should_pause_before_exit(sys.argv[1:]):
+    input("엔터 키를 누르면 종료합니다...")

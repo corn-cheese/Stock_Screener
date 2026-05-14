@@ -6,8 +6,8 @@
 
 기본 workflow는 다음과 같다.
 
-1. `scan.py`를 실행하여 오늘 날짜의 `stock_results` 파일을 생성한다.
-2. 생성된 `stock_results` 파일의 각 종목을 확인한다.
+1. `scan.py`를 실행하여 오늘 날짜의 스캔 결과 CSV 파일을 생성한다.
+2. 생성된 `Stock_Results/YYYY-MM-DD_Scan_Result_Top5000.csv` 파일의 각 종목을 확인한다.
 3. `context.md`에 적힌 사용자의 관심사, 투자 맥락, 제약 조건을 기준으로 각 종목을 분류한다.
 4. 분류된 종목 각각에 대해 다음 내용을 작성한다.
    - 기업명
@@ -33,7 +33,8 @@
 ## File conventions
 
 - 입력 맥락 파일: `context.md`
-- 스캔 결과 파일:  `YYYY-MM-DD_Stock_Results` 형식
+- 스캔 결과 폴더: `Stock_Results`
+- 스캔 결과 파일: `Stock_Results/YYYY-MM-DD_Scan_Result_Top5000.csv` 형식
 - 최종 결과 파일: `results.md`
 
 ## Running the project
@@ -42,6 +43,13 @@
 
 ```bash
 python scan.py
+```
+
+대화형으로 실행 후 창이 바로 닫히지 않게 하려면 다음 명령을 사용할 수 있다.
+
+```bash
+python scan.py --pause
+```
 
 ## Output Format
 
@@ -65,7 +73,7 @@ results.md는 다음 구조를 따른다.
 
 또한, Rank가 높고 추천 순위가 높은 주식 순서대로 기재한다.
 
-##Testing / validation
+## Testing / validation
 
 코드를 수정한 경우 다음을 확인한다.
 
@@ -75,5 +83,5 @@ python scan.py
 
 scan.py가 정상 실행되는지
 오늘 날짜의 결과 파일이 생성되는지
-Results.md가 의도한 형식으로 작성되는지
+results.md가 의도한 형식으로 작성되는지
 존재하지 않는 종목이나 확인되지 않은 기업 정보를 만들어내지 않았는지
