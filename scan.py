@@ -10,10 +10,13 @@ import yfinance as yf
 from tqdm import tqdm
 
 
-TARGET_RETURN = 0.15
+TARGET_RETURN = 0.30
 MIN_PRICE = 1
 MIN_MARKET_CAP = 70_000_000
 SCAN_LIMIT = 5000
+TARGET_RESULT_MIN = 50
+TARGET_RESULT_MAX = 80
+RETURN_PERCENT_COLUMN = "수익률(%)"
 
 EXCLUDED_LISTING_KEYWORDS = (
     "warrant",
@@ -125,7 +128,44 @@ def get_listing_metadata(df_list, ticker):
     return ticker, "N/A", "N/A"
 
 
-def scan_price_momentum(df_list, tickers, target_return=TARGET_RETURN, min_price=MIN_PRICE):
+def select_momentum_results(
+    results,
+    target_return=TARGET_RETURN,
+    min_count=TARGET_RESULT_MIN,
+    max_count=TARGET_RESULT_MAX,
+):
+    if min_count > max_count:
+        raise ValueError("min_count cannot be greater than max_count")
+
+    def return_percent(row):
+        try:
+            return float(row.get(RETURN_PERCENT_COLUMN, float("-inf")))
+        except (TypeError, ValueError):
+            return float("-inf")
+
+    sorted_results = sorted(results, key=return_percent, reverse=True)
+    if not sorted_results:
+        return []
+
+    target_percent = target_return * 100
+    preferred_results = [
+        row for row in sorted_results if return_percent(row) >= target_percent
+    ]
+
+    if len(preferred_results) >= min_count:
+        return preferred_results[:max_count]
+
+    return sorted_results[: min(min_count, len(sorted_results))]
+
+
+def scan_price_momentum(
+    df_list,
+    tickers,
+    target_return=TARGET_RETURN,
+    min_price=MIN_PRICE,
+    target_result_min=TARGET_RESULT_MIN,
+    target_result_max=TARGET_RESULT_MAX,
+):
     results = []
     chunk_size = 400
     delay_time = 1
@@ -169,7 +209,7 @@ def scan_price_momentum(df_list, tickers, target_return=TARGET_RETURN, min_price
                         continue
 
                     return_rate = (end_price - start_price) / start_price
-                    if return_rate < target_return or end_price < min_price:
+                    if end_price < min_price:
                         continue
 
                     name, sector, industry = get_listing_metadata(df_list, ticker)
@@ -180,7 +220,7 @@ def scan_price_momentum(df_list, tickers, target_return=TARGET_RETURN, min_price
                             "섹터": sector,
                             "산업": industry,
                             "현재가": round(end_price, 2),
-                            "수익률(%)": round(return_rate * 100, 2),
+                            RETURN_PERCENT_COLUMN: round(return_rate * 100, 2),
                         }
                     )
                 except Exception:
@@ -189,7 +229,12 @@ def scan_price_momentum(df_list, tickers, target_return=TARGET_RETURN, min_price
         except Exception:
             continue
 
-    return results
+    return select_momentum_results(
+        results,
+        target_return=target_return,
+        min_count=target_result_min,
+        max_count=target_result_max,
+    )
 
 
 def run_scan(scan_limit=SCAN_LIMIT, output_dir="Stock_Results"):
@@ -201,7 +246,11 @@ def run_scan(scan_limit=SCAN_LIMIT, output_dir="Stock_Results"):
     full_path = output_path / filename
 
     print("■■■ US Market 5000 - AI 전처리용 스캐너 ■■■")
-    print(f"※ 전략: 시총 상위 {scan_limit}개 중 최근 1개월 {int(TARGET_RETURN * 100)}% 급등주 전수 조사")
+    print(
+        f"※ 전략: 시총 상위 {scan_limit}개 중 최근 1개월 상승률 동적 필터링 "
+        f"({TARGET_RESULT_MIN}~{TARGET_RESULT_MAX}개 목표, "
+        f"{int(TARGET_RETURN * 100)}% 기준 우선)"
+    )
     print("=" * 60)
 
     print("[1/3] 종목 리스트 확보 중...")
@@ -221,13 +270,13 @@ def run_scan(scan_limit=SCAN_LIMIT, output_dir="Stock_Results"):
     if not results:
         raise RuntimeError("조건에 맞는 종목이 없습니다.")
 
-    df_final = pd.DataFrame(results).sort_values(by="수익률(%)", ascending=False)
+    df_final = pd.DataFrame(results).sort_values(by=RETURN_PERCENT_COLUMN, ascending=False)
     df_final.to_csv(full_path, index=False, encoding="utf-8-sig")
 
     print(f"[Success] 총 {len(df_final)}개 종목 필터링 완료!")
     print(f"파일 저장 경로: {full_path}")
     print("-" * 30)
-    print(df_final[["티커", "수익률(%)", "종목명"]].head(5))
+    print(df_final[["티커", RETURN_PERCENT_COLUMN, "종목명"]].head(5))
     print("=" * 60)
 
     return full_path

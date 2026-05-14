@@ -14,6 +14,7 @@ def load_scan_helpers():
         "is_supported_listing",
         "meets_market_cap_threshold",
         "parse_market_cap",
+        "select_momentum_results",
         "should_pause_before_exit",
     }
     helpers = {
@@ -32,7 +33,10 @@ def load_scan_helpers():
                 "EXCLUDED_LISTING_KEYWORDS",
                 "MIN_MARKET_CAP",
                 "MIN_PRICE",
+                "RETURN_PERCENT_COLUMN",
                 "TARGET_RETURN",
+                "TARGET_RESULT_MAX",
+                "TARGET_RESULT_MIN",
             }
             for target in node.targets
         )
@@ -52,7 +56,7 @@ class ScanHelperTests(unittest.TestCase):
     def test_target_return_matches_context_threshold(self):
         helpers = load_scan_helpers()
 
-        self.assertEqual(helpers["TARGET_RETURN"], 0.15)
+        self.assertEqual(helpers["TARGET_RETURN"], 0.30)
 
     def test_price_and_market_cap_thresholds_match_requested_filters(self):
         helpers = load_scan_helpers()
@@ -87,6 +91,42 @@ class ScanHelperTests(unittest.TestCase):
         self.assertFalse(helpers["meets_market_cap_threshold"]("$69,999,999"))
         self.assertFalse(helpers["meets_market_cap_threshold"](""))
         self.assertFalse(helpers["meets_market_cap_threshold"]("N/A"))
+
+    def test_select_momentum_results_keeps_between_50_and_80_when_possible(self):
+        helpers = load_scan_helpers()
+        rows = [
+            {"티커": f"TICKER{i:03d}", "수익률(%)": 40 - (i * 0.5)}
+            for i in range(100)
+        ]
+
+        selected = helpers["select_momentum_results"](
+            rows,
+            target_return=0.30,
+            min_count=50,
+            max_count=80,
+        )
+
+        self.assertEqual(len(selected), 50)
+        self.assertEqual(selected[0]["티커"], "TICKER000")
+        self.assertEqual(selected[-1]["티커"], "TICKER049")
+
+    def test_select_momentum_results_caps_large_preferred_sets_at_80(self):
+        helpers = load_scan_helpers()
+        rows = [
+            {"티커": f"TICKER{i:03d}", "수익률(%)": 100 - (i * 0.5)}
+            for i in range(120)
+        ]
+
+        selected = helpers["select_momentum_results"](
+            rows,
+            target_return=0.30,
+            min_count=50,
+            max_count=80,
+        )
+
+        self.assertEqual(len(selected), 80)
+        self.assertEqual(selected[0]["티커"], "TICKER000")
+        self.assertEqual(selected[-1]["티커"], "TICKER079")
 
     def test_should_pause_before_exit_defaults_to_non_blocking(self):
         helpers = load_scan_helpers()
