@@ -1,0 +1,119 @@
+from pathlib import Path
+
+import pandas as pd
+import streamlit as st
+
+from report_generator import generate_report, get_openai_api_key
+from scan import run_scan
+
+
+RESULTS_DIR = Path("Stock_Results")
+REPORT_PATH = Path("results.md")
+
+
+def find_latest_csv():
+    files = sorted(RESULTS_DIR.glob("*_Scan_Result_Top5000.csv"), key=lambda path: path.stat().st_mtime)
+    return files[-1] if files else None
+
+
+def read_report():
+    if not REPORT_PATH.exists():
+        return ""
+    return REPORT_PATH.read_text(encoding="utf-8")
+
+
+def read_candidates(csv_path):
+    return pd.read_csv(csv_path, encoding="utf-8-sig")
+
+
+def render_candidates(csv_path):
+    df = read_candidates(csv_path)
+    st.caption(f"입력 CSV: `{csv_path}` · 후보 {len(df):,}개")
+    st.dataframe(df, use_container_width=True, hide_index=True)
+
+    st.download_button(
+        "CSV 다운로드",
+        data=csv_path.read_bytes(),
+        file_name=csv_path.name,
+        mime="text/csv",
+    )
+
+
+def render_report():
+    report_text = read_report()
+    if not report_text:
+        st.info("아직 표시할 results.md가 없습니다.")
+        return
+
+    st.markdown(report_text)
+    st.download_button(
+        "리포트 Markdown 다운로드",
+        data=report_text.encode("utf-8"),
+        file_name="results.md",
+        mime="text/markdown",
+    )
+
+
+def main():
+    st.set_page_config(page_title="Stock Screener Demo", layout="wide")
+
+    st.title("Stock Screener Demo")
+    st.caption("면접 시연용 후보군 분석 도구입니다. 투자 추천이 아니라 스캔 결과 기반 후보군 분석 데모입니다.")
+
+    latest_csv = find_latest_csv()
+    api_key = get_openai_api_key()
+
+    mode = "빠른 데모 모드" if latest_csv else "CSV 없음"
+    st.info(f"현재 모드: {mode}")
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        if st.button("최신 결과 불러오기", use_container_width=True):
+            latest_csv = find_latest_csv()
+            if latest_csv:
+                st.success(f"최신 CSV를 불러왔습니다: {latest_csv.name}")
+            else:
+                st.warning("Stock_Results 폴더에 스캔 결과 CSV가 없습니다.")
+
+    with col2:
+        if st.button("실시간 스캔 실행", use_container_width=True):
+            try:
+                with st.spinner("Nasdaq/yfinance 데이터를 가져와 스캔하는 중입니다. 몇 분 걸릴 수 있습니다."):
+                    latest_csv = run_scan()
+                st.success(f"스캔 완료: {latest_csv.name}")
+            except Exception as exc:
+                st.error(f"실시간 스캔에 실패했습니다: {exc}")
+                latest_csv = find_latest_csv()
+                if latest_csv:
+                    st.info("기존 최신 CSV를 fallback으로 계속 표시합니다.")
+
+    with col3:
+        gpt_disabled = latest_csv is None or not api_key
+        if st.button("GPT 리포트 생성", use_container_width=True, disabled=gpt_disabled):
+            try:
+                with st.spinner("context.md와 CSV를 바탕으로 results.md를 생성하는 중입니다."):
+                    generate_report(latest_csv)
+                st.success("results.md를 갱신했습니다.")
+            except Exception as exc:
+                st.error(f"GPT 리포트 생성에 실패했습니다: {exc}")
+
+        if latest_csv is None:
+            st.caption("먼저 스캔 결과 CSV가 필요합니다.")
+        elif not api_key:
+            st.caption("OPENAI_API_KEY가 없어서 GPT 생성은 비활성화되어 있습니다.")
+
+    tab_candidates, tab_report = st.tabs(["후보 테이블", "리포트 미리보기"])
+
+    with tab_candidates:
+        if latest_csv:
+            render_candidates(latest_csv)
+        else:
+            st.warning("표시할 CSV가 없습니다. 실시간 스캔을 실행하거나 Stock_Results에 CSV를 추가하세요.")
+
+    with tab_report:
+        render_report()
+
+
+if __name__ == "__main__":
+    main()

@@ -20,7 +20,10 @@ def load_scan_helpers():
         node
         for node in tree.body
         if isinstance(node, ast.Assign)
-        and any(getattr(target, "id", None) == "EXCLUDED_LISTING_KEYWORDS" for target in node.targets)
+        and any(
+            getattr(target, "id", None) in {"EXCLUDED_LISTING_KEYWORDS", "TARGET_RETURN"}
+            for target in node.targets
+        )
     ]
 
     module = ast.Module(
@@ -34,6 +37,11 @@ def load_scan_helpers():
 
 
 class ScanHelperTests(unittest.TestCase):
+    def test_target_return_matches_context_threshold(self):
+        helpers = load_scan_helpers()
+
+        self.assertEqual(helpers["TARGET_RETURN"], 0.15)
+
     def test_clean_symbol_strips_whitespace_and_rejects_bad_values(self):
         helpers = load_scan_helpers()
 
