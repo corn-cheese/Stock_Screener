@@ -56,7 +56,7 @@ class ScanHelperTests(unittest.TestCase):
     def test_target_return_matches_context_threshold(self):
         helpers = load_scan_helpers()
 
-        self.assertEqual(helpers["TARGET_RETURN"], 0.30)
+        self.assertEqual(helpers["TARGET_RETURN"], 0.15)
 
     def test_price_and_market_cap_thresholds_match_requested_filters(self):
         helpers = load_scan_helpers()

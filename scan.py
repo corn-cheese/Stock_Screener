@@ -10,7 +10,7 @@ import yfinance as yf
 from tqdm import tqdm
 
 
-TARGET_RETURN = 0.30
+TARGET_RETURN = 0.15
 MIN_PRICE = 1
 MIN_MARKET_CAP = 70_000_000
 SCAN_LIMIT = 5000
