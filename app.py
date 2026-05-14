@@ -12,7 +12,7 @@ REPORT_PATH = Path("results.md")
 
 
 def find_latest_csv():
-    files = sorted(RESULTS_DIR.glob("*_Scan_Result_Top5000.csv"), key=lambda path: path.stat().st_mtime)
+    files = sorted(RESULTS_DIR.glob("*_Scan_Result_Top5000.csv"), key=lambda path: path.name[:10])
     return files[-1] if files else None
 
 

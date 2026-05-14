@@ -1,5 +1,6 @@
 import ast
 import unittest
+from types import SimpleNamespace
 from pathlib import Path
 
 
@@ -65,6 +66,35 @@ class WebAppStaticTests(unittest.TestCase):
         csv_index = source.index('st.button("기존 CSV 파일 표시"')
 
         self.assertLess(scan_index, csv_index)
+
+    def test_find_latest_csv_uses_filename_date_not_modified_time(self):
+        import app
+
+        original_results_dir = app.RESULTS_DIR
+
+        class FakeCsv:
+            def __init__(self, name, mtime):
+                self.name = name
+                self._mtime = mtime
+
+            def stat(self):
+                return SimpleNamespace(st_mtime=self._mtime)
+
+        class FakeResultsDir:
+            def __init__(self, files):
+                self.files = files
+
+            def glob(self, pattern):
+                return self.files
+
+        may_file = FakeCsv("2026-05-15_Scan_Result_Top5000.csv", 1)
+        march_file = FakeCsv("2026-03-25_Scan_Result_Top5000.csv", 2)
+
+        app.RESULTS_DIR = FakeResultsDir([may_file, march_file])
+        try:
+            self.assertIs(app.find_latest_csv(), may_file)
+        finally:
+            app.RESULTS_DIR = original_results_dir
 
     def test_report_generator_exposes_expected_functions(self):
         report_path = ROOT / "report_generator.py"
